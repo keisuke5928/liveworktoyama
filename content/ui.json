@@ -232,7 +232,20 @@
     "emp_disclaimer": "This profile is based on public information (company website and job postings) as of the date shown. We are not connected with this company. Companies can ask us to correct or remove information at any time.",
     "employers_link": "Employers hiring foreign staff",
     "emp_nojobs": "No open listings right now.",
-    "emp_sources": "Information sources"
+    "emp_sources": "Information sources",
+    "job_auto_title": "{cat} job, {emp} ({city})",
+    "jobs_by_city": "Job listings by city",
+    "jobs_city_h1": "Job listings in {city}",
+    "jobs_city_desc": "Job listings in {city}, Toyama, open to foreign applicants, with pay, hours and a link to the original posting.",
+    "page_next": "Next page",
+    "page_prev": "Previous page",
+    "page_n": "Page {n}",
+    "job_posted": "Posted",
+    "job_auto_note": "Many of these listings are collected automatically every day from JobsGo, a job site that shows Hello Work postings, in its \"actively hiring foreign nationals\" category. The job title in Japanese is the original title. Please check the details and conditions on the original posting.",
+    "jobs_featured": "Featured job listings",
+    "jobs_total": "{n} job listings in Toyama Prefecture",
+    "job_hw_no": "Hello Work no. {no}",
+    "job_tag_welcome": "Listed as \"actively hiring foreign nationals\" on JobsGo (not a statement in the posting itself)"
   },
   "easy": {
     "html_lang": "ja",
@@ -467,7 +480,20 @@
     "emp_disclaimer": "この ページは、かいしゃの ホームページや しごとの じょうほうを もとに かきました。わたしたちと この かいしゃは かんけい ありません。かいしゃは いつでも なおす ことや けす ことを たのめます。",
     "employers_link": "がいこくじんを さがして いる かいしゃ",
     "emp_nojobs": "いまは しごとの じょうほうが ありません。",
-    "emp_sources": "じょうほうの でどころ"
+    "emp_sources": "じょうほうの でどころ",
+    "job_auto_title": "{cat}の しごと、{emp}（{city}）",
+    "jobs_by_city": "まちの しごと",
+    "jobs_city_h1": "{city}の しごと",
+    "jobs_city_desc": "{city}の、がいこくじんも おうぼ できる しごとの じょうほう。",
+    "page_next": "つぎの ページ",
+    "page_prev": "まえの ページ",
+    "page_n": "{n}ページ",
+    "job_posted": "のせた ひ",
+    "job_auto_note": "おおくの しごとは、ハローワークの しごとを のせて いる「ジョブズゴー」の「がいこくじん せっきょく さいよう」から、まいにち じどうで あつめて います。くわしい ことは もとの ページで みて ください。",
+    "jobs_featured": "おすすめの しごと",
+    "jobs_total": "とやまけんの しごと {n}けん",
+    "job_hw_no": "ハローワーク {no}",
+    "job_tag_welcome": "ジョブズゴーで「がいこくじん せっきょく さいよう」に はいって います"
   },
   "ja": {
     "html_lang": "ja",
@@ -703,7 +729,20 @@
     "emp_disclaimer": "この紹介は、記載の日付時点の公開情報（企業の公式サイト、求人情報）をもとに当サイトがまとめたものです。当サイトとこの企業に関係はありません。掲載内容の修正・削除のご依頼にはすぐに対応します。",
     "employers_link": "外国人材を募集している企業",
     "emp_nojobs": "現在掲載中の求人はありません。",
-    "emp_sources": "情報の出典"
+    "emp_sources": "情報の出典",
+    "job_auto_title": "{cat}・{emp}（{city}）",
+    "jobs_by_city": "市町村別の求人情報",
+    "jobs_city_h1": "{city}の求人情報",
+    "jobs_city_desc": "{city}で外国籍の方も応募できる求人情報。給与、勤務時間、元の求人へのリンクつき。",
+    "page_next": "次のページ",
+    "page_prev": "前のページ",
+    "page_n": "{n}ページ目",
+    "job_posted": "掲載開始",
+    "job_auto_note": "多くの求人は、ハローワーク求人を掲載する求人サイト「ジョブズゴー」の「外国人積極採用」から毎日自動で集めています。求人名は元の求人のままです。詳しい条件は元の求人ページで確認してください。",
+    "jobs_featured": "注目の求人情報",
+    "jobs_total": "富山県内の求人 {n}件",
+    "job_hw_no": "ハローワーク求人番号 {no}",
+    "job_tag_welcome": "ジョブズゴーで「外国人積極採用」に分類（求人本文の記載ではありません）"
   },
   "vi": {
     "html_lang": "vi",
@@ -938,7 +977,20 @@
     "emp_disclaimer": "Trang này dựa trên thông tin công khai (trang web công ty và tin tuyển dụng) tại ngày ghi bên dưới. Chúng tôi không liên quan đến công ty này. Công ty có thể yêu cầu sửa hoặc xóa thông tin bất cứ lúc nào.",
     "employers_link": "Doanh nghiệp đang tuyển người nước ngoài",
     "emp_nojobs": "Hiện chưa có tin tuyển dụng.",
-    "emp_sources": "Nguồn thông tin"
+    "emp_sources": "Nguồn thông tin",
+    "job_auto_title": "Việc {cat}, {emp} ({city})",
+    "jobs_by_city": "Việc làm theo thành phố",
+    "jobs_city_h1": "Việc làm ở {city}",
+    "jobs_city_desc": "Việc làm ở {city}, Toyama mà người nước ngoài có thể ứng tuyển, kèm lương, giờ làm và đường dẫn đến tin gốc.",
+    "page_next": "Trang sau",
+    "page_prev": "Trang trước",
+    "page_n": "Trang {n}",
+    "job_posted": "Ngày đăng",
+    "job_auto_note": "Nhiều tin được tự động thu thập mỗi ngày từ JobsGo, trang đăng tin của Hello Work, trong mục \"tích cực tuyển người nước ngoài\". Tên công việc tiếng Nhật là tên gốc. Hãy xem chi tiết và điều kiện trên tin gốc.",
+    "jobs_featured": "Tin tuyển dụng nổi bật",
+    "jobs_total": "{n} tin tuyển dụng ở tỉnh Toyama",
+    "job_hw_no": "Mã Hello Work {no}",
+    "job_tag_welcome": "Được JobsGo xếp vào mục \"tích cực tuyển người nước ngoài\" (không phải nội dung trong tin)"
   },
   "id": {
     "html_lang": "id",
@@ -1173,6 +1225,19 @@
     "emp_disclaimer": "Profil ini berdasarkan informasi publik (situs perusahaan dan iklan lowongan) pada tanggal yang tertera. Kami tidak berhubungan dengan perusahaan ini. Perusahaan dapat meminta koreksi atau penghapusan kapan saja.",
     "employers_link": "Perusahaan yang merekrut staf asing",
     "emp_nojobs": "Saat ini belum ada lowongan.",
-    "emp_sources": "Sumber informasi"
+    "emp_sources": "Sumber informasi",
+    "job_auto_title": "Pekerjaan {cat}, {emp} ({city})",
+    "jobs_by_city": "Lowongan per kota",
+    "jobs_city_h1": "Lowongan di {city}",
+    "jobs_city_desc": "Lowongan di {city}, Toyama yang terbuka untuk pelamar asing, dengan gaji, jam kerja, dan tautan ke iklan asli.",
+    "page_next": "Halaman berikutnya",
+    "page_prev": "Halaman sebelumnya",
+    "page_n": "Halaman {n}",
+    "job_posted": "Dipasang",
+    "job_auto_note": "Banyak lowongan dikumpulkan otomatis setiap hari dari JobsGo, situs yang memuat lowongan Hello Work, pada kategori \"aktif merekrut warga asing\". Judul dalam bahasa Jepang adalah judul asli. Silakan periksa detail dan syarat di iklan asli.",
+    "jobs_featured": "Lowongan pilihan",
+    "jobs_total": "{n} lowongan di Prefektur Toyama",
+    "job_hw_no": "No. Hello Work {no}",
+    "job_tag_welcome": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (bukan tulisan di iklan itu sendiri)"
   }
 }
