@@ -439,6 +439,7 @@ def build_home(lang):
         for g in featured
     )
     body = band(
+        f'<p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
         f'<h1>{esc(t(lang, "home_h1"))}</h1>\n<p class="lead">{esc(t(lang, "home_lead"))}</p>\n'
         f'<div class="btns"><a class="btn" href="/{lang}/guides/">{esc(t(lang, "nav_guides"))}</a>'
         f'<a class="btn" href="/{lang}/jobs/">{esc(t(lang, "nav_jobs"))}</a>'

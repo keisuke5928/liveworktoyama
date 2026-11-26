@@ -143,3 +143,8 @@ details.lang .short{display:none}
 .sform .chk{display:flex;align-items:center;gap:6px;font-weight:400;min-height:36px}
 .sform .chk input{width:18px;height:18px}
 .ndate{font-weight:700;color:var(--soft);font-size:14px;margin-right:2px;white-space:nowrap}
+.hlangs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:0 0 16px;font-size:14px}
+.hl-label{font-weight:700;color:var(--red);margin-right:4px;flex-basis:100%}
+.hlangs a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);background:var(--card)}
+.hlangs a[aria-current]{background:var(--bay);color:var(--bg);border-color:var(--bay)}
+@media(max-width:600px){.logo small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}}
