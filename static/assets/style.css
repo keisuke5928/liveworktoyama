@@ -132,3 +132,4 @@ a.tag{text-decoration:none}
 details.lang .short{display:none}
 @media(max-width:600px){details.lang .full{display:none}details.lang .short{display:inline}details.lang>summary{padding:0 12px}.logo{font-size:17px}}
 .easy body,.easysum{word-break:keep-all;overflow-wrap:anywhere}
+.cols{columns:2 220px;padding-left:1.3em}.cols li{break-inside:avoid;margin:4px 0}.card.job h3{font-size:18px;margin:4px 0}
