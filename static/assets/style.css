@@ -148,3 +148,67 @@ details.lang .short{display:none}
 .hlangs a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);background:var(--card)}
 .hlangs a[aria-current]{background:var(--bay);color:var(--bg);border-color:var(--bay)}
 @media(max-width:600px){.logo small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}}
+
+/* Home (2026-11 refresh) */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.hero2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+.hero2 .btns{margin-top:16px}
+.hfind{background:var(--bayf);border:1px solid var(--line);border-radius:16px;padding:20px}
+.hfind h2{font-size:21px;margin:0 0 12px}
+.hrow{display:grid;grid-template-columns:1fr;gap:10px}
+.hfind input,.hfind select{width:100%;min-height:48px;font:inherit;font-size:16px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.hfind .btn{width:100%;justify-content:center;border:0;cursor:pointer;font:inherit;font-weight:700}
+.hfind .note{margin:12px 0 0}
+.sh{font-size:clamp(21px,2.4vw,26px);margin:0}
+.shead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin:0 0 16px}
+.shead a{font-weight:700}
+.tels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px;margin:14px 0 8px}
+.tel{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:var(--card)}
+.tel b{font-size:22px;font-weight:900;color:var(--bay);white-space:nowrap}
+.tel.red b{color:var(--red)}
+.tel span{font-size:13.5px;line-height:1.4;color:var(--soft)}
+.ngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:16px}
+.ncard{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.ncard img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line)}
+.ncard .nmeta{margin:12px 16px 0;font-size:13px;font-weight:700;color:var(--red)}
+.ncard h3{margin:4px 16px 16px;font-size:17px}
+.ncard h3 a{color:var(--ink);text-decoration:none}
+.ncard h3 a:hover{text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:20px;text-decoration:none;color:var(--ink);background:var(--card);font-size:14.5px}
+.chip span{font-size:12.5px;color:var(--soft)}
+.chip:hover,.gtile:hover,.jmini:hover,.tel:hover{border-color:var(--bay)}
+.jmini,.gtile{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--ink)}
+.jmini b,.gtile b{font-size:16.5px;line-height:1.4;color:var(--bay)}
+.jmini .tag{align-self:flex-start}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px}
+.gtile .note{font-size:13.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:820px){.hero2{grid-template-columns:1fr;gap:20px}}
+@media (max-width:700px){
+  nav{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch;order:3}
+  nav::-webkit-scrollbar{display:none}
+  nav a{white-space:nowrap;flex:none}
+}
+.tel{flex-direction:column;align-items:flex-start;gap:2px}
+@media (max-width:700px){
+  .tels{grid-template-columns:1fr 1fr}
+  .tel:last-child{grid-column:1/-1}
+  .ncard{flex-direction:row;align-items:center}
+  .ncard>a{flex:0 0 112px}
+  .ncard img{aspect-ratio:1/1;border-bottom:0;border-right:1px solid var(--line)}
+  .ncard div,.ncard .nmeta{margin:10px 12px 0}
+  .ncard{display:grid;grid-template-columns:112px 1fr;grid-template-rows:auto 1fr}
+  .ncard>a{grid-row:1/3}
+  .ncard h3{margin:2px 12px 10px;font-size:15.5px}
+  .ggrid{grid-template-columns:1fr 1fr;gap:8px}
+  .gtile{padding:12px}
+  .gtile b{font-size:14.5px}
+  .gtile .note{display:none}
+  .chips{gap:6px}
+  .chip{min-height:38px;padding:0 11px;font-size:14px}
+}
+.jmini .note:last-child{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:700px){
+  .tel:nth-child(n+3){grid-column:1/-1}
+  .ncard img{object-position:80% 50%}
+}
