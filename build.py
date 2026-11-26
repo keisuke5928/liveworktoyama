@@ -360,7 +360,7 @@ def head(lang, title, desc, path, alternates, og_image=None, og_type="website", 
             lines.append(f'<meta property="og:locale:alternate" content="{UI[l]["og_locale"]}">')
     lines += [
         '<meta name="twitter:card" content="summary_large_image">',
-        '<meta name="theme-color" content="#1d5d86">',
+        '<meta name="theme-color" content="#00255f">',
         '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
         '<link rel="apple-touch-icon" href="/img/logo.png">',
         '<link rel="preconnect" href="https://fonts.googleapis.com">',
