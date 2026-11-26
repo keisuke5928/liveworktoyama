@@ -16,7 +16,7 @@
    3. 将来の展開：寮・住まい（Oiyo Home）、受け入れキット、定着支援
 7. 現行サイトの元データ：`source/index.html`（claude.ai のアーティファクトとして公開していた1ファイル版。デザインと文言の正本）
    1. アーティファクトURL：https://claude.ai/artifact/WQPFxGnqFWHzkVL2c2SCzB（slug ee1cd83f-11a6-477f-b7e5-d7db943c0918）
-   2. 移行が終わるまでは、毎朝のスケジュールタスクがアーティファクト側のニュースを更新している。移行時に最新のニュースをアーティファクトから取り込むこと
+   2. 移行は2026-11-26に完了。アーティファクトはもう更新しない（ニュースは移行時に取り込み済み）
 
 ## 2. 最初にやること（移行タスク）
 
@@ -114,9 +114,10 @@
 1. 毎朝の自動更新（スケジュールタスク）
    1. 富山の外国人関連ニュース、在留制度の変更、雇用・留学生のニュース、季節の生活情報を調べる
    2. 1〜2本の記事を5言語で追加。記事ごとにSEO・AEOの設定をする
-   3. ガイドの追加は週1本程度まで
-   4. SNS投稿（Facebookページ、Instagram。TikTokは2か月目以降、週1本程度）
-   5. 最後に日本語のまとめを出す：追加した記事、事実確認が必要な点、「外国人歓迎」求人の候補
+   3. 記事はオーナーの確認を待たずに main に反映し、自動で公開する（2026-11-26 オーナー指示）。公開前に `python3 build.py && python3 tools/check.py` が通ることを必ず確認する
+   4. ガイドの追加は週1本程度まで
+   5. SNS投稿（Facebookページ、Instagram。TikTokは2か月目以降、週1本程度）
+   6. 最後に日本語のまとめを出す：追加した記事、事実確認が必要な点、「外国人歓迎」求人の候補
 2. 週1回の見直し
    1. GA4、Search Console、SNSの反応を見て、テーマの割合、投稿時間、見出しの書き方を調整する
    2. 何をなぜ変えたかを `docs/運用ノート.md` に記録し、まとめで報告する
@@ -139,6 +140,6 @@
 ## 11. サイトの構成（移行後）
 
 1. 原稿は `content/`、デザインは `static/`、`python3 build.py` で `_site/` に生成。main に push すると GitHub Actions で公開される
-2. ニュースの追加：`content/news/YYYY-MM-DD-slug/` に meta.json と5言語の .md を置き、`node tools/make-images.mjs` で画像を作ってからビルド。手順の詳細は README.md
+2. ニュースの追加：`content/news/YYYY-MM-DD-slug/` に meta.json と5言語の .md を置き、`node tools/make-images.mjs` で画像を作ってからビルドし、`python3 tools/check.py` で確認する。手順の詳細は README.md
 3. ガイド：`content/guides/<slug>/`。見出しは質問形式にする
 4. GA4のタグ（測定ID G-FXB7F1EDW4、2026-11-26設定）は `content/site.json` の `ga4_id`。Search Consoleの確認コードは `gsc_verification` に入れる

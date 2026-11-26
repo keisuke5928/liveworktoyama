@@ -31,7 +31,7 @@ Pushing to `main` builds and publishes to GitHub Pages (`.github/workflows/pages
 1. Copy a folder in `content/news/` and rename it `YYYY-MM-DD-short-slug`.
 2. Edit `meta.json`: `date`, `category` (rules / news / life / work / outings), `region` (japan / toyama / uozu — add new ones to `ui.json` as `region_<name>`), `sources`, `related` guides, `easy_summary`, `scene`, `og_title`, `og_sub`.
 3. Write each language file: front matter (`title`, `description`, `image_alt`), then `+++ short` (3 lines), `+++ body`, `+++ meaning`.
-4. Run `node tools/make-images.mjs` to make the image, then `python3 build.py`.
+4. Run `node tools/make-images.mjs` to make the image, then `python3 build.py && python3 tools/check.py`.
 
 Markdown supported: `## heading`, `1.` lists, `-` lists, paragraphs, `**bold**`, `[text](url)`.
 Guide headings should be questions (they become FAQ structured data).
