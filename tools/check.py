@@ -61,6 +61,44 @@ for d in sorted((ROOT / "content/news").iterdir()):
             if need not in text:
                 problems.append(f"news/{d.name}/{lang}.md: missing '{need}'")
 
+# job listings (CLAUDE.md chapter 6)
+JOB_BOARDS = ("indeed.", "townwork", "baitoru", "mynavi", "rikunabi", "doda", "en-japan", "hellowork.mhlw.go.jp",
+              "jobmedley", "stanby", "kyujinbox", "careerjet", "glassdoor", "linkedin.com/jobs", "jobs.yahoo", "airwork",
+              "engage", "hatarako", "an-", "gaijinpot", "jobs-in-japan", "workport")
+UI = json.loads((ROOT / "content/ui.json").read_text(encoding="utf-8"))
+REQ = ("status", "title", "employer", "region", "category", "employment", "source_url", "source_name",
+       "foreign_welcome", "checked", "first_listed")
+import datetime
+for f in sorted((ROOT / "content/jobs").glob("*.json")) if (ROOT / "content/jobs").exists() else []:
+    try:
+        j = json.loads(f.read_text(encoding="utf-8"))
+    except ValueError as e:
+        problems.append(f"jobs/{f.name}: invalid JSON ({e})"); continue
+    for k in REQ:
+        if not j.get(k):
+            problems.append(f"jobs/{f.name}: missing '{k}'")
+    if j.get("status") not in ("open", "closed"):
+        problems.append(f"jobs/{f.name}: status must be open or closed")
+    url = (j.get("source_url") or "").lower()
+    if not url.startswith("https://") and not url.startswith("http://"):
+        problems.append(f"jobs/{f.name}: source_url must be a full URL")
+    if any(b in url for b in JOB_BOARDS):
+        problems.append(f"jobs/{f.name}: source must be the employer's own page or a public body, not a job board ({url})")
+    for k in ("checked", "first_listed"):
+        try:
+            datetime.date.fromisoformat(j.get(k, ""))
+        except ValueError:
+            problems.append(f"jobs/{f.name}: '{k}' must be YYYY-MM-DD")
+    for k, pre in (("region", "region_"), ("category", "job_cat_"), ("employment", "emp_"), ("japanese", "jp_"), ("housing", "housing_")):
+        if j.get(k) and pre + j[k] not in UI["en"]:
+            problems.append(f"jobs/{f.name}: unknown {k} '{j[k]}' (add {pre}{j[k]} to ui.json)")
+    if isinstance(j.get("title"), dict):
+        for lang in LANGS:
+            if not j["title"].get(lang) and lang not in ("easy",):
+                problems.append(f"jobs/{f.name}: title missing for {lang}")
+    if j.get("pay") and j["pay"].get("per") not in ("month", "hour", "year", "day"):
+        problems.append(f"jobs/{f.name}: pay.per must be month/hour/year/day")
+
 if problems:
     print("\n".join(problems))
     print(f"\nFAILED: {len(problems)} problem(s)")
