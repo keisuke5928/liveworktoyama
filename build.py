@@ -710,6 +710,9 @@ def load_auto_jobs():
 AUTO_JOBS = load_auto_jobs()
 _cf = C / "jobs_auto" / "companies.json"
 COMPANY_INFO = json.loads(_cf.read_text(encoding="utf-8")) if _cf.exists() else {}
+for _ci in COMPANY_INFO.values():  # show the address that actually opened (https when available)
+    if _ci.get("site_url"):
+        _ci["website"] = _ci["site_url"]
 
 
 def norm_name(n):
