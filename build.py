@@ -437,10 +437,15 @@ def build_home(lang):
         f'<a class="btn" href="/{lang}/jobs/">{esc(t(lang, "nav_jobs"))}</a>'
         f'<a class="btn ghost" href="/{lang}/students/">{esc(t(lang, "btn_students"))}</a></div>'
     )
+    if JOBS:
+        items = "".join(f'<li><a href="/{lang}/jobs/#{esc(x["id"])}">{esc(pick(x["title"], lang))}</a> <span class="note">({esc(t(lang, "region_" + x["region"]))})</span></li>' for x in JOBS[:3])
+        jobs_card = f'<div class="card"><h2>{esc(t(lang, "jobs_latest"))}</h2><ul>{items}</ul><a class="more" href="/{lang}/jobs/">{esc(t(lang, "jobs_count", n=len(JOBS)))}</a></div>\n'
+    else:
+        jobs_card = f'<div class="card"><h2>{esc(t(lang, "nav_jobs"))}</h2><p>{esc(t(lang, "home_jobs"))}</p><a class="more" href="/{lang}/jobs/">{esc(t(lang, "home_jobs_link"))}</a></div>\n'
     body += "\n" + band(
         f'<div class="card"><h2>{esc(t(lang, "home_news"))}</h2><ul>{latest}</ul><a class="more" href="/{lang}/news/">{esc(t(lang, "all_news"))}</a></div>\n'
         f'<div class="card"><h2>{esc(t(lang, "nav_guides"))}</h2><ul>{guides}</ul><a class="more" href="/{lang}/guides/">{esc(t(lang, "all_guides"))}</a></div>\n'
-        f'<div class="card"><h2>{esc(t(lang, "nav_jobs"))}</h2><p>{esc(t(lang, "home_jobs"))}</p><a class="more" href="/{lang}/jobs/">{esc(t(lang, "home_jobs_link"))}</a></div>\n'
+        f'{jobs_card}'
         f'<div class="card"><h2>{esc(t(lang, "home_help_h"))}</h2><p>{esc(t(lang, "home_help"))}</p><a class="more" href="/{lang}/guides/help-in-your-language/">{esc(t(lang, "home_help_link"))}</a></div>',
         cls="tint",
     ).replace('class="wrap"', 'class="wrap grid"', 1)
@@ -646,21 +651,94 @@ def build_guide(g, lang):
          jsonld=ld, lastmod=g["checked"] if len(g["checked"]) > 7 else None)
 
 
+JOB_MAX_AGE_DAYS = 14  # a listing not re-checked for this many days is hidden automatically
+
+
+def load_jobs():
+    import datetime
+    today = datetime.date.fromisoformat(SITE["updated"]) if SITE.get("updated") else datetime.date.today()
+    today = max(today, datetime.date.today())
+    jobs = []
+    d = C / "jobs"
+    if not d.exists():
+        return jobs
+    for f in sorted(d.glob("*.json")):
+        j = json.loads(f.read_text(encoding="utf-8"))
+        j["id"] = f.stem
+        if j.get("status") != "open":
+            continue
+        age = (today - datetime.date.fromisoformat(j["checked"])).days
+        if age > JOB_MAX_AGE_DAYS:
+            continue
+        jobs.append(j)
+    return sorted(jobs, key=lambda j: (j.get("first_listed", j["checked"]), j["id"]), reverse=True)
+
+
+JOBS = load_jobs()
+
+
+def fmt_yen(n):
+    return "¥{:,}".format(int(n))
+
+
+def job_pay(j, lang):
+    p = j.get("pay") or {}
+    if not p.get("min") and not p.get("max"):
+        return t(lang, "pay_unknown")
+    if p.get("min") and p.get("max"):
+        x = t(lang, "pay_range", a=fmt_yen(p["min"]), b=fmt_yen(p["max"]))
+    else:
+        x = t(lang, "pay_from", a=fmt_yen(p.get("min") or p.get("max")))
+    return t(lang, "pay_" + p.get("per", "month"), x=x)
+
+
+def job_card(j, lang):
+    title = pick(j["title"], lang)
+    tags = [t(lang, "job_cat_" + j.get("category", "other")), t(lang, "region_" + j["region"])]
+    tags.append(t(lang, "emp_" + j.get("employment", "full_time")))
+    if j.get("housing") == "dorm":
+        tags.append(t(lang, "housing_dorm"))
+    if j.get("students_ok"):
+        tags.append(t(lang, "job_students"))
+    tag_html = "".join(f'<span class="tag">{esc(x)}</span>' for x in tags)
+    paid = f'<span class="sample">{esc(t(lang, "job_paid"))}</span>' if j.get("paid") else ""
+    rows = [
+        (t(lang, "job_employer"), esc(pick(j["employer"], lang))),
+        (t(lang, "job_pay"), esc(job_pay(j, lang))),
+    ]
+    if j.get("hours"):
+        rows.append((t(lang, "job_hours"), esc(pick(j["hours"], lang))))
+    rows.append((t(lang, "job_japanese"), esc(t(lang, "jp_" + j.get("japanese", "unknown")))))
+    rows.append((t(lang, "job_housing"), esc(t(lang, "housing_" + j.get("housing", "unknown")))))
+    if j.get("visa"):
+        rows.append((t(lang, "job_visa"), esc(pick(j["visa"], lang))))
+    rows.append((t(lang, "job_welcome"), esc(pick(j["foreign_welcome"], lang))))
+    src = esc(pick(j["source_name"], lang))
+    rows.append((t(lang, "job_checked"), f'{fmt_date(j["checked"], lang)} · {esc(t(lang, "job_source"))}: {src}'))
+    dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in rows)
+    summary = f'<p>{esc(pick(j["summary"], lang))}</p>' if j.get("summary") else ""
+    return (
+        f'<article class="card job" id="{esc(j["id"])}">{tag_html}<h2>{esc(title)}</h2>{paid}{summary}<dl>{dl}</dl>'
+        f'<div class="btns"><a class="btn sm" href="{esc(j["source_url"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a></div></article>'
+    )
+
+
 def build_jobs(lang):
     path = f"/{lang}/jobs/"
-    rows = "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in t(lang, "jobs_sample_rows"))
-    tags = "".join(f'<span class="tag">{esc(x)}</span>' for x in t(lang, "jobs_sample_tags"))
     body = band(f'<h1>{esc(t(lang, "jobs_h1"))}</h1>\n<p class="lead">{esc(t(lang, "jobs_lead"))}</p>')
-    body += "\n" + band(
-        f'<article class="card job">{tags}<h2>{esc(t(lang, "jobs_sample_title"))}</h2>'
-        f'<span class="sample">{esc(t(lang, "jobs_sample_note"))}</span><dl>{rows}</dl></article>', cls="tint")
+    if JOBS:
+        inner = f'<p class="note">{esc(t(lang, "jobs_count", n=len(JOBS)))}</p><div class="newslist">' + "".join(job_card(j, lang) for j in JOBS) + "</div>"
+    else:
+        inner = f'<div class="card"><p style="margin:0">{esc(t(lang, "jobs_none"))}</p></div>'
+    body += "\n" + band(inner, cls="tint")
     body += "\n" + band(
         f'<div class="rule"><p><b>{esc(t(lang, "jobs_note_h"))}</b> {esc(t(lang, "jobs_note"))}</p></div>'
         f'<div class="sect"><h2>{esc(t(lang, "jobs_how_h"))}</h2><ol>' + "".join(f"<li>{esc(x)}</li>" for x in t(lang, "jobs_how")) + "</ol></div>"
     )
     crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "nav_jobs"), path)]
+    last = max([j["checked"] for j in JOBS], default=None)
     page(lang, path, t(lang, "jobs_h1"), t(lang, "jobs_desc"), body, section="jobs",
-         alternates=alts(lambda l: f"/{l}/jobs/"), jsonld=[crumbs_ld(crumbs)], slim=False)
+         alternates=alts(lambda l: f"/{l}/jobs/"), jsonld=[crumbs_ld(crumbs)], slim=False, lastmod=last)
 
 
 def build_students(lang):
