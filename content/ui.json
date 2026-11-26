@@ -328,7 +328,22 @@
     "no_results": "No job listings match. Try fewer conditions.",
     "reset": "Clear conditions",
     "search_noscript": "This search needs JavaScript. You can also browse all job listings by city.",
-    "search_saved_note": "Saved jobs are kept only in this browser. We do not collect any personal data."
+    "search_saved_note": "Saved jobs are kept only in this browser. We do not collect any personal data.",
+    "date_short": "{month_s} {d}",
+    "months_short": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
   },
   "easy": {
     "html_lang": "ja",
@@ -659,7 +674,8 @@
     "no_results": "ありません。じょうけんを へらして ください。",
     "reset": "じょうけんを けす",
     "search_noscript": "この けんさくには JavaScript が ひつようです。まちごとの ページでも しごとを みられます。",
-    "search_saved_note": "ほぞん した しごとは、この ブラウザの なかだけに のこります。"
+    "search_saved_note": "ほぞん した しごとは、この ブラウザの なかだけに のこります。",
+    "date_short": "{m}がつ{d}にち"
   },
   "ja": {
     "html_lang": "ja",
@@ -991,7 +1007,8 @@
     "no_results": "条件に合う求人がありません。条件を減らしてください。",
     "reset": "条件をクリア",
     "search_noscript": "検索にはJavaScriptが必要です。市町村別の一覧からもすべての求人を見られます。",
-    "search_saved_note": "保存した求人はこのブラウザの中だけに残ります。個人情報は集めていません。"
+    "search_saved_note": "保存した求人はこのブラウザの中だけに残ります。個人情報は集めていません。",
+    "date_short": "{m}月{d}日"
   },
   "vi": {
     "html_lang": "vi",
@@ -1322,7 +1339,8 @@
     "no_results": "Không có việc phù hợp. Hãy bớt điều kiện.",
     "reset": "Xóa điều kiện",
     "search_noscript": "Tìm kiếm cần JavaScript. Bạn cũng có thể xem tất cả việc làm theo thành phố.",
-    "search_saved_note": "Việc đã lưu chỉ được giữ trong trình duyệt này. Chúng tôi không thu thập dữ liệu cá nhân."
+    "search_saved_note": "Việc đã lưu chỉ được giữ trong trình duyệt này. Chúng tôi không thu thập dữ liệu cá nhân.",
+    "date_short": "{d}/{m}"
   },
   "id": {
     "html_lang": "id",
@@ -1653,6 +1671,21 @@
     "no_results": "Tidak ada lowongan yang cocok. Kurangi syaratnya.",
     "reset": "Hapus syarat",
     "search_noscript": "Pencarian memerlukan JavaScript. Anda juga bisa melihat semua lowongan per kota.",
-    "search_saved_note": "Lowongan yang disimpan hanya ada di browser ini. Kami tidak mengumpulkan data pribadi."
+    "search_saved_note": "Lowongan yang disimpan hanya ada di browser ini. Kami tidak mengumpulkan data pribadi.",
+    "date_short": "{d} {month_s}",
+    "months_short": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Mei",
+      "Jun",
+      "Jul",
+      "Agu",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Des"
+    ]
   }
 }

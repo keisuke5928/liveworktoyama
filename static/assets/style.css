@@ -142,3 +142,4 @@ details.lang .short{display:none}
 .sform legend{font-weight:700;font-size:14.5px;padding:0 6px}
 .sform .chk{display:flex;align-items:center;gap:6px;font-weight:400;min-height:36px}
 .sform .chk input{width:18px;height:18px}
+.ndate{font-weight:700;color:var(--soft);font-size:14px;margin-right:2px;white-space:nowrap}

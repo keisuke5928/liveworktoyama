@@ -168,6 +168,12 @@ def reading_minutes(text, lang):
     return max(1, math.ceil(n))
 
 
+def short_date(iso, lang):
+    y, m, d = [int(x) for x in iso.split("-")]
+    ms = t(lang, "months_short")[m - 1] if lang in ("en", "id") else ""
+    return t(lang, "date_short", m=m, d=d, month_s=ms)
+
+
 def fmt_date(iso, lang):
     y, m, *rest = [int(x) for x in iso.split("-")]
     d = rest[0] if rest else None
@@ -424,7 +430,8 @@ def news_title(n, lang):
 def build_home(lang):
     path = f"/{lang}/"
     latest = "".join(
-        f'<li><a href="/{lang}/news/{n["slug"]}/">{esc(news_title(n, lang))}</a></li>' for n in NEWS[:3]
+        f'<li><time datetime="{n["date"]}" class="ndate">{esc(short_date(n["date"], lang))}</time> '
+        f'<a href="/{lang}/news/{n["slug"]}/">{esc(news_title(n, lang))}</a></li>' for n in NEWS[:3]
     )
     featured = [GUIDE_BY_SLUG[s] for s in SITE["featured_guides"] if s in GUIDE_BY_SLUG]
     guides = "".join(
