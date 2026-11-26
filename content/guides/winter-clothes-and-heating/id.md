@@ -18,3 +18,9 @@ Musim dingin di Toyama tidak sedingin Hokkaido, tetapi basah, bersalju, dan cepa
 1. Pada malam yang sangat dingin, pipa air bisa membeku. Tanyakan ke pemilik rumah atau perusahaan apa yang harus dilakukan.
 2. Embun di jendela bisa menyebabkan jamur. Lap jendela dan buka jendela agar udara berganti.
 3. Jangan naik ke atap untuk membersihkan salju sendirian. Tanyakan ke pemilik rumah atau perusahaan.
+
+## Bagaimana agar pipa air tidak membeku?
+1. Jika prakiraan suhu minus 4 derajat atau lebih dingin, biarkan keran mengalir sangat kecil sepanjang malam.
+2. Bungkus pipa di luar atau di tempat dingin dengan kain atau bahan penahan panas.
+3. Jika pipa membeku, jangan siram air mendidih karena pipa bisa pecah. Hangatkan pelan-pelan dengan air hangat atau tunggu mencair.
+4. Jika air bocor, tutup katup utama dan hubungi pemilik rumah, perusahaan, atau kantor air kota.

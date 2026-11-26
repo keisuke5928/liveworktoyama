@@ -30,5 +30,16 @@ description: Cần bằng lái nào để lái xe ở Toyama, cách đổi bằn
 2. Khi đổi địa chỉ hoặc tên, hãy báo cho đồn cảnh sát.
 3. Vi phạm giao thông sẽ bị tính điểm phạt. Nếu nhiều điểm trong 3 năm, bằng lái có thể bị đình chỉ hoặc thu hồi.
 4. Vào mùa đông, hãy đọc thêm hướng dẫn lái xe trên đường tuyết.
+
+## Đổi bằng lái ở Toyama thế nào?
+1. Nộp hồ sơ tại Trung tâm Giáo dục Lái xe tỉnh Toyama, 62-1 Takashima, TP. Toyama. Chỉ nhận theo lịch hẹn.
+2. Gọi đặt lịch: 076-441-2211 (máy lẻ 731-243), thứ Hai đến thứ Sáu 14:00–17:00.
+3. Giờ tiếp nhận theo lịch hẹn: thứ Hai đến thứ Năm 8:30–9:00 và 13:00–13:30, thứ Sáu 8:30–9:00 (nghỉ ngày lễ và 29/12–3/1).
+4. Mang hộ chiếu (cả hộ chiếu cũ), thẻ lưu trú và một bản gốc phiếu cư trú (juminhyo) có ghi quốc tịch, tư cách lưu trú và thời hạn lưu trú. Nếu có số My Number thì sẽ bị bôi đen.
+5. Mang bằng lái nước ngoài. Giấy phép lái xe quốc tế không thể đổi sang bằng Nhật.
+6. Cần bản dịch tiếng Nhật của bằng lái do cơ quan cấp bằng, Đại sứ quán/Lãnh sự quán hoặc JAF (Liên đoàn Ô tô Nhật Bản) làm.
+7. Phải chứng minh đã sống ở nước đó ít nhất 3 tháng sau khi có bằng, ví dụ bằng dấu xuất nhập cảnh trong hộ chiếu.
+8. Nếu không nói được tiếng Nhật, hãy đi cùng người phiên dịch. Không có phiên dịch thủ tục có thể lâu hơn.
 +++ links
 - [Sổ tay sinh hoạt và làm việc, Chương 9 Giao thông (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [Đổi bằng lái nước ngoài sang bằng Nhật (Cảnh sát tỉnh Toyama, tiếng Anh)](https://police.pref.toyama.jp/6117/untenmenkyo/menkyoshou/kj00011420.html)

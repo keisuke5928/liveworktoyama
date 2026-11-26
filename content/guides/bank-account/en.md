@@ -18,3 +18,9 @@ You need a bank account to receive your salary and pay rent, phone and utility b
 ## What must I never do with my bank account?
 1. Never sell, lend or give your bank account, cash card or PIN to anyone, even when you leave Japan. It is a crime in Japan and your account can be used for fraud.
 2. When you leave Japan, close your accounts at the bank.
+
+## How can I send money to my home country safely?
+1. Use a bank or a registered money transfer company. Check the fee and the exchange rate before you send.
+2. You may need to show your residence card and My Number when you send money abroad.
+3. Never use an unregistered "underground bank" (chika ginko). It is illegal, and both the sender and the operator can be arrested.
+4. Be careful of people who ask you to receive or send money for them. Your account can be used for crime.

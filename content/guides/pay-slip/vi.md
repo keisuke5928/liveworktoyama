@@ -20,6 +20,13 @@ Phiếu lương (kyuyo meisaisho) cho biết bạn được trả bao nhiêu và
 1. So sánh giờ làm và giờ làm thêm với ghi chép của chính bạn.
 2. Kiểm tra lương không thấp hơn mức lương tối thiểu của tỉnh Toyama.
 3. Nếu thấy có gì sai, trước tiên hãy hỏi công ty. Nếu không được giải quyết, hãy gọi đường dây tư vấn lao động.
+
+## Lương tối thiểu ở Toyama là bao nhiêu?
+1. Từ ngày 1/10/2026, lương tối thiểu ở tỉnh Toyama là 1.119 yên/giờ (trước đó là 1.062 yên).
+2. Áp dụng cho mọi người lao động, kể cả bán thời gian, thực tập sinh kỹ năng và người nước ngoài.
+3. Ví dụ: 8 giờ/ngày × 21 ngày = 168 giờ, tối thiểu khoảng 188.000 yên/tháng trước khi khấu trừ.
+4. Nếu lương giờ thấp hơn, hãy hỏi công ty hoặc góc tư vấn lao động.
 +++ links
 - [Đường dây tư vấn cho lao động nước ngoài (Bộ Y tế, Lao động và Phúc lợi, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
 - [Sổ tay sinh hoạt và làm việc, Chương 3, 6 và 7 (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [Lương tối thiểu tỉnh Toyama (Cục Lao động Toyama)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/news_topics/oshirase/_120032/R8saichin_toushin_00012.html)

@@ -20,7 +20,16 @@ description: 富山での地震、津波、大雪への備え。無料アプリ�
 1. 車のエンジンをかける前に、マフラーのまわりの雪を取り除きます。マフラーがふさがると一酸化炭素中毒の危険があります。
 2. 車が雪で動けなくなったら、マフラーのまわりの雪を取り除き、窓を少し開けておきます。
 3. 屋根の雪下ろしを一人でしないでください。毎年冬に多くの事故が起きています。
+
+## 避難情報のレベルはどういう意味ですか？
+1. 市町村は避難の情報を5段階のレベルで出します。
+2. レベル3：高齢者、障害のある人、小さい子どもがいる家族などは避難します。
+3. レベル4：危険な場所にいる人は全員避難します。
+4. レベル5：すでに災害が起きています。2階以上に上がるなど、命を守る行動をすぐにとります。
+5. 避難所だけでなく、安全な知り合いの家やホテルに避難してもかまいません。
+6. 富山市は英語などの防災ガイドを出しています。お住まいの市町村のガイドも確認しましょう。
 +++ links
 - [Safety tips（iPhone）](https://apps.apple.com/jp/app/safety-tips/id858357174)
 - [Safety tips（Android）](https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android)
 - [Safety tipsについて（観光庁）](https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/jizoku_kankochi/anzenkakuho/inbound/tool.html)
+- [富山市 防災ガイド（英語、PDF）](https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/000/bousai_en.pdf)

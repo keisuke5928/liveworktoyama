@@ -20,7 +20,14 @@ description: とやまでの じしん、つなみ、おおゆきへの そな�
 1. くるまの エンジンを かける まえに、マフラーの まわりの ゆきを とります。ふさがると いっさんかたんそ ちゅうどくの きけんが あります。
 2. くるまが ゆきで うごけなく なったら、マフラーの まわりの ゆきを とって、まどを すこし あけます。
 3. やねの ゆきおろしを ひとりで しないで ください。まいとし じこが たくさん おきて います。
+
+## ひなんの レベルは どういう いみですか？
+1. まちは ひなんの じょうほうを 5つの レベルで だします。
+2. レベル3：おとしよりや ちいさい こどもが いる かぞくは ひなん します。
+3. レベル4：あぶない ばしょに いる ひとは みんな ひなん します。
+4. レベル5：もう さいがいが おきて います。すぐに いのちを まもります。
 +++ links
 - [Safety tips（iPhone）](https://apps.apple.com/jp/app/safety-tips/id858357174)
 - [Safety tips（Android）](https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android)
 - [Safety tips に ついて（かんこうちょう）](https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/jizoku_kankochi/anzenkakuho/inbound/tool.html)
+- [とやまし ぼうさい ガイド（えいご、PDF）](https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/000/bousai_en.pdf)

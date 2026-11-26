@@ -30,5 +30,16 @@ In Toyama, many jobs and daily errands need a car. Driving without a valid licen
 2. When your address or name changes, tell the police station.
 3. Traffic violations give you penalty points. Too many points in three years can lead to suspension or cancellation of your license.
 4. In winter, read our guide on driving in snow.
+
+## How do I change my license in Toyama?
+1. Apply at the Toyama Prefectural Driver Education Center, 62-1 Takashima, Toyama City. Appointments only.
+2. To make an appointment, call 076-441-2211 (extension 731-243), Monday to Friday 14:00 to 17:00.
+3. Reception for appointments: Monday to Thursday 8:30 to 9:00 and 13:00 to 13:30, Friday 8:30 to 9:00 (closed on holidays and from December 29 to January 3).
+4. Bring your passport (and old passports), your residence card, and one original residence certificate (juminhyo) that shows your nationality, status of residence and period of stay. Black out your My Number if it is written on it.
+5. Bring your foreign driver's license. An international driving permit cannot be changed to a Japanese license.
+6. You need a Japanese translation of your license made by the office that issued it, your embassy or consulate, or JAF (Japan Automobile Federation).
+7. You must prove that you lived in that country for at least 3 months after you got the license, for example with passport stamps.
+8. If you cannot speak Japanese, come with an interpreter. Without one, the process can take longer.
 +++ links
 - [Guidebook on Living and Working, Chapter 9 Traffic (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [How to convert a foreign driver's license (Toyama Prefectural Police)](https://police.pref.toyama.jp/6117/untenmenkyo/menkyoshou/kj00011420.html)
