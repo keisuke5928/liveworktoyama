@@ -133,3 +133,13 @@ details.lang .short{display:none}
 @media(max-width:600px){details.lang .full{display:none}details.lang .short{display:inline}details.lang>summary{padding:0 12px}.logo{font-size:17px}}
 .easy body,.easysum{word-break:keep-all;overflow-wrap:anywhere}
 .cols{columns:2 220px;padding-left:1.3em}.cols li{break-inside:avoid;margin:4px 0}.card.job h3{font-size:18px;margin:4px 0}
+.pts{margin:10px 0;background:var(--bayf);border:0}.pts>summary{padding:10px 14px;font-size:15px}.pts>div{padding:0 14px 10px;font-size:15px}
+.sform{display:grid;gap:14px;margin-top:18px}
+.sform label{display:grid;gap:4px;font-weight:700;font-size:14.5px}
+.sform input[type=search],.sform select{font:inherit;font-weight:400;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.srow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+.sform fieldset{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.sform legend{font-weight:700;font-size:14.5px;padding:0 6px}
+.sform .chk{display:flex;align-items:center;gap:6px;font-weight:400;min-height:36px}
+.sform .chk input{width:18px;height:18px}
+.ndate{font-weight:700;color:var(--soft);font-size:14px;margin-right:2px;white-space:nowrap}

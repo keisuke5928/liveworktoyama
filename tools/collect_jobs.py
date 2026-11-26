@@ -106,12 +106,14 @@ def parse_block(block):
     content = cell(block, "content")
     cat = next((c for c, rx in CATEGORY if re.search(rx, title)), None) or \
         next((c for c, rx in CATEGORY if re.search(rx, content[:200])), "other")
+    if not employer or "公開していません" in employer:
+        return None  # no employer name: excluded (owner instruction 2026-11-26)
     hw = "ハローワーク" in block or "公共職業安定所" in office
     return {
         "id": "jg-" + jid,
         "status": "open",
         "title_ja": title[:80],
-        "employer_ja": employer[:80] if "公開していません" not in employer else "",
+        "employer_ja": employer[:80],
         "region": city,
         "category": cat,
         "employment": etype,
@@ -124,7 +126,188 @@ def parse_block(block):
     }
 
 
+DETAILS = ROOT / "content/jobs_auto/details.json"
+COMPANIES = ROOT / "content/jobs_auto/companies.json"
+QUALS = [("license_car", r"普通自動車運転免許|普通自動車免許"), ("license_large", r"大型自動車|中型自動車|準中型"),
+         ("care_worker", r"介護福祉士"), ("care_training", r"初任者研修|実務者研修|ヘルパー2級"), ("nurse", r"看護師"),
+         ("childcare", r"保育士"), ("cook", r"調理師"), ("welding", r"溶接"), ("forklift", r"フォークリフト"),
+         ("crane", r"クレーン|玉掛"), ("electrician", r"電気工事士"), ("pc", r"パソコン|ＰＣ|PCスキル|Excel|エクセル")]
+FOREIGN_WORDS = ["外国人", "外国籍", "技能実習", "特定技能", "ベトナム", "インドネシア", "フィリピン", "ネパール", "ミャンマー",
+                 "中国人", "ブラジル", "foreign", "Foreign"]
+
+
+def flat(page):
+    page = re.sub(r"(?s)<(script|style).*?</\1>", "", page)
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", page)))
+
+
+def grab(t, rx, n=1):
+    m = re.search(rx, t)
+    return m.group(n) if m else ""
+
+
+def parse_detail(page):
+    t = flat(page)
+    a = t.find("仕事内容")
+    end = t.find("この求人に似た")
+    t = t[a:end if end > a else a + 8000]
+    need = grab(t, r"【必要な免許・資格】(.*?)(?:【|雇用形態)") + " " + grab(t, r"【必要な経験等】(.*?)(?:【|雇用形態)")
+    req = " ".join([need, grab(t, r"応募資格(.*?)雇用形態")])
+    quals = [k for k, rx in QUALS if re.search(rx, req)]
+    body = t[:t.find("会社概要")] if "会社概要" in t else t
+    fmention = bool(re.search(r"外国(?!人積極採用)", body))
+    jlpt = grab(body, r"(?:日本語能力試験|JLPT)[^N]{0,12}(N[1-5])") or (grab(body, r"(N[1-5])以上") if fmention else "")
+    ins = grab(t, r"加入保険等：(\S+)")
+    bonus = re.search(r"賞与：あり（前年度実績 年(\d+)回 計 ([\d.]+)ヶ月分）", t)
+    d = {
+        "quals": quals,
+        "age": grab(t, r"【年齢制限、該当事由】\s*(\S+?)(?:、|\s)"),
+        "holidays": int(grab(t, r"年間休日数：(\d+)日") or 0) or None,
+        "weekly2": grab(t, r"週休二日制：(\S+)"),
+        "overtime": int(grab(t, r"時間外労働時間：(\d+)時間") or 0),
+        "bonus": float(bonus.group(2)) if bonus else None,
+        "raise": "昇給：あり" in t,
+        "commute": bool(re.search(r"通勤手当：通勤手当あり", t)),
+        "housing": grab(t, r"入居可能住宅：(\S+)"),
+        "social_ins": all(x in ins for x in ("健康保険", "厚生年金")),
+        "foreign_text": fmention,
+        "jlpt": jlpt,
+        "employees": int(grab(t, r"企業全体：(\d+)名") or 0) or None,
+        "founded": grab(t, r"設立年月日\s*(\d{4})年"),
+        "website": grab(t, r"会社ホームページ\s*(https?://[^\s]+)"),
+    }
+    return d
+
+
+def check_company_site(url):
+    """Open the company's website, find a recruitment page and look for mentions of foreign staff."""
+    out = {"website": url, "ok": False, "recruit_url": "", "foreign_words": [], "title": ""}
+    try:
+        page = fetch(url)
+    except Exception:
+        return out
+    out["ok"] = True
+    m = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
+    out["title"] = html.unescape(m.group(1)).strip()[:80] if m else ""
+    from urllib.parse import urljoin
+    rec = ""
+    for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', page, re.S | re.I):
+        lab = re.sub(r"<[^>]+>", "", label)
+        if re.search(r"採用|リクルート|recruit|求人|career", href + lab, re.I) and not href.startswith(("mailto:", "tel:", "javascript")):
+            rec = urljoin(url, href)
+            break
+    texts = [flat(page)]
+    if rec:
+        out["recruit_url"] = rec
+        try:
+            texts.append(flat(fetch(rec)))
+        except Exception:
+            pass
+    joined = " ".join(texts)
+    out["foreign_words"] = [w for w in FOREIGN_WORDS if w in joined][:5]
+    # links on the recruitment page that may be individual job pages
+    links = []
+    if rec:
+        try:
+            rp = fetch(rec)
+            for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', rp, re.S | re.I):
+                lab = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()
+                if 2 <= len(lab) <= 60 and not href.startswith(("mailto:", "tel:", "javascript")):
+                    links.append([lab, urljoin(rec, href)])
+            # one level deeper: pages that list jobs ("職種から探す", "募集要項", ...)
+            from urllib.parse import urlparse
+            host = urlparse(rec).netloc
+            hubs = [u for lab, u in links if urlparse(u).netloc == host and re.search(r"職種|募集|求人|要項|job|recruit|採用情報|キャリア|中途|新卒", lab + u, re.I)]
+            for hub in list(dict.fromkeys(hubs))[:3]:
+                try:
+                    hp = fetch(hub)
+                except Exception:
+                    continue
+                for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', hp, re.S | re.I):
+                    lab = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()
+                    if 2 <= len(lab) <= 60 and not href.startswith(("mailto:", "tel:", "javascript")):
+                        links.append([lab, urljoin(hub, href)])
+        except Exception:
+            pass
+    seen, uniq = set(), []
+    for lab, u in links:
+        if u not in seen and "microsoft.com" not in u and "google.co" not in u:
+            seen.add(u)
+            uniq.append([lab, u])
+    out["links"] = uniq[:200]
+    return out
+
+
+STOP = {"正社員", "募集", "未経験", "歓迎", "スタッフ", "急募", "契約社員", "パート", "アルバイト", "富山", "富山市", "高岡",
+        "勤務", "可能", "経験者", "以上", "日勤", "夜勤", "週休", "土日", "休み", "賞与", "年間", "休日", "求人", "採用",
+        "株式会社", "店", "店舗", "センター", "業務", "ホーム", "詳細", "こちら", "一覧", "情報", "エントリー", "応募"}
+
+
+def match_official(title, links):
+    toks = [w for w in re.findall(r"[一-龥]{2,}|[ァ-ヴー]{2,}", title) if w not in STOP]
+    best, score = "", 0
+    for lab, url in links:
+        sc = sum(len(w) for w in toks if w in lab)
+        if sc > score and sc >= 3:
+            best, score = url, sc
+    return best
+
+
+def enrich(jobs, today):
+    from concurrent.futures import ThreadPoolExecutor
+    details = json.loads(DETAILS.read_text(encoding="utf-8")) if DETAILS.exists() else {}
+    todo = [j for j in jobs if j["id"] not in details]
+    print(f"detail pages to read: {len(todo)}", file=sys.stderr)
+    for i, j in enumerate(todo):
+        try:
+            details[j["id"]] = parse_detail(fetch(j["source_url"]))
+        except Exception as e:
+            print(f"detail {j['id']}: {e}", file=sys.stderr)
+        if i % 100 == 0:
+            print(f"  {i}/{len(todo)}", file=sys.stderr)
+            DETAILS.write_text(json.dumps(details, ensure_ascii=False), encoding="utf-8")
+        time.sleep(1)
+    keep = {j["id"] for j in jobs}
+    details = {k: v for k, v in details.items() if k in keep}
+    DETAILS.write_text(json.dumps(details, ensure_ascii=False, indent=0), encoding="utf-8")
+    companies = json.loads(COMPANIES.read_text(encoding="utf-8")) if COMPANIES.exists() else {}
+    sites = {}
+    for j in jobs:
+        d = details.get(j["id"], {})
+        name = j["employer_ja"]
+        c = companies.setdefault(name, {})
+        for k in ("employees", "founded", "website"):
+            if d.get(k) and not c.get(k):
+                c[k] = d[k]
+        if c.get("website") and (not c.get("site_checked") or c["site_checked"] < (datetime.date.fromisoformat(today) - datetime.timedelta(days=30)).isoformat()):
+            sites[name] = c["website"]
+    print(f"company websites to check: {len(sites)}", file=sys.stderr)
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for name, res in zip(sites, ex.map(check_company_site, sites.values())):
+            companies[name].update({"site_ok": res["ok"], "recruit_url": res["recruit_url"], "links": res.get("links", []),
+                                    "site_foreign_words": res["foreign_words"], "site_title": res["title"], "site_checked": today})
+    for j in jobs:
+        c = companies.get(j["employer_ja"], {})
+        j["official_url"] = match_official(j["title_ja"], c.get("links", [])) if c.get("links") else ""
+    names = {j["employer_ja"] for j in jobs}
+    companies = {k: v for k, v in companies.items() if k in names}
+    COMPANIES.write_text(json.dumps(companies, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def sites_only():
+    """Re-check company websites and job-page matches without reading JobsGo again."""
+    data = json.loads(OUT.read_text(encoding="utf-8"))
+    comps = json.loads(COMPANIES.read_text(encoding="utf-8")) if COMPANIES.exists() else {}
+    for c in comps.values():
+        c.pop("site_checked", None)
+    COMPANIES.write_text(json.dumps(comps, ensure_ascii=False), encoding="utf-8")
+    enrich(data["jobs"], datetime.date.today().isoformat())
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
+    if "--sites-only" in sys.argv:
+        return sites_only()
     max_pages = 200
     if "--max-pages" in sys.argv:
         max_pages = int(sys.argv[sys.argv.index("--max-pages") + 1])
@@ -155,6 +338,8 @@ def main():
         print("Too few listings collected; keeping the old file.", file=sys.stderr)
         sys.exit(1)
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    if "--no-detail" not in sys.argv:
+        enrich(jobs, today)
     OUT.write_text(json.dumps({"source": "JobsGo, Toyama, 外国人積極採用 (k9)", "collected": today, "jobs": jobs},
                               ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"saved {len(jobs)} listings to {OUT.relative_to(ROOT)}", file=sys.stderr)
