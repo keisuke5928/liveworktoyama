@@ -1,0 +1,37 @@
+# Every morning (5:00 JST) save GA4 and Search Console numbers to docs/metrics/ for the automatic review.
+# Needs repository secrets GA_SA_KEY and GA4_PROPERTY_ID (see CLAUDE.md chapter 12). Without them it does nothing.
+name: Fetch site metrics
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet google-auth requests
+      - run: python3 tools/fetch_metrics.py
+        env:
+          GA_SA_KEY: ${{ secrets.GA_SA_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GSC_SITE: ${{ vars.GSC_SITE || 'sc-domain:liveworktoyama.com' }}
+      - name: Commit the summary
+        run: |
+          if [ -n "$(git status --porcelain docs/metrics)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/metrics
+            git commit -m "metrics: $(date -u +%F)"
+            git push
+          fi

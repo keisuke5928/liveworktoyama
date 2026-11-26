@@ -1013,8 +1013,6 @@ def build_job_search(lang):
          alternates=alts(lambda l: f"/{l}/jobs/search/"), jsonld=[crumbs_ld(crumbs)], slim=True)
 
 
-JOBS_JSON = json.dumps(job_index(), ensure_ascii=False, separators=(",", ":"))
-JOBS_V = hashlib.md5(JOBS_JSON.encode("utf-8")).hexdigest()[:8]
 PER_PAGE = 40
 
 
@@ -1061,6 +1059,10 @@ for _e in EMPLOYERS:
     for _c in COMPANIES.values():
         if norm_name(_c["name"]) == _n:
             _c["curated"] = _e["slug"]
+
+# The search data needs the links to hand-written company pages, so build it after the mapping above.
+JOBS_JSON = json.dumps(job_index(), ensure_ascii=False, separators=(",", ":"))
+JOBS_V = hashlib.md5(JOBS_JSON.encode("utf-8")).hexdigest()[:8]
 
 
 def employer_jobs(e):
