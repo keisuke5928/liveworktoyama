@@ -6,8 +6,8 @@
     "lang_name": "English",
     "language": "Language",
     "skip": "Skip to content",
-    "tagline": "Jobs and daily life in Toyama · by Oiyo",
-    "tagline_short": "Jobs and daily life in Toyama",
+    "tagline": "Jobs and daily life in Toyama for foreign residents · by Oiyo",
+    "tagline_short": "Jobs and daily life in Toyama for foreign residents",
     "nav_label": "Main",
     "nav_home": "Home",
     "nav_news": "News",
@@ -33,9 +33,9 @@
     ],
     "date_format": "{month} {d}, {y}",
     "month_format": "{month} {y}",
-    "home_h1": "Live and work in Toyama",
-    "home_lead": "Moving to Toyama or already living here? We share simple guides for daily life, short local news, and jobs that welcome foreign applicants.",
-    "home_desc": "Jobs and daily life in Toyama, Japan. Simple guides, local news and job listings that welcome foreign applicants. In English, easy Japanese, Japanese, Vietnamese and Indonesian.",
+    "home_h1": "For foreign residents living and working in Toyama",
+    "home_lead": "Moving to Toyama from abroad, or already living here? Simple life guides, local news and job listings open to foreign applicants, in 5 languages.",
+    "home_desc": "An information site for foreign residents in Toyama, Japan, and people who want to move there: life guides, local news and job listings open to foreign applicants, in English, easy Japanese, Japanese, Vietnamese and Indonesian.",
     "btn_students": "For students",
     "home_news": "Latest news",
     "all_news": "All news",
@@ -343,7 +343,8 @@
       "Oct",
       "Nov",
       "Dec"
-    ]
+    ],
+    "home_langs": "Information for foreign residents, in 5 languages"
   },
   "easy": {
     "html_lang": "ja",
@@ -352,8 +353,8 @@
     "lang_name": "やさしいにほんご",
     "language": "ことば",
     "skip": "ほんぶんへ",
-    "tagline": "とやまの しごとと くらし · by Oiyo",
-    "tagline_short": "とやまの しごとと くらし",
+    "tagline": "がいこくじんの ための とやまの しごとと くらし · by Oiyo",
+    "tagline_short": "がいこくじんの ための とやまの しごとと くらし",
     "nav_label": "メニュー",
     "nav_home": "ホーム",
     "nav_news": "ニュース",
@@ -379,8 +380,8 @@
     ],
     "date_format": "{y}ねん {m}がつ {d}にち",
     "month_format": "{y}ねん {m}がつ",
-    "home_h1": "とやまで はたらく・くらす",
-    "home_lead": "とやまの くらしに やくだつ じょうほう、とやまの ニュース、がいこくじんを かんげいする しごとを のせます。",
+    "home_h1": "とやまで はたらく・くらす がいこくじんの みなさんへ",
+    "home_lead": "がいこくから とやまに くる ひと、もう とやまに すんで いる ひとの ための サイトです。くらしの ガイド、ニュース、がいこくじんも おうぼ できる しごとを、5つの ことばで のせます。",
     "home_desc": "とやまで はたらく がいこくじんの ための サイトです。くらしの ガイド、ニュース、がいこくじんを かんげいする しごとの じょうほうを、やさしい にほんごで のせます。",
     "btn_students": "りゅうがくせいの みなさんへ",
     "home_news": "あたらしい ニュース",
@@ -675,7 +676,8 @@
     "reset": "じょうけんを けす",
     "search_noscript": "この けんさくには JavaScript が ひつようです。まちごとの ページでも しごとを みられます。",
     "search_saved_note": "ほぞん した しごとは、この ブラウザの なかだけに のこります。",
-    "date_short": "{m}がつ{d}にち"
+    "date_short": "{m}がつ{d}にち",
+    "home_langs": "がいこくじんの ための じょうほう。5つの ことばで よめます"
   },
   "ja": {
     "html_lang": "ja",
@@ -685,8 +687,8 @@
     "language": "言語",
     "ja_only_note": "このページは日本語のみです。下から各言語のトップページへ移動できます。",
     "skip": "本文へ移動",
-    "tagline": "富山の仕事と暮らし · by Oiyo",
-    "tagline_short": "富山の仕事と暮らし",
+    "tagline": "外国籍の方のための 富山の仕事と暮らし · by Oiyo",
+    "tagline_short": "外国籍の方のための富山の仕事と暮らし",
     "nav_label": "メインメニュー",
     "nav_home": "ホーム",
     "nav_news": "ニュース",
@@ -712,9 +714,9 @@
     ],
     "date_format": "{y}年{m}月{d}日",
     "month_format": "{y}年{m}月",
-    "home_h1": "富山で働く、富山で暮らす",
-    "home_lead": "富山に引っ越す予定の方も、もう住んでいる方も。暮らしのガイド、地域のニュース、外国籍の方の応募を歓迎する求人情報をお届けします。",
-    "home_desc": "富山で働く外国人と、これから富山に来たい外国人のための情報サイト。生活ガイド、ニュース、外国籍の方の応募を歓迎する求人情報を5言語で。",
+    "home_h1": "富山で働く・暮らす外国籍のみなさんへ",
+    "home_lead": "海外から富山に来る方、すでに富山で暮らしている外国籍の方のための情報サイトです。生活ガイド、地域のニュース、外国籍の方も応募できる求人情報を5言語でお届けします。",
+    "home_desc": "富山で働く外国籍の方、これから富山に来たい外国籍の方のための情報サイト。生活ガイド、ニュース、外国籍の方も応募できる求人情報を、英語・やさしい日本語・日本語・ベトナム語・インドネシア語の5言語で。",
     "btn_students": "留学生のみなさんへ",
     "home_news": "最新ニュース",
     "all_news": "ニュース一覧",
@@ -1008,7 +1010,8 @@
     "reset": "条件をクリア",
     "search_noscript": "検索にはJavaScriptが必要です。市町村別の一覧からもすべての求人を見られます。",
     "search_saved_note": "保存した求人はこのブラウザの中だけに残ります。個人情報は集めていません。",
-    "date_short": "{m}月{d}日"
+    "date_short": "{m}月{d}日",
+    "home_langs": "外国籍の方のための情報を5言語で"
   },
   "vi": {
     "html_lang": "vi",
@@ -1017,8 +1020,8 @@
     "lang_name": "Tiếng Việt",
     "language": "Ngôn ngữ",
     "skip": "Đến nội dung chính",
-    "tagline": "Việc làm và cuộc sống ở Toyama · by Oiyo",
-    "tagline_short": "Việc làm và cuộc sống ở Toyama",
+    "tagline": "Việc làm và cuộc sống ở Toyama cho người nước ngoài · by Oiyo",
+    "tagline_short": "Việc làm và cuộc sống ở Toyama cho người nước ngoài",
     "nav_label": "Menu chính",
     "nav_home": "Trang chủ",
     "nav_news": "Tin tức",
@@ -1044,9 +1047,9 @@
     ],
     "date_format": "{d}/{m}/{y}",
     "month_format": "{month} năm {y}",
-    "home_h1": "Sống và làm việc ở Toyama",
-    "home_lead": "Bạn sắp chuyển đến Toyama hay đang sống ở đây? Chúng tôi chia sẻ hướng dẫn đơn giản về cuộc sống, tin tức địa phương và việc làm chào đón người nước ngoài.",
-    "home_desc": "Việc làm và cuộc sống ở Toyama, Nhật Bản. Hướng dẫn đơn giản, tin tức địa phương và thông tin tuyển dụng chào đón người nước ngoài, bằng tiếng Việt.",
+    "home_h1": "Dành cho người nước ngoài sống và làm việc ở Toyama",
+    "home_lead": "Bạn sắp từ nước ngoài đến Toyama hay đang sống ở đây? Hướng dẫn cuộc sống, tin tức địa phương và việc làm mà người nước ngoài có thể ứng tuyển, bằng 5 ngôn ngữ.",
+    "home_desc": "Trang thông tin dành cho người nước ngoài ở Toyama, Nhật Bản và người muốn đến Toyama: hướng dẫn cuộc sống, tin tức và việc làm cho người nước ngoài, bằng tiếng Việt và 4 ngôn ngữ khác.",
     "btn_students": "Dành cho du học sinh",
     "home_news": "Tin mới nhất",
     "all_news": "Xem tất cả tin tức",
@@ -1340,7 +1343,8 @@
     "reset": "Xóa điều kiện",
     "search_noscript": "Tìm kiếm cần JavaScript. Bạn cũng có thể xem tất cả việc làm theo thành phố.",
     "search_saved_note": "Việc đã lưu chỉ được giữ trong trình duyệt này. Chúng tôi không thu thập dữ liệu cá nhân.",
-    "date_short": "{d}/{m}"
+    "date_short": "{d}/{m}",
+    "home_langs": "Thông tin cho người nước ngoài, bằng 5 ngôn ngữ"
   },
   "id": {
     "html_lang": "id",
@@ -1349,8 +1353,8 @@
     "lang_name": "Bahasa Indonesia",
     "language": "Bahasa",
     "skip": "Langsung ke isi",
-    "tagline": "Kerja dan kehidupan di Toyama · by Oiyo",
-    "tagline_short": "Kerja dan kehidupan di Toyama",
+    "tagline": "Kerja dan kehidupan di Toyama untuk warga asing · by Oiyo",
+    "tagline_short": "Kerja dan kehidupan di Toyama untuk warga asing",
     "nav_label": "Menu utama",
     "nav_home": "Beranda",
     "nav_news": "Berita",
@@ -1376,9 +1380,9 @@
     ],
     "date_format": "{d} {month} {y}",
     "month_format": "{month} {y}",
-    "home_h1": "Hidup dan bekerja di Toyama",
-    "home_lead": "Akan pindah ke Toyama atau sudah tinggal di sini? Kami berbagi panduan sederhana untuk kehidupan sehari-hari, berita lokal, dan lowongan yang menyambut pelamar asing.",
-    "home_desc": "Kerja dan kehidupan sehari-hari di Toyama, Jepang. Panduan sederhana, berita lokal, dan informasi lowongan yang menyambut pelamar asing, dalam bahasa Indonesia.",
+    "home_h1": "Untuk warga asing yang tinggal dan bekerja di Toyama",
+    "home_lead": "Akan datang ke Toyama dari luar negeri, atau sudah tinggal di sini? Panduan hidup, berita lokal, dan lowongan yang terbuka untuk pelamar asing, dalam 5 bahasa.",
+    "home_desc": "Situs informasi untuk warga asing di Toyama, Jepang, dan yang ingin pindah ke sana: panduan hidup, berita, dan lowongan untuk pelamar asing, dalam bahasa Indonesia dan 4 bahasa lain.",
     "btn_students": "Untuk pelajar",
     "home_news": "Berita terbaru",
     "all_news": "Semua berita",
@@ -1686,6 +1690,7 @@
       "Okt",
       "Nov",
       "Des"
-    ]
+    ],
+    "home_langs": "Informasi untuk warga asing, dalam 5 bahasa"
   }
 }
