@@ -226,3 +226,6 @@ footer nav a{min-height:44px}
 .chk{display:inline-flex;align-items:center;gap:8px;min-height:44px}
 .chk input{width:22px;height:22px}
 .hlangs .hl-label{color:var(--soft);font-weight:500}
+.logo img{display:block;height:36px;width:auto;margin:2px 0 3px}
+@media(max-width:600px){.logo img{height:28px}}
+@media(min-width:601px){.logo img{height:42px}}
