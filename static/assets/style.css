@@ -1,0 +1,134 @@
+/* Live & Work Toyama — design carried over from source/index.html (claude.ai artifact).
+   VOICE everyday and warm for residents, calm and trustworthy for businesses
+   COLOUR pure white ground, bay blue #1d5d86, deep ink #0f2433, tulip red #c9372e accent; night #0b1822
+   TYPE Zen Kaku Gothic New 900 for titles, 400/500 for text */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1822);--ink:light-dark(#0f2433,#e9f1f6);--soft:light-dark(#4a5f6d,#a9bccb);--bay:light-dark(#1d5d86,#5fa8d6);--bayf:light-dark(#eaf3f9,#12283a);--red:light-dark(#c9372e,#ff7a6e);--line:light-dark(#d5e3ec,#22394b);--card:light-dark(#ffffff,#10212f)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;overflow-x:clip}
+a{color:var(--bay)}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.tint{background:var(--bayf)}
+.wrap{max-width:1180px;margin:0 auto}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;max-width:1180px;margin:0 auto;padding:8px max(5vw,16px)}
+.logo{font-weight:900;font-size:19px;color:var(--ink);text-decoration:none;margin-right:auto;line-height:1.2}
+.logo b{color:var(--red)}
+.logo small{display:block;font-weight:500;font-size:12px;color:var(--soft)}
+nav{display:flex;flex-wrap:wrap;gap:2px}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 11px;border-radius:22px;text-decoration:none;color:var(--ink);font-weight:500;font-size:14.5px}
+nav a[aria-current=page]{background:var(--bay);color:var(--bg)}
+nav .biz{border:1px solid var(--line)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.scene{display:block;width:100%;height:clamp(150px,22vw,260px);background:var(--bayf)}
+h1{font-weight:900;font-size:clamp(30px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+h2{font-size:clamp(23px,2.8vw,30px);font-weight:900;line-height:1.2;margin:0 0 16px}
+h3{margin:0 0 8px;font-size:19px;line-height:1.35;font-weight:900}
+.lead{margin:0;max-width:64ch;color:var(--soft);font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card ul,.card ol{margin:8px 0 0;padding-left:1.3em}
+.card li{margin:4px 0}
+.note{font-size:14px;color:var(--soft)}
+.tag{display:inline-block;font-size:13px;font-weight:700;padding:2px 10px;border-radius:12px;background:var(--bayf);color:var(--bay);margin:0 6px 6px 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:24px;background:var(--bay);color:var(--bg);font-weight:700;text-decoration:none}
+.btn.red{background:var(--red);color:#fff}
+.btn.ghost{background:transparent;color:var(--bay);border:2px solid var(--bay)}
+.rule{border-left:4px solid var(--red);padding:12px 16px;background:var(--bayf);border-radius:0 10px 10px 0}
+.rule p{margin:0}
+details{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;min-height:44px;list-style-position:inside}
+details>div{padding:0 18px 16px}
+details ol,details ul{padding-left:1.3em;margin:6px 0}
+details h4{margin:16px 0 4px;font-size:16px;font-weight:900;color:var(--bay)}
+details .src{margin-top:16px;padding:12px 14px;border-radius:10px;background:var(--bayf);font-size:14.5px}
+details .src ul{margin:4px 0 0}
+details .src a{font-weight:700}
+details .upd{font-size:13px;color:var(--soft);margin-top:10px}
+.job dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 14px;margin:10px 0 0;font-size:15px}
+.job dt{color:var(--soft)}
+.job dd{margin:0}
+.sample{font-size:13px;color:var(--red);font-weight:700}
+.price{width:100%;border-collapse:collapse;font-size:15px}
+.price th,.price td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.price td.n{text-align:right;white-space:nowrap;font-weight:700}
+.scroll{overflow-x:auto}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--bay);color:var(--bg);font-weight:900}
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer nav a{min-height:36px;font-size:13.5px;color:var(--soft)}
+@media(prefers-reduced-motion:no-preference){.car{animation:drive 16s linear infinite}@keyframes drive{from{transform:translateX(-120px)}to{transform:translateX(1320px)}}}
+@media(max-width:600px){.price{font-size:14px}.price th,.price td{padding:10px 4px}.job dl{grid-template-columns:minmax(0,1fr)}.job dt{margin-top:6px}}
+
+/* ---- added for the multi-page site ---- */
+html[lang=vi] body{font-family:"Noto Sans","Zen Kaku Gothic New",system-ui,sans-serif}
+.skip{position:absolute;left:-9999px;top:8px;z-index:20;background:var(--bg);color:var(--ink);padding:10px 14px;border-radius:8px}
+.skip:focus{left:16px}
+.bar nav{order:2}
+.logo{order:1}
+details.lang{order:3;position:relative;border:0;background:none;margin:0}
+details.lang>summary{list-style:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:22px;font-weight:700;font-size:14px;background:var(--card);white-space:nowrap}
+details.lang>summary::-webkit-details-marker{display:none}
+details.lang>summary svg{width:18px;height:18px;flex:none}
+details.lang ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgb(0 0 0 / .14);min-width:220px;z-index:6}
+details.lang li a{display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:500}
+details.lang li a:hover{background:var(--bayf)}
+details.lang li a[aria-current]{background:var(--bayf);font-weight:700;color:var(--bay)}
+details.lang .only{font-size:12.5px;color:var(--soft);padding:6px 12px 4px;margin:0;line-height:1.5}
+@media(max-width:960px){.bar nav{order:4;width:100%}}
+.scene.slim{height:clamp(90px,12vw,140px)}
+.narrow{max-width:780px}
+.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:2px 8px;padding:0;margin:0 0 14px;font-size:14px;color:var(--soft)}
+.crumbs li+li::before{content:"›";margin-right:8px}
+.crumbs a{color:var(--soft)}
+.meta{color:var(--soft);font-size:14.5px;margin:0 0 20px}
+.hero{margin:0 0 26px}
+.hero img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.box{border-radius:14px;padding:18px 20px;margin:0 0 24px}
+.box h2,.prose .box h2{font-size:20px;margin:0 0 8px}
+.box ol,.box ul{margin:6px 0 0;padding-left:1.3em}
+.box li{margin:4px 0}
+.box p{margin:6px 0 0}
+.short{background:var(--bayf)}
+.meaning{border:1px solid var(--line);border-left:4px solid var(--red);border-radius:0 14px 14px 0}
+.easysum{border:1px dashed var(--bay)}
+.prose{font-size:16.5px}
+.prose h2{font-size:clamp(20px,2.4vw,24px);margin:34px 0 8px}
+.prose ol,.prose ul{padding-left:1.3em;margin:8px 0}
+.prose li{margin:6px 0}
+.prose p{margin:10px 0}
+.src{margin:28px 0 0;padding:14px 18px;border-radius:12px;background:var(--bayf);font-size:15px}
+.src h2{font-size:17px;margin:0 0 4px}
+.src ul{margin:4px 0 0;padding-left:1.3em}
+.src a{font-weight:700}
+.upd{font-size:13.5px;color:var(--soft);margin-top:12px}
+.sect{margin-top:30px}
+.sect h2{font-size:20px;margin:0 0 10px}
+.share .btns{margin-top:6px}
+.btn.sm{min-height:44px;padding:0 16px;font-size:14.5px}
+button.btn{border:0;font:inherit;font-weight:700;cursor:pointer}
+.bizlink{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--soft)}
+.bizlink a{color:var(--soft)}
+.newslist{display:grid;gap:16px}
+.newsitem{display:grid;grid-template-columns:220px minmax(0,1fr);gap:18px;align-items:start}
+.newsitem h2{font-size:19px;line-height:1.4;margin:2px 0 6px}
+.newsitem h2 a{color:var(--ink);text-decoration:none}
+.newsitem h2 a:hover{text-decoration:underline}
+.newsitem p{margin:0}
+.thumb{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.card h2{font-size:19px;line-height:1.35;margin:0 0 8px}
+.card>h2 a{color:var(--ink)}
+.more{display:inline-block;margin-top:10px;font-weight:700}
+.langs{list-style:none;padding:0;display:grid;gap:10px;max-width:420px}
+@media(max-width:600px){.newsitem{grid-template-columns:minmax(0,1fr)}}
+.crumbs{display:block}
+.crumbs a{display:inline;min-height:0;padding:0;border-radius:0;font-weight:400;font-size:inherit;color:var(--soft)}
+a.tag{text-decoration:none}
+details.lang .short{display:none}
+@media(max-width:600px){details.lang .full{display:none}details.lang .short{display:inline}details.lang>summary{padding:0 12px}.logo{font-size:17px}}
+.easy body,.easysum{word-break:keep-all;overflow-wrap:anywhere}

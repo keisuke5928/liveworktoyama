@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-26",
+  "updated": "2026-11-26",
+  "category": "rules",
+  "region": "japan",
+  "image": "/img/news/2026-11-26-visa-fee-change.png",
+  "scene": "document",
+  "og_title": ["New fees for visa", "extensions from October 1"],
+  "og_sub": "ビザの てすうりょうが かわりました",
+  "easy_summary": "2026ねん 10がつ 1にちから、ビザの こうしんなどの てすうりょうが かわりました。くわしくは にゅうかんの ページを みてください。",
+  "sources": [
+    {"name": {"en": "Immigration Services Agency of Japan", "ja": "出入国在留管理庁", "easy": "しゅつにゅうこく ざいりゅう かんりちょう（にゅうかん）", "vi": "Cục Quản lý Xuất nhập cảnh và Lưu trú Nhật Bản", "id": "Badan Layanan Imigrasi Jepang"},
+     "note": {"en": "fees effective October 1, 2026", "ja": "2026年10月1日からの手数料", "easy": "2026ねん 10がつ 1にちからの てすうりょう", "vi": "lệ phí áp dụng từ ngày 1/10/2026", "id": "biaya yang berlaku mulai 1 Oktober 2026"},
+     "url": "https://www.moj.go.jp/isa/01_00644.html"}
+  ],
+  "related": ["moving-procedures", "help-in-your-language"]
+}

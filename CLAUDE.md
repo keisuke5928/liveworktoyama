@@ -135,3 +135,10 @@
 2. 箇条書きはハイフンではなく番号付きリストを使う
 3. ドキュメントにせず、チャットのテキストで報告する
 4. オーナーが手を動かす作業は、画面の場所と入力する値を具体的に書く
+
+## 11. サイトの構成（移行後）
+
+1. 原稿は `content/`、デザインは `static/`、`python3 build.py` で `_site/` に生成。main に push すると GitHub Actions で公開される
+2. ニュースの追加：`content/news/YYYY-MM-DD-slug/` に meta.json と5言語の .md を置き、`node tools/make-images.mjs` で画像を作ってからビルド。手順の詳細は README.md
+3. ガイド：`content/guides/<slug>/`。見出しは質問形式にする
+4. GA4のIDとSearch Consoleの確認コードは `content/site.json` の `ga4_id` と `gsc_verification` に入れる
