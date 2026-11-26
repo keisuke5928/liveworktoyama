@@ -1,8 +1,8 @@
 /* Live & Work Toyama — design carried over from source/index.html (claude.ai artifact).
    VOICE everyday and warm for residents, calm and trustworthy for businesses
-   COLOUR pure white ground, bay blue #1d5d86, deep ink #0f2433, tulip red #c9372e accent; night #0b1822
+   COLOUR pure white ground, logo navy #00255f (main), logo green #037a50 (accent), deep ink #0f2433, red #c9372e only for emergencies and cautions; night #0b1822
    TYPE Zen Kaku Gothic New 900 for titles, 400/500 for text */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1822);--ink:light-dark(#0f2433,#e9f1f6);--soft:light-dark(#4a5f6d,#a9bccb);--bay:light-dark(#1d5d86,#5fa8d6);--bayf:light-dark(#eaf3f9,#12283a);--red:light-dark(#c9372e,#ff7a6e);--line:light-dark(#d5e3ec,#22394b);--card:light-dark(#ffffff,#10212f)}
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1822);--ink:light-dark(#0f2433,#e9f1f6);--soft:light-dark(#4a5f6d,#a9bccb);--bay:light-dark(#00255f,#7cc4ef);--bayf:light-dark(#edf2f9,#12283a);--grn:light-dark(#037a50,#2dbe85);--red:light-dark(#c9372e,#ff7a6e);--line:light-dark(#d5e3ec,#22394b);--card:light-dark(#ffffff,#10212f)}
 :root[data-theme=light]{color-scheme:light}
 :root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
@@ -95,7 +95,7 @@ details.lang .only{font-size:12.5px;color:var(--soft);padding:6px 12px 4px;margi
 .box li{margin:4px 0}
 .box p{margin:6px 0 0}
 .short{background:var(--bayf)}
-.meaning{border:1px solid var(--line);border-left:4px solid var(--red);border-radius:0 14px 14px 0}
+.meaning{border:1px solid var(--line);border-left:4px solid var(--grn);border-radius:0 14px 14px 0}
 .easysum{border:1px dashed var(--bay)}
 .prose{font-size:16.5px}
 .prose h2{font-size:clamp(20px,2.4vw,24px);margin:34px 0 8px}
@@ -170,7 +170,7 @@ details.lang .short{display:none}
 .ngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:16px}
 .ncard{padding:0;overflow:hidden;display:flex;flex-direction:column}
 .ncard img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line)}
-.ncard .nmeta{margin:12px 16px 0;font-size:13px;font-weight:700;color:var(--red)}
+.ncard .nmeta{margin:12px 16px 0;font-size:13px;font-weight:700;color:var(--grn)}
 .ncard h3{margin:4px 16px 16px;font-size:17px}
 .ncard h3 a{color:var(--ink);text-decoration:none}
 .ncard h3 a:hover{text-decoration:underline}
@@ -213,8 +213,8 @@ details.lang .short{display:none}
   .ncard img{object-position:80% 50%}
 }
 /* 2026-11 UX pass */
-.kicker{margin:0 0 10px;font-weight:900;color:var(--red);font-size:15px}
-.season{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:14px 18px;border:1px solid var(--line);border-left:5px solid var(--bay);border-radius:12px;background:var(--card)}
+.kicker{margin:0 0 10px;font-weight:900;color:var(--grn);font-size:15px}
+.season{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:14px 18px;border:1px solid var(--line);border-left:5px solid var(--grn);border-radius:12px;background:var(--card)}
 .season p{margin:0}
 .season .btns{margin:0}
 .vnote{flex-basis:100%;order:9;margin:4px 0 0;font-size:13.5px;line-height:1.5;color:var(--soft)}
@@ -229,3 +229,4 @@ footer nav a{min-height:44px}
 .logo img{display:block;height:36px;width:auto;margin:2px 0 3px}
 @media(max-width:600px){.logo img{height:28px}}
 @media(min-width:601px){.logo img{height:42px}}
+.chip span{color:var(--grn)}
