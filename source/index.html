@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live &amp; Work Toyama</title>
+<meta name="description" content="Jobs and daily life in Toyama, Japan. Simple guides and jobs that welcome foreign applicants. Run by Oiyo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday and warm for residents, calm and trustworthy for businesses
+   IDEA a prefectural welcome guide: Tateyama over Toyama Bay, snowy roofs, a road into town
+   PICTURE layered winter scene of mountains, bay, houses, a hotel and a small red car
+   COLOUR pure white ground, bay blue #1d5d86, deep ink #0f2433, tulip red #c9372e accent; night #0b1822
+   TYPE Zen Kaku Gothic New 900 for titles, 400/500 for text
+   LAYOUT laptop: sticky nav, scene band, content in card grids; phone: stacked, nav wraps */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0b1822);--ink:light-dark(#0f2433,#e9f1f6);--soft:light-dark(#4a5f6d,#a9bccb);--bay:light-dark(#1d5d86,#5fa8d6);--bayf:light-dark(#eaf3f9,#12283a);--red:light-dark(#c9372e,#ff7a6e);--line:light-dark(#d5e3ec,#22394b);--card:light-dark(#ffffff,#10212f)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;overflow-x:clip}
+a{color:var(--bay)}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.tint{background:var(--bayf)}
+.wrap{max-width:1180px;margin:0 auto}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;max-width:1180px;margin:0 auto;padding:8px max(5vw,16px)}
+.logo{font-weight:900;font-size:19px;color:var(--ink);text-decoration:none;margin-right:auto;line-height:1.2}
+.logo b{color:var(--red)}
+.logo small{display:block;font-weight:500;font-size:12px;color:var(--soft)}
+nav{display:flex;flex-wrap:wrap;gap:2px}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 11px;border-radius:22px;text-decoration:none;color:var(--ink);font-weight:500;font-size:14.5px}
+nav a[aria-current=page]{background:var(--bay);color:var(--bg)}
+nav .biz{border:1px solid var(--line)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.scene{display:block;width:100%;height:clamp(150px,22vw,260px);background:var(--bayf)}
+h1{font-weight:900;font-size:clamp(30px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+h2{font-size:clamp(23px,2.8vw,30px);font-weight:900;line-height:1.2;margin:0 0 16px}
+h3{margin:0 0 8px;font-size:19px;line-height:1.35;font-weight:900}
+.lead{margin:0;max-width:64ch;color:var(--soft);font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card ul,.card ol{margin:8px 0 0;padding-left:1.3em}
+.card li{margin:4px 0}
+.note{font-size:14px;color:var(--soft)}
+.tag{display:inline-block;font-size:13px;font-weight:700;padding:2px 10px;border-radius:12px;background:var(--bayf);color:var(--bay);margin:0 6px 6px 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:24px;background:var(--bay);color:var(--bg);font-weight:700;text-decoration:none}
+.btn.red{background:var(--red);color:#fff}
+.btn.ghost{background:transparent;color:var(--bay);border:2px solid var(--bay)}
+.rule{border-left:4px solid var(--red);padding:12px 16px;background:var(--bayf);border-radius:0 10px 10px 0}
+.rule p{margin:0}
+details{border:1px solid var(--line);border-radius:12px;background:var(--card);margin-bottom:10px}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;min-height:44px;list-style-position:inside}
+details>div{padding:0 18px 16px}
+details ol,details ul{padding-left:1.3em;margin:6px 0}
+details h4{margin:16px 0 4px;font-size:16px;font-weight:900;color:var(--bay)}
+details .src{margin-top:16px;padding:12px 14px;border-radius:10px;background:var(--bayf);font-size:14.5px}
+details .src ul{margin:4px 0 0}
+details .src a{font-weight:700}
+details .upd{font-size:13px;color:var(--soft);margin-top:10px}
+.job dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 14px;margin:10px 0 0;font-size:15px}
+.job dt{color:var(--soft)}
+.job dd{margin:0}
+.sample{font-size:13px;color:var(--red);font-weight:700}
+.price{width:100%;border-collapse:collapse;font-size:15px}
+.price th,.price td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.price td.n{text-align:right;white-space:nowrap;font-weight:700}
+.scroll{overflow-x:auto}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--bay);color:var(--bg);font-weight:900}
+.view{display:none}
+.view.on{display:block}
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer nav a{min-height:36px;font-size:13.5px;color:var(--soft)}
+@media(prefers-reduced-motion:no-preference){.car{animation:drive 16s linear infinite}@keyframes drive{from{transform:translateX(-120px)}to{transform:translateX(1320px)}}}
+@media(max-width:600px){.price{font-size:14px}.price th,.price td{padding:10px 4px}.job dl{grid-template-columns:minmax(0,1fr)}.job dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="#home">Live &amp; Work <b>Toyama</b><small>Jobs and daily life in Toyama · by Oiyo</small></a>
+    <nav aria-label="Main">
+      <a href="#home" data-v="home">Home</a>
+      <a href="#news" data-v="news">News</a>
+      <a href="#guides" data-v="guides">Life guides</a>
+      <a href="#jobs" data-v="jobs">Jobs</a>
+      <a href="#students" data-v="students">Students</a>
+      <a href="#easy" data-v="easy">やさしいにほんご</a>
+      <a href="#business" data-v="business" class="biz">企業のみなさまへ</a>
+    </nav>
+  </div>
+</header>
+
+<svg class="scene" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Winter in Toyama: the Tateyama mountains over Toyama Bay and a snowy town">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6f3"/><stop offset="1" stop-color="#f4fafd"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a6f9c"/><stop offset="1" stop-color="#1d5d86"/></linearGradient>
+    <g id="house"><rect x="0" y="12" width="34" height="24" fill="#f2eee6"/><rect x="0" y="22" width="34" height="14" fill="#d9d2c4"/><path d="M-4 14 L17 0 L38 14 Z" fill="#ffffff"/><path d="M17 0 L38 14 L28 14 Z" fill="#dfe9ef"/><rect x="12" y="22" width="9" height="9" fill="#f6c86b"/></g>
+  </defs>
+  <rect width="1200" height="300" fill="url(#sky)"/>
+  <path d="M0 160 L90 110 L160 130 L250 56 L320 100 L400 34 L470 80 L560 24 L640 74 L720 38 L800 90 L880 52 L960 100 L1050 64 L1120 108 L1200 84 L1200 180 L0 180 Z" fill="#9fb7c8"/>
+  <path d="M250 56 L280 78 L262 76 L250 84 L236 72 Z M400 34 L432 58 L412 54 L400 66 L384 52 Z M560 24 L596 54 L574 48 L560 62 L544 46 Z M720 38 L752 62 L732 58 L720 70 L704 56 Z M880 52 L910 74 L892 70 L880 80 L866 68 Z" fill="#ffffff"/>
+  <path d="M0 180 L120 146 L220 168 L330 134 L430 162 L540 138 L650 166 L760 142 L880 168 L990 146 L1100 170 L1200 154 L1200 200 L0 200 Z" fill="#6f8ea4"/>
+  <rect y="196" width="1200" height="30" fill="url(#sea)"/>
+  <path d="M0 210 h1200" stroke="#ffffff" stroke-opacity=".35" stroke-width="2" stroke-dasharray="40 30"/>
+  <path d="M0 224 Q300 216 600 222 T1200 220 L1200 300 L0 300 Z" fill="#ffffff"/>
+  <use href="#house" x="80" y="192"/><use href="#house" x="128" y="198"/><use href="#house" x="210" y="194"/>
+  <rect x="300" y="186" width="70" height="40" fill="#e7e2d8"/><rect x="300" y="186" width="70" height="8" fill="#ffffff"/><rect x="350" y="166" width="10" height="22" fill="#b8b1a3"/>
+  <rect x="760" y="166" width="96" height="60" fill="#f4f0e8"/><rect x="760" y="162" width="96" height="8" fill="#ffffff"/><g fill="#f6c86b"><rect x="772" y="178" width="12" height="10"/><rect x="796" y="178" width="12" height="10"/><rect x="820" y="178" width="12" height="10"/><rect x="772" y="198" width="12" height="10"/><rect x="796" y="198" width="12" height="10"/><rect x="820" y="198" width="12" height="10"/></g>
+  <use href="#house" x="900" y="196"/><use href="#house" x="960" y="192"/><use href="#house" x="1040" y="198"/><use href="#house" x="1110" y="194"/>
+  <path d="M0 268 Q600 248 1200 264" stroke="#3b4a55" stroke-width="16" fill="none"/>
+  <path d="M0 268 Q600 248 1200 264" stroke="#ffffff" stroke-width="2" stroke-dasharray="24 20" fill="none"/>
+  <g class="car"><rect x="0" y="242" width="62" height="20" rx="6" fill="#d9433a"/><path d="M12 242 L22 230 L44 230 L54 242 Z" fill="#c13a31"/><path d="M24 233 h18 v8 h-22 Z" fill="#cfe6f3"/><circle cx="14" cy="264" r="7" fill="#1b2730"/><circle cx="48" cy="264" r="7" fill="#1b2730"/></g>
+  <g fill="#ffffff" opacity=".9"><circle cx="60" cy="40" r="3"/><circle cx="190" cy="24" r="2"/><circle cx="330" cy="18" r="3"/><circle cx="640" cy="16" r="3"/><circle cx="990" cy="20" r="3"/><circle cx="1130" cy="36" r="2"/></g>
+</svg>
+
+<main>
+<!-- HOME -->
+<section class="view" id="v-home">
+  <div class="band"><div class="wrap">
+    <h1>Live and work in Toyama</h1>
+    <p class="lead">Moving to Toyama or already living here? We share simple guides for daily life and jobs that welcome foreign applicants. Updated every Monday.</p>
+    <div class="btns"><a class="btn" href="#guides">Life guides</a><a class="btn" href="#jobs">Jobs</a><a class="btn ghost" href="#students">For students</a></div>
+  </div></div>
+  <div class="band tint"><div class="wrap grid">
+    <div class="card"><h3>Latest news</h3><p><a href="#news">New fees for visa extensions and changes since October 1</a></p></div>
+    <div class="card"><h3>Life guides</h3><ul><li><a href="#guides">Driving in snow</a></li><li><a href="#guides">Garbage sorting</a></li><li><a href="#guides">If you get sick or hurt</a></li></ul></div>
+    <div class="card"><h3>Jobs</h3><p>We list only jobs whose official posting says they welcome foreign applicants, with the date we checked and a link to apply.</p><a href="#jobs">See how listings work</a></div>
+    <div class="card"><h3>Need help in your language?</h3><p>The Toyama Foreign Resident Support Center offers free consultation in 22 languages and easy Japanese. Weekdays 9:00 to 17:00, Intec Building 4F, 5-5 Ushijimashin-machi, Toyama City.</p></div>
+  </div></div>
+  <div class="band"><div class="wrap"><div class="rule"><p>Live &amp; Work Toyama is a private media run by Oiyo. It is not an official website of Toyama Prefecture or the Toyama International Center. We do not introduce you to employers or send applications for you.</p></div></div></div>
+</section>
+
+<!-- NEWS -->
+<section class="view" id="v-news">
+  <div class="band"><div class="wrap">
+    <h1>Toyama news for residents</h1>
+    <p class="lead">Short updates about life and work in Toyama, written in plain English and easy Japanese. Each update links to its original source.</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap" id="newsList">
+<!--AUTO-NEWS-START-->
+    <article class="card" style="margin-bottom:14px"><span class="tag">2026-11-26</span><h3>New fees for visa extensions and changes since October 1</h3><p>The Immigration Services Agency changed the fees for residence procedures. The new fees apply to applications for extension of period of stay, change of status, and permanent residence made on or after October 1, 2026. The fee now depends on the length of the period of stay you are granted. Applications made by September 30 pay the old fee. Please check the fee table on the official page, and ask immigration or a gyoseishoshi if you have questions about your case.</p><p lang="ja" class="note">2026ねん 10がつ 1にちから、ビザの こうしんなどの てすうりょうが かわりました。くわしくは にゅうかんの ページを みてください。</p><p class="note">Source: Immigration Services Agency of Japan, fees effective October 1, 2026 <a href="https://www.moj.go.jp/isa/01_00644.html">link</a></p></article>
+    <article class="card" style="margin-bottom:14px"><span class="tag">2026-11-25</span><h3>A Japanese language school will open in Uozu in April 2027</h3><p>A Japanese language school approved by the Ministry of Education is planned to open in Uozu City in April 2027, the first of its kind in Toyama Prefecture. It plans to accept about 100 students, mainly from Asia, and to support students to find jobs in Toyama after graduation.</p><p lang="ja" class="note">2027ねん 4がつ、うおづしに にほんごがっこうが できる よていです。</p><p class="note">Source: Kitanihon Shimbun, November 25, 2026 (print edition)</p></article>
+<!--AUTO-NEWS-END-->
+  </div></div>
+</section>
+
+<!-- GUIDES -->
+<section class="view" id="v-guides">
+  <div class="band"><div class="wrap">
+    <h1>Life guides</h1>
+    <p class="lead">Short, practical guides for life in Toyama. Rules can be different in each city, so please also check with your city office.</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap" id="guideList"></div></div>
+</section>
+
+<!-- JOBS -->
+<section class="view" id="v-jobs">
+  <div class="band"><div class="wrap">
+    <h1>Jobs open to foreign applicants</h1>
+    <p class="lead">We list jobs whose official posting says they welcome foreign applicants. Each listing shows the date we checked it and a link to the official page. Please apply on the official page.</p>
+  </div></div>
+  <div class="band tint"><div class="wrap">
+    <article class="card job">
+      <span class="tag">Hotel</span><span class="tag">Toyama City</span><span class="tag">Dormitory</span>
+      <h3>Front desk staff</h3>
+      <span class="sample">Sample layout only. Real listings will appear here.</span>
+      <dl>
+        <dt>Pay</dt><dd>From the official posting</dd>
+        <dt>Hours</dt><dd>From the official posting</dd>
+        <dt>Japanese</dt><dd>Level written in the posting, for example daily conversation</dd>
+        <dt>Housing</dt><dd>Dormitory or housing support, if stated</dd>
+        <dt>Commute</dt><dd>Shuttle or car commute, if stated</dd>
+        <dt>Visa (guide)</dt><dd>Visa types mentioned in the posting</dd>
+        <dt>Checked</dt><dd>Date and source page</dd>
+      </dl>
+    </article>
+  </div></div>
+  <div class="band"><div class="wrap"><div class="rule"><p><b>Please note.</b> Whether your visa allows a job is decided by the employer and the Immigration Services Agency. For visa questions, ask immigration or a gyoseishoshi (licensed administrative scrivener). If a translation is unclear, the Japanese original is correct.</p></div></div></div>
+</section>
+
+<!-- STUDENTS -->
+<section class="view" id="v-students">
+  <div class="band"><div class="wrap">
+    <h1>For international students</h1>
+    <p class="lead">Part-time jobs and life tips for students in Toyama, including Uozu, Kurobe and Namerikawa.</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap grid">
+    <div class="card"><h3>Rules for part-time work</h3><ol><li>You need permission to work outside your status (shikakugai katsudo kyoka).</li><li>Up to 28 hours a week during school terms.</li><li>During long school holidays, up to 8 hours a day.</li><li>Jobs in night entertainment businesses are not allowed.</li></ol><p class="note">Breaking these rules can affect your visa. Ask your school if you are not sure.</p></div>
+    <div class="card"><h3>Living in the Uozu and Kurobe area</h3><ol><li>Trains and buses are not frequent. Check the timetable before you go.</li><li>A bicycle is useful from spring to autumn. In winter, roads are snowy and dark early.</li><li>Supermarkets and drugstores are spread out. Plan one big shopping trip a week.</li></ol></div>
+    <div class="card"><h3>Part-time jobs for students</h3><p>We will list part-time jobs that say they welcome international students, with the date we checked and a link to the official page.</p><a href="#jobs">How listings work</a></div>
+  </div></div>
+</section>
+
+<!-- EASY JAPANESE -->
+<section class="view" id="v-easy" lang="ja">
+  <div class="band"><div class="wrap">
+    <h1>とやまで はたらく・くらす</h1>
+    <p class="lead">とやまの くらしに やくだつ じょうほうと、がいこくじんを かんげいする しごとを しょうかいします。まいしゅう げつようびに かくにんします。</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap grid">
+    <div class="card"><h3>ゆきの みちを うんてんする</h3><ol><li>ゆきが ふるまえに、ふゆの タイヤに かえます。</li><li>ゆきの あさは、はやく いえを でます。</li><li>くるまに ゆきを はらう ブラシを いれます。</li><li>あぶないときは、はやく かいしゃに れんらくします。</li></ol></div>
+    <div class="card"><h3>ごみの だしかた</h3><ol><li>まちに よって ルールが ちがいます。</li><li>しやくしょで ごみの カレンダーを もらいます。</li><li>きまった ひの あさに、きまった ばしょに だします。</li></ol></div>
+    <div class="card"><h3>こまった とき</h3><ol><li>かじ・きゅうきゅうしゃ：119</li><li>けいさつ：110</li><li>とやまけん がいこくじん ワンストップ そうだんセンター：22の ことばと やさしい にほんごで、むりょうで そうだん できます。へいじつ 9じ〜17じ。</li></ol></div>
+  </div></div>
+  <div class="band"><div class="wrap"><div class="rule"><p>わたしたちは しごとの しょうかいを しません。おうぼは かいしゃの ページから してください。ビザで その しごとが できるかは、かいしゃと にゅうかんが きめます。</p></div></div></div>
+</section>
+
+<!-- BUSINESS -->
+<section class="view" id="v-business" lang="ja">
+  <div class="band"><div class="wrap">
+    <h1>富山で、外国人スタッフの採用を始めたい企業さまへ</h1>
+    <p class="lead">外国人に届く求人をつくり、届け、面接の言葉の壁をなくす。外国人採用の最初の一歩を、地元・富山でお手伝いします。応募は貴社に直接届きます。運営：Oiyo（おいよ）</p>
+    <div class="btns"><a class="btn red" href="#contact-biz">無料ヒアリング（30分）を予約する</a><a class="btn ghost" href="#partners">学校・自治体のみなさまへ</a></div>
+  </div></div>
+  <div class="band tint"><div class="wrap grid">
+    <div class="card"><h3>こんなお悩みに</h3><ul><li>外国人を採用したいが、外国人に届く媒体がない</li><li>外国語で求人を書ける人がいない</li><li>面接で言葉が通じず、人柄が分からない</li><li>紹介会社に頼むと費用が大きい</li><li>外国人を雇うのが初めてで、受け入れ準備が分からない</li></ul></div>
+    <div class="card"><h3>私たちができること</h3><ul><li>英語・やさしい日本語・ベトナム語・インドネシア語の求人ページ制作</li><li>富山県内や富山で働きたい外国語利用者へのSNS広告</li><li>Live &amp; Work Toyamaでの求人の紹介</li><li>面接・入社時の通訳（英語ほか）</li><li>多言語の受け入れ資料づくり</li></ul></div>
+  </div></div>
+  <div class="band"><div class="wrap">
+    <h2>プランと料金</h2>
+    <div class="scroll"><table class="price">
+      <thead><tr><th>プラン</th><th>内容</th><th style="text-align:right">料金</th></tr></thead>
+      <tbody>
+        <tr><td>お試しプラン</td><td>今の求人を、英語とやさしい日本語の求人ページに作り直し、Live &amp; Work Toyamaで紹介します。ベトナム語・インドネシア語は1言語1万円で追加できます</td><td class="n">30,000円</td></tr>
+        <tr><td>採用スタートパック</td><td>多言語の求人ページ、SNS広告の設定と運用、月1回の報告。お試しプランをご利用の場合は差額で切り替えられます</td><td class="n">初期100,000円<br>月30,000円</td></tr>
+        <tr><td>留学生アルバイト採用プラン</td><td>魚津・黒部・滑川周辺の飲食店、小売、ホテル、食品工場向け。やさしい日本語と英語のアルバイト求人ページ、留学生向けの発信と広告</td><td class="n">初期30,000円<br>月15,000円</td></tr>
+        <tr><td>受け入れ準備セット</td><td>会社名入りの多言語生活ガイド、社内ルールの多言語版、職場の多言語掲示物</td><td class="n">50,000円〜</td></tr>
+        <tr><td>通訳</td><td>面接や入社時の説明。対面は2時間から</td><td class="n">対面 10,000円／時間<br>オンライン 5,000円／30分</td></tr>
+        <tr><td>広告費</td><td>実費を貴社から広告媒体へ直接お支払いいただきます。採用スタートパックは月5〜10万円、留学生プランは月2〜3万円を推奨</td><td class="n">実費</td></tr>
+      </tbody>
+    </table></div>
+  </div></div>
+  <div class="band tint"><div class="wrap grid">
+    <div><h2>導入の流れ</h2>
+      <ol class="steps">
+        <li><div><b>無料ヒアリング（30分）</b><br>職種、人数、条件、受け入れ体制をうかがいます。</div></li>
+        <li><div><b>求人ページの制作</b><br>日本語の原文を確定し、多言語版を作ります。条件の最終確認は貴社にお願いします。</div></li>
+        <li><div><b>広告の配信</b><br>外国語を使う方に向けて配信します。国籍で対象を絞ることはしません。</div></li>
+        <li><div><b>応募は貴社へ直接</b><br>応募の受付、選考、合否の判断は貴社で行っていただきます。</div></li>
+        <li><div><b>月1回の報告と改善</b><br>表示数、クリック数、応募数をもとに見直します。</div></li>
+      </ol>
+    </div>
+    <div class="card"><h3>私たちが行わないこと</h3>
+      <ul><li>求職者の紹介、応募の取り次ぎ、合否の判断（職業紹介は行っていません）</li><li>在留資格の個別の判断や申請書類の作成（行政書士をご案内します）</li><li>特定技能の義務的支援の代行</li><li>採用の成立に応じた報酬の請求</li></ul>
+      <p class="note">法令に沿ってご提供するため、業務の範囲をはっきりさせています。</p>
+    </div>
+  </div></div>
+  <div class="band"><div class="wrap">
+    <h2>よくあるご質問</h2>
+    <details><summary>応募は来ますか？</summary><div><p>広告の反応は、業種や条件によって変わります。月1回、表示数、クリック数、応募数をご報告し、原稿と配信を改善していきます。</p></div></details>
+    <details><summary>どんな外国人に届きますか？</summary><div><p>富山県内にお住まいの方や、富山で働きたい方のうち、英語やベトナム語、インドネシア語などを使う方に届けます。国籍で対象を絞ることはしません。</p></div></details>
+    <details><summary>在留資格の手続きもお願いできますか？</summary><div><p>在留資格の申請は行政書士の業務のため、行政書士をご案内します。</p></div></details>
+    <details><summary>1名だけの採用でも頼めますか？</summary><div><p>はい。3万円のお試しプランから始められます。</p></div></details>
+    <details><summary>外国人を雇うのは初めてです。</summary><div><p>受け入れ準備セットで、生活ガイドや社内ルールの多言語資料をご用意できます。通訳とあわせて、入社時の説明もお手伝いします。</p></div></details>
+  </div></div>
+  <div class="band tint" id="contact-biz"><div class="wrap grid">
+    <div class="card"><h3>運営者</h3><p><b>Oiyo（おいよ）　吉田 圭佑</b><br>富山県滑川市</p><ul><li>観光・宿泊業界の人材サービス会社で、ホテル・旅館など100社以上の採用を担当</li><li>メーカーの海外営業として、米国・メキシコ・東南アジアの取引先を担当</li><li>英語での面接・コミュニケーションに対応</li></ul></div>
+    <div class="card"><h3>お問い合わせ・無料ヒアリングのご予約</h3><p>メールアドレスとお電話番号は、独自ドメインの取得後にこちらに掲載します。</p><p class="note">「おいよ」は富山の東部などで使われてきた、相手の話に「そうそう、そうなんだよ」と共感する言葉です。外国人材と企業、地域が「おいよ」と頷き合える関係をつくりたいと考えています。</p></div>
+  </div></div>
+</section>
+
+<!-- PARTNERS -->
+<section class="view" id="v-partners" lang="ja">
+  <div class="band"><div class="wrap">
+    <h1>日本語学校・自治体のみなさまへ</h1>
+    <p class="lead">留学生や外国人住民が、富山で安心して暮らし、働けるように。地元の事業者として、情報づくりと地域とのつながりをお手伝いします。</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap grid">
+    <div class="card"><h3>生活ガイドの共同制作</h3><p>留学生や外国人住民向けに、地域の暮らし方をまとめたガイドを、英語・やさしい日本語などで作ります。</p></div>
+    <div class="card"><h3>地域交流・農業体験の企画</h3><p>地元の農家や商店と組んだ交流の機会を企画します。</p></div>
+    <div class="card"><h3>企業向け説明会の運営協力</h3><p>外国人を受け入れたい地元企業向けの説明の場づくりをお手伝いします。個別の紹介は行わず、場の提供と運営に限ります。</p></div>
+  </div></div>
+</section>
+
+<!-- ABOUT / POLICY -->
+<section class="view" id="v-about" lang="ja">
+  <div class="band"><div class="wrap">
+    <h1>About / 運営者情報と掲載方針</h1>
+    <p class="lead" lang="en">Live &amp; Work Toyama is a private media run by Oiyo. "Oiyo" is a word from Toyama meaning "Yeah, exactly!", a warm way to show you understand. We want to say "We hear you" to everyone living and working in Toyama.</p>
+  </div></div>
+  <div class="band" style="padding-top:0"><div class="wrap grid">
+    <div class="card"><h3>運営者</h3><p>サイト名：Live &amp; Work Toyama<br>運営ブランド：Oiyo（おいよ）<br>運営：吉田 圭佑（個人事業）<br>所在地：富山県滑川市</p><p class="note">当サイトは民間の情報メディアです。富山県、とやま国際センター、その他の公的機関の公式サイトではありません。</p></div>
+    <div class="card"><h3>求人情報の掲載方針</h3><ol><li>企業が公開している求人のうち、外国籍の方の応募を歓迎すると明記されたものを掲載します。</li><li>各求人に、確認した日付と出典（公式の採用ページ）を記載します。</li><li>毎週月曜日に掲載中の求人を確認し、募集が終わったものは削除します。</li><li>文章は当サイトが要約したもので、他サイトの文章や写真は転載しません。</li><li>求職者の紹介や応募の取り次ぎは行いません。</li><li>有料で掲載する求人がある場合は、その旨を表示します。</li></ol></div>
+    <div class="card"><h3>修正・削除のご依頼、苦情の窓口</h3><p>掲載内容の修正や削除をご希望の企業さま、ご意見や苦情は、お問い合わせ先までご連絡ください。確認のうえ速やかに対応します。</p><h3 style="margin-top:18px">個人情報</h3><p>当サイトは会員登録やメールアドレスの登録を受け付けていません。閲覧状況はアクセス解析ツールで集計し、サイトの改善にのみ使います。</p><h3 style="margin-top:18px">情報の正確さ</h3><p>正確な情報の掲載に努めますが、労働条件などの最終的な内容は、各企業の公式情報が優先します。翻訳は参考で、日本語の原文が正式な情報です。</p></div>
+  </div></div>
+</section>
+</main>
+
+<footer class="band"><div class="wrap">
+  <span>© Live &amp; Work Toyama by Oiyo · Toyama, Japan</span>
+  <nav aria-label="Footer"><a href="#about">About / 掲載方針</a><a href="#business">企業のみなさまへ</a><a href="#partners">学校・自治体のみなさまへ</a></nav>
+</div></footer>
+
+<script>
+{
+  const guides=[
+/*AUTO-GUIDES-START*/
+    {t:'Where to get help in your language',b:'<p>You are not alone. These services are free or low cost, and many of them support your language.</p><h4>Emergencies</h4><ol><li>Fire or ambulance: call 119.</li><li>Police: call 110.</li><li>Say your address slowly. If you cannot speak Japanese well, say "English, please" and stay on the line.</li></ol><h4>Problems in daily life</h4><ol><li>Toyama Foreign Resident Support Center: free consultation about daily life in 22 languages and easy Japanese, with interpreting by phone. It keeps your secrets.</li><li>Hours: weekdays 9:00 to 17:00 (closed on holidays). Phone: 076-441-6330.</li><li>Place: Intec Building 4F, 5-5 Ushijimashin-machi, Toyama City.</li><li>You can ask about housing, money, school, hospitals, Japanese classes, problems with neighbors and more.</li></ol><h4>Problems at work</h4><ol><li>Unpaid wages, sudden dismissal, very long hours: first talk to your company or your support organization.</li><li>The Ministry of Health, Labour and Welfare has a phone line for foreign workers in 13 languages, and a free evening and weekend line. Check the leaflet below for numbers and days for your language.</li><li>You can also visit the Labour Standards Inspection Office for your workplace.</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://www.tic-toyama.or.jp/life/consultation.html" target="_blank" rel="noopener">Toyama Foreign Resident Support Center (Toyama International Center)</a></li><li><a href="https://www.mhlw.go.jp/content/001708139.pdf" target="_blank" rel="noopener">Phone lines for foreign workers (MHLW, PDF)</a></li><li><a href="https://www.moj.go.jp/isa/support/portal/guidebook_all.html" target="_blank" rel="noopener">Guidebook on Living and Working in Japan, 20 languages (Immigration Services Agency)</a></li></ul></div>'},
+    {t:'Driving in snow',b:'<p>Toyama gets heavy snow, mostly from December to February. Snow can come suddenly and roads can close. If you drive, prepare in November.</p><h4>Before the snow</h4><ol><li>Change to winter tires (studless tires). Most people in Toyama change in November. Normal tires on snow are very dangerous.</li><li>Put a snow brush, a steel shovel, gloves and a blanket in your car.</li><li>Check your windshield washer fluid. Use a winter type that does not freeze.</li></ol><h4>On snowy days</h4><ol><li>Leave 15 to 30 minutes earlier. Clear all snow from your car, including the roof and lights, before you drive.</li><li>Drive slowly and keep a long distance from the car in front. Brake early and gently.</li><li>Be careful on bridges, slopes, curves, crossings and in tunnels. Bridges and shaded roads freeze first.</li><li>Many roads in Toyama have snow-melting pipes that spray water. The road is wet and can be slippery. Slow down.</li><li>Watch for snow falling from roofs, bridges and road signs.</li><li>Do not park on the road. It blocks the snow plows.</li><li>When heavy snow is forecast, do not go out by car unless you must. Tell your workplace early if you cannot come.</li></ol><h4>Check the roads</h4><ol><li>The Toyama Prefecture road information site shows road cameras and snow depth.</li><li>Road traffic information in Japanese: 050-3369-6616 (JARTIC Toyama).</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://www.toyama-douro.toyama.toyama.jp/" target="_blank" rel="noopener">Toyama Prefecture road information (cameras and snow)</a></li></ul></div>'},
+    {t:'Winter clothes and heating',b:'<p>Toyama winters are not as cold as Hokkaido, but they are wet, snowy and dark early. Good shoes and a warm room make a big difference.</p><h4>Clothes</h4><ol><li>Buy waterproof winter boots with good grip. Snow and slush make normal shoes wet and slippery. Home centers and shoe shops sell them from November.</li><li>Wear layers: thermal underwear, a sweater and a waterproof jacket. Shops and trains are warm, outside is cold.</li><li>An umbrella is useful all winter. Toyama has many rainy and snowy days.</li></ol><h4>Heating</h4><ol><li>Kerosene heaters are common. Gas stations and some home centers sell kerosene. Some shops deliver it.</li><li>Open a window for a few minutes every hour to let fresh air in.</li><li>Never use a gas or kerosene heater while sleeping. Turn it off before you go out.</li><li>Keep heaters away from curtains, clothes and futons.</li></ol><h4>At home</h4><ol><li>On very cold nights, water pipes can freeze. Ask your landlord or company what to do.</li><li>Condensation on windows can cause mold. Wipe windows and air your room.</li><li>Do not climb on the roof to clear snow alone. Ask your landlord or company.</li></ol>'},
+    {t:'Garbage sorting',b:'<p>Garbage rules are one of the biggest causes of trouble with neighbors. Every city in Toyama has its own rules, bags and calendar.</p><h4>First steps</h4><ol><li>Get the garbage calendar and sorting guide from your city office, your apartment manager or your company. Many cities have versions in English and other languages.</li><li>Find your collection point. Ask your neighbors or manager.</li><li>Some cities require special garbage bags sold at supermarkets and convenience stores. Check which bag your city uses.</li></ol><h4>Common types</h4><ol><li>Burnable garbage: food waste, paper scraps, and in many cities small plastic items. Drain water from food waste.</li><li>Plastic containers and packaging: rinse them lightly.</li><li>Cans, glass bottles and PET bottles: rinse them. Remove caps and labels from PET bottles.</li><li>Large items such as furniture or bicycles: you need to book a collection and pay a fee.</li><li>Air conditioners, TVs, fridges and washing machines cannot go out as normal garbage. Ask the shop or your city.</li></ol><h4>Rules to keep</h4><ol><li>Put garbage out in the morning of the collection day, usually by 8:30. Not the night before.</li><li>If your garbage is left with a sticker, it was sorted wrongly. Take it back, sort it again and put it out on the right day.</li><li>When you move out, do not leave garbage or furniture behind.</li></ol>'},
+    {t:'If you get sick or hurt',b:'<h4>Emergency</h4><ol><li>Call 119 for an ambulance. Say "kyukyu desu" (it is an emergency), then your address slowly.</li><li>Ambulances are free in Japan. Use them only for serious cases.</li></ol><h4>Not an emergency</h4><ol><li>In Japan, people usually go to a small clinic first, not a big hospital. Big hospitals may charge an extra fee without a referral letter.</li><li>Choose the right clinic: naika (internal medicine, for colds and fever), geka or seikei-geka (injuries, bones), shika (dentist), jibika (ear, nose and throat), hifuka (skin), fujinka (women).</li><li>Bring your residence card, health insurance card (or My Number card) and cash. Many clinics do not take credit cards.</li><li>With health insurance, you usually pay 30% of the cost.</li><li>At night and on holidays, go to a holiday or night emergency clinic (kyujitsu yakan kyukan center). Call first if you can.</li><li>For a sick child at night, call #8000 (in Japanese) for advice.</li></ol><h4>Find a hospital that speaks your language</h4><ol><li>The national Medical Information Net lets you search hospitals and pharmacies by language and by night or holiday service.</li><li>If you need an interpreter, the Toyama Foreign Resident Support Center can help by phone on weekdays (076-441-6330).</li><li>Medicine: show your prescription at a pharmacy. Tell the pharmacist about allergies and other medicine you take.</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2700/direct?prefCd=16" target="_blank" rel="noopener">Medical Information Net, Toyama (search by language, night and holiday clinics)</a></li><li><a href="https://www.tic-toyama.or.jp/life/consultation.html" target="_blank" rel="noopener">Toyama Foreign Resident Support Center</a></li></ul></div>'},
+    {t:'Opening a bank account',b:'<p>You need a bank account to receive your salary and pay rent, phone and utility bills.</p><h4>What to bring</h4><ol><li>Your residence card. Your address must be registered at the city office first.</li><li>A phone number in Japan.</li><li>Your hanko (personal seal) if you have one. Some banks accept a signature.</li><li>Some banks ask for your employee ID, a letter from your company or school, or how long you have lived in Japan.</li></ol><h4>Tips</h4><ol><li>Ask your workplace which bank they use for salaries. It can make transfers easier.</li><li>The Japan Post Bank (yucho) and local banks such as Hokuriku Bank have many branches in Toyama.</li><li>Opening can take one to two weeks. Your cash card arrives by mail, so make sure your name is on your mailbox.</li><li>Set up a smartphone app to check your balance.</li></ol><h4>Never do this</h4><ol><li>Never sell, lend or give your bank account, cash card or PIN to anyone, even when you leave Japan. It is a crime in Japan and your account can be used for fraud.</li><li>When you leave Japan, close your accounts at the bank.</li></ol>'},
+    {t:'Getting a phone and SIM',b:'<h4>What you need</h4><ol><li>Your residence card.</li><li>A payment method: a bank account or a credit card in your name.</li><li>Some shops ask for proof of address, such as a utility bill.</li></ol><h4>Choosing a plan</h4><ol><li>Big carriers have shops and staff support. Low-cost SIM and online plans are often much cheaper.</li><li>If your phone is unlocked, you can use an eSIM or a SIM card from another company.</li><li>Check the monthly price after discounts end, the contract period, and the cancellation fee.</li></ol><h4>Be careful</h4><ol><li>Never give your SIM or phone contract to another person. Lending or selling a phone line used for crime can get you arrested.</li><li>Before you leave Japan, cancel your contract and pay the last bill.</li><li>Unpaid phone bills can make it hard to get a phone or loan in Japan later.</li></ol>'},
+    {t:'City office and immigration notices after moving',b:'<h4>At the city office</h4><ol><li>Register your address at the city office within 14 days after you move in. Bring your residence card. Your new address is written on the back.</li><li>When you move to another city, report your move-out at the old city office and your move-in at the new one.</li><li>You can apply for a My Number card. It is used for taxes, insurance and many online services.</li><li>If your company does not give you health insurance and pension, join National Health Insurance and the National Pension at the city office.</li><li>Ask for the garbage calendar and information for foreign residents.</li></ol><h4>To the Immigration Services Agency</h4><ol><li>If you change or leave your company or school, many visa types must report this to immigration within 14 days. You can do it online.</li><li>Your residence card has an expiry date. Apply to extend your period of stay before it ends.</li><li>For questions about your own visa, ask immigration or a gyoseishoshi.</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://www.moj.go.jp/isa/support/portal/guidebook_all.html" target="_blank" rel="noopener">Guidebook on Living and Working in Japan (chapters on procedures at the city office)</a></li></ul></div>'},
+    {t:'Reading your pay slip',b:'<p>Your pay slip (kyuyo meisaisho) shows what you earned and what was taken out. Keep every pay slip.</p><h4>What you earned (shikyu)</h4><ol><li>Kihonkyu: basic pay.</li><li>Zangyo teate: overtime pay. Overtime is paid at least 25% more than normal pay.</li><li>Other allowances: commuting, housing, night work and more.</li></ol><h4>What was taken out (kojo)</h4><ol><li>Kenko hoken: health insurance.</li><li>Kosei nenkin: pension.</li><li>Koyo hoken: employment insurance.</li><li>Shotokuzei: income tax.</li><li>Juminzei: resident tax. It usually starts from June of your second year in Japan, so take-home pay can go down.</li><li>Rent, dormitory fees or meals may also be taken out if you agreed to it.</li></ol><h4>Check every month</h4><ol><li>Compare your working hours and overtime with your own record.</li><li>Check that your pay is not below the minimum wage in Toyama.</li><li>If something looks wrong, ask your company first. If it is not solved, call a labor consultation line.</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://www.mhlw.go.jp/content/001708139.pdf" target="_blank" rel="noopener">Phone lines for foreign workers (MHLW, PDF)</a></li></ul></div>'},
+    {t:'Paid holidays and insurance',b:'<h4>Paid holidays (yukyu)</h4><ol><li>After 6 months of work with good attendance (80% or more of work days), full-time workers get at least 10 days of paid holiday a year. The number goes up each year.</li><li>Part-time workers also get paid holidays, based on how many days they work.</li><li>Tell your company early when you want to take a day off.</li><li>Unused days can be carried over to the next year, then they expire.</li></ol><h4>Health insurance</h4><ol><li>Show your insurance card (or My Number card) at hospitals. You usually pay 30% of the cost.</li><li>If medical costs in one month are very high, you may get part of the money back.</li></ol><h4>Injury at work</h4><ol><li>If you are injured at work or on your way to work, tell your company right away.</li><li>Work injury insurance (rosai) covers treatment and part of your pay. Do not use your normal health insurance card for a work injury.</li><li>Your company cannot fire you because you were injured at work and are taking time off to recover.</li></ol><h4>If you lose your job</h4><ol><li>If you had employment insurance, you may get unemployment benefits. Ask at Hello Work.</li><li>Many visas must report leaving a company to immigration within 14 days.</li></ol>'},
+    {t:'Earthquakes and heavy snow',b:'<p>In January 2024, the Noto Peninsula earthquake also caused damage in Toyama. Prepare before it happens.</p><h4>Prepare now</h4><ol><li>Install the free Safety tips app. It sends earthquake, tsunami and weather warnings in 15 languages.</li><li>Check your city hazard map and your nearest evacuation shelter. Walk there once.</li><li>Keep water, food, a flashlight, a phone battery and your medicine for at least 3 days.</li><li>Fix tall furniture to the wall. Do not sleep next to tall shelves.</li><li>Decide with your family or friends where to meet. Know your embassy contact.</li></ol><h4>When an earthquake happens</h4><ol><li>Get under a table and protect your head until the shaking stops.</li><li>Near the sea, if there is a strong quake or a tsunami warning, move to high ground right away. Do not wait.</li><li>Turn off gas and heaters when it is safe. Watch for broken glass.</li><li>Get information from the app, your city and NHK.</li></ol><h4>Heavy snow</h4><ol><li>Before you start your car, clear snow around the exhaust pipe. Blocked exhaust can cause carbon monoxide poisoning.</li><li>If you are stuck in snow in your car, keep the exhaust clear and open a window a little.</li><li>Do not clear snow from roofs alone. Many accidents happen every winter.</li></ol><div class="src"><b>Official links</b><ul><li><a href="https://apps.apple.com/jp/app/safety-tips/id858357174" target="_blank" rel="noopener">Safety tips for iPhone</a></li><li><a href="https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android" target="_blank" rel="noopener">Safety tips for Android</a></li><li><a href="https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/jizoku_kankochi/anzenkakuho/inbound/tool.html" target="_blank" rel="noopener">About Safety tips (Japan Tourism Agency)</a></li></ul></div>'}
+  /*AUTO-GUIDES-END*/
+  ];
+  const gl=document.getElementById('guideList');
+  if(gl)gl.innerHTML=guides.map((g,i)=>'<details'+(i===0?' open':'')+'><summary>'+g.t+'</summary><div>'+g.b+'<p class="upd">Last checked: November 2026. Rules can change. Please also check the official pages.</p></div></details>').join('');
+  const views=['home','news','guides','jobs','students','easy','business','partners','about'];
+  const show=()=>{
+    const h=(location.hash||'').slice(1);
+    let v=views.includes(h)?h:(h==='contact-biz'?'business':'home');
+    for(const n of views){const el=document.getElementById('v-'+n);if(el)el.classList.toggle('on',n===v);}
+    for(const a of document.querySelectorAll('header nav a')){if(a.dataset.v===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');}
+    document.documentElement.lang=['business','partners','about','easy'].includes(v)?'ja':'en';
+    if(h==='contact-biz'){const c=document.getElementById('contact-biz');if(c)c.scrollIntoView();}else window.scrollTo(0,0);
+  };
+  window.addEventListener('hashchange',show);
+  show();
+}
+</script>
+</body>
+</html>
