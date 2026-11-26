@@ -12,6 +12,8 @@ Sekolah bahasa Jepang yang diakui Kementerian Pendidikan Jepang direncanakan dib
 Sekolah ini berencana menerima sekitar 100 siswa, terutama dari Asia. Sekolah juga berencana membantu siswa mencari pekerjaan di Toyama setelah lulus.
 
 Kami akan membagikan informasi lebih lanjut, seperti cara mendaftar, setelah ada pengumuman resmi.
+
+Pada Oktober 2025, Kota Uozu menandatangani perjanjian lokasi sekolah ini dengan ICA Co., Ltd. Sekolah memakai gedung bekas tempat penitipan anak Matsukura. Saat itu, rencananya dibuka sekitar Oktober 2026 dengan 80 siswa. Berita terbaru menyebut April 2027 dan sekitar 100 siswa.
 +++ meaning
 1. Jika Anda ingin belajar bahasa Jepang di Jepang, Toyama bisa menjadi pilihan mulai April 2027.
 2. Pelajar internasional boleh kerja paruh waktu dengan izin, maksimal 28 jam per minggu selama masa sekolah. Lihat halaman untuk pelajar.

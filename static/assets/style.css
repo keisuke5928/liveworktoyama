@@ -212,3 +212,17 @@ details.lang .short{display:none}
   .tel:nth-child(n+3){grid-column:1/-1}
   .ncard img{object-position:80% 50%}
 }
+/* 2026-11 UX pass */
+.kicker{margin:0 0 10px;font-weight:900;color:var(--red);font-size:15px}
+.season{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:14px 18px;border:1px solid var(--line);border-left:5px solid var(--bay);border-radius:12px;background:var(--card)}
+.season p{margin:0}
+.season .btns{margin:0}
+.vnote{flex-basis:100%;order:9;margin:4px 0 0;font-size:13.5px;line-height:1.5;color:var(--soft)}
+.upd .btns,.upd p:last-child{margin-bottom:0}
+.hlangs a,.chip{min-height:44px}
+.btn.sm{min-height:44px}
+.ncard h3 a,.shead a,.note a{display:inline-block;min-height:24px}
+footer nav a{min-height:44px}
+.chk{display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.chk input{width:22px;height:22px}
+.hlangs .hl-label{color:var(--soft);font-weight:500}
