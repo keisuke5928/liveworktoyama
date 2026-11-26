@@ -2,11 +2,11 @@
   "status": "open",
   "employer_id": "village-field",
   "title": {
-    "en": "Day service care staff (Furusato no Kaze Sumiyoshi)",
-    "easy": "デイサービスの かいごの しごと（すみよし）",
-    "ja": "デイサービス介護職員（ふる里の風 住吉）",
-    "vi": "Nhân viên chăm sóc dịch vụ ban ngày (Furusato no Kaze Sumiyoshi)",
-    "id": "Staf perawatan layanan harian (Furusato no Kaze Sumiyoshi)"
+    "en": "Day service care staff (Furusato no Kaze: Sumiyoshi, Nakata, Horikawa)",
+    "easy": "デイサービスの かいごの しごと（ふる里の風 すみよし・なかだ・ほりかわ）",
+    "ja": "デイサービス介護職員（ふる里の風 住吉・中田・堀川）",
+    "vi": "Nhân viên chăm sóc dịch vụ ban ngày (Furusato no Kaze: Sumiyoshi, Nakata, Horikawa)",
+    "id": "Staf perawatan layanan harian (Furusato no Kaze: Sumiyoshi, Nakata, Horikawa)"
   },
   "employer": {
     "en": "Village Field Co., Ltd. (Furusato no Kaze group)",
@@ -21,11 +21,11 @@
     "max": 223000
   },
   "hours": {
-    "en": "8:15–17:00 (45-minute break). Sundays off, 2 days off every week. 113 days off a year.",
-    "ja": "8:15〜17:00（休憩45分）。日曜ほか週休2日。年間休日113日",
-    "easy": "8じ15ふん〜17じ。1しゅうかんに 2にち やすみ。",
-    "vi": "8:15–17:00 (nghỉ 45 phút). Nghỉ Chủ nhật, 2 ngày/tuần. 113 ngày nghỉ/năm.",
-    "id": "8:15–17:00 (istirahat 45 menit). Libur Minggu, 2 hari per minggu. 113 hari libur per tahun."
+    "en": "Full-time 8:15–17:00. Part-time 9:00–16:00 (3 to 5 days a week). Closed on Sundays. 113 days off a year (full-time, FY2026), plus holidays in Golden Week, Obon and New Year.",
+    "easy": "せいしゃいん 8じ15ふん〜17じ。パート 9じ〜16じ（1しゅうかんに 3〜5にち）。にちようは やすみ。",
+    "ja": "常勤 8:15〜17:00、パート 9:00〜16:00（週3〜5日）。日曜休み（シフト制）、GW・お盆・年末年始休暇。年間休日113日（常勤、令和8年度）",
+    "vi": "Toàn thời gian 8:15–17:00. Bán thời gian 9:00–16:00 (3–5 ngày/tuần). Nghỉ Chủ nhật. 113 ngày nghỉ/năm (toàn thời gian, năm tài chính 2026), cùng kỳ nghỉ Golden Week, Obon và Tết.",
+    "id": "Penuh waktu 8:15–17:00. Paruh waktu 9:00–16:00 (3–5 hari per minggu). Libur hari Minggu. 113 hari libur per tahun (penuh waktu, tahun fiskal 2026), ditambah libur Golden Week, Obon, dan Tahun Baru."
   },
   "japanese": "unknown",
   "housing": "none",
@@ -37,11 +37,11 @@
     "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
   },
   "summary": {
-    "en": "Picking up users from home, health checks, bathing, exercises and activities at a day service for older people. A Japanese driver's license is required.",
-    "easy": "おとしよりの デイサービスで、おくりむかえ、おふろ、たいそう などを します。うんてん めんきょが ひつようです。",
-    "ja": "高齢者デイサービスでの送迎、バイタル測定、入浴、体操、レクリエーション。普通自動車運転免許が必要。",
-    "vi": "Đưa đón người cao tuổi, đo sức khỏe, hỗ trợ tắm, thể dục và sinh hoạt tại dịch vụ ban ngày. Cần bằng lái Nhật.",
-    "id": "Antar-jemput pengguna, cek kesehatan, mandi, senam, dan kegiatan di layanan harian lansia. Wajib punya SIM Jepang."
+    "en": "Care work at day service centers for older people that focus on massage-type equipment and exercise. Full-time and part-time jobs. Full-time staff also drive users to and from home.",
+    "easy": "マッサージや うんどうに ちからを いれて いる、おとしよりの デイサービスの しごとです。せいしゃいんと パートが あります。",
+    "ja": "マッサージ機器や運動に力を入れた機能訓練型の高齢者デイサービスでの介護。常勤とパートの募集。常勤は送迎も担当します。",
+    "vi": "Chăm sóc tại trung tâm dịch vụ ban ngày cho người cao tuổi, chú trọng thiết bị massage và vận động. Có việc toàn thời gian và bán thời gian. Nhân viên toàn thời gian còn đưa đón người sử dụng.",
+    "id": "Perawatan di pusat layanan harian lansia yang berfokus pada alat pijat dan olahraga. Ada pekerjaan penuh waktu dan paruh waktu. Staf penuh waktu juga mengantar-jemput pengguna."
   },
   "students_ok": false,
   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24268561",
@@ -54,5 +54,24 @@
   },
   "first_listed": "2026-11-26",
   "checked": "2026-11-26",
-  "paid": false
+  "paid": false,
+  "pay_text": {
+    "en": "Full-time: from ¥220,000 a month (Sumiyoshi), ¥230,000 (Nakata), ¥240,000 (Horikawa), plus a care staff allowance from ¥40,000 (varies). Part-time: ¥1,300–1,350 an hour (+¥50 on Saturdays and holidays). +¥10,000 a month with the Certified Care Worker license.",
+    "easy": "せいしゃいん：1かげつ 220,000えん から（すみよし）。パート：1じかん 1,300えん から。",
+    "ja": "常勤：月給 住吉220,000円〜、中田230,000円〜、堀川240,000円〜、別途 処遇改善40,000円〜（変動）。パート：時給1,300〜1,350円（土曜・祝日は＋50円）。介護福祉士手当＋10,000円",
+    "vi": "Toàn thời gian: từ ¥220.000/tháng (Sumiyoshi), ¥230.000 (Nakata), ¥240.000 (Horikawa), cộng phụ cấp cải thiện đãi ngộ từ ¥40.000 (thay đổi). Bán thời gian: ¥1.300–1.350/giờ (+¥50 thứ Bảy, ngày lễ). +¥10.000/tháng nếu có Kaigo Fukushishi.",
+    "id": "Penuh waktu: mulai ¥220.000 per bulan (Sumiyoshi), ¥230.000 (Nakata), ¥240.000 (Horikawa), ditambah tunjangan perbaikan perlakuan mulai ¥40.000 (berubah). Paruh waktu: ¥1.300–1.350 per jam (+¥50 Sabtu dan hari libur). +¥10.000 per bulan dengan sertifikat Kaigo Fukushishi."
+  },
+  "points": {
+    "en": "1. A day: 9:00 pick-up, 9:30 health checks, 10:00 bathing and equipment (water bed, leg massager), 14:00 exercises, 14:30 snacks, 15:00 walking practice, 15:30 recreation, 16:30 drive home.\n2. Bathing: about 90% of users take a bath. Most need only partial help (washing the back and hair). Full-time and part-time care staff do bathing about 2 or 3 times a week. A uniform for bathing is provided.\n3. Massage is done by specialist staff. Care staff guide users to the machines and put them on and take them off.\n4. Part-time care staff: no driving, no leader tasks, simple tablet input only.\n5. There are also part-time jobs only for bathing help (¥1,450 an hour).",
+    "easy": "1. 1にちの ながれ：9じ おむかえ、9じ30ぷん けんこう チェック、10じ おふろ、14じ たいそう、16じ30ぷん おくり。\n2. おふろ：りようする ひとの 9わりが はいります。せなかや かみを あらう てつだいが おおいです。\n3. マッサージは せんもんの ひとが します。\n4. パートは うんてんが ありません。",
+    "ja": "1. 1日の流れ：9:00送迎、9:30バイタル測定、10:00入浴・各種メニュー（ウォーターベッド、メドマー等）、14:00体操、14:30おやつ、15:00平行棒運動、15:30レクリエーション、16:30送迎\n2. 入浴：利用者の約9割が入浴。一部介助（背中・洗髪のお手伝い）が中心。常勤・パートの入浴業務は週2〜3回程度。入浴用制服の支給あり\n3. マッサージは専門職員が担当。介護職員は機器までの誘導と取り付け・取り外し\n4. 介護パートは送迎・リーダー業務なし、簡単なタブレット入力のみ\n5. 入浴専門のパート（時給1,450円）の募集もあり",
+    "vi": "1. Một ngày: 9:00 đón, 9:30 đo sức khỏe, 10:00 tắm và dùng thiết bị (giường nước, máy massage chân), 14:00 thể dục, 14:30 ăn nhẹ, 15:00 tập đi, 15:30 sinh hoạt, 16:30 đưa về.\n2. Tắm: khoảng 90% người sử dụng có tắm. Phần lớn chỉ cần hỗ trợ một phần (kỳ lưng, gội đầu). Nhân viên làm việc tắm khoảng 2–3 lần/tuần. Có đồng phục cho việc tắm.\n3. Massage do nhân viên chuyên môn thực hiện. Nhân viên chăm sóc dẫn người sử dụng đến máy, gắn và tháo máy.\n4. Nhân viên chăm sóc bán thời gian: không lái xe, không làm trưởng nhóm, chỉ nhập liệu đơn giản trên máy tính bảng.\n5. Cũng có việc bán thời gian chỉ hỗ trợ tắm (¥1.450/giờ).",
+    "id": "1. Sehari: 9:00 penjemputan, 9:30 cek kesehatan, 10:00 mandi dan alat (kasur air, pemijat kaki), 14:00 senam, 14:30 camilan, 15:00 latihan berjalan, 15:30 rekreasi, 16:30 antar pulang.\n2. Mandi: sekitar 90% pengguna mandi. Kebanyakan hanya perlu bantuan sebagian (menggosok punggung, keramas). Staf mengerjakan bantuan mandi sekitar 2–3 kali seminggu. Seragam khusus mandi disediakan.\n3. Pijat dilakukan staf spesialis. Staf perawatan mengantar pengguna ke alat serta memasang dan melepasnya.\n4. Staf perawatan paruh waktu: tidak mengemudi, tidak menjadi pemimpin, hanya input sederhana di tablet.\n5. Ada juga lowongan paruh waktu khusus bantuan mandi (¥1.450 per jam)."
+  },
+  "official_url": "https://furusatonokaze-recruit.com/job_search/kaigo_day/",
+  "official_name": {
+    "en": "Village Field recruitment page",
+    "ja": "ビレッジ・フィールド 採用情報"
+  }
 }

@@ -216,7 +216,7 @@ GUIDE_BY_SLUG = {g["slug"]: g for g in GUIDES}
 # ---------------------------------------------------------------- layout
 GLOBE = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>'
 CSS_V = hashlib.md5((ROOT / "static/assets/style.css").read_bytes()).hexdigest()[:8]
-JS_V = hashlib.md5((ROOT / "static/assets/site.js").read_bytes()).hexdigest()[:8]
+JS_V = hashlib.md5((ROOT / "static/assets/site.js").read_bytes() + (ROOT / "static/assets/jobsearch.js").read_bytes()).hexdigest()[:8]
 PAGES = []  # collected for the sitemap
 
 
@@ -760,7 +760,7 @@ def job_card(j, lang):
     paid = f'<span class="sample">{esc(t(lang, "job_paid"))}</span>' if j.get("paid") else ""
     rows = [
         (t(lang, "job_employer"), (f'<a href="/{lang}/employers/{j["employer_id"]}/">{esc(pick(j["employer"], lang))}</a>' if j.get("employer_id") in EMP_BY_SLUG else esc(pick(j["employer"], lang)))),
-        (t(lang, "job_pay"), esc(job_pay(j, lang))),
+        (t(lang, "job_pay"), esc(pick(j["pay_text"], lang) if j.get("pay_text") else job_pay(j, lang))),
     ]
     if j.get("hours"):
         rows.append((t(lang, "job_hours"), esc(pick(j["hours"], lang))))
@@ -773,10 +773,19 @@ def job_card(j, lang):
     rows.append((t(lang, "job_checked"), f'{fmt_date(j["checked"], lang)} · {esc(t(lang, "job_source"))}: {src}'))
     dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in rows)
     summary = f'<p>{esc(pick(j["summary"], lang))}</p>' if j.get("summary") else ""
+    if j.get("points"):
+        summary += f'<details class="pts"><summary>{esc(t(lang, "job_points"))}</summary><div>{md(pick(j["points"], lang))}</div></details>'
     return (
         f'<article class="card job" id="{esc(j["id"])}">{tag_html}<h2>{esc(title)}</h2>{paid}{summary}<dl>{dl}</dl>'
-        f'<div class="btns"><a class="btn sm" href="{esc(j["source_url"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a></div></article>'
+        f'<div class="btns">{job_buttons(j.get("official_url"), j["source_url"], lang)}</div></article>'
     )
+
+
+def job_buttons(official, source, lang):
+    if official:
+        return (f'<a class="btn sm" href="{esc(official)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_official"))}</a>'
+                f'<a class="btn sm ghost" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_source"))}</a>')
+    return f'<a class="btn sm" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a>'
 
 
 def detail_rows(d, lang):
@@ -826,6 +835,9 @@ def auto_card(j, lang):
     if j.get("hours"):
         rows.append((t(lang, "job_hours"), esc(j["hours"])))
     rows += detail_rows(d, lang)
+    rec = (comp or {}).get("info", {}).get("recruit_url") if comp else ""
+    if rec and not j.get("official_url"):
+        rows.append((t(lang, "emp_recruit"), f'<a href="{esc(rec)}" target="_blank" rel="noopener nofollow">{esc(rec[:60])}</a>'))
     if j.get("published"):
         rows.append((t(lang, "job_posted"), fmt_date(j["published"], lang)))
     src = "JobsGo" + (" · " + t(lang, "job_hw_no", no=j["hellowork_no"]) if j.get("hellowork_no") else "")
@@ -833,7 +845,7 @@ def auto_card(j, lang):
     rows.append((t(lang, "job_welcome"), esc(t(lang, "job_foreign_text") if d.get("foreign_text") else t(lang, "job_tag_welcome"))))
     dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in rows)
     return (f'<article class="card job">{tag_html}{head}<dl>{dl}</dl>'
-            f'<div class="btns"><a class="btn sm" href="{esc(j["source_url"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a></div></article>')
+            f'<div class="btns">{job_buttons(j.get("official_url"), j["source_url"], lang)}</div></article>')
 
 
 def all_jobs_in(region):
@@ -848,7 +860,8 @@ def build_jobs(lang):
     path = f"/{lang}/jobs/"
     total = len(JOBS) + len(AUTO_JOBS)
     body = band(f'<h1>{esc(t(lang, "jobs_h1"))}</h1>\n<p class="lead">{esc(t(lang, "jobs_lead"))}</p>'
-                + (f'<div class="btns"><a class="btn ghost" href="/{lang}/employers/">{esc(t(lang, "employers_link"))}</a></div>' if EMPLOYERS or COMPANIES else ""))
+                + f'<div class="btns"><a class="btn" href="/{lang}/jobs/search/">{esc(t(lang, "search_link"))}</a>'
+                + (f'<a class="btn ghost" href="/{lang}/employers/">{esc(t(lang, "employers_link"))}</a>' if EMPLOYERS or COMPANIES else "") + "</div>")
     inner = ""
     if total:
         links = "".join(
@@ -875,6 +888,70 @@ def build_jobs(lang):
             build_jobs_city(lang, r, items)
 
 
+def job_index():
+    """Compact, language-neutral data for the job search page."""
+    rows = []
+    for j in JOBS:
+        rows.append({"id": j["id"], "k": "c", "t": j["title"], "e": pick(j["employer"], "ja"), "es": j.get("employer_id", ""),
+                     "r": j["region"], "c": j["category"], "m": j["employment"], "p": j.get("pay") or {},
+                     "q": [], "hol": None, "b": None, "hs": 1 if j.get("housing") in ("dorm", "support") else 0,
+                     "ft": 1 if j.get("japanese") == "n2" or "本文" in pick(j["foreign_welcome"], "ja") or "記載" in pick(j["foreign_welcome"], "ja") else 0,
+                     "jl": "", "pub": j.get("first_listed"), "u": j["source_url"], "o": j.get("official_url", "")})
+    for j in AUTO_JOBS:
+        d = j.get("detail") or {}
+        comp = COMPANIES.get(norm_name(j["employer_ja"]))
+        rows.append({"id": j["id"], "k": "a", "t": j["title_ja"], "e": j["employer_ja"],
+                     "es": (comp.get("curated") or comp["slug"]) if comp else "",
+                     "r": j["region"], "c": j["category"], "m": j["employment"], "p": j.get("pay") or {}, "h": j.get("hours", ""),
+                     "q": d.get("quals", []), "hol": d.get("holidays"), "b": d.get("bonus"),
+                     "hs": 1 if ("単身用あり" in d.get("housing", "") or "世帯用あり" in d.get("housing", "")) else 0,
+                     "ft": 1 if d.get("foreign_text") else 0, "jl": d.get("jlpt", ""), "pub": j.get("published"),
+                     "u": j["source_url"], "o": j.get("official_url", ""), "hw": j.get("hellowork_no", "")})
+    return rows
+
+
+def build_job_search(lang):
+    path = f"/{lang}/jobs/search/"
+    keys = ["job_pay", "job_hours", "job_requires", "job_holidays", "job_bonus", "job_housing", "job_posted", "job_employer",
+            "job_apply", "job_apply_official", "job_apply_source", "job_foreign_text", "holidays_fmt", "bonus_fmt", "jlpt_fmt",
+            "pay_month", "pay_hour", "pay_year", "pay_day", "pay_from", "pay_range", "pay_unknown", "results_n", "show_more",
+            "save", "saved", "no_results", "job_auto_title", "job_hw_no", "job_japanese", "housing_single"]
+    L = {k: t(lang, k) for k in keys}
+    for pre, vals in (("job_cat_", ["care", "manufacturing", "food", "retail", "construction", "logistics", "hotel", "office", "agriculture", "other"]),
+                      ("emp_", ["full_time", "contract", "part_time", "dispatch"]), ("region_", REGION_ORDER),
+                      ("q_", ["license_car", "license_large", "care_worker", "care_training", "nurse", "childcare", "cook", "welding", "forklift", "crane", "electrician", "pc"])):
+        for v in vals:
+            L[pre + v] = t(lang, pre + v)
+    cats = ["care", "manufacturing", "food", "retail", "construction", "logistics", "hotel", "office", "agriculture", "other"]
+    opt = lambda vals, pre: "".join(f'<option value="{v}">{esc(t(lang, pre + v))}</option>' for v in vals)
+    pays = "".join(f'<option value="{v}">{fmt_yen(v)}</option>' for v in (180000, 200000, 220000, 250000, 300000))
+    checks = "".join(f'<label class="chk"><input type="checkbox" name="{k}" value="1"> {esc(t(lang, "opt_" + k))}</label>'
+                     for k in ("housing", "nolicense", "noqual", "hol120", "bonus", "foreign", "official", "new", "saved"))
+    form = (f'<form id="jobsearch" class="card sform" action="" method="get">'
+            f'<label>{esc(t(lang, "f_keyword"))}<input type="search" name="kw" placeholder="{esc(t(lang, "f_keyword_ph"))}"></label>'
+            f'<div class="srow"><label>{esc(t(lang, "f_cat"))}<select name="cat"><option value="">{esc(t(lang, "any"))}</option>{opt(cats, "job_cat_")}</select></label>'
+            f'<label>{esc(t(lang, "f_emp"))}<select name="emp"><option value="">{esc(t(lang, "any"))}</option>{opt(["full_time", "contract", "part_time", "dispatch"], "emp_")}</select></label>'
+            f'<label>{esc(t(lang, "f_city"))}<select name="city"><option value="">{esc(t(lang, "any"))}</option>{opt(REGION_ORDER, "region_")}</select></label>'
+            f'<label>{esc(t(lang, "f_pay"))}<select name="pay"><option value="">{esc(t(lang, "any"))}</option>{pays}</select></label>'
+            f'<label>{esc(t(lang, "f_sort"))}<select name="sort"><option value="new">{esc(t(lang, "sort_new"))}</option><option value="pay">{esc(t(lang, "sort_pay"))}</option><option value="hol">{esc(t(lang, "sort_hol"))}</option></select></label></div>'
+            f'<fieldset><legend>{esc(t(lang, "f_options"))}</legend>{checks}</fieldset>'
+            f'<div class="btns"><button type="reset" class="btn sm ghost">{esc(t(lang, "reset"))}</button></div></form>')
+    cities = "".join(f'<li><a href="/{lang}/jobs/{region_slug(r)}/">{esc(t(lang, "region_" + r))}</a></li>' for r in REGION_ORDER if all_jobs_in(r))
+    crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "nav_jobs"), f"/{lang}/jobs/"), (t(lang, "search_h1"), path)]
+    body = band(crumbs_html(crumbs, lang) + f'<h1>{esc(t(lang, "search_h1"))}</h1><p class="lead">{esc(t(lang, "search_desc"))}</p>' + form
+                + f'<p class="note">{esc(t(lang, "search_saved_note"))}</p>'
+                + f'<noscript><div class="rule"><p>{esc(t(lang, "search_noscript"))}</p></div><ul class="cols">{cities}</ul></noscript>')
+    body += "\n" + band(f'<p id="jcount" class="note" aria-live="polite"></p><div id="jresults" class="newslist"></div>'
+                         f'<div class="btns"><button id="jmore" class="btn sm" type="button" hidden>{esc(t(lang, "show_more"))}</button></div>', cls="tint")
+    body += "\n" + band(f'<div class="rule"><p><b>{esc(t(lang, "jobs_note_h"))}</b> {esc(t(lang, "jobs_note"))}</p></div>')
+    cfg = json.dumps({"lang": lang, "L": L, "data": f"/data/jobs.json?v={JOBS_V}"}, ensure_ascii=False).replace("</", "<\\/")
+    body += f'<script>window.JOBSEARCH={cfg};</script><script src="/assets/jobsearch.js?v={JS_V}" defer></script>'
+    page(lang, path, t(lang, "search_h1"), t(lang, "search_desc"), body, section="jobs",
+         alternates=alts(lambda l: f"/{l}/jobs/search/"), jsonld=[crumbs_ld(crumbs)], slim=True)
+
+
+JOBS_JSON = json.dumps(job_index(), ensure_ascii=False, separators=(",", ":"))
+JOBS_V = hashlib.md5(JOBS_JSON.encode("utf-8")).hexdigest()[:8]
 PER_PAGE = 40
 
 
@@ -1193,6 +1270,8 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "static", OUT)
+    (OUT / "data").mkdir(exist_ok=True)
+    (OUT / "data" / "jobs.json").write_text(JOBS_JSON, encoding="utf-8")
     for lang in LANGS:
         build_home(lang)
         build_news_list(lang)
@@ -1204,6 +1283,7 @@ def main():
             if lang in g["lang"]:
                 build_guide(g, lang)
         build_jobs(lang)
+        build_job_search(lang)
         if EMPLOYERS or COMPANIES:
             build_employers_list(lang)
             for e in EMPLOYERS:

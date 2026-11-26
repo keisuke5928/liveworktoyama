@@ -29,11 +29,11 @@
     "id": "Perusahaan perawatan lansia yang menjalankan layanan harian dan rumah kelompok di Kota Toyama."
   },
   "about": {
-    "en": "Village Field runs the \"Furusato no Kaze\" care services: day services, home-visit care, care planning, housing with services for older people, and group homes. Its job posting says applicants can visit and try the work before deciding.",
-    "easy": "「ふる里の風」と いう なまえで、デイサービス、ほうもん かいご、グループホーム などを して います。はたらく まえに けんがく できます。",
-    "ja": "「ふる里の風」として、デイサービス、訪問介護、居宅介護支援、サービス付き高齢者向け住宅、グループホームを運営しています。求人情報では、見学や体験就業ができるとしています。",
-    "vi": "Công ty điều hành dịch vụ chăm sóc \"Furusato no Kaze\": chăm sóc ban ngày, chăm sóc tại nhà, lập kế hoạch chăm sóc, nhà ở có dịch vụ cho người cao tuổi và nhà tập thể. Tin tuyển dụng cho biết có thể đến tham quan và làm thử trước khi quyết định.",
-    "id": "Perusahaan menjalankan layanan perawatan \"Furusato no Kaze\": layanan harian, perawatan kunjungan rumah, perencanaan perawatan, hunian dengan layanan untuk lansia, dan rumah kelompok. Iklannya menyebutkan pelamar bisa berkunjung dan mencoba bekerja sebelum memutuskan."
+    "en": "Village Field runs the \"Furusato no Kaze\" care services in Toyama City: three day service centers (Sumiyoshi, Nakata and Horikawa), home-visit care, care planning, housing with services for older people, and a group home. The day service centers grew out of a bone-setting clinic and focus on massage-type equipment and exercise. They are open Monday to Saturday, 9:00–17:00, with places for 38 (Sumiyoshi) and 60 people (Nakata and Horikawa).",
+    "easy": "とやましで「ふる里の風」と いう なまえで、デイサービス（すみよし・なかだ・ほりかわ）、ほうもん かいご、グループホーム などを して います。デイサービスは マッサージや うんどうに ちからを いれて います。",
+    "ja": "富山市で「ふる里の風」として、デイサービスセンター3か所（住吉・中田・堀川）、訪問介護、居宅介護支援、サービス付き高齢者向け住宅、グループホームを運営しています。デイサービスは接骨院が母体の機能訓練型で、マッサージ機器や運動のメニューが特徴です。営業は月〜土の9:00〜17:00、定員は住吉38人、中田・堀川60人です。",
+    "vi": "Village Field điều hành dịch vụ chăm sóc \"Furusato no Kaze\" tại TP. Toyama: 3 trung tâm dịch vụ ban ngày (Sumiyoshi, Nakata, Horikawa), chăm sóc tại nhà, lập kế hoạch chăm sóc, nhà ở có dịch vụ cho người cao tuổi và nhà tập thể. Các trung tâm ban ngày có nguồn gốc từ phòng khám chỉnh xương, chú trọng thiết bị massage và vận động. Mở cửa thứ Hai đến thứ Bảy, 9:00–17:00, sức chứa 38 người (Sumiyoshi) và 60 người (Nakata, Horikawa).",
+    "id": "Village Field menjalankan layanan perawatan \"Furusato no Kaze\" di Kota Toyama: tiga pusat layanan harian (Sumiyoshi, Nakata, Horikawa), perawatan kunjungan rumah, perencanaan perawatan, hunian dengan layanan untuk lansia, dan rumah kelompok. Pusat layanan harian berasal dari klinik tulang dan berfokus pada alat pijat serta olahraga. Buka Senin–Sabtu, 9:00–17:00, dengan kapasitas 38 orang (Sumiyoshi) dan 60 orang (Nakata, Horikawa)."
   },
   "hiring": {
     "en": "In November 2026 the company posted a full-time day service care job (Furusato no Kaze Sumiyoshi) at Hello Work. It is listed as \"actively hiring foreign nationals\" on JobsGo. A Japanese driver's license (AT is OK) is required because the job includes driving users to and from home.",
@@ -49,6 +49,22 @@
         "ja": "ふる里の風 公式サイト"
       },
       "url": "https://furusatonokaze.com/",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "Furusato no Kaze day service information",
+        "ja": "ふる里の風 デイサービスの案内"
+      },
+      "url": "https://furusatonokaze.com/detail/day_service/",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "Village Field recruitment page (day service care staff)",
+        "ja": "ビレッジ・フィールド 採用情報（介護職員・デイサービス）"
+      },
+      "url": "https://furusatonokaze-recruit.com/job_search/kaigo_day/",
       "date": "2026-11-26"
     },
     {

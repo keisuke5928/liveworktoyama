@@ -205,7 +205,52 @@ def check_company_site(url):
             pass
     joined = " ".join(texts)
     out["foreign_words"] = [w for w in FOREIGN_WORDS if w in joined][:5]
+    # links on the recruitment page that may be individual job pages
+    links = []
+    if rec:
+        try:
+            rp = fetch(rec)
+            for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', rp, re.S | re.I):
+                lab = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()
+                if 2 <= len(lab) <= 60 and not href.startswith(("mailto:", "tel:", "javascript")):
+                    links.append([lab, urljoin(rec, href)])
+            # one level deeper: pages that list jobs ("職種から探す", "募集要項", ...)
+            from urllib.parse import urlparse
+            host = urlparse(rec).netloc
+            hubs = [u for lab, u in links if urlparse(u).netloc == host and re.search(r"職種|募集|求人|要項|job|recruit|採用情報|キャリア|中途|新卒", lab + u, re.I)]
+            for hub in list(dict.fromkeys(hubs))[:3]:
+                try:
+                    hp = fetch(hub)
+                except Exception:
+                    continue
+                for href, label in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', hp, re.S | re.I):
+                    lab = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()
+                    if 2 <= len(lab) <= 60 and not href.startswith(("mailto:", "tel:", "javascript")):
+                        links.append([lab, urljoin(hub, href)])
+        except Exception:
+            pass
+    seen, uniq = set(), []
+    for lab, u in links:
+        if u not in seen and "microsoft.com" not in u and "google.co" not in u:
+            seen.add(u)
+            uniq.append([lab, u])
+    out["links"] = uniq[:200]
     return out
+
+
+STOP = {"正社員", "募集", "未経験", "歓迎", "スタッフ", "急募", "契約社員", "パート", "アルバイト", "富山", "富山市", "高岡",
+        "勤務", "可能", "経験者", "以上", "日勤", "夜勤", "週休", "土日", "休み", "賞与", "年間", "休日", "求人", "採用",
+        "株式会社", "店", "店舗", "センター", "業務", "ホーム", "詳細", "こちら", "一覧", "情報", "エントリー", "応募"}
+
+
+def match_official(title, links):
+    toks = [w for w in re.findall(r"[一-龥]{2,}|[ァ-ヴー]{2,}", title) if w not in STOP]
+    best, score = "", 0
+    for lab, url in links:
+        sc = sum(len(w) for w in toks if w in lab)
+        if sc > score and sc >= 3:
+            best, score = url, sc
+    return best
 
 
 def enrich(jobs, today):
@@ -239,14 +284,30 @@ def enrich(jobs, today):
     print(f"company websites to check: {len(sites)}", file=sys.stderr)
     with ThreadPoolExecutor(max_workers=8) as ex:
         for name, res in zip(sites, ex.map(check_company_site, sites.values())):
-            companies[name].update({"site_ok": res["ok"], "recruit_url": res["recruit_url"],
+            companies[name].update({"site_ok": res["ok"], "recruit_url": res["recruit_url"], "links": res.get("links", []),
                                     "site_foreign_words": res["foreign_words"], "site_title": res["title"], "site_checked": today})
+    for j in jobs:
+        c = companies.get(j["employer_ja"], {})
+        j["official_url"] = match_official(j["title_ja"], c.get("links", [])) if c.get("links") else ""
     names = {j["employer_ja"] for j in jobs}
     companies = {k: v for k, v in companies.items() if k in names}
     COMPANIES.write_text(json.dumps(companies, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def sites_only():
+    """Re-check company websites and job-page matches without reading JobsGo again."""
+    data = json.loads(OUT.read_text(encoding="utf-8"))
+    comps = json.loads(COMPANIES.read_text(encoding="utf-8")) if COMPANIES.exists() else {}
+    for c in comps.values():
+        c.pop("site_checked", None)
+    COMPANIES.write_text(json.dumps(comps, ensure_ascii=False), encoding="utf-8")
+    enrich(data["jobs"], datetime.date.today().isoformat())
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
+    if "--sites-only" in sys.argv:
+        return sites_only()
     max_pages = 200
     if "--max-pages" in sys.argv:
         max_pages = int(sys.argv[sys.argv.index("--max-pages") + 1])
