@@ -296,7 +296,8 @@ def header(lang, section, alternates, ja_only=False):
         nav += f'<a href="/business/" class="biz" lang="ja"{biz_cur}>企業のみなさまへ</a>'
     return (
         f'<a class="skip" href="#main">{esc(t(nl, "skip"))}</a>\n<header>\n  <div class="bar">\n'
-        f'    <a class="logo" href="/{nl}/" lang="en">Live &amp; Work <b>Toyama</b><small lang="{UI[nl]["html_lang"]}">{esc(t(nl, "tagline"))}</small></a>\n'
+        f'    <a class="logo" href="/{nl}/"><picture><source srcset="/img/brand/wordmark-dark.png" media="(prefers-color-scheme: dark)">'
+        f'<img src="/img/brand/wordmark.png" width="720" height="131" alt="Live &amp; Work Toyama"></picture><small lang="{UI[nl]["html_lang"]}">{esc(t(nl, "tagline"))}</small></a>\n'
         f'    <nav aria-label="{esc(t(nl, "nav_label"))}">{nav}</nav>\n'
         f"    {lang_switch(lang, alternates, ja_only)}\n  </div>\n</header>\n"
     )
