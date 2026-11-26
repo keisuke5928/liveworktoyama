@@ -1,0 +1,80 @@
+{
+ "name": {
+  "en": "Seikokai Medical Corporation (Shimada Hospital)",
+  "ja": "医療法人社団 清幸会（島田病院）"
+ },
+ "industry": "care",
+ "region": "toyama_city",
+ "location": {
+  "en": "Shimoshinkita-machi, Toyama City",
+  "ja": "富山市下新北町",
+  "easy": "とやまし しもしんきたまち",
+  "vi": "Shimoshinkita-machi, TP. Toyama",
+  "id": "Shimoshinkita-machi, Kota Toyama"
+ },
+ "founded": "1950",
+ "employees": {
+  "en": "About 110 (whole organization)",
+  "ja": "約110名（法人全体）",
+  "easy": "やく 110にん",
+  "vi": "Khoảng 110 (toàn tổ chức)",
+  "id": "Sekitar 110 (seluruh organisasi)"
+ },
+ "tagline": {
+  "en": "A hospital in Toyama City with long-term care beds, day care rehabilitation and home rehabilitation.",
+  "easy": "とやましの びょういんです。ながく にゅういん する ひとの びょうしつや、リハビリが あります。",
+  "ja": "療養病床、通所リハビリ（デイケア）、訪問リハビリを持つ富山市の病院。",
+  "vi": "Bệnh viện ở TP. Toyama có giường điều dưỡng dài hạn, phục hồi chức năng ban ngày và tại nhà.",
+  "id": "Rumah sakit di Kota Toyama dengan ranjang perawatan jangka panjang, rehabilitasi harian, dan rehabilitasi di rumah."
+ },
+ "about": {
+  "en": "Shimada Hospital is in Shimoshinkita-machi, Toyama City. Its departments are internal medicine, pediatrics, anesthesiology and rehabilitation. It has long-term care beds, a day care rehabilitation service and home-visit rehabilitation. The hospital has its own kitchen and cooks meals for patients.",
+  "easy": "しまだ びょういんは とやましの びょういんです。ないか、しょうにか、リハビリ など が あります。ながく にゅういん する ひとの びょうしつと、かよう リハビリ（デイケア）が あります。",
+  "ja": "富山市下新北町の病院です。内科、小児科、麻酔科、リハビリテーション科があり、療養病床、通所リハビリテーション（デイケア）、訪問リハビリテーションを行っています。院内に給食室があり、患者さんの食事を作っています。",
+  "vi": "Bệnh viện Shimada ở Shimoshinkita-machi, TP. Toyama, có khoa nội, nhi, gây mê và phục hồi chức năng. Bệnh viện có giường điều dưỡng dài hạn, dịch vụ phục hồi chức năng ban ngày và tại nhà, và có bếp riêng nấu ăn cho bệnh nhân.",
+  "id": "Rumah Sakit Shimada berada di Shimoshinkita-machi, Kota Toyama. Ada bagian penyakit dalam, anak, anestesi, dan rehabilitasi. Rumah sakit ini punya ranjang perawatan jangka panjang, rehabilitasi harian, rehabilitasi di rumah, dan dapur sendiri untuk makanan pasien."
+ },
+ "hiring": {
+  "en": "The hospital's own recruitment pages list nurses, care workers (nursing assistants) and other jobs. Several of its Hello Work postings are listed as \"actively hiring foreign nationals\" on JobsGo.",
+  "easy": "びょういんの さいようの ページに、かんごしや かいごの しごとが のって います。",
+  "ja": "病院の採用ページに看護師、介護職（看護補助者）などの募集があります。ハローワーク求人の一部は、ジョブズゴーで「外国人積極採用」に分類されています。",
+  "vi": "Trang tuyển dụng của bệnh viện có tuyển y tá, nhân viên chăm sóc (trợ lý điều dưỡng) và các vị trí khác. Một số tin trên Hello Work được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo.",
+  "id": "Halaman rekrutmen rumah sakit mencantumkan lowongan perawat, staf perawatan (asisten perawat), dan lainnya. Beberapa lowongan Hello Work-nya masuk kategori \"aktif merekrut warga asing\" di JobsGo."
+ },
+ "sources": [
+  {
+   "name": {
+    "en": "Shimada Hospital official website",
+    "ja": "島田病院 公式サイト",
+    "easy": "しまだ びょういんの サイト",
+    "vi": "Trang web chính thức của Bệnh viện Shimada",
+    "id": "Situs resmi Rumah Sakit Shimada"
+   },
+   "url": "https://www.seikoukai-shimada.jp/",
+   "date": "2026-11-27"
+  },
+  {
+   "name": {
+    "en": "Shimada Hospital recruitment page (care worker)",
+    "ja": "島田病院 採用情報（介護職）",
+    "easy": "しまだ びょういんの さいようの ページ",
+    "vi": "Trang tuyển dụng (nhân viên chăm sóc)",
+    "id": "Halaman rekrutmen (staf perawatan)"
+   },
+   "url": "https://www.seikoukai-shimada.jp/recruitment/%e7%97%85%e6%a3%9f%e7%9c%8b%e8%ad%b7%e8%a3%9c%e5%8a%a9%e8%80%85%ef%bc%88%e4%bb%8b%e8%ad%b7%e8%81%b7%ef%bc%89/",
+   "date": "2026-11-27"
+  },
+  {
+   "name": {
+    "en": "JobsGo (Hello Work posting 16010-21850561)",
+    "ja": "ジョブズゴー（ハローワーク求人 16010-21850561）",
+    "easy": "ジョブズゴー（ハローワーク）",
+    "vi": "JobsGo (tin Hello Work 16010-21850561)",
+    "id": "JobsGo (lowongan Hello Work 16010-21850561)"
+   },
+   "url": "https://www.jobs-go.jp/jobs/detail/16010-21850561",
+   "date": "2026-11-27"
+  }
+ ],
+ "checked": "2026-11-27"
+}

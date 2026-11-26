@@ -1,0 +1,70 @@
+{
+ "status": "open",
+ "employer_id": "seikokai-shimada",
+ "title": {
+  "en": "Care worker (nursing assistant) at Shimada Hospital",
+  "easy": "びょういんの かいごの しごと（しまだ びょういん）",
+  "ja": "介護職（看護補助者）島田病院",
+  "vi": "Nhân viên chăm sóc (trợ lý điều dưỡng) tại Bệnh viện Shimada",
+  "id": "Staf perawatan (asisten perawat) di Rumah Sakit Shimada"
+ },
+ "employer": {
+  "en": "Seikokai Medical Corporation (Shimada Hospital)",
+  "ja": "医療法人社団 清幸会（島田病院）"
+ },
+ "region": "toyama_city",
+ "category": "care",
+ "employment": "full_time",
+ "pay": {
+  "per": "month",
+  "min": 213200,
+  "max": 279700
+ },
+ "hours": {
+  "en": "Shifts: 8:45–17:30, 7:00–15:45, 9:45–18:30, or night 16:45–9:00 next day. 120 days off a year. Part-time hours can be discussed.",
+  "easy": "じかんは こうたいです。よるの しごとも あります。1ねんに 120にち やすみ。",
+  "ja": "シフト制：8:45〜17:30、7:00〜15:45、9:45〜18:30、夜勤16:45〜翌9:00。年間休日120日。パート・アルバイトは時間を相談できます",
+  "vi": "Theo ca: 8:45–17:30, 7:00–15:45, 9:45–18:30, hoặc ca đêm 16:45–9:00 hôm sau. 120 ngày nghỉ/năm. Bán thời gian có thể thỏa thuận giờ.",
+  "id": "Sif: 8:45–17:30, 7:00–15:45, 9:45–18:30, atau malam 16:45–9:00 hari berikutnya. 120 hari libur per tahun. Jam paruh waktu bisa dibicarakan."
+ },
+ "japanese": "unknown",
+ "housing": "dorm",
+ "foreign_welcome": {
+  "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+  "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+  "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+  "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+  "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+ },
+ "summary": {
+  "en": "Care work on hospital wards: tidying rooms, changing sheets, helping patients with baths, toilet and meals. No experience needed. Staff teach you one-to-one.",
+  "easy": "びょういんで かんじゃさんの せわを する しごとです。おふろ、トイレ、しょくじを てつだいます。けいけんが なくても だいじょうぶです。",
+  "ja": "病棟での介護の仕事。病室の整理、シーツ交換、入浴・排泄・食事の介助など。未経験でも、経験のある職員がマンツーマンで教えます。",
+  "vi": "Chăm sóc bệnh nhân tại khoa nội trú: dọn phòng, thay ga giường, hỗ trợ tắm, đi vệ sinh và ăn uống. Không cần kinh nghiệm, có người hướng dẫn kèm cặp.",
+  "id": "Perawatan pasien di bangsal: merapikan kamar, mengganti seprai, membantu mandi, ke toilet, dan makan. Tidak perlu pengalaman, ada pendamping satu per satu."
+ },
+ "students_ok": false,
+ "source_url": "https://www.jobs-go.jp/jobs/detail/16010-21850561",
+ "source_name": {
+  "en": "JobsGo (Hello Work posting)",
+  "ja": "ジョブズゴー（ハローワーク求人）"
+ },
+ "first_listed": "2026-11-27",
+ "checked": "2026-11-27",
+ "official_url": "https://www.seikoukai-shimada.jp/recruitment/%e7%97%85%e6%a3%9f%e7%9c%8b%e8%ad%b7%e8%a3%9c%e5%8a%a9%e8%80%85%ef%bc%88%e4%bb%8b%e8%ad%b7%e8%81%b7%ef%bc%89/",
+ "pay_text": {
+  "en": "Full-time: ¥213,200–¥279,700 a month (Hello Work posting). Bonus about 4.1 months a year (last year's result in the posting). The hospital's own page does not show pay.",
+  "easy": "せいしゃいん：1かげつ 213,200えん〜279,700えん（ハローワーク）。",
+  "ja": "正社員：月給213,200円〜279,700円（ハローワーク求人）。賞与は前年度実績で年約4.1か月（求人票）。病院の採用ページには給与の記載はありません",
+  "vi": "Toàn thời gian: 213.200–279.700 yên/tháng (tin Hello Work). Thưởng khoảng 4,1 tháng/năm (kết quả năm trước). Trang của bệnh viện không ghi lương.",
+  "id": "Penuh waktu: 213.200–279.700 yen per bulan (lowongan Hello Work). Bonus sekitar 4,1 bulan per tahun (hasil tahun lalu). Halaman rumah sakit tidak mencantumkan gaji."
+ },
+ "points": {
+  "en": "1. No experience needed. An experienced staff member teaches you one-to-one.\n2. You work with nurses and plan patient care together.\n3. Almost no overtime, according to the hospital.\n4. Uniforms are provided and cleaned for you. Parking with snow-melting system.\n5. Support to get care qualifications. Housing for single people and families is listed in the Hello Work posting.",
+  "easy": "1. けいけんが なくても、せんぱいが 1たい1で おしえます。\n2. ざんぎょうは ほとんど ありません。\n3. せいふくを かします。せんたくも しなくて いいです。\n4. ゆきを とかす ちゅうしゃじょうが あります。",
+  "ja": "1. 未経験でも、経験のある職員がマンツーマンで指導\n2. 看護補助者だけでなく看護師とも相談しながらケアを行う\n3. 残業はほとんどない（病院の採用ページより）\n4. 制服貸与・クリーニング不要、融雪付きの職員駐車場\n5. 資格取得のサポートあり。ハローワーク求人では単身用・世帯用の住宅ありと記載",
+  "vi": "1. Không cần kinh nghiệm, có nhân viên lâu năm hướng dẫn kèm cặp.\n2. Làm việc cùng y tá, cùng trao đổi về chăm sóc bệnh nhân.\n3. Hầu như không làm thêm giờ (theo bệnh viện).\n4. Được cấp đồng phục và giặt miễn phí. Bãi đỗ xe có hệ thống làm tan tuyết.\n5. Hỗ trợ lấy chứng chỉ. Tin Hello Work ghi có nhà ở cho người độc thân và gia đình.",
+  "id": "1. Tidak perlu pengalaman, ada staf berpengalaman yang mengajari satu per satu.\n2. Bekerja bersama perawat dan berdiskusi tentang perawatan pasien.\n3. Hampir tidak ada lembur (menurut rumah sakit).\n4. Seragam disediakan dan dicucikan. Parkir dengan sistem pencair salju.\n5. Dukungan untuk mendapat sertifikat. Lowongan Hello Work menyebut ada perumahan untuk lajang dan keluarga."
+ },
+ "paid": false
+}

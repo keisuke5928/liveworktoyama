@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-27",
+  "updated": "2026-11-27",
+  "category": "rules",
+  "region": "japan",
+  "image": "/img/news/2026-11-27-help-for-vietnamese-residents.png",
+  "scene": "document",
+  "og_title": ["Help for Vietnamese", "people in trouble in Japan"],
+  "og_sub": "こまって いる ベトナムの ひとへ",
+  "easy_summary": "にゅうかんなどが、こまって いる ベトナムの ひとの ための あんないを だしました。ぎのうじっしゅうせいは ベトナムごで そうだん できます（0120-250-168）。",
+  "sources": [
+    {"name": {"en": "Immigration Services Agency of Japan", "ja": "出入国在留管理庁", "easy": "にゅうかん", "vi": "Cục Quản lý Xuất nhập cảnh và Lưu trú Nhật Bản", "id": "Badan Layanan Imigrasi Jepang"},
+     "date": "2026-10-23",
+     "note": {"en": "with the Ministry of Health, Labour and Welfare, OTIT and the Embassy of Vietnam", "ja": "厚生労働省・外国人技能実習機構・駐日ベトナム大使館と連携", "easy": "こうせいろうどうしょう など と いっしょに", "vi": "phối hợp với Bộ Y tế, Lao động và Phúc lợi, OTIT và Đại sứ quán Việt Nam", "id": "bersama Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan, OTIT, dan Kedutaan Vietnam"},
+     "url": "https://www.moj.go.jp/isa/09_00050.html"},
+    {"name": {"en": "Leaflet in Vietnamese (PDF)", "ja": "ベトナム語のチラシ（PDF）", "easy": "ベトナムごの チラシ", "vi": "Tờ rơi tiếng Việt (PDF)", "id": "Selebaran bahasa Vietnam (PDF)"},
+     "date": "2026-10-23", "url": "https://www.moj.go.jp/isa/content/001469514.pdf"}
+  ],
+  "related": ["changing-jobs", "help-in-your-language"]
+}
