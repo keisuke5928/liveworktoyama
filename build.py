@@ -13,6 +13,7 @@ Content layout
   content/guides/<slug>/<lang>.md   title, description, body, +++ links
   content/pages-ja/<name>.html      Japanese-only pages (business, partners, about)
 """
+import datetime
 import hashlib
 import html
 import json
@@ -429,35 +430,62 @@ def news_title(n, lang):
 
 def build_home(lang):
     path = f"/{lang}/"
-    latest = "".join(
-        f'<li><time datetime="{n["date"]}" class="ndate">{esc(short_date(n["date"], lang))}</time> '
-        f'<a href="/{lang}/news/{n["slug"]}/">{esc(news_title(n, lang))}</a></li>' for n in NEWS[:3]
-    )
-    featured = [GUIDE_BY_SLUG[s] for s in SITE["featured_guides"] if s in GUIDE_BY_SLUG]
-    guides = "".join(
-        f'<li><a href="/{lang}/guides/{g["slug"]}/">{esc(pick({l: g["lang"][l]["title"] for l in g["lang"]}, lang))}</a></li>'
-        for g in featured
-    )
+    allj = JOBS + AUTO_JOBS
+    # 1. Hero: who the site is for, languages, and a job search box (works without JavaScript: plain GET form)
+    city_opts = "".join(f'<option value="{r}">{esc(t(lang, "region_" + r))}</option>' for r in REGION_ORDER if all_jobs_in(r))
+    find = (f'<form class="hfind" action="/{lang}/jobs/search/" method="get" role="search">'
+            f'<h2>{esc(t(lang, "home_find_h"))}</h2><div class="hrow">'
+            f'<label class="sr">{esc(t(lang, "f_keyword"))}</label><input type="search" name="kw" aria-label="{esc(t(lang, "f_keyword"))}" placeholder="{esc(t(lang, "f_keyword_ph"))}">'
+            f'<select name="city" aria-label="{esc(t(lang, "f_city"))}"><option value="">{esc(t(lang, "f_city"))}: {esc(t(lang, "any"))}</option>{city_opts}</select>'
+            f'<button class="btn" type="submit">{esc(t(lang, "home_find_btn"))}</button></div>'
+            f'<p class="note"><a href="/{lang}/jobs/search/">{esc(t(lang, "home_find_all"))}</a> · <a href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(allj)))}</a></p></form>')
     body = band(
-        f'<p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
+        f'<div class="hero2"><div><p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
         f'<h1>{esc(t(lang, "home_h1"))}</h1>\n<p class="lead">{esc(t(lang, "home_lead"))}</p>\n'
-        f'<div class="btns"><a class="btn" href="/{lang}/guides/">{esc(t(lang, "nav_guides"))}</a>'
-        f'<a class="btn" href="/{lang}/jobs/">{esc(t(lang, "nav_jobs"))}</a>'
-        f'<a class="btn ghost" href="/{lang}/students/">{esc(t(lang, "btn_students"))}</a></div>'
+        f'<div class="btns"><a class="btn ghost" href="/{lang}/guides/">{esc(t(lang, "nav_guides"))}</a>'
+        f'<a class="btn ghost" href="/{lang}/news/">{esc(t(lang, "nav_news"))}</a>'
+        f'<a class="btn ghost" href="/{lang}/students/">{esc(t(lang, "btn_students"))}</a></div></div>{find}</div>'
     )
-    if JOBS or AUTO_JOBS:
-        items = "".join(f'<li><a href="/{lang}/jobs/#{esc(x["id"])}">{esc(pick(x["title"], lang))}</a> <span class="note">({esc(t(lang, "region_" + x["region"]))})</span></li>' for x in JOBS[:3])
-        cities = "".join(f'<li><a href="/{lang}/jobs/{region_slug(r)}/">{esc(t(lang, "region_" + r))}</a> ({len(all_jobs_in(r))})</li>' for r in REGION_ORDER[:4] if all_jobs_in(r))
-        jobs_card = f'<div class="card"><h2>{esc(t(lang, "nav_jobs"))}</h2><ul>{items}{cities}</ul><a class="more" href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(JOBS) + len(AUTO_JOBS)))}</a></div>\n'
-    else:
-        jobs_card = f'<div class="card"><h2>{esc(t(lang, "nav_jobs"))}</h2><p>{esc(t(lang, "home_jobs"))}</p><a class="more" href="/{lang}/jobs/">{esc(t(lang, "home_jobs_link"))}</a></div>\n'
-    body += "\n" + band(
-        f'<div class="card"><h2>{esc(t(lang, "home_news"))}</h2><ul>{latest}</ul><a class="more" href="/{lang}/news/">{esc(t(lang, "all_news"))}</a></div>\n'
-        f'<div class="card"><h2>{esc(t(lang, "nav_guides"))}</h2><ul>{guides}</ul><a class="more" href="/{lang}/guides/">{esc(t(lang, "all_guides"))}</a></div>\n'
-        f'{jobs_card}'
-        f'<div class="card"><h2>{esc(t(lang, "home_help_h"))}</h2><p>{esc(t(lang, "home_help"))}</p><a class="more" href="/{lang}/guides/help-in-your-language/">{esc(t(lang, "home_help_link"))}</a></div>',
-        cls="tint",
-    ).replace('class="wrap"', 'class="wrap grid"', 1)
+    # 2. Phone numbers people need fast (tap to call)
+    tels = [("119", "119", "tel_119", "red"), ("110", "110", "tel_110", "red"), ("#8000", "%238000", "tel_8000", ""), ("076-441-6330", "0764416330", "tel_tic", "")]
+    tel_html = "".join(f'<a class="tel {c}" href="tel:{h}"><b>{esc(n)}</b><span>{esc(t(lang, k))}</span></a>' for n, h, k, c in tels)
+    body += "\n" + band(f'<h2 class="sh">{esc(t(lang, "home_phone_h"))}</h2><div class="tels">{tel_html}</div>'
+                         f'<p class="note"><a href="/{lang}/guides/help-in-your-language/">{esc(t(lang, "home_help_link"))}</a> · <a href="/{lang}/guides/sick-or-hurt/">{esc(pick({l: GUIDE_BY_SLUG["sick-or-hurt"]["lang"][l]["title"] for l in GUIDE_BY_SLUG["sick-or-hurt"]["lang"]}, lang))}</a></p>', top0=True)
+    # 3. Latest news with pictures and dates
+    cards = ""
+    for n in NEWS[:3]:
+        url = f"/{lang}/news/{n['slug']}/"
+        cards += (f'<article class="card ncard"><a href="{url}" tabindex="-1" aria-hidden="true"><img src="{n["image"]}" width="1200" height="630" alt="" loading="lazy"></a>'
+                  f'<p class="nmeta"><time datetime="{n["date"]}">{esc(short_date(n["date"], lang))}</time> · {esc(t(lang, "cat_" + n["category"]))}</p>'
+                  f'<h3><a href="{url}">{esc(news_title(n, lang))}</a></h3></article>')
+    body += "\n" + band(f'<div class="shead"><h2 class="sh">{esc(t(lang, "home_news"))}</h2><a href="/{lang}/news/">{esc(t(lang, "all_news"))} →</a></div><div class="ngrid">{cards}</div>', cls="tint")
+    # 4. Jobs: by type, by area, new, featured
+    if allj:
+        from collections import Counter
+        cc = Counter(j.get("category", "other") for j in allj)
+        cats = "".join(f'<a class="chip" href="/{lang}/jobs/search/?cat={c}">{esc(t(lang, "job_cat_" + c))} <span>{n}</span></a>' for c, n in cc.most_common())
+        cities = "".join(f'<a class="chip" href="/{lang}/jobs/{region_slug(r)}/">{esc(t(lang, "region_" + r))} <span>{len(all_jobs_in(r))}</span></a>' for r in REGION_ORDER if all_jobs_in(r))
+        week = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+        new_n = sum(1 for j in allj if (j.get("published") or j.get("first_listed") or "") >= week)
+        feat = ""
+        for x in JOBS[:3]:
+            pay = pick(x["pay_text"], lang) if x.get("pay_text") else ""
+            feat += (f'<a class="card jmini" href="/{lang}/jobs/#{esc(x["id"])}"><span class="tag">{esc(t(lang, "job_cat_" + x.get("category", "other")))}</span>'
+                     f'<b>{esc(pick(x["title"], lang))}</b><span class="note">{esc(pick(x["employer"], lang))} · {esc(t(lang, "region_" + x["region"]))}</span>'
+                     + (f'<span class="note">{esc(pay)}</span>' if pay else "") + '</a>')
+        jobs = (f'<div class="shead"><h2 class="sh">{esc(t(lang, "nav_jobs"))}</h2><a href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(allj)))} →</a></div>'
+                f'<h3>{esc(t(lang, "home_by_cat"))}</h3><div class="chips">{cats}</div>'
+                f'<h3>{esc(t(lang, "home_by_city"))}</h3><div class="chips">{cities}</div>'
+                f'<p><a class="btn sm" href="/{lang}/jobs/search/?new=1">{esc(t(lang, "home_new_jobs", n=new_n))}</a></p>'
+                + (f'<h3>{esc(t(lang, "home_featured"))}</h3><div class="ngrid">{feat}</div>' if feat else "")
+                + f'<p class="note">{esc(t(lang, "jobs_note"))}</p>')
+        body += "\n" + band(jobs)
+    # 5. All life guides as tiles
+    tiles = ""
+    for g in GUIDES:
+        d = g["lang"].get(lang) or g["lang"]["en"]
+        tiles += f'<a class="card gtile" href="/{lang}/guides/{g["slug"]}/"><b>{esc(d["title"])}</b><span class="note">{esc(d.get("description", ""))}</span></a>'
+    body += "\n" + band(f'<div class="shead"><h2 class="sh">{esc(t(lang, "nav_guides"))}</h2><a href="/{lang}/guides/">{esc(t(lang, "home_guides_n", n=len(GUIDES)))} →</a></div><div class="ggrid">{tiles}</div>', cls="tint")
     body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "disclaimer"))}</p></div>')
     ld = [
         {"@context": "https://schema.org", **org_ld()},
@@ -474,7 +502,7 @@ def build_home(lang):
         },
     ]
     page(lang, path, f'{SITE["name"]} | {t(lang, "tagline_short")}', t(lang, "home_desc"), body, section="home",
-         alternates=alts(lambda l: f"/{l}/"), jsonld=ld, slim=False, xdefault="/")
+         alternates=alts(lambda l: f"/{l}/"), jsonld=ld, slim=True, xdefault="/")
 
 
 def build_news_list(lang):
