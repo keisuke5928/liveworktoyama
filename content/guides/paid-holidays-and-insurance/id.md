@@ -6,6 +6,9 @@ description: Cuti berbayar (yukyu), asuransi kesehatan, asuransi kecelakaan kerj
 2. Pekerja paruh waktu juga mendapat cuti berbayar, sesuai jumlah hari kerjanya.
 3. Beri tahu perusahaan lebih awal jika ingin mengambil cuti.
 4. Hari yang tidak dipakai bisa dibawa ke tahun berikutnya, setelah itu hangus.
+5. Jumlah hari bertambah sampai paling banyak 20 hari per tahun.
+6. Jika Anda mendapat 10 hari atau lebih per tahun, perusahaan wajib memastikan Anda mengambil paling sedikit 5 hari.
+7. Biasanya Anda bisa mengambil cuti kapan saja, dengan alasan apa pun. Lihat juga [Hak Anda di tempat kerja](/id/guides/rights-at-work/).
 
 ## Bagaimana cara kerja asuransi kesehatan?
 1. Tunjukkan kartu asuransi (atau kartu My Number) di rumah sakit. Biasanya Anda membayar 30% dari biaya.
@@ -19,3 +22,5 @@ description: Cuti berbayar (yukyu), asuransi kesehatan, asuransi kecelakaan kerj
 ## Bagaimana jika saya kehilangan pekerjaan?
 1. Jika Anda ikut asuransi ketenagakerjaan, Anda mungkin bisa mendapat tunjangan pengangguran. Tanyakan di Hello Work.
 2. Banyak jenis visa wajib melaporkan keluar dari perusahaan ke imigrasi dalam 14 hari.
++++ links
+- [Buku panduan hidup dan bekerja, Bab 3, 6, dan 7 (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

@@ -22,3 +22,4 @@ description: きゅうよめいさい（きゅうりょうの かみ）の み�
 3. おかしい ときは、まず かいしゃに ききます。かいけつ しない ときは、しごとの そうだんの でんわに かけます。
 +++ links
 - [がいこくじんの ための しごとの そうだん でんわ（こうせいろうどうしょう、PDF）](https://www.mhlw.go.jp/content/001708139.pdf)
+- [せいかつ・しゅうろう ガイドブック（にゅうかん）](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

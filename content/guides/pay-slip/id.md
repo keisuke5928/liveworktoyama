@@ -22,3 +22,4 @@ Slip gaji (kyuyo meisaisho) menunjukkan berapa yang Anda dapat dan apa saja yang
 3. Jika ada yang salah, tanyakan dulu ke perusahaan. Jika tidak selesai, hubungi layanan konsultasi tenaga kerja.
 +++ links
 - [Layanan telepon untuk pekerja asing (Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Buku panduan hidup dan bekerja, Bab 3, 6, dan 7 (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

@@ -6,6 +6,9 @@ description: Nghỉ phép có lương (yukyu), bảo hiểm y tế, bảo hiểm
 2. Người làm bán thời gian cũng được nghỉ phép có lương, tùy theo số ngày làm việc.
 3. Hãy báo cho công ty sớm khi muốn nghỉ.
 4. Ngày chưa dùng có thể chuyển sang năm sau, sau đó sẽ hết hiệu lực.
+5. Số ngày tăng tối đa đến 20 ngày mỗi năm.
+6. Nếu bạn được từ 10 ngày trở lên mỗi năm, công ty phải bảo đảm bạn nghỉ ít nhất 5 ngày trong số đó.
+7. Thông thường bạn có thể nghỉ phép khi muốn, với bất kỳ lý do nào. Xem thêm [Quyền lợi khi làm việc](/vi/guides/rights-at-work/).
 
 ## Bảo hiểm y tế hoạt động thế nào?
 1. Xuất trình thẻ bảo hiểm (hoặc thẻ My Number) ở bệnh viện. Bạn thường trả 30% chi phí.
@@ -19,3 +22,5 @@ description: Nghỉ phép có lương (yukyu), bảo hiểm y tế, bảo hiểm
 ## Nếu bị mất việc thì sao?
 1. Nếu đã tham gia bảo hiểm việc làm, bạn có thể nhận trợ cấp thất nghiệp. Hãy hỏi ở Hello Work.
 2. Nhiều loại visa phải báo việc nghỉ công ty cho Cục Xuất nhập cảnh trong vòng 14 ngày.
++++ links
+- [Sổ tay sinh hoạt và làm việc, Chương 3, 6 và 7 (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

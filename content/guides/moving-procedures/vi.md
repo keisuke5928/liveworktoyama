@@ -12,5 +12,10 @@ description: Những việc cần làm ở tòa thị chính sau khi chuyển đ
 1. Khi đổi hoặc nghỉ công ty, trường học, nhiều loại visa phải báo cho Cục Xuất nhập cảnh trong vòng 14 ngày. Có thể làm trực tuyến.
 2. Thẻ lưu trú có ngày hết hạn. Hãy xin gia hạn thời gian lưu trú trước khi hết hạn.
 3. Với câu hỏi về visa của riêng bạn, hãy hỏi Cục Xuất nhập cảnh hoặc gyoseishoshi.
+
+## Cần biết gì về thẻ lưu trú?
+1. Người từ 16 tuổi trở lên phải luôn mang theo thẻ lưu trú.
+2. Nếu làm mất, hãy xin cấp lại tại Cục Xuất nhập cảnh trong vòng 14 ngày kể từ khi phát hiện. Mang hộ chiếu, ảnh (4 cm x 3 cm) và giấy tờ cho biết lý do mất, ví dụ giấy báo mất đồ của cảnh sát.
+3. Khi về nước hẳn, hãy trả thẻ ở sân bay. Xem thêm hướng dẫn [Khi rời Nhật Bản](/vi/guides/leaving-japan/).
 +++ links
 - [Sổ tay sinh hoạt và làm việc ở Nhật Bản (phần thủ tục ở tòa thị chính)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

@@ -22,3 +22,4 @@ description: 日本の給与明細の見方。基本給、残業手当、社会�
 3. おかしいと思ったら、まず会社に聞きます。解決しなければ、労働相談の窓口に電話しましょう。
 +++ links
 - [外国人労働者向け相談ダイヤル（厚生労働省、PDF）](https://www.mhlw.go.jp/content/001708139.pdf)
+- [生活・就労ガイドブック 第3章・第6章・第7章（出入国在留管理庁）](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

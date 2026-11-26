@@ -22,3 +22,4 @@ Phiếu lương (kyuyo meisaisho) cho biết bạn được trả bao nhiêu và
 3. Nếu thấy có gì sai, trước tiên hãy hỏi công ty. Nếu không được giải quyết, hãy gọi đường dây tư vấn lao động.
 +++ links
 - [Đường dây tư vấn cho lao động nước ngoài (Bộ Y tế, Lao động và Phúc lợi, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Sổ tay sinh hoạt và làm việc, Chương 3, 6 và 7 (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
