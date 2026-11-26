@@ -2,9 +2,19 @@
   "name": "Live & Work Toyama",
   "domain": "liveworktoyama.com",
   "base_url": "https://liveworktoyama.com",
-  "langs": ["en", "easy", "ja", "vi", "id"],
+  "langs": [
+    "en",
+    "easy",
+    "ja",
+    "vi",
+    "id"
+  ],
   "updated": "2026-11-26",
-  "featured_guides": ["driving-in-snow", "garbage-sorting", "sick-or-hurt"],
-  "ga4_id": "",
+  "featured_guides": [
+    "driving-in-snow",
+    "garbage-sorting",
+    "sick-or-hurt"
+  ],
+  "ga4_id": "GTM-NSRHMWNR",
   "gsc_verification": ""
 }

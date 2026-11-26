@@ -363,9 +363,12 @@ def head(lang, title, desc, path, alternates, og_image=None, og_type="website", 
         lines.append(f'<meta name="google-site-verification" content="{esc(SITE["gsc_verification"])}">')
     if SITE.get("ga4_id"):
         gid = esc(SITE["ga4_id"])
+        # Google tag as given by GA4 (GTM-... container id or G-... measurement id)
+        loader = "gtm.js" if gid.startswith("GTM-") else "gtag/js"
+        config = "" if gid.startswith("GTM-") else f"gtag('config','{gid}');"
         lines.append(
-            f'<script async src="https://www.googletagmanager.com/gtag/js?id={gid}"></script>\n'
-            f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{gid}');</script>"
+            f'<script async src="https://www.googletagmanager.com/{loader}?id={gid}"></script>\n'
+            f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());{config}</script>"
         )
     for ld in jsonld:
         data = json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
