@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "village-field",
+  "title": {
+    "en": "Day service care staff (Furusato no Kaze Sumiyoshi)",
+    "easy": "デイサービスの かいごの しごと（すみよし）",
+    "ja": "デイサービス介護職員（ふる里の風 住吉）",
+    "vi": "Nhân viên chăm sóc dịch vụ ban ngày (Furusato no Kaze Sumiyoshi)",
+    "id": "Staf perawatan layanan harian (Furusato no Kaze Sumiyoshi)"
+  },
+  "employer": {
+    "en": "Village Field Co., Ltd. (Furusato no Kaze group)",
+    "ja": "株式会社ビレッジ・フィールド（ふる里の風グループ）"
+  },
+  "region": "toyama_city",
+  "category": "care",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 223000,
+    "max": 223000
+  },
+  "hours": {
+    "en": "8:15–17:00 (45-minute break). Sundays off, 2 days off every week. 113 days off a year.",
+    "ja": "8:15〜17:00（休憩45分）。日曜ほか週休2日。年間休日113日",
+    "easy": "8じ15ふん〜17じ。1しゅうかんに 2にち やすみ。",
+    "vi": "8:15–17:00 (nghỉ 45 phút). Nghỉ Chủ nhật, 2 ngày/tuần. 113 ngày nghỉ/năm.",
+    "id": "8:15–17:00 (istirahat 45 menit). Libur Minggu, 2 hari per minggu. 113 hari libur per tahun."
+  },
+  "japanese": "unknown",
+  "housing": "none",
+  "foreign_welcome": {
+    "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+    "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+    "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+    "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+    "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+  },
+  "summary": {
+    "en": "Picking up users from home, health checks, bathing, exercises and activities at a day service for older people. A Japanese driver's license is required.",
+    "easy": "おとしよりの デイサービスで、おくりむかえ、おふろ、たいそう などを します。うんてん めんきょが ひつようです。",
+    "ja": "高齢者デイサービスでの送迎、バイタル測定、入浴、体操、レクリエーション。普通自動車運転免許が必要。",
+    "vi": "Đưa đón người cao tuổi, đo sức khỏe, hỗ trợ tắm, thể dục và sinh hoạt tại dịch vụ ban ngày. Cần bằng lái Nhật.",
+    "id": "Antar-jemput pengguna, cek kesehatan, mandi, senam, dan kegiatan di layanan harian lansia. Wajib punya SIM Jepang."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24268561",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 16010-24268561)",
+    "ja": "ジョブズゴー（ハローワーク求人 16010-24268561）",
+    "easy": "ジョブズゴー（ハローワーク 16010-24268561）",
+    "vi": "JobsGo (tin Hello Work 16010-24268561)",
+    "id": "JobsGo (lowongan Hello Work 16010-24268561)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}

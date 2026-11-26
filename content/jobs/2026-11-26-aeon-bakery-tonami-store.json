@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "aeon-bakery",
+  "title": {
+    "en": "Bakery staff and store manager candidate (Tonami store)",
+    "easy": "パンを つくって うる しごと（となみの みせ）",
+    "ja": "パンの製造・販売 店長候補（となみ店）",
+    "vi": "Làm và bán bánh mì, ứng viên cửa hàng trưởng (cửa hàng Tonami)",
+    "id": "Staf toko roti dan calon manajer toko (toko Tonami)"
+  },
+  "employer": {
+    "en": "AEON Bakery Co., Ltd.",
+    "ja": "イオンベーカリー株式会社"
+  },
+  "region": "tonami",
+  "category": "food",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 241500,
+    "max": 280140
+  },
+  "hours": {
+    "en": "Shifts, mainly 6:00–15:00. 2 days off every week, 117 days a year.",
+    "ja": "シフト制（主に6:00〜15:00）。週休2日、年間休日117日",
+    "easy": "シフト。あさ 6じ〜15じ が おおいです。",
+    "vi": "Theo ca, chủ yếu 6:00–15:00. Nghỉ 2 ngày/tuần, 117 ngày/năm.",
+    "id": "Shift, terutama 6:00–15:00. Libur 2 hari per minggu, 117 hari per tahun."
+  },
+  "japanese": "unknown",
+  "housing": "support",
+  "foreign_welcome": {
+    "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+    "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+    "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+    "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+    "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+  },
+  "summary": {
+    "en": "Baking bread, selling, display and register work at an in-store bakery. You become store manager after 6 months to a year. Bread making and management experience are required.",
+    "easy": "パンを やいて、うります。あとで てんちょうに なります。パンづくりの けいけんが ひつようです。",
+    "ja": "インストアベーカリーでのパンの製造、販売・陳列・レジ。半年〜1年後に店長。製パン経験とマネジメント経験が必要。",
+    "vi": "Nướng bánh, bán hàng, trưng bày và thu ngân tại tiệm bánh trong trung tâm mua sắm. Sau 6 tháng đến 1 năm sẽ làm cửa hàng trưởng. Cần kinh nghiệm làm bánh và quản lý.",
+    "id": "Membuat roti, menjual, menata, dan kasir di toko roti dalam pusat belanja. Setelah 6 bulan sampai 1 tahun menjadi manajer toko. Perlu pengalaman membuat roti dan manajemen."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/12010-36399161",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 12010-36399161)",
+    "ja": "ジョブズゴー（ハローワーク求人 12010-36399161）",
+    "easy": "ジョブズゴー（ハローワーク 12010-36399161）",
+    "vi": "JobsGo (tin Hello Work 12010-36399161)",
+    "id": "JobsGo (lowongan Hello Work 12010-36399161)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}

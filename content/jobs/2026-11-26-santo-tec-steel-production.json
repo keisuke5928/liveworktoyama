@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "santo-tec-steel",
+  "title": {
+    "en": "Steel frame production staff (no welding license needed to start)",
+    "easy": "てっこつを つくる しごと（しかく なしで はじめられる）",
+    "ja": "製造スタッフ（組立・溶接）未経験可",
+    "vi": "Nhân viên sản xuất khung thép (chưa có chứng chỉ hàn vẫn được)",
+    "id": "Staf produksi rangka baja (bisa mulai tanpa sertifikat las)"
+  },
+  "employer": {
+    "en": "Santo Techno Steel Co., Ltd.",
+    "ja": "三東テクノスチール株式会社"
+  },
+  "region": "toyama_city",
+  "category": "manufacturing",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 220000,
+    "max": 310000
+  },
+  "hours": {
+    "en": "8:00–17:00 (80-minute break). Sundays and holidays off; some Saturdays are work days. 116 days off a year.",
+    "ja": "8:00〜17:00（休憩80分）。日曜・祝日休み、土曜は月1〜2回出勤。年間休日116日",
+    "easy": "8じ〜17じ。にちようと しゅくじつは やすみ。",
+    "vi": "8:00–17:00 (nghỉ 80 phút). Nghỉ Chủ nhật và ngày lễ; một số thứ Bảy đi làm. 116 ngày nghỉ/năm.",
+    "id": "8:00–17:00 (istirahat 80 menit). Libur Minggu dan hari libur; beberapa Sabtu masuk. 116 hari libur per tahun."
+  },
+  "japanese": "unknown",
+  "housing": "none",
+  "foreign_welcome": {
+    "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+    "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+    "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+    "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+    "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+  },
+  "summary": {
+    "en": "Cutting, assembling and welding steel columns and beams, and operating welding robots. Training is given. A Japanese driver's license is required.",
+    "easy": "てつを きったり、くみたてたり、ようせつ したり します。おしえて もらえます。うんてん めんきょが ひつようです。",
+    "ja": "鉄骨の切断・組立・溶接、溶接ロボットの操作。未経験者には指導あり。普通自動車運転免許が必要。",
+    "vi": "Cắt, lắp ráp và hàn cột, dầm thép, vận hành robot hàn. Có đào tạo. Cần bằng lái ô tô Nhật.",
+    "id": "Memotong, merakit, dan mengelas kolom serta balok baja, dan mengoperasikan robot las. Ada pelatihan. Wajib punya SIM Jepang."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24294861",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 16010-24294861)",
+    "ja": "ジョブズゴー（ハローワーク求人 16010-24294861）",
+    "easy": "ジョブズゴー（ハローワーク 16010-24294861）",
+    "vi": "JobsGo (tin Hello Work 16010-24294861)",
+    "id": "JobsGo (lowongan Hello Work 16010-24294861)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}

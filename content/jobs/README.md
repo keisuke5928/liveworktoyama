@@ -5,6 +5,7 @@
 ```json
 {
   "status": "open",                       // open / closed（募集終了は closed にする。ファイルは消さない）
+  "employer_id": "greens",                // content/employers/ のファイル名
   "title": {"en": "...", "easy": "...", "ja": "...", "vi": "...", "id": "..."},
   "employer": {"en": "...", "ja": "株式会社〇〇"},
   "region": "toyama_city",                // ui.json の region_*（toyama_city, takaoka, uozu, namerikawa, kurobe ...）
@@ -26,4 +27,5 @@
 }
 ```
 
-出典にしてよいのは企業自身の公式サイトか公的機関のページだけ。求人サイト（Indeed、タウンワーク、ハローワーク等）は出典にしない（tools/check.py が止める）。
+出典は企業の採用ページ、ハローワーク、求人サイト（2026-11-26 オーナー指示）。文章はコピーせず要約し、元の求人へのリンクを必ず付ける。
+求人を出している企業は `content/employers/<slug>.json` に企業紹介を作り、求人の `employer_id` にその slug を入れる（形式は既存のファイルを参照）。

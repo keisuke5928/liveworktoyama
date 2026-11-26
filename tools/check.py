@@ -62,9 +62,6 @@ for d in sorted((ROOT / "content/news").iterdir()):
                 problems.append(f"news/{d.name}/{lang}.md: missing '{need}'")
 
 # job listings (CLAUDE.md chapter 6)
-JOB_BOARDS = ("indeed.", "townwork", "baitoru", "mynavi", "rikunabi", "doda", "en-japan", "hellowork.mhlw.go.jp",
-              "jobmedley", "stanby", "kyujinbox", "careerjet", "glassdoor", "linkedin.com/jobs", "jobs.yahoo", "airwork",
-              "engage", "hatarako", "an-", "gaijinpot", "jobs-in-japan", "workport")
 UI = json.loads((ROOT / "content/ui.json").read_text(encoding="utf-8"))
 REQ = ("status", "title", "employer", "region", "category", "employment", "source_url", "source_name",
        "foreign_welcome", "checked", "first_listed")
@@ -82,8 +79,8 @@ for f in sorted((ROOT / "content/jobs").glob("*.json")) if (ROOT / "content/jobs
     url = (j.get("source_url") or "").lower()
     if not url.startswith("https://") and not url.startswith("http://"):
         problems.append(f"jobs/{f.name}: source_url must be a full URL")
-    if any(b in url for b in JOB_BOARDS):
-        problems.append(f"jobs/{f.name}: source must be the employer's own page or a public body, not a job board ({url})")
+    if j.get("employer_id") and not (ROOT / "content/employers" / (j["employer_id"] + ".json")).exists():
+        problems.append(f"jobs/{f.name}: employer_id '{j['employer_id']}' has no content/employers file")
     for k in ("checked", "first_listed"):
         try:
             datetime.date.fromisoformat(j.get(k, ""))
@@ -98,6 +95,24 @@ for f in sorted((ROOT / "content/jobs").glob("*.json")) if (ROOT / "content/jobs
                 problems.append(f"jobs/{f.name}: title missing for {lang}")
     if j.get("pay") and j["pay"].get("per") not in ("month", "hour", "year", "day"):
         problems.append(f"jobs/{f.name}: pay.per must be month/hour/year/day")
+
+# employer profiles
+for f in sorted((ROOT / "content/employers").glob("*.json")) if (ROOT / "content/employers").exists() else []:
+    try:
+        e = json.loads(f.read_text(encoding="utf-8"))
+    except ValueError as err:
+        problems.append(f"employers/{f.name}: invalid JSON ({err})"); continue
+    for k in ("name", "tagline", "about", "hiring", "industry", "region", "checked", "sources"):
+        if not e.get(k):
+            problems.append(f"employers/{f.name}: missing '{k}'")
+    for k in ("tagline", "about", "hiring"):
+        if isinstance(e.get(k), dict):
+            for lang in LANGS:
+                if not e[k].get(lang):
+                    problems.append(f"employers/{f.name}: {k} missing for {lang}")
+    for k, pre in (("region", "region_"), ("industry", "job_cat_")):
+        if e.get(k) and pre + e[k] not in UI["en"]:
+            problems.append(f"employers/{f.name}: unknown {k} '{e[k]}'")
 
 if problems:
     print("\n".join(problems))

@@ -1,0 +1,67 @@
+{
+  "name": {
+    "en": "Takagi Seiko Corporation",
+    "ja": "株式会社タカギセイコー"
+  },
+  "industry": "manufacturing",
+  "region": "nanto",
+  "location": {
+    "en": "Head office in Takaoka; Fukumitsu Factory in Nanto",
+    "ja": "本社：高岡市、福光工場：南砺市",
+    "easy": "ほんしゃ：たかおかし、こうじょう：なんとし",
+    "vi": "Trụ sở ở Takaoka; nhà máy Fukumitsu ở Nanto",
+    "id": "Kantor pusat di Takaoka; Pabrik Fukumitsu di Nanto"
+  },
+  "founded": "1959",
+  "employees": {
+    "en": "About 940 (whole company)",
+    "ja": "約940名（企業全体）",
+    "easy": "やく 940にん",
+    "vi": "Khoảng 940 (toàn công ty)",
+    "id": "Sekitar 940 (seluruh perusahaan)"
+  },
+  "website": "https://www.takagi-seiko.co.jp/",
+  "tagline": {
+    "en": "Plastic parts maker for vehicles and office equipment, based in Takaoka.",
+    "easy": "くるまや じむの きかいの プラスチックの ぶひんを つくる かいしゃです（たかおか）。",
+    "ja": "車両・OA機器向けのプラスチック部品メーカー（高岡市）。",
+    "vi": "Nhà sản xuất linh kiện nhựa cho xe và thiết bị văn phòng, trụ sở tại Takaoka.",
+    "id": "Produsen komponen plastik untuk kendaraan dan peralatan kantor, berbasis di Takaoka."
+  },
+  "about": {
+    "en": "Takagi Seiko makes plastic industrial parts and the molds to make them, mainly for vehicles and office equipment. It does everything from mold design to molding, painting and assembly. The company says it was the first in Japan to make spinning machine parts from plastic, in 1949.",
+    "easy": "くるまや じむの きかいに つかう プラスチックの ぶひんと、その かたを つくります。かたの せっけいから、ぬる こと、くみたてまで ぜんぶ します。",
+    "ja": "車両・OA機器を中心に、プラスチック工業用部品と成形用金型を製造しています。金型の設計からプラスチック部品の成形、塗装、組付けまで一貫生産しています。1949年に日本で初めて紡績機器部品のプラスチック化に成功したとしています。",
+    "vi": "Công ty sản xuất linh kiện nhựa công nghiệp và khuôn đúc, chủ yếu cho xe và thiết bị văn phòng. Công ty làm từ thiết kế khuôn đến đúc, sơn và lắp ráp. Công ty cho biết năm 1949 là nơi đầu tiên ở Nhật làm linh kiện máy kéo sợi bằng nhựa.",
+    "id": "Perusahaan membuat komponen plastik industri dan cetakannya, terutama untuk kendaraan dan peralatan kantor. Semua proses dikerjakan, dari desain cetakan sampai pencetakan, pengecatan, dan perakitan. Perusahaan menyebut dirinya yang pertama di Jepang membuat komponen mesin pintal dari plastik, pada 1949."
+  },
+  "hiring": {
+    "en": "The Fukumitsu Factory in Nanto posted full-time jobs at Hello Work in November 2026, such as plastic molding operator and painting. They are listed as \"actively hiring foreign nationals\" on JobsGo. The operator job is for ages 18 to 35 and needs a Japanese driver's license.",
+    "easy": "なんとしの ふくみつ こうじょうが、2026ねん 11がつ、ハローワークに プラスチックの せいけいの しごと などを だしました。18さいから 35さいまで、うんてん めんきょが ひつようです。",
+    "ja": "南砺市の福光工場が、2026年11月にプラスチック成形オペレーターや塗装作業などの正社員求人をハローワークに出しています。ジョブズゴーでは「外国人積極採用」に分類されています。成形オペレーターは18〜35歳、普通自動車運転免許が必要です。",
+    "vi": "Nhà máy Fukumitsu ở Nanto đăng tin tuyển toàn thời gian tại Hello Work vào tháng 11/2026, như vận hành máy đúc nhựa và sơn. Tin được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo. Vị trí vận hành dành cho người 18–35 tuổi và cần bằng lái Nhật.",
+    "id": "Pabrik Fukumitsu di Nanto memasang lowongan penuh waktu di Hello Work pada November 2026, seperti operator cetak plastik dan pengecatan. Lowongan ini masuk kategori \"aktif merekrut warga asing\" di JobsGo. Posisi operator untuk usia 18–35 tahun dan perlu SIM Jepang."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "Takagi Seiko official website",
+        "ja": "タカギセイコー 公式サイト"
+      },
+      "url": "https://www.takagi-seiko.co.jp/",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 16050-05432561)",
+        "ja": "ジョブズゴー（ハローワーク求人 16050-05432561）",
+        "easy": "ジョブズゴー（ハローワーク 16050-05432561）",
+        "vi": "JobsGo (tin Hello Work 16050-05432561)",
+        "id": "JobsGo (lowongan Hello Work 16050-05432561)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/16050-05432561",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}

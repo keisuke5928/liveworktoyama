@@ -76,7 +76,7 @@
     "more_guides": "More life guides",
     "jobs_h1": "Job listings open to foreign applicants",
     "jobs_desc": "Job listings in Toyama whose official posting welcomes foreign applicants. Each listing shows the date we checked it and a link to apply on the employer's page.",
-    "jobs_lead": "We list jobs whose official posting says they welcome foreign applicants. Each listing shows the date we checked it and a link to the official page. Please apply on the official page.",
+    "jobs_lead": "We list jobs in Toyama that are open to foreign applicants, from company pages, Hello Work and job sites. Each listing shows the date we checked it and a link to the original posting. Please apply through the original posting.",
     "jobs_sample_tags": [
       "Hotel",
       "Toyama City",
@@ -118,11 +118,11 @@
     "jobs_note": "Whether your visa allows a job is decided by the employer and the Immigration Services Agency. For visa questions, ask immigration or a gyoseishoshi (licensed administrative scrivener). If a translation is unclear, the Japanese original is correct.",
     "jobs_how_h": "How do these job listings work?",
     "jobs_how": [
-      "We only list jobs that the employer has published and that clearly welcome foreign applicants.",
+      "We list jobs in Toyama that say they welcome foreign applicants, or that are listed as open to foreign nationals on Hello Work or job sites.",
       "We write a short summary in our own words: job, place, pay, Japanese level, housing.",
       "Each listing shows the date we checked it, the source, and a link to the original posting.",
-      "Please apply directly on the original page. We do not take applications or contact employers for you.",
-      "We check the links every week and remove jobs that have closed."
+      "Please apply through the original posting. We do not take applications or contact employers for you.",
+      "We check the links regularly and remove jobs that have closed. A listing not checked for 14 days is removed automatically."
     ],
     "students_h1": "For international students",
     "students_desc": "Part-time work rules for international students in Toyama (28 hours a week, 8 hours a day in long holidays) and tips for life in Uozu, Kurobe and Namerikawa.",
@@ -199,7 +199,7 @@
     "pay_from": "from {a}",
     "pay_range": "{a} to {b}",
     "pay_unknown": "See the official page",
-    "job_apply": "See the job and apply on the official page",
+    "job_apply": "See the original job posting and apply there",
     "job_paid": "Paid listing",
     "jobs_none": "There are no listings right now. We check new jobs every day.",
     "jobs_count": "{n} job listings",
@@ -218,7 +218,21 @@
     "region_tateyama": "Tateyama Town",
     "region_nyuzen": "Nyuzen",
     "region_asahi": "Asahi Town",
-    "region_funahashi": "Funahashi"
+    "region_funahashi": "Funahashi",
+    "employers_h1": "Employers in Toyama hiring foreign staff",
+    "employers_lead": "Companies in Toyama that have recently posted jobs open to foreign applicants. We summarize public information about each company and link to the job postings.",
+    "employers_desc": "A list of companies in Toyama Prefecture recruiting foreign staff, with a short company profile, the jobs they posted and links to the original postings.",
+    "emp_about": "About the company",
+    "emp_hiring": "Hiring of foreign staff",
+    "emp_jobs": "Job listings from this company",
+    "emp_website": "Official website",
+    "emp_founded": "Founded",
+    "emp_size": "Employees",
+    "emp_hq": "Location",
+    "emp_disclaimer": "This profile is based on public information (company website and job postings) as of the date shown. We are not connected with this company. Companies can ask us to correct or remove information at any time.",
+    "employers_link": "Employers hiring foreign staff",
+    "emp_nojobs": "No open listings right now.",
+    "emp_sources": "Information sources"
   },
   "easy": {
     "html_lang": "ja",
@@ -297,7 +311,7 @@
     "more_guides": "ほかの ガイド",
     "jobs_h1": "がいこくじんを かんげいする しごと",
     "jobs_desc": "とやまの しごとの じょうほうです。かいしゃが「がいこくじん かんげい」と かいている しごとだけ のせます。",
-    "jobs_lead": "かいしゃが「がいこくじん かんげい」と かいている しごとを のせます。かくにんした ひと、かいしゃの ページへの リンクを かきます。おうぼは かいしゃの ページから してください。",
+    "jobs_lead": "がいこくじんも おうぼ できる とやまの しごとを のせます。かいしゃの ページ、ハローワーク、しごとの サイトから あつめます。かくにんした ひと、もとの ページの リンクを かきます。おうぼは もとの ページから して ください。",
     "jobs_sample_tags": [
       "ホテル",
       "とやまし",
@@ -339,11 +353,11 @@
     "jobs_note": "あなたの ビザで その しごとが できるかは、かいしゃと にゅうかんが きめます。ビザの ことは、にゅうかんか ぎょうせいしょし に きいて ください。ほんやくが わかりにくい ときは、にほんごが ただしいです。",
     "jobs_how_h": "しごとの じょうほうは どう のせて いますか？",
     "jobs_how": [
-      "かいしゃが だしていて、「がいこくじん かんげい」と かいてある しごとだけ のせます。",
-      "しごと、ばしょ、きゅうりょう、にほんごの レベル、すむ ところを みじかく かきます。",
+      "がいこくじん かんげいの しごとや、ハローワーク・しごとの サイトで がいこくじんも おうぼ できる しごとを のせます。",
+      "しごと、ばしょ、きゅうりょう、にほんご、すむ ところを みじかく かきます。",
       "かくにんした ひ、でどころ、もとの ページの リンクを かきます。",
       "おうぼは もとの ページから して ください。わたしたちは おうぼを うけつけません。",
-      "まいしゅう リンクを かくにんして、おわった しごとは けします。"
+      "ときどき リンクを かくにん して、おわった しごとは けします。14にち かくにん して いない しごとは じどうで けします。"
     ],
     "students_h1": "りゅうがくせいの みなさんへ",
     "students_desc": "りゅうがくせいの アルバイトの ルール（1しゅうかん 28じかん、ながい やすみは 1にち 8じかん）と、うおづ・くろべ・なめりかわの くらしの じょうほう。",
@@ -420,7 +434,7 @@
     "pay_from": "{a}から",
     "pay_range": "{a}〜{b}",
     "pay_unknown": "かいしゃの ページを みて ください",
-    "job_apply": "かいしゃの ページで みて、おうぼ する",
+    "job_apply": "もとの しごとの ページを みて、おうぼ する",
     "job_paid": "おかねを もらって のせて います",
     "jobs_none": "いまは しごとの じょうほうが ありません。まいにち あたらしい しごとを しらべて います。",
     "jobs_count": "しごと {n}けん",
@@ -439,7 +453,21 @@
     "region_tateyama": "たてやままち",
     "region_nyuzen": "にゅうぜんまち",
     "region_asahi": "あさひまち",
-    "region_funahashi": "ふなはしむら"
+    "region_funahashi": "ふなはしむら",
+    "employers_h1": "がいこくじんを さがして いる とやまの かいしゃ",
+    "employers_lead": "さいきん、がいこくじんも おうぼ できる しごとを だした とやまの かいしゃです。かいしゃの じょうほうと、しごとの ページの リンクを のせます。",
+    "employers_desc": "がいこくじんを さがして いる とやまの かいしゃの リストと しょうかい。",
+    "emp_about": "どんな かいしゃ？",
+    "emp_hiring": "がいこくじんの さいよう",
+    "emp_jobs": "この かいしゃの しごと",
+    "emp_website": "かいしゃの ホームページ",
+    "emp_founded": "できた とし",
+    "emp_size": "はたらく ひとの かず",
+    "emp_hq": "ばしょ",
+    "emp_disclaimer": "この ページは、かいしゃの ホームページや しごとの じょうほうを もとに かきました。わたしたちと この かいしゃは かんけい ありません。かいしゃは いつでも なおす ことや けす ことを たのめます。",
+    "employers_link": "がいこくじんを さがして いる かいしゃ",
+    "emp_nojobs": "いまは しごとの じょうほうが ありません。",
+    "emp_sources": "じょうほうの でどころ"
   },
   "ja": {
     "html_lang": "ja",
@@ -519,7 +547,7 @@
     "more_guides": "ほかの生活ガイド",
     "jobs_h1": "外国籍の方の応募を歓迎する求人情報",
     "jobs_desc": "富山の求人情報のうち、企業の公式の求人で外国籍の方の応募歓迎が明記されたものを掲載。確認日と応募先のリンクつき。",
-    "jobs_lead": "企業の公式の求人のうち、外国籍の方の応募を歓迎すると書かれたものを掲載します。各求人に確認した日付と公式ページへのリンクを記載します。応募は公式ページから行ってください。",
+    "jobs_lead": "外国籍の方も応募できる富山県内の求人を、企業の採用ページ、ハローワーク、求人サイトから集めて掲載します。各求人に確認日と元の求人へのリンクを記載します。応募は元の求人ページから行ってください。",
     "jobs_sample_tags": [
       "ホテル",
       "富山市",
@@ -561,11 +589,11 @@
     "jobs_note": "在留資格でその仕事ができるかどうかは、企業と出入国在留管理庁が判断します。在留資格のご相談は、入管または行政書士にお問い合わせください。翻訳がわかりにくい場合は、日本語の原文が正式な情報です。",
     "jobs_how_h": "求人情報はどのように掲載していますか？",
     "jobs_how": [
-      "企業が公開している求人のうち、外国籍の方の応募歓迎が明記されたものだけを掲載します。",
+      "外国籍の方の応募歓迎が明記された求人や、ハローワーク・求人サイトで外国人の応募可・積極採用とされている富山県内の求人を掲載します。",
       "職種、勤務地、給与、日本語レベル、住まいを当サイトの言葉で短くまとめます。",
       "各求人に、確認した日付、出典、元の求人へのリンクを記載します。",
-      "応募は元のページから直接行ってください。当サイトは応募の受付や企業への取り次ぎを行いません。",
-      "毎週リンク先を確認し、募集が終わったものは削除します。"
+      "応募は元の求人ページから行ってください。当サイトは応募の受付や企業への取り次ぎを行いません。",
+      "定期的にリンク先を確認し、募集が終わったものは削除します。14日間確認できていない求人は自動で非表示にします。"
     ],
     "students_h1": "留学生のみなさんへ",
     "students_desc": "富山の留学生向け、アルバイトのルール（週28時間、長期休暇中は1日8時間）と、魚津・黒部・滑川での暮らしのヒント。",
@@ -642,7 +670,7 @@
     "pay_from": "{a}〜",
     "pay_range": "{a}〜{b}",
     "pay_unknown": "公式の求人をご覧ください",
-    "job_apply": "公式の求人ページで詳細を見て応募する",
+    "job_apply": "元の求人ページで詳細を見て応募する",
     "job_paid": "有料掲載",
     "jobs_none": "現在掲載中の求人はありません。新しい求人を毎日確認しています。",
     "jobs_count": "求人 {n}件",
@@ -661,7 +689,21 @@
     "region_tateyama": "立山町",
     "region_nyuzen": "入善町",
     "region_asahi": "朝日町",
-    "region_funahashi": "舟橋村"
+    "region_funahashi": "舟橋村",
+    "employers_h1": "外国人材を募集している富山の企業",
+    "employers_lead": "最近、外国籍の方も応募できる求人を出した富山県内の企業です。公開情報をもとに企業の概要をまとめ、求人へのリンクを掲載しています。",
+    "employers_desc": "外国人材を募集している富山県内の企業の一覧。企業の概要、掲載中の求人、元の求人へのリンク。",
+    "emp_about": "企業の概要",
+    "emp_hiring": "外国人材の採用",
+    "emp_jobs": "この企業の求人情報",
+    "emp_website": "公式サイト",
+    "emp_founded": "設立",
+    "emp_size": "従業員数",
+    "emp_hq": "所在地",
+    "emp_disclaimer": "この紹介は、記載の日付時点の公開情報（企業の公式サイト、求人情報）をもとに当サイトがまとめたものです。当サイトとこの企業に関係はありません。掲載内容の修正・削除のご依頼にはすぐに対応します。",
+    "employers_link": "外国人材を募集している企業",
+    "emp_nojobs": "現在掲載中の求人はありません。",
+    "emp_sources": "情報の出典"
   },
   "vi": {
     "html_lang": "vi",
@@ -740,7 +782,7 @@
     "more_guides": "Hướng dẫn khác",
     "jobs_h1": "Việc làm chào đón người nước ngoài",
     "jobs_desc": "Thông tin việc làm ở Toyama mà tin tuyển dụng chính thức chào đón người nước ngoài. Mỗi tin có ngày kiểm tra và đường dẫn để ứng tuyển trên trang của công ty.",
-    "jobs_lead": "Chúng tôi đăng những việc làm mà tin tuyển dụng chính thức ghi rõ chào đón người nước ngoài. Mỗi tin có ngày chúng tôi kiểm tra và đường dẫn đến trang chính thức. Vui lòng ứng tuyển trên trang chính thức.",
+    "jobs_lead": "Chúng tôi đăng việc làm ở Toyama mà người nước ngoài có thể ứng tuyển, từ trang công ty, Hello Work và các trang tuyển dụng. Mỗi tin có ngày kiểm tra và đường dẫn đến tin gốc. Vui lòng ứng tuyển qua tin gốc.",
     "jobs_sample_tags": [
       "Khách sạn",
       "Thành phố Toyama",
@@ -782,11 +824,11 @@
     "jobs_note": "Visa của bạn có được làm công việc đó hay không là do công ty và Cục Quản lý Xuất nhập cảnh quyết định. Nếu có câu hỏi về visa, hãy hỏi Cục Xuất nhập cảnh hoặc gyoseishoshi (chuyên viên hành chính có giấy phép). Nếu bản dịch khó hiểu, bản gốc tiếng Nhật là chính xác.",
     "jobs_how_h": "Thông tin việc làm được đăng như thế nào?",
     "jobs_how": [
-      "Chúng tôi chỉ đăng việc làm do công ty công bố và ghi rõ chào đón người nước ngoài.",
+      "Chúng tôi đăng việc làm ở Toyama ghi rõ chào đón người nước ngoài, hoặc được ghi là mở cho người nước ngoài trên Hello Work hay trang tuyển dụng.",
       "Chúng tôi tóm tắt ngắn bằng lời của mình: công việc, nơi làm, lương, trình độ tiếng Nhật, nhà ở.",
       "Mỗi tin có ngày kiểm tra, nguồn và đường dẫn đến tin gốc.",
-      "Hãy ứng tuyển trực tiếp trên trang gốc. Chúng tôi không nhận hồ sơ và không liên hệ công ty thay bạn.",
-      "Chúng tôi kiểm tra đường dẫn mỗi tuần và xóa những tin đã hết hạn."
+      "Hãy ứng tuyển qua tin gốc. Chúng tôi không nhận hồ sơ và không liên hệ công ty thay bạn.",
+      "Chúng tôi kiểm tra đường dẫn thường xuyên và xóa tin đã hết hạn. Tin không được kiểm tra trong 14 ngày sẽ tự động bị ẩn."
     ],
     "students_h1": "Dành cho du học sinh",
     "students_desc": "Quy định làm thêm cho du học sinh ở Toyama (28 giờ mỗi tuần, 8 giờ mỗi ngày trong kỳ nghỉ dài) và mẹo sống ở Uozu, Kurobe, Namerikawa.",
@@ -863,7 +905,7 @@
     "pay_from": "từ {a}",
     "pay_range": "{a} đến {b}",
     "pay_unknown": "Xem trang chính thức",
-    "job_apply": "Xem chi tiết và ứng tuyển trên trang chính thức",
+    "job_apply": "Xem tin tuyển dụng gốc và ứng tuyển tại đó",
     "job_paid": "Tin trả phí",
     "jobs_none": "Hiện chưa có tin tuyển dụng. Chúng tôi kiểm tra việc làm mới mỗi ngày.",
     "jobs_count": "{n} tin tuyển dụng",
@@ -882,7 +924,21 @@
     "region_tateyama": "Tateyama",
     "region_nyuzen": "Nyuzen",
     "region_asahi": "Asahi",
-    "region_funahashi": "Funahashi"
+    "region_funahashi": "Funahashi",
+    "employers_h1": "Doanh nghiệp ở Toyama đang tuyển người nước ngoài",
+    "employers_lead": "Các công ty ở Toyama gần đây đã đăng tin tuyển dụng mà người nước ngoài có thể ứng tuyển. Chúng tôi tóm tắt thông tin công khai về từng công ty và dẫn đường dẫn đến tin tuyển dụng.",
+    "employers_desc": "Danh sách công ty ở tỉnh Toyama đang tuyển người nước ngoài, kèm giới thiệu ngắn, các tin tuyển dụng và đường dẫn đến tin gốc.",
+    "emp_about": "Giới thiệu công ty",
+    "emp_hiring": "Tuyển dụng người nước ngoài",
+    "emp_jobs": "Tin tuyển dụng của công ty này",
+    "emp_website": "Trang web chính thức",
+    "emp_founded": "Thành lập",
+    "emp_size": "Số nhân viên",
+    "emp_hq": "Địa điểm",
+    "emp_disclaimer": "Trang này dựa trên thông tin công khai (trang web công ty và tin tuyển dụng) tại ngày ghi bên dưới. Chúng tôi không liên quan đến công ty này. Công ty có thể yêu cầu sửa hoặc xóa thông tin bất cứ lúc nào.",
+    "employers_link": "Doanh nghiệp đang tuyển người nước ngoài",
+    "emp_nojobs": "Hiện chưa có tin tuyển dụng.",
+    "emp_sources": "Nguồn thông tin"
   },
   "id": {
     "html_lang": "id",
@@ -961,7 +1017,7 @@
     "more_guides": "Panduan lainnya",
     "jobs_h1": "Lowongan yang terbuka untuk pelamar asing",
     "jobs_desc": "Informasi lowongan di Toyama yang iklan resminya menyambut pelamar asing. Setiap lowongan memuat tanggal pemeriksaan dan tautan untuk melamar di halaman perusahaan.",
-    "jobs_lead": "Kami memuat lowongan yang iklan resminya menyebutkan menyambut pelamar asing. Setiap lowongan memuat tanggal kami memeriksanya dan tautan ke halaman resmi. Silakan melamar di halaman resmi.",
+    "jobs_lead": "Kami memuat lowongan di Toyama yang terbuka untuk pelamar asing, dari halaman perusahaan, Hello Work, dan situs lowongan. Setiap lowongan memuat tanggal pemeriksaan dan tautan ke iklan asli. Silakan melamar melalui iklan asli.",
     "jobs_sample_tags": [
       "Hotel",
       "Kota Toyama",
@@ -1003,11 +1059,11 @@
     "jobs_note": "Apakah visa Anda mengizinkan suatu pekerjaan, ditentukan oleh perusahaan dan Badan Layanan Imigrasi. Untuk pertanyaan visa, tanyakan ke kantor imigrasi atau gyoseishoshi (juru tulis administrasi berlisensi). Jika terjemahan kurang jelas, teks asli bahasa Jepang yang benar.",
     "jobs_how_h": "Bagaimana cara kami memuat lowongan?",
     "jobs_how": [
-      "Kami hanya memuat lowongan yang diterbitkan perusahaan dan jelas menyambut pelamar asing.",
+      "Kami memuat lowongan di Toyama yang menyebutkan menyambut pelamar asing, atau yang ditandai terbuka untuk warga asing di Hello Work atau situs lowongan.",
       "Kami menulis ringkasan singkat dengan kata-kata kami sendiri: pekerjaan, lokasi, gaji, tingkat bahasa Jepang, tempat tinggal.",
       "Setiap lowongan memuat tanggal pemeriksaan, sumber, dan tautan ke iklan asli.",
-      "Silakan melamar langsung di halaman asli. Kami tidak menerima lamaran dan tidak menghubungi perusahaan untuk Anda.",
-      "Kami memeriksa tautan setiap minggu dan menghapus lowongan yang sudah ditutup."
+      "Silakan melamar melalui iklan asli. Kami tidak menerima lamaran dan tidak menghubungi perusahaan untuk Anda.",
+      "Kami memeriksa tautan secara rutin dan menghapus lowongan yang sudah ditutup. Lowongan yang tidak diperiksa selama 14 hari otomatis disembunyikan."
     ],
     "students_h1": "Untuk pelajar internasional",
     "students_desc": "Aturan kerja paruh waktu untuk pelajar internasional di Toyama (28 jam per minggu, 8 jam per hari saat libur panjang) dan tips hidup di Uozu, Kurobe, dan Namerikawa.",
@@ -1084,7 +1140,7 @@
     "pay_from": "mulai {a}",
     "pay_range": "{a} sampai {b}",
     "pay_unknown": "Lihat halaman resmi",
-    "job_apply": "Lihat detail dan lamar di halaman resmi",
+    "job_apply": "Lihat iklan lowongan asli dan lamar di sana",
     "job_paid": "Iklan berbayar",
     "jobs_none": "Saat ini belum ada lowongan. Kami memeriksa lowongan baru setiap hari.",
     "jobs_count": "{n} lowongan",
@@ -1103,6 +1159,20 @@
     "region_tateyama": "Tateyama",
     "region_nyuzen": "Nyuzen",
     "region_asahi": "Asahi",
-    "region_funahashi": "Funahashi"
+    "region_funahashi": "Funahashi",
+    "employers_h1": "Perusahaan di Toyama yang merekrut staf asing",
+    "employers_lead": "Perusahaan di Toyama yang baru-baru ini memasang lowongan yang terbuka untuk pelamar asing. Kami merangkum informasi publik tentang setiap perusahaan dan memberi tautan ke lowongannya.",
+    "employers_desc": "Daftar perusahaan di Prefektur Toyama yang merekrut staf asing, dengan profil singkat, lowongan, dan tautan ke iklan aslinya.",
+    "emp_about": "Tentang perusahaan",
+    "emp_hiring": "Perekrutan staf asing",
+    "emp_jobs": "Lowongan dari perusahaan ini",
+    "emp_website": "Situs resmi",
+    "emp_founded": "Didirikan",
+    "emp_size": "Jumlah karyawan",
+    "emp_hq": "Lokasi",
+    "emp_disclaimer": "Profil ini berdasarkan informasi publik (situs perusahaan dan iklan lowongan) pada tanggal yang tertera. Kami tidak berhubungan dengan perusahaan ini. Perusahaan dapat meminta koreksi atau penghapusan kapan saja.",
+    "employers_link": "Perusahaan yang merekrut staf asing",
+    "emp_nojobs": "Saat ini belum ada lowongan.",
+    "emp_sources": "Sumber informasi"
   }
 }

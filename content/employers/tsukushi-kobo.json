@@ -1,0 +1,58 @@
+{
+  "name": {
+    "en": "Tsukushi Kobo Co., Ltd.",
+    "ja": "株式会社つくし工房"
+  },
+  "industry": "care",
+  "region": "toyama_city",
+  "location": {
+    "en": "Toyama City",
+    "ja": "富山市",
+    "easy": "とやまし",
+    "vi": "TP. Toyama",
+    "id": "Kota Toyama"
+  },
+  "founded": "1985",
+  "employees": {
+    "en": "About 80 (whole company)",
+    "ja": "約80名（企業全体）",
+    "easy": "やく 80にん",
+    "vi": "Khoảng 80 (toàn công ty)",
+    "id": "Sekitar 80 (seluruh perusahaan)"
+  },
+  "tagline": {
+    "en": "Day services mainly for children and adults with disabilities, in Toyama City.",
+    "easy": "しょうがいの ある こどもや おとなの デイサービスの かいしゃです（とやまし）。",
+    "ja": "障害者（児）を中心としたデイサービスの会社（富山市）。",
+    "vi": "Dịch vụ chăm sóc ban ngày chủ yếu cho trẻ em và người lớn khuyết tật, tại TP. Toyama.",
+    "id": "Layanan harian terutama untuk anak dan orang dewasa penyandang disabilitas, di Kota Toyama."
+  },
+  "about": {
+    "en": "According to its job posting, Tsukushi Kobo runs day services mainly for children and adults with disabilities. It also works with welfare equipment (making, selling and renting) and short stays.",
+    "easy": "しょうがいの ある ひとの デイサービスを して います。ふくしの どうぐを つくったり、かしたり も します。",
+    "ja": "求人情報によると、障害者（児）を中心としたデイサービスを運営しています。福祉用具の製作・販売・レンタルやショートステイも手がけています。",
+    "vi": "Theo tin tuyển dụng, công ty điều hành dịch vụ ban ngày chủ yếu cho trẻ em và người lớn khuyết tật. Công ty cũng làm, bán và cho thuê dụng cụ phúc lợi, và dịch vụ lưu trú ngắn ngày.",
+    "id": "Menurut iklan lowongannya, perusahaan menjalankan layanan harian terutama untuk anak dan orang dewasa penyandang disabilitas. Perusahaan juga membuat, menjual, dan menyewakan alat bantu, serta layanan menginap singkat."
+  },
+  "hiring": {
+    "en": "In November 2026 the company posted full-time care and nursing jobs at its day service \"Bora Heart Tsukushi\" at Hello Work. They are listed as \"actively hiring foreign nationals\" on JobsGo. The care job requires the Certified Care Worker (kaigo fukushishi) qualification and a Japanese driver's license.",
+    "easy": "2026ねん 11がつ、ハローワークに かいごの しごとを だしました。かいごふくしし の しかくと、うんてん めんきょが ひつようです。",
+    "ja": "2026年11月、デイサービス「ぼらハートつくし」の介護職・看護職の正社員求人をハローワークに出しています。ジョブズゴーでは「外国人積極採用」に分類されています。介護職は介護福祉士の資格と普通自動車運転免許が必要です。",
+    "vi": "Tháng 11/2026, công ty đăng tin tuyển điều dưỡng và chăm sóc toàn thời gian tại cơ sở \"Bora Heart Tsukushi\" trên Hello Work. Tin được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo. Vị trí chăm sóc cần chứng chỉ Kaigo Fukushishi và bằng lái Nhật.",
+    "id": "Pada November 2026 perusahaan memasang lowongan perawat dan pengasuh penuh waktu di layanan harian \"Bora Heart Tsukushi\" di Hello Work. Lowongan ini masuk kategori \"aktif merekrut warga asing\" di JobsGo. Posisi pengasuh memerlukan sertifikat Kaigo Fukushishi dan SIM Jepang."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 16010-24141161)",
+        "ja": "ジョブズゴー（ハローワーク求人 16010-24141161）",
+        "easy": "ジョブズゴー（ハローワーク 16010-24141161）",
+        "vi": "JobsGo (tin Hello Work 16010-24141161)",
+        "id": "JobsGo (lowongan Hello Work 16010-24141161)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/16010-24141161",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}

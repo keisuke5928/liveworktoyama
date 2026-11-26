@@ -1,0 +1,67 @@
+{
+  "name": {
+    "en": "Greens Co., Ltd. (Comfort Hotel Toyama Minamiguchi)",
+    "ja": "株式会社グリーンズ（コンフォートホテル富山南口）"
+  },
+  "industry": "hotel",
+  "region": "toyama_city",
+  "location": {
+    "en": "Hotel in Takara-machi, Toyama City",
+    "ja": "ホテル：富山市宝町",
+    "easy": "ホテル：とやまし たからまち",
+    "vi": "Khách sạn ở Takara-machi, TP. Toyama",
+    "id": "Hotel di Takara-machi, Kota Toyama"
+  },
+  "founded": "1957",
+  "employees": {
+    "en": "About 2,200 (whole company)",
+    "ja": "約2,200名（企業全体）",
+    "easy": "やく 2200にん",
+    "vi": "Khoảng 2.200 (toàn công ty)",
+    "id": "Sekitar 2.200 (seluruh perusahaan)"
+  },
+  "website": "https://www.kk-greens.jp/",
+  "tagline": {
+    "en": "Hotel company opening a Comfort Hotel near Toyama Station (planned for April 2027).",
+    "easy": "とやまえきの ちかくに あたらしい ホテルを ひらく よていの かいしゃです（2027ねん 4がつ）。",
+    "ja": "富山駅南口にコンフォートホテルを開業予定のホテル会社（2027年4月予定）。",
+    "vi": "Công ty khách sạn dự kiến mở Comfort Hotel gần ga Toyama (tháng 4/2027).",
+    "id": "Perusahaan hotel yang berencana membuka Comfort Hotel dekat Stasiun Toyama (April 2027)."
+  },
+  "about": {
+    "en": "Greens is a hotel company that runs hotels across Japan, including the Comfort Hotel brand. Its job posting says it is preparing a new hotel, \"Comfort Hotel Toyama Minamiguchi\", planned to open in April 2027.",
+    "easy": "にほんの いろいろな ところで ホテルを して いる かいしゃです。2027ねん 4がつに「コンフォートホテル とやま みなみぐち」を ひらく よていだと、しごとの じょうほうに かいて あります。",
+    "ja": "コンフォートホテルなど、全国でホテルを運営する会社です。求人情報によると、2027年4月に「コンフォートホテル富山南口」を新しく開業する予定です。",
+    "vi": "Greens là công ty điều hành khách sạn trên khắp Nhật Bản, trong đó có thương hiệu Comfort Hotel. Tin tuyển dụng cho biết công ty đang chuẩn bị khách sạn mới \"Comfort Hotel Toyama Minamiguchi\", dự kiến mở vào tháng 4/2027.",
+    "id": "Greens adalah perusahaan hotel yang mengelola hotel di seluruh Jepang, termasuk merek Comfort Hotel. Iklan lowongannya menyebutkan perusahaan sedang menyiapkan hotel baru \"Comfort Hotel Toyama Minamiguchi\" yang direncanakan buka pada April 2027."
+  },
+  "hiring": {
+    "en": "In November 2026 the company posted full-time opening staff jobs for the new hotel at Hello Work. The posting says foreign applicants must have JLPT N2 or higher, because the job involves serving guests. It also says single housing is available.",
+    "easy": "2026ねん 11がつ、ハローワークに あたらしい ホテルの しごとを だしました。がいこくじんは にほんご N2 いじょうが ひつようだと かいて あります。",
+    "ja": "2026年11月、新しいホテルのオープニングスタッフの正社員求人をハローワークに出しています。求人には、接客業務のため外国籍の方は日本語能力試験N2以上の方に限ると書かれています。単身用の住宅もあります。",
+    "vi": "Tháng 11/2026, công ty đăng tin tuyển nhân viên khai trương toàn thời gian cho khách sạn mới trên Hello Work. Tin ghi rằng người nước ngoài cần có JLPT N2 trở lên vì công việc phục vụ khách. Tin cũng ghi có nhà ở cho người độc thân.",
+    "id": "Pada November 2026 perusahaan memasang lowongan staf pembukaan penuh waktu untuk hotel baru di Hello Work. Iklan menyebutkan pelamar asing wajib memiliki JLPT N2 atau lebih karena pekerjaan melayani tamu. Tersedia juga tempat tinggal untuk lajang."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "Greens official website",
+        "ja": "グリーンズ 公式サイト"
+      },
+      "url": "https://www.kk-greens.jp/",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 24010-14419761)",
+        "ja": "ジョブズゴー（ハローワーク求人 24010-14419761）",
+        "easy": "ジョブズゴー（ハローワーク 24010-14419761）",
+        "vi": "JobsGo (tin Hello Work 24010-14419761)",
+        "id": "JobsGo (lowongan Hello Work 24010-14419761)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/24010-14419761",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}
