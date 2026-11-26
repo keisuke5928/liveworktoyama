@@ -688,11 +688,45 @@ def load_auto_jobs():
     if (today - datetime.date.fromisoformat(data["collected"])).days > JOB_MAX_AGE_DAYS:
         return []
     curated = {j["source_url"] for j in JOBS}
-    out = [j for j in data["jobs"] if j.get("status") == "open" and j["source_url"] not in curated]
+    details_f = C / "jobs_auto" / "details.json"
+    details = json.loads(details_f.read_text(encoding="utf-8")) if details_f.exists() else {}
+    out = []
+    for j in data["jobs"]:
+        if j.get("status") != "open" or j["source_url"] in curated or not j.get("employer_ja") or "公開していません" in j["employer_ja"]:
+            continue
+        j["detail"] = details.get(j["id"], {})
+        out.append(j)
     return sorted(out, key=lambda j: (j.get("published") or "", j["id"]), reverse=True)
 
 
 AUTO_JOBS = load_auto_jobs()
+_cf = C / "jobs_auto" / "companies.json"
+COMPANY_INFO = json.loads(_cf.read_text(encoding="utf-8")) if _cf.exists() else {}
+
+
+def norm_name(n):
+    return re.sub(r"[\s\u3000]", "", n or "")
+
+
+def company_slug(name):
+    return "c-" + hashlib.md5(norm_name(name).encode("utf-8")).hexdigest()[:10]
+
+
+def build_companies():
+    comps = {}
+    for j in AUTO_JOBS:
+        c = comps.setdefault(norm_name(j["employer_ja"]), {"name": j["employer_ja"], "jobs": []})
+        c["jobs"].append(j)
+    for c in comps.values():
+        from collections import Counter
+        c["region"] = Counter(j["region"] for j in c["jobs"]).most_common(1)[0][0]
+        c["category"] = Counter(j["category"] for j in c["jobs"]).most_common(1)[0][0]
+        c["info"] = COMPANY_INFO.get(c["name"], {})
+        c["slug"] = company_slug(c["name"])
+    return comps
+
+
+COMPANIES = build_companies()
 REGION_ORDER = ["toyama_city", "takaoka", "imizu", "tonami", "nanto", "oyabe", "himi", "uozu", "kurobe", "namerikawa",
                 "kamiichi", "tateyama", "nyuzen", "asahi", "funahashi"]
 
@@ -745,26 +779,60 @@ def job_card(j, lang):
     )
 
 
+def detail_rows(d, lang):
+    rows = []
+    if d.get("quals"):
+        rows.append((t(lang, "job_requires"), esc(", ".join(t(lang, "q_" + q) for q in d["quals"]))))
+    if d.get("jlpt"):
+        rows.append((t(lang, "job_japanese"), esc(t(lang, "jlpt_fmt", lv=d["jlpt"]))))
+    if d.get("age"):
+        rows.append((t(lang, "job_age"), esc(d["age"].replace("歳", "").replace("〜", "–") if lang not in ("ja", "easy") else d["age"])))
+    hol = []
+    if d.get("holidays"):
+        hol.append(t(lang, "holidays_fmt", n=d["holidays"]))
+    if d.get("weekly2") == "毎週":
+        hol.append(t(lang, "weekly2_every"))
+    if hol:
+        rows.append((t(lang, "job_holidays"), esc(" · ".join(hol))))
+    if d.get("overtime"):
+        rows.append((t(lang, "job_overtime"), esc(t(lang, "overtime_fmt", n=d["overtime"]))))
+    if d.get("bonus"):
+        rows.append((t(lang, "job_bonus"), esc(t(lang, "bonus_fmt", n=("%g" % d["bonus"])))))
+    h = d.get("housing", "")
+    hs = ([t(lang, "housing_single")] if "単身用あり" in h else []) + ([t(lang, "housing_family")] if "世帯用あり" in h else [])
+    if hs:
+        rows.append((t(lang, "job_housing"), esc(" · ".join(hs))))
+    ben = [t(lang, k) for k, on in (("ben_social", d.get("social_ins")), ("ben_commute", d.get("commute")), ("ben_raise", d.get("raise"))) if on]
+    if ben:
+        rows.append((t(lang, "job_benefits"), esc(" · ".join(ben))))
+    return rows
+
+
 def auto_card(j, lang):
     city = t(lang, "region_" + j["region"])
     cat = t(lang, "job_cat_" + j["category"])
     emp = t(lang, "emp_" + j["employment"])
-    tags = "".join(f'<span class="tag">{esc(x)}</span>' for x in (cat, city, emp))
-    jp = j["title_ja"] + (f"（{j['employer_ja']}）" if j.get("employer_ja") else "")
+    d = j.get("detail") or {}
+    tags = [cat, city, emp] + ([t(lang, "job_foreign_text")] if d.get("foreign_text") else [])
+    tag_html = "".join(f'<span class="tag">{esc(x)}</span>' for x in tags)
+    comp = COMPANIES.get(norm_name(j["employer_ja"]))
+    slug = (comp.get("curated") or comp["slug"]) if comp else None
+    emp_link = f'<a href="/{lang}/employers/{slug}/" lang="ja">{esc(j["employer_ja"])}</a>' if slug else esc(j["employer_ja"])
     if lang in ("ja", "easy"):
-        head = f'<h3>{esc(j["title_ja"])}</h3>' + (f'<p class="note" style="margin:0">{esc(j["employer_ja"])}</p>' if j.get("employer_ja") else "")
+        head = f'<h3>{esc(j["title_ja"])}</h3>'
     else:
-        head = f'<h3>{esc(t(lang, "job_auto_title", cat=cat, emp=emp, city=city))}</h3><p class="note" lang="ja" style="margin:0">{esc(jp)}</p>'
-    rows = [(t(lang, "job_pay"), esc(job_pay(j, lang)))]
+        head = f'<h3>{esc(t(lang, "job_auto_title", cat=cat, emp=emp, city=city))}</h3><p class="note" lang="ja" style="margin:0">{esc(j["title_ja"])}</p>'
+    rows = [(t(lang, "job_employer"), emp_link), (t(lang, "job_pay"), esc(job_pay(j, lang)))]
     if j.get("hours"):
         rows.append((t(lang, "job_hours"), esc(j["hours"])))
+    rows += detail_rows(d, lang)
     if j.get("published"):
         rows.append((t(lang, "job_posted"), fmt_date(j["published"], lang)))
     src = "JobsGo" + (" · " + t(lang, "job_hw_no", no=j["hellowork_no"]) if j.get("hellowork_no") else "")
     rows.append((t(lang, "job_checked"), f'{fmt_date(j["checked"], lang)} · {esc(t(lang, "job_source"))}: {esc(src)}'))
-    rows.append((t(lang, "job_welcome"), esc(t(lang, "job_tag_welcome"))))
+    rows.append((t(lang, "job_welcome"), esc(t(lang, "job_foreign_text") if d.get("foreign_text") else t(lang, "job_tag_welcome"))))
     dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in rows)
-    return (f'<article class="card job">{tags}{head}<dl>{dl}</dl>'
+    return (f'<article class="card job">{tag_html}{head}<dl>{dl}</dl>'
             f'<div class="btns"><a class="btn sm" href="{esc(j["source_url"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a></div></article>')
 
 
@@ -780,7 +848,7 @@ def build_jobs(lang):
     path = f"/{lang}/jobs/"
     total = len(JOBS) + len(AUTO_JOBS)
     body = band(f'<h1>{esc(t(lang, "jobs_h1"))}</h1>\n<p class="lead">{esc(t(lang, "jobs_lead"))}</p>'
-                + (f'<div class="btns"><a class="btn ghost" href="/{lang}/employers/">{esc(t(lang, "employers_link"))}</a></div>' if EMPLOYERS else ""))
+                + (f'<div class="btns"><a class="btn ghost" href="/{lang}/employers/">{esc(t(lang, "employers_link"))}</a></div>' if EMPLOYERS or COMPANIES else ""))
     inner = ""
     if total:
         links = "".join(
@@ -848,10 +916,19 @@ def load_employers():
 
 EMPLOYERS = load_employers()
 EMP_BY_SLUG = {e["slug"]: e for e in EMPLOYERS}
+for _e in EMPLOYERS:
+    _n = norm_name(re.sub(r"（.*?）", "", pick(_e["name"], "ja")))
+    for _c in COMPANIES.values():
+        if norm_name(_c["name"]) == _n:
+            _c["curated"] = _e["slug"]
 
 
 def employer_jobs(e):
     return [j for j in JOBS if j.get("employer_id") == e["slug"]]
+
+
+def employer_auto_jobs(e):
+    return [j for c in COMPANIES.values() if c.get("curated") == e["slug"] for j in c["jobs"]]
 
 
 def build_employers_list(lang):
@@ -865,6 +942,15 @@ def build_employers_list(lang):
                      f'<p>{esc(pick(e["tagline"], lang))}</p>{cnt}</article>')
     body = band(f'<h1>{esc(t(lang, "employers_h1"))}</h1>\n<p class="lead">{esc(t(lang, "employers_lead"))}</p>')
     body += "\n" + band("\n".join(cards) or f'<p>{esc(t(lang, "emp_nojobs"))}</p>', top0=True).replace('class="wrap"', 'class="wrap grid"', 1)
+    if COMPANIES:
+        secs = []
+        for r in REGION_ORDER:
+            cs = sorted([c for c in COMPANIES.values() if c["region"] == r and not c.get("curated")], key=lambda c: (-len(c["jobs"]), c["name"]))
+            if not cs:
+                continue
+            lis = "".join(f'<li><a href="/{lang}/employers/{c["slug"]}/" lang="ja">{esc(c["name"])}</a> <span class="note">({esc(t(lang, "job_cat_" + c["category"]))}, {esc(t(lang, "emp_jobs_n", n=len(c["jobs"])))})</span></li>' for c in cs)
+            secs.append(f'<h3>{esc(t(lang, "region_" + r))}</h3><ul class="cols">{lis}</ul>')
+        body += "\n" + band(f'<h2>{esc(t(lang, "emp_all"))} ({len(COMPANIES)})</h2>' + "".join(secs), cls="tint")
     body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "jobs_note"))}</p></div>')
     crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "nav_jobs"), f"/{lang}/jobs/"), (t(lang, "employers_h1"), path)]
     page(lang, path, t(lang, "employers_h1"), t(lang, "employers_desc"), body, section="jobs",
@@ -886,7 +972,8 @@ def build_employer(e, lang):
         facts.append((t(lang, "emp_website"), f'<a href="{esc(e["website"])}" target="_blank" rel="noopener nofollow">{esc(e["website"])}</a>'))
     dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in facts)
     jobs = employer_jobs(e)
-    jobs_html = "".join(job_card(j, lang) for j in jobs) if jobs else f'<p>{esc(t(lang, "emp_nojobs"))}</p>'
+    autos = employer_auto_jobs(e)
+    jobs_html = ("".join(job_card(j, lang) for j in jobs) + "".join(auto_card(j, lang) for j in autos)) if (jobs or autos) else f'<p>{esc(t(lang, "emp_nojobs"))}</p>'
     srcs = "".join(
         f'<li>{esc(pick(s["name"], lang))}{", " + fmt_date(s["date"], lang) if s.get("date") else ""} '
         f'<a href="{esc(s["url"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "source_link"))}</a></li>' for s in e.get("sources", []))
@@ -908,6 +995,55 @@ def build_employer(e, lang):
           "address": {"@type": "PostalAddress", "addressRegion": "Toyama", "addressCountry": "JP", "addressLocality": t("en", "region_" + e["region"])}}]
     page(lang, path, f'{name} | {t(lang, "employers_h1")}', pick(e["tagline"], lang), body, section="jobs",
          alternates=alts(lambda l: f"/{l}/employers/{e['slug']}/"), jsonld=ld, lastmod=e["checked"])
+
+
+def build_company(c, lang):
+    path = f"/{lang}/employers/{c['slug']}/"
+    name = c["name"]
+    info = c["info"]
+    city = t(lang, "region_" + c["region"])
+    cat = t(lang, "job_cat_" + c["category"])
+    crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "employers_h1"), f"/{lang}/employers/"), (name, path)]
+    facts = [(t(lang, "emp_hq"), esc(city))]
+    if info.get("founded"):
+        facts.append((t(lang, "emp_founded"), esc(info["founded"])))
+    if info.get("employees"):
+        facts.append((t(lang, "emp_size"), esc(f'{info["employees"]:,}')))
+    if info.get("website") and info.get("site_ok"):
+        facts.append((t(lang, "emp_website"), f'<a href="{esc(info["website"])}" target="_blank" rel="noopener nofollow">{esc(info["website"])}</a>'))
+    if info.get("recruit_url"):
+        facts.append((t(lang, "emp_recruit"), f'<a href="{esc(info["recruit_url"])}" target="_blank" rel="noopener nofollow">{esc(info["recruit_url"][:70])}</a>'))
+    dl = "".join(f"<dt>{esc(k)}</dt><dd>{v}</dd>" for k, v in facts)
+    words = [t(lang, "fw_" + w) for w in info.get("site_foreign_words", [])]
+    words = list(dict.fromkeys(words))
+    hiring = f'<p>{esc(t(lang, "jobs_count", n=len(c["jobs"])))}. {esc(t(lang, "job_tag_welcome"))}.</p>'
+    if any((j.get("detail") or {}).get("foreign_text") for j in c["jobs"]):
+        hiring += f'<p>{esc(t(lang, "job_foreign_text"))}.</p>'
+    if words:
+        hiring += f'<p>{esc(t(lang, "emp_site_mentions"))}: <b>{esc(", ".join(words))}</b></p>'
+    srcs = f'<li>JobsGo / Hello Work <a href="https://www.jobs-go.jp/toyama/jobs/k9" target="_blank" rel="noopener nofollow">{esc(t(lang, "source_link"))}</a></li>'
+    if info.get("site_ok") and info.get("website"):
+        srcs += f'<li>{esc(t(lang, "emp_website"))} <a href="{esc(info["website"])}" target="_blank" rel="noopener nofollow">{esc(t(lang, "source_link"))}</a></li>'
+    jobs_html = "".join(auto_card(j, lang) for j in c["jobs"][:60])
+    about = t(lang, "emp_auto_about", name=name, cat=cat, city=city)
+    parts = [
+        crumbs_html(crumbs, lang),
+        f'<div><span class="tag">{esc(cat)}</span><span class="tag">{esc(city)}</span></div>',
+        f'<h1 lang="ja">{esc(name)}</h1>',
+        f'<p class="meta">{esc(t(lang, "last_checked"))}: {fmt_date(max(j["checked"] for j in c["jobs"]), lang)}</p>',
+        f'<section class="box short"><h2>{esc(t(lang, "emp_about"))}</h2><p>{esc(about)}</p><div class="job"><dl>{dl}</dl></div></section>',
+        f'<section class="box meaning"><h2>{esc(t(lang, "emp_hiring"))}</h2>{hiring}</section>',
+        f'<section class="sect"><h2>{esc(t(lang, "emp_jobs"))}</h2><div class="newslist">{jobs_html}</div></section>',
+        f'<section class="src"><h2>{esc(t(lang, "emp_sources"))}</h2><ul>{srcs}</ul></section>',
+        f'<p class="upd">{esc(t(lang, "emp_disclaimer"))}</p>',
+        f'<div class="rule" style="margin-top:20px"><p>{esc(t(lang, "jobs_note"))}</p></div>',
+    ]
+    body = band("\n".join(parts), narrow=True)
+    ld = [crumbs_ld(crumbs), {"@context": "https://schema.org", "@type": "Organization", "name": name,
+          **({"url": info["website"]} if info.get("website") and info.get("site_ok") else {}),
+          "address": {"@type": "PostalAddress", "addressRegion": "Toyama", "addressCountry": "JP", "addressLocality": t("en", "region_" + c["region"])}}]
+    page(lang, path, f"{name} | {t(lang, 'employers_h1')}", about, body, section="jobs",
+         alternates=alts(lambda l: f"/{l}/employers/{c['slug']}/"), jsonld=ld, lastmod=max(j["checked"] for j in c["jobs"]))
 
 
 def build_students(lang):
@@ -1068,10 +1204,13 @@ def main():
             if lang in g["lang"]:
                 build_guide(g, lang)
         build_jobs(lang)
-        if EMPLOYERS:
+        if EMPLOYERS or COMPANIES:
             build_employers_list(lang)
             for e in EMPLOYERS:
                 build_employer(e, lang)
+            for c in COMPANIES.values():
+                if not c.get("curated"):
+                    build_company(c, lang)
         build_students(lang)
     build_ja_page("business", "business")
     build_ja_page("partners", "business")
