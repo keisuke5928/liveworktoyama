@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "updated": "2026-11-25",
+  "category": "news",
+  "region": "uozu",
+  "image": "/img/news/2026-11-25-uozu-japanese-school.png",
+  "scene": "school",
+  "og_title": ["New Japanese language", "school in Uozu, April 2027"],
+  "og_sub": "うおづしに にほんごがっこうが できます",
+  "easy_summary": "2027ねん 4がつ、うおづしに にほんごがっこうが できる よていです。",
+  "sources": [
+    {"name": {"en": "Kitanihon Shimbun", "ja": "北日本新聞", "easy": "きたにほん しんぶん", "vi": "Báo Kitanihon Shimbun", "id": "Surat kabar Kitanihon Shimbun"},
+     "date": "2026-11-25",
+     "note": {"en": "print edition", "ja": "朝刊（紙面）", "easy": "しんぶん", "vi": "bản in", "id": "edisi cetak"}}
+  ],
+  "related": ["moving-procedures", "phone-and-sim"],
+  "related_pages": ["students"]
+}

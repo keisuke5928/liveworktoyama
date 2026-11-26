@@ -1,0 +1,22 @@
+<svg class="scene" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Winter in Toyama: the Tateyama mountains over Toyama Bay and a snowy town">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6f3"/><stop offset="1" stop-color="#f4fafd"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a6f9c"/><stop offset="1" stop-color="#1d5d86"/></linearGradient>
+    <g id="house"><rect x="0" y="12" width="34" height="24" fill="#f2eee6"/><rect x="0" y="22" width="34" height="14" fill="#d9d2c4"/><path d="M-4 14 L17 0 L38 14 Z" fill="#ffffff"/><path d="M17 0 L38 14 L28 14 Z" fill="#dfe9ef"/><rect x="12" y="22" width="9" height="9" fill="#f6c86b"/></g>
+  </defs>
+  <rect width="1200" height="300" fill="url(#sky)"/>
+  <path d="M0 160 L90 110 L160 130 L250 56 L320 100 L400 34 L470 80 L560 24 L640 74 L720 38 L800 90 L880 52 L960 100 L1050 64 L1120 108 L1200 84 L1200 180 L0 180 Z" fill="#9fb7c8"/>
+  <path d="M250 56 L280 78 L262 76 L250 84 L236 72 Z M400 34 L432 58 L412 54 L400 66 L384 52 Z M560 24 L596 54 L574 48 L560 62 L544 46 Z M720 38 L752 62 L732 58 L720 70 L704 56 Z M880 52 L910 74 L892 70 L880 80 L866 68 Z" fill="#ffffff"/>
+  <path d="M0 180 L120 146 L220 168 L330 134 L430 162 L540 138 L650 166 L760 142 L880 168 L990 146 L1100 170 L1200 154 L1200 200 L0 200 Z" fill="#6f8ea4"/>
+  <rect y="196" width="1200" height="30" fill="url(#sea)"/>
+  <path d="M0 210 h1200" stroke="#ffffff" stroke-opacity=".35" stroke-width="2" stroke-dasharray="40 30"/>
+  <path d="M0 224 Q300 216 600 222 T1200 220 L1200 300 L0 300 Z" fill="#ffffff"/>
+  <use href="#house" x="80" y="192"/><use href="#house" x="128" y="198"/><use href="#house" x="210" y="194"/>
+  <rect x="300" y="186" width="70" height="40" fill="#e7e2d8"/><rect x="300" y="186" width="70" height="8" fill="#ffffff"/><rect x="350" y="166" width="10" height="22" fill="#b8b1a3"/>
+  <rect x="760" y="166" width="96" height="60" fill="#f4f0e8"/><rect x="760" y="162" width="96" height="8" fill="#ffffff"/><g fill="#f6c86b"><rect x="772" y="178" width="12" height="10"/><rect x="796" y="178" width="12" height="10"/><rect x="820" y="178" width="12" height="10"/><rect x="772" y="198" width="12" height="10"/><rect x="796" y="198" width="12" height="10"/><rect x="820" y="198" width="12" height="10"/></g>
+  <use href="#house" x="900" y="196"/><use href="#house" x="960" y="192"/><use href="#house" x="1040" y="198"/><use href="#house" x="1110" y="194"/>
+  <path d="M0 268 Q600 248 1200 264" stroke="#3b4a55" stroke-width="16" fill="none"/>
+  <path d="M0 268 Q600 248 1200 264" stroke="#ffffff" stroke-width="2" stroke-dasharray="24 20" fill="none"/>
+  <g class="car"><rect x="0" y="242" width="62" height="20" rx="6" fill="#d9433a"/><path d="M12 242 L22 230 L44 230 L54 242 Z" fill="#c13a31"/><path d="M24 233 h18 v8 h-22 Z" fill="#cfe6f3"/><circle cx="14" cy="264" r="7" fill="#1b2730"/><circle cx="48" cy="264" r="7" fill="#1b2730"/></g>
+  <g fill="#ffffff" opacity=".9"><circle cx="60" cy="40" r="3"/><circle cx="190" cy="24" r="2"/><circle cx="330" cy="18" r="3"/><circle cx="640" cy="16" r="3"/><circle cx="990" cy="20" r="3"/><circle cx="1130" cy="36" r="2"/></g>
+</svg>
