@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-26",
+  "updated": "2026-11-26",
+  "category": "rules",
+  "region": "japan",
+  "image": "/img/news/2026-11-26-indonesia-tb-screening.png",
+  "scene": "document",
+  "og_title": ["Coming from Indonesia?", "TB certificate from Jan 2027"],
+  "og_sub": "けっかくの しょうめいしょが ひつようです",
+  "easy_summary": "2027ねん 1がつ 4にちから、インドネシアから にほんに ながく すむ ために くる ひとは、けっかくの けんさの しょうめいしょが ひつように なる よていです。",
+  "sources": [
+    {"name": {"en": "Ministry of Health, Labour and Welfare", "ja": "厚生労働省", "easy": "こうせいろうどうしょう", "vi": "Bộ Y tế, Lao động và Phúc lợi Nhật Bản", "id": "Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan Jepang"},
+     "note": {"en": "start of pre-entry TB screening in Indonesia", "ja": "インドネシアにおける入国前結核スクリーニングの開始", "easy": "インドネシアでの けっかくの けんさ", "vi": "bắt đầu sàng lọc lao trước nhập cảnh tại Indonesia", "id": "dimulainya skrining TB pra-masuk di Indonesia"},
+     "url": "https://www.mhlw.go.jp/stf/newpage_76360.html"},
+    {"name": {"en": "Immigration Services Agency of Japan", "ja": "出入国在留管理庁", "easy": "にゅうかん", "vi": "Cục Quản lý Xuất nhập cảnh và Lưu trú Nhật Bản", "id": "Badan Layanan Imigrasi Jepang"},
+     "note": {"en": "pre-entry TB screening (Philippines, Nepal, Vietnam, Indonesia)", "ja": "入国前結核スクリーニング（フィリピン、ネパール、ベトナム及びインドネシア）", "easy": "けっかくの けんさ（フィリピン、ネパール、ベトナム、インドネシア）", "vi": "sàng lọc lao trước nhập cảnh (Philippines, Nepal, Việt Nam, Indonesia)", "id": "skrining TB pra-masuk (Filipina, Nepal, Vietnam, Indonesia)"},
+     "url": "https://www.moj.go.jp/isa/10_00219.html"},
+    {"name": {"en": "JPETS (Japan Pre-Entry Tuberculosis Screening)", "ja": "入国前結核スクリーニング（JPETS）", "easy": "JPETS（けっかくの けんさの サイト）"},
+     "note": {"en": "list of designated clinics", "ja": "指定健診医療機関の一覧", "easy": "けんさが できる びょういんの リスト", "vi": "danh sách cơ sở khám được chỉ định", "id": "daftar klinik yang ditunjuk"},
+     "url": "https://jpets.mhlw.go.jp/jp/"}
+  ],
+  "related": ["moving-procedures", "sick-or-hurt"]
+}
