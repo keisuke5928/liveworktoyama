@@ -20,7 +20,16 @@ Trận động đất bán đảo Noto vào tháng 1 năm 2024 cũng gây thiệ
 1. Trước khi nổ máy xe, gạt tuyết quanh ống xả. Ống xả bị bịt có thể gây ngộ độc khí CO.
 2. Nếu xe bị kẹt trong tuyết, giữ ống xả thông thoáng và mở hé cửa sổ.
 3. Không dọn tuyết trên mái nhà một mình. Mỗi mùa đông có nhiều tai nạn.
+
+## Các cấp độ sơ tán có nghĩa là gì?
+1. Thành phố phát thông tin sơ tán theo 5 cấp độ.
+2. Cấp 3: người cao tuổi, người khuyết tật và gia đình có con nhỏ nên sơ tán.
+3. Cấp 4: mọi người ở khu vực nguy hiểm phải sơ tán.
+4. Cấp 5: thảm họa đã xảy ra. Hãy hành động ngay để bảo vệ tính mạng, ví dụ lên tầng cao hơn.
+5. Không nhất thiết phải đến nơi lánh nạn. Nhà người quen an toàn hoặc khách sạn cũng được.
+6. TP. Toyama có hướng dẫn phòng chống thiên tai bằng tiếng Anh và các ngôn ngữ khác.
 +++ links
 - [Safety tips cho iPhone](https://apps.apple.com/jp/app/safety-tips/id858357174)
 - [Safety tips cho Android](https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android)
 - [Giới thiệu Safety tips (Cơ quan Du lịch Nhật Bản)](https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/jizoku_kankochi/anzenkakuho/inbound/tool.html)
+- [Hướng dẫn phòng chống thiên tai TP. Toyama (tiếng Anh, PDF)](https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/000/bousai_en.pdf)

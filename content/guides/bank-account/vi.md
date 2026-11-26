@@ -18,3 +18,9 @@ Bạn cần tài khoản ngân hàng để nhận lương và trả tiền nhà,
 ## Những điều tuyệt đối không được làm với tài khoản ngân hàng?
 1. Không bao giờ bán, cho mượn hoặc cho người khác tài khoản, thẻ rút tiền hay mã PIN, kể cả khi về nước. Ở Nhật đây là tội phạm, và tài khoản có thể bị dùng để lừa đảo.
 2. Khi về nước, hãy đóng tài khoản ở ngân hàng.
+
+## Gửi tiền về nước an toàn như thế nào?
+1. Dùng ngân hàng hoặc công ty chuyển tiền đã đăng ký. Kiểm tra phí và tỷ giá trước khi gửi.
+2. Khi chuyển tiền ra nước ngoài, có thể phải xuất trình thẻ lưu trú và số My Number.
+3. Tuyệt đối không dùng "ngân hàng ngầm" (chika ginko) không đăng ký. Đó là phạm pháp, cả người gửi và người điều hành đều có thể bị bắt.
+4. Cẩn thận với người nhờ bạn nhận hoặc chuyển tiền giúp họ. Tài khoản của bạn có thể bị dùng để phạm tội.

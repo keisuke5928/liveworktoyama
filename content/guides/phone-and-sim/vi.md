@@ -15,3 +15,9 @@ description: Cách ký hợp đồng điện thoại hoặc SIM ở Nhật: cầ
 1. Không bao giờ đưa SIM hoặc hợp đồng điện thoại cho người khác. Cho mượn hoặc bán số điện thoại bị dùng để phạm tội có thể khiến bạn bị bắt.
 2. Trước khi về nước, hãy hủy hợp đồng và trả hóa đơn cuối cùng.
 3. Nợ cước điện thoại có thể khiến bạn khó ký hợp đồng điện thoại hoặc vay tiền ở Nhật sau này.
+
+## Cần cảnh giác với những trò lừa qua điện thoại nào?
+1. Cuộc gọi hoặc tin nhắn tự xưng là cảnh sát, Cục Xuất nhập cảnh, Đại sứ quán hoặc công ty giao hàng, yêu cầu tiền hoặc thông tin tài khoản.
+2. Tin nhắn có đường dẫn yêu cầu đăng nhập hoặc thanh toán. Đừng mở đường dẫn.
+3. Cảnh sát và Cục Xuất nhập cảnh Nhật không bao giờ yêu cầu chuyển tiền qua điện thoại.
+4. Nếu lo lắng, hãy cúp máy và gọi đường dây tư vấn cảnh sát #9110, hoặc 110 khi khẩn cấp.

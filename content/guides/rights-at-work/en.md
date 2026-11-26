@@ -43,6 +43,15 @@ Japanese labor law protects every worker, including foreign workers, part-time w
 ## Where can I get help?
 1. First talk to your company or your support organization.
 2. The Labour Standards Inspection Office and the phone lines for foreign workers can help in many languages.
+
+## Where can I talk about work problems in Toyama?
+1. General labor consultation corners give free advice about dismissal, pay cuts, harassment and other problems, in person or by phone.
+2. Toyama: 076-415-8733 (inside the Toyama Labour Standards Inspection Office, 1-5-5 Jinzu-honmachi, Toyama City).
+3. Takaoka: 0766-23-6480. Uozu: 0765-22-0579. Tonami: 0763-32-3323.
+4. Hours: weekdays 9:30 to 16:30 (except 12:00 to 13:00). No appointment needed, but calling first is recommended.
+5. The consultation is in Japanese. Ask the Toyama Foreign Resident Support Center (076-441-6330) for interpreting by phone.
+6. For phone lines in your language, see our guide [Where to get help in your language](/en/guides/help-in-your-language/).
 +++ links
 - [Guidebook on Living and Working, Chapter 3 Employment/Working (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
 - [Phone lines for foreign workers (MHLW, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Labor consultation corners in Toyama (Toyama Labour Bureau)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/roudoukyoku/kanren_shisetsu/kona.html)

@@ -20,7 +20,16 @@ Pada Januari 2024, gempa bumi Semenanjung Noto juga menimbulkan kerusakan di Toy
 1. Sebelum menyalakan mesin mobil, bersihkan salju di sekitar knalpot. Knalpot yang tertutup bisa menyebabkan keracunan karbon monoksida.
 2. Jika mobil Anda terjebak salju, jaga knalpot tetap bersih dan buka jendela sedikit.
 3. Jangan membersihkan salju di atap sendirian. Banyak kecelakaan terjadi setiap musim dingin.
+
+## Apa arti tingkat evakuasi?
+1. Kota mengeluarkan informasi evakuasi dalam 5 tingkat.
+2. Tingkat 3: lansia, penyandang disabilitas, dan keluarga dengan anak kecil harus mengungsi.
+3. Tingkat 4: semua orang di daerah berbahaya harus mengungsi.
+4. Tingkat 5: bencana sudah terjadi. Segera lindungi nyawa Anda, misalnya naik ke lantai atas.
+5. Anda tidak harus ke tempat pengungsian. Rumah kenalan yang aman atau hotel juga boleh.
+6. Kota Toyama punya panduan bencana dalam bahasa Inggris dan bahasa lain.
 +++ links
 - [Safety tips untuk iPhone](https://apps.apple.com/jp/app/safety-tips/id858357174)
 - [Safety tips untuk Android](https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android)
 - [Tentang Safety tips (Badan Pariwisata Jepang)](https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/jizoku_kankochi/anzenkakuho/inbound/tool.html)
+- [Panduan bencana Kota Toyama (bahasa Inggris, PDF)](https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/000/bousai_en.pdf)

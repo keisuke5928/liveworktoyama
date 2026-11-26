@@ -20,5 +20,11 @@ Toyama gets heavy snow, mostly from December to February. Snow can come suddenly
 ## Where can I check road conditions?
 1. The Toyama Prefecture road information site shows road cameras and snow depth.
 2. Road traffic information in Japanese: 050-3369-6616 (JARTIC Toyama).
+
+## What if my car gets stuck or the road is closed?
+1. On some roads in very heavy snow, a "chain regulation" (chein kisei) can be set. Then you must put tire chains on, even with winter tires. Watch the road signs.
+2. If you get stuck, turn on your hazard lights, keep the exhaust pipe clear of snow and open a window a little.
+3. Call your car insurance road service or JAF road service (#8139). In danger, call 110 or 119.
+4. Carry a full tank of gas, water, food, a phone charger and warm clothes in winter.
 +++ links
 - [Toyama Prefecture road information (cameras and snow)](https://www.toyama-douro.toyama.toyama.jp/)

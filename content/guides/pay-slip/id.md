@@ -20,6 +20,13 @@ Slip gaji (kyuyo meisaisho) menunjukkan berapa yang Anda dapat dan apa saja yang
 1. Bandingkan jam kerja dan lembur dengan catatan Anda sendiri.
 2. Pastikan gaji Anda tidak di bawah upah minimum Prefektur Toyama.
 3. Jika ada yang salah, tanyakan dulu ke perusahaan. Jika tidak selesai, hubungi layanan konsultasi tenaga kerja.
+
+## Berapa upah minimum di Toyama?
+1. Mulai 1 Oktober 2026, upah minimum Prefektur Toyama adalah 1.119 yen per jam (sebelumnya 1.062 yen).
+2. Berlaku untuk semua pekerja, termasuk paruh waktu, peserta magang teknis, dan pekerja asing.
+3. Contoh: 8 jam × 21 hari = 168 jam, jadi minimal sekitar 188.000 yen per bulan sebelum potongan.
+4. Jika upah per jam Anda lebih rendah, tanyakan ke perusahaan atau pojok konsultasi tenaga kerja.
 +++ links
 - [Layanan telepon untuk pekerja asing (Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
 - [Buku panduan hidup dan bekerja, Bab 3, 6, dan 7 (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [Upah minimum Toyama (Biro Tenaga Kerja Toyama)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/news_topics/oshirase/_120032/R8saichin_toushin_00012.html)

@@ -20,6 +20,13 @@ Your pay slip (kyuyo meisaisho) shows what you earned and what was taken out. Ke
 1. Compare your working hours and overtime with your own record.
 2. Check that your pay is not below the minimum wage in Toyama.
 3. If something looks wrong, ask your company first. If it is not solved, call a labor consultation line.
+
+## What is the minimum wage in Toyama?
+1. From October 1, 2026, the minimum wage in Toyama Prefecture is 1,119 yen an hour (it was 1,062 yen).
+2. It applies to all workers, including part-time workers, technical intern trainees and foreign workers.
+3. Example: 8 hours a day for 21 days is 168 hours, so the minimum is about 188,000 yen a month before deductions.
+4. If your hourly pay is lower, ask your company or a labor consultation corner.
 +++ links
 - [Phone lines for foreign workers (MHLW, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
 - [Guidebook on Living and Working, Chapters 3, 6 and 7 (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [Toyama minimum wage (Toyama Labour Bureau)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/news_topics/oshirase/_120032/R8saichin_toushin_00012.html)

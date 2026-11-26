@@ -30,5 +30,16 @@ Di Toyama, banyak pekerjaan dan keperluan sehari-hari membutuhkan mobil. Mengemu
 2. Jika alamat atau nama berubah, laporkan ke kantor polisi.
 3. Pelanggaran lalu lintas memberi poin. Jika poin terlalu banyak dalam 3 tahun, SIM bisa ditangguhkan atau dicabut.
 4. Pada musim dingin, baca juga panduan mengemudi di jalan bersalju.
+
+## Bagaimana cara mengganti SIM di Toyama?
+1. Ajukan di Pusat Pendidikan Pengemudi Prefektur Toyama, 62-1 Takashima, Kota Toyama. Hanya dengan janji.
+2. Untuk membuat janji, telepon 076-441-2211 (ekstensi 731-243), Senin–Jumat 14:00–17:00.
+3. Penerimaan sesuai janji: Senin–Kamis 8:30–9:00 dan 13:00–13:30, Jumat 8:30–9:00 (libur hari libur nasional dan 29 Desember–3 Januari).
+4. Bawa paspor (termasuk paspor lama), kartu izin tinggal, dan satu lembar asli surat keterangan penduduk (juminhyo) yang mencantumkan kewarganegaraan, status tinggal, dan masa tinggal. Nomor My Number akan dihitamkan jika tertulis.
+5. Bawa SIM luar negeri Anda. SIM internasional tidak bisa diganti menjadi SIM Jepang.
+6. Perlu terjemahan bahasa Jepang dari SIM yang dibuat oleh instansi penerbit, kedutaan/konsulat, atau JAF (Japan Automobile Federation).
+7. Anda harus membuktikan tinggal di negara itu paling sedikit 3 bulan setelah mendapat SIM, misalnya dengan cap di paspor.
+8. Jika tidak bisa berbahasa Jepang, datanglah bersama penerjemah. Tanpa penerjemah prosesnya bisa lebih lama.
 +++ links
 - [Buku panduan hidup dan bekerja, Bab 9 Lalu lintas (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
+- [Mengganti SIM luar negeri ke SIM Jepang (Kepolisian Prefektur Toyama, bahasa Inggris)](https://police.pref.toyama.jp/6117/untenmenkyo/menkyoshou/kj00011420.html)

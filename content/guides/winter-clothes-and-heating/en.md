@@ -18,3 +18,9 @@ Toyama winters are not as cold as Hokkaido, but they are wet, snowy and dark ear
 1. On very cold nights, water pipes can freeze. Ask your landlord or company what to do.
 2. Condensation on windows can cause mold. Wipe windows and air your room.
 3. Do not climb on the roof to clear snow alone. Ask your landlord or company.
+
+## How do I stop water pipes from freezing?
+1. When the forecast says minus 4 degrees or colder, leave a tap running with a very thin stream of water overnight.
+2. Wrap pipes that are outside or in a cold place with cloth or insulation.
+3. If a pipe is frozen, do not pour boiling water on it. It can break. Warm it slowly with lukewarm water or wait.
+4. If water leaks, close the main valve and call your landlord, company or the city water office.

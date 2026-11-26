@@ -20,5 +20,11 @@ Toyama có tuyết dày, chủ yếu từ tháng 12 đến tháng 2. Tuyết có
 ## Có thể xem tình trạng đường ở đâu?
 1. Trang thông tin đường bộ của tỉnh Toyama có camera giao thông và độ sâu tuyết.
 2. Thông tin giao thông bằng tiếng Nhật: 050-3369-6616 (JARTIC Toyama).
+
+## Nếu xe bị kẹt hoặc đường bị đóng thì sao?
+1. Khi tuyết rất lớn, một số tuyến đường có thể áp dụng "quy định xích lốp" (chein kisei). Khi đó phải lắp xích dù đã dùng lốp mùa đông. Hãy chú ý biển báo.
+2. Nếu bị kẹt, bật đèn khẩn cấp, gạt tuyết quanh ống xả và mở hé cửa sổ.
+3. Gọi dịch vụ cứu hộ của bảo hiểm xe hoặc JAF (#8139). Khi nguy hiểm, gọi 110 hoặc 119.
+4. Mùa đông nên đổ đầy xăng, mang nước, đồ ăn, sạc điện thoại và quần áo ấm trong xe.
 +++ links
 - [Thông tin đường bộ tỉnh Toyama (camera và tuyết)](https://www.toyama-douro.toyama.toyama.jp/)

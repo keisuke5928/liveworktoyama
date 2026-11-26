@@ -15,3 +15,9 @@ description: Cara membuat kontrak ponsel atau kartu SIM di Jepang: dokumen yang 
 1. Jangan pernah memberikan SIM atau kontrak ponsel kepada orang lain. Meminjamkan atau menjual nomor yang dipakai untuk kejahatan bisa membuat Anda ditangkap.
 2. Sebelum meninggalkan Jepang, batalkan kontrak dan bayar tagihan terakhir.
 3. Tagihan ponsel yang tidak dibayar bisa membuat Anda sulit membuat kontrak ponsel atau pinjaman di Jepang nanti.
+
+## Penipuan telepon apa yang harus saya waspadai?
+1. Telepon atau pesan dari orang yang mengaku polisi, imigrasi, kedutaan, atau perusahaan pengiriman, lalu meminta uang atau data rekening.
+2. Pesan berisi tautan yang meminta login atau pembayaran. Jangan buka tautannya.
+3. Polisi dan imigrasi Jepang tidak pernah meminta Anda mengirim uang lewat telepon.
+4. Jika khawatir, tutup telepon dan hubungi layanan konsultasi polisi #9110, atau 110 saat darurat.

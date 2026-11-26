@@ -20,5 +20,11 @@ Toyama mendapat salju lebat, terutama dari Desember sampai Februari. Salju bisa 
 ## Di mana saya bisa memeriksa kondisi jalan?
 1. Situs informasi jalan Prefektur Toyama menampilkan kamera jalan dan kedalaman salju.
 2. Informasi lalu lintas dalam bahasa Jepang: 050-3369-6616 (JARTIC Toyama).
+
+## Bagaimana jika mobil terjebak atau jalan ditutup?
+1. Saat salju sangat lebat, beberapa jalan bisa menerapkan "aturan rantai" (chein kisei). Saat itu Anda wajib memasang rantai ban meskipun memakai ban musim dingin. Perhatikan rambu jalan.
+2. Jika terjebak, nyalakan lampu hazard, bersihkan salju di sekitar knalpot, dan buka jendela sedikit.
+3. Hubungi layanan derek asuransi mobil atau JAF (#8139). Jika berbahaya, hubungi 110 atau 119.
+4. Saat musim dingin, isi penuh bensin dan bawa air, makanan, pengisi daya ponsel, dan pakaian hangat di mobil.
 +++ links
 - [Informasi jalan Prefektur Toyama (kamera dan salju)](https://www.toyama-douro.toyama.toyama.jp/)

@@ -43,6 +43,15 @@ Luật lao động Nhật Bản bảo vệ mọi người lao động, kể cả
 ## Có thể hỏi ý kiến ở đâu?
 1. Trước tiên hãy nói chuyện với công ty hoặc tổ chức hỗ trợ của bạn.
 2. Văn phòng Thanh tra Tiêu chuẩn Lao động và đường dây tư vấn cho lao động nước ngoài có hỗ trợ nhiều ngôn ngữ.
+
+## Ở Toyama có thể tư vấn về công việc ở đâu?
+1. Các góc tư vấn lao động tổng hợp tư vấn miễn phí về sa thải, giảm lương, quấy rối và các vấn đề khác, trực tiếp hoặc qua điện thoại.
+2. Toyama: 076-415-8733 (trong Văn phòng Thanh tra Tiêu chuẩn Lao động Toyama, 1-5-5 Jinzu-honmachi, TP. Toyama).
+3. Takaoka: 0766-23-6480. Uozu: 0765-22-0579. Tonami: 0763-32-3323.
+4. Giờ tiếp nhận: ngày thường 9:30–16:30 (trừ 12:00–13:00). Không cần hẹn, nhưng nên gọi trước.
+5. Tư vấn bằng tiếng Nhật. Có thể nhờ Trung tâm hỗ trợ người nước ngoài tỉnh Toyama (076-441-6330) phiên dịch qua điện thoại.
+6. Đường dây bằng tiếng Việt: xem hướng dẫn [Nơi hỗ trợ bằng tiếng mẹ đẻ](/vi/guides/help-in-your-language/).
 +++ links
 - [Sổ tay sinh hoạt và làm việc, Chương 3 Việc làm/Lao động (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
 - [Đường dây tư vấn cho lao động nước ngoài (Bộ Y tế, Lao động và Phúc lợi, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Các góc tư vấn lao động ở Toyama (Cục Lao động Toyama)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/roudoukyoku/kanren_shisetsu/kona.html)

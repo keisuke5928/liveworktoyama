@@ -15,3 +15,9 @@ description: How to get a phone contract or SIM card in Japan: what documents yo
 1. Never give your SIM or phone contract to another person. Lending or selling a phone line used for crime can get you arrested.
 2. Before you leave Japan, cancel your contract and pay the last bill.
 3. Unpaid phone bills can make it hard to get a phone or loan in Japan later.
+
+## What phone scams should I watch for?
+1. Calls or messages from someone saying they are the police, immigration, an embassy or a delivery company, and asking for money or your bank details.
+2. Messages with a link that asks you to log in or pay. Do not open the link.
+3. Japanese police and immigration never ask you to send money by phone.
+4. If you are worried, hang up and call the police consultation line #9110, or 110 in an emergency.

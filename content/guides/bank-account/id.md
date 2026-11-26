@@ -18,3 +18,9 @@ Anda perlu rekening bank untuk menerima gaji dan membayar sewa, telepon, listrik
 ## Apa yang tidak boleh saya lakukan dengan rekening bank?
 1. Jangan pernah menjual, meminjamkan, atau memberikan rekening, kartu ATM, atau PIN kepada siapa pun, bahkan saat pulang ke negara asal. Ini kejahatan di Jepang, dan rekening Anda bisa dipakai untuk penipuan.
 2. Saat meninggalkan Jepang, tutup rekening Anda di bank.
+
+## Bagaimana mengirim uang ke negara asal dengan aman?
+1. Gunakan bank atau perusahaan pengiriman uang yang terdaftar. Periksa biaya dan kurs sebelum mengirim.
+2. Saat mengirim uang ke luar negeri, Anda mungkin diminta menunjukkan kartu izin tinggal dan My Number.
+3. Jangan pernah memakai "bank bawah tanah" (chika ginko) yang tidak terdaftar. Itu ilegal, dan pengirim maupun pengelolanya bisa ditangkap.
+4. Waspadai orang yang meminta Anda menerima atau mengirim uang untuk mereka. Rekening Anda bisa dipakai untuk kejahatan.

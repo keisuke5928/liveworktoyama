@@ -22,5 +22,11 @@ description: Nghỉ phép có lương (yukyu), bảo hiểm y tế, bảo hiểm
 ## Nếu bị mất việc thì sao?
 1. Nếu đã tham gia bảo hiểm việc làm, bạn có thể nhận trợ cấp thất nghiệp. Hãy hỏi ở Hello Work.
 2. Nhiều loại visa phải báo việc nghỉ công ty cho Cục Xuất nhập cảnh trong vòng 14 ngày.
+
+## Làm sao để không phải trả nhiều tiền viện phí một lúc?
+1. Ở Nhật có mức trần chi phí y tế phải trả trong một tháng (chế độ chi phí điều trị cao). Mức trần tùy theo thu nhập.
+2. Nếu dùng thẻ My Number làm thẻ bảo hiểm y tế, bệnh viện tự áp dụng mức trần, bạn chỉ trả đến mức đó.
+3. Nếu không, có thể xin "giấy chứng nhận áp dụng mức trần" (gendogaku tekiyo ninteisho) từ bảo hiểm y tế trước khi nhập viện.
+4. Tiền ăn khi nằm viện và phòng riêng không được tính.
 +++ links
 - [Sổ tay sinh hoạt và làm việc, Chương 3, 6 và 7 (Cục Quản lý Xuất nhập cảnh)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

@@ -43,6 +43,15 @@ Hukum ketenagakerjaan Jepang melindungi semua pekerja, termasuk pekerja asing, p
 ## Di mana saya bisa minta bantuan?
 1. Pertama, bicarakan dengan perusahaan atau lembaga pendukung Anda.
 2. Kantor Pengawas Standar Ketenagakerjaan dan layanan telepon untuk pekerja asing bisa membantu dalam banyak bahasa.
+
+## Di mana saya bisa berkonsultasi soal pekerjaan di Toyama?
+1. Pojok konsultasi tenaga kerja umum memberi saran gratis tentang pemecatan, pemotongan gaji, pelecehan, dan masalah lain, secara langsung atau lewat telepon.
+2. Toyama: 076-415-8733 (di dalam Kantor Pengawas Standar Ketenagakerjaan Toyama, 1-5-5 Jinzu-honmachi, Kota Toyama).
+3. Takaoka: 0766-23-6480. Uozu: 0765-22-0579. Tonami: 0763-32-3323.
+4. Jam layanan: hari kerja 9:30–16:30 (kecuali 12:00–13:00). Tidak perlu janji, tetapi sebaiknya telepon dulu.
+5. Konsultasi dalam bahasa Jepang. Mintalah bantuan penerjemah telepon ke Pusat Dukungan Warga Asing Prefektur Toyama (076-441-6330).
+6. Layanan dalam bahasa Indonesia: lihat panduan [Tempat bertanya dalam bahasa Anda](/id/guides/help-in-your-language/).
 +++ links
 - [Buku panduan hidup dan bekerja, Bab 3 Pekerjaan (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
 - [Layanan telepon untuk pekerja asing (Kementerian Kesehatan, Tenaga Kerja dan Kesejahteraan, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Pojok konsultasi tenaga kerja di Toyama (Biro Tenaga Kerja Toyama)](https://jsite.mhlw.go.jp/toyama-roudoukyoku/roudoukyoku/kanren_shisetsu/kona.html)

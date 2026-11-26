@@ -22,5 +22,11 @@ description: Cuti berbayar (yukyu), asuransi kesehatan, asuransi kecelakaan kerj
 ## Bagaimana jika saya kehilangan pekerjaan?
 1. Jika Anda ikut asuransi ketenagakerjaan, Anda mungkin bisa mendapat tunjangan pengangguran. Tanyakan di Hello Work.
 2. Banyak jenis visa wajib melaporkan keluar dari perusahaan ke imigrasi dalam 14 hari.
+
+## Bagaimana agar tidak membayar mahal sekaligus di rumah sakit?
+1. Jepang punya batas biaya pengobatan yang Anda bayar dalam sebulan (tunjangan biaya pengobatan tinggi). Batasnya tergantung penghasilan.
+2. Jika memakai kartu My Number sebagai kartu asuransi kesehatan, rumah sakit otomatis menerapkan batas itu, jadi Anda hanya membayar sampai batas.
+3. Jika tidak, Anda bisa meminta "sertifikat batas biaya" (gendogaku tekiyo ninteisho) dari asuransi kesehatan sebelum dirawat inap.
+4. Biaya makan di rumah sakit dan kamar pribadi tidak termasuk.
 +++ links
 - [Buku panduan hidup dan bekerja, Bab 3, 6, dan 7 (Badan Layanan Imigrasi)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

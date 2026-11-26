@@ -22,5 +22,11 @@ description: Paid holidays (yukyu), health insurance, work injury insurance (ros
 ## What if I lose my job?
 1. If you had employment insurance, you may get unemployment benefits. Ask at Hello Work.
 2. Many visas must report leaving a company to immigration within 14 days.
+
+## How can I avoid paying a lot at the hospital at once?
+1. Japan has a limit on how much you pay for medical care in one month (high-cost medical care benefit). The limit depends on your income.
+2. If you show your My Number card as your health insurance card, the hospital uses the limit automatically, so you only pay up to the limit.
+3. Without it, you can ask your health insurance for a "limit certificate" (gendogaku tekiyo ninteisho) before you go into hospital.
+4. Meals in hospital and private rooms are not included.
 +++ links
 - [Guidebook on Living and Working, Chapters 3, 6 and 7 (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
