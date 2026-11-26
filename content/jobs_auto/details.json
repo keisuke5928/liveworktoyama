@@ -1369,23 +1369,6 @@
 "founded": "1967",
 "website": "http://www.hokuriku-yosinaka.co.jp/"
 },
-"jg-16020-13129961": {
-"quals": [],
-"age": "",
-"holidays": null,
-"weekly2": "その他",
-"overtime": 0,
-"bonus": null,
-"raise": false,
-"commute": false,
-"housing": "なし",
-"social_ins": false,
-"foreign_text": false,
-"jlpt": "",
-"employees": 57,
-"founded": "1973",
-"website": ""
-},
 "jg-16020-13132261": {
 "quals": [
 "license_car",
@@ -2966,23 +2949,6 @@
 "employees": 549,
 "founded": "1962",
 "website": "http://www.sainouhp.or.jp"
-},
-"jg-16010-23709461": {
-"quals": [],
-"age": "",
-"holidays": null,
-"weekly2": "毎週",
-"overtime": 5,
-"bonus": null,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 296,
-"founded": "1991",
-"website": "http://www.jeckc.com"
 },
 "jg-16010-23742861": {
 "quals": [],
@@ -5071,27 +5037,6 @@
 "employees": 30,
 "founded": "1926",
 "website": ""
-},
-"jg-16010-23239061": {
-"quals": [
-"license_car",
-"electrician",
-"pc"
-],
-"age": "〜59歳",
-"holidays": 114,
-"weekly2": "その他",
-"overtime": 10,
-"bonus": 4.0,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 320,
-"founded": "1938",
-"website": "http://kawamura-ss.co.jp"
 },
 "jg-16010-23255061": {
 "quals": [
@@ -10607,23 +10552,6 @@
 "employees": 24,
 "founded": "1970",
 "website": "http://takeda-tts.com"
-},
-"jg-16070-02954361": {
-"quals": [],
-"age": "",
-"holidays": null,
-"weekly2": "毎週",
-"overtime": 0,
-"bonus": null,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 361,
-"founded": "1976",
-"website": "http://www.sansho-mec.co.jp"
 },
 "jg-25010-09693061": {
 "quals": [
@@ -17557,23 +17485,6 @@
 "founded": "2012",
 "website": ""
 },
-"jg-16010-20751661": {
-"quals": [],
-"age": "",
-"holidays": null,
-"weekly2": "週休二日制(土日休)",
-"overtime": 0,
-"bonus": null,
-"raise": false,
-"commute": true,
-"housing": "なし",
-"social_ins": false,
-"foreign_text": false,
-"jlpt": "",
-"employees": 578,
-"founded": "1968",
-"website": "http://www.baron-jp.com"
-},
 "jg-16010-20824261": {
 "quals": [],
 "age": "〜59歳",
@@ -21638,28 +21549,6 @@
 "age": "〜63歳",
 "holidays": 114,
 "weekly2": "毎週",
-"overtime": 2,
-"bonus": 4.0,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 271,
-"founded": "1976",
-"website": "http://niikawa-fukushi.net/"
-},
-"jg-16040-04102661": {
-"quals": [
-"license_car",
-"care_worker",
-"care_training",
-"pc"
-],
-"age": "18歳〜63歳",
-"holidays": 114,
-"weekly2": "その他",
 "overtime": 2,
 "bonus": 4.0,
 "raise": true,
@@ -30293,5 +30182,343 @@
 "employees": 7813,
 "founded": "1990",
 "website": "http://www.genky.co.jp/"
+},
+"jg-16010-24375961": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜64歳",
+"holidays": 110,
+"weekly2": "その他",
+"overtime": 5,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 78,
+"founded": "1961",
+"website": "https://www.sanwaseigyoku.co.jp"
+},
+"jg-16010-24396261": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "その他",
+"overtime": 0,
+"bonus": 0.5,
+"raise": true,
+"commute": true,
+"housing": "",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 299,
+"founded": "1981",
+"website": ""
+},
+"jg-16010-24399761": {
+"quals": [
+"license_car",
+"nurse"
+],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": 0.8,
+"raise": true,
+"commute": true,
+"housing": "",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 299,
+"founded": "1981",
+"website": ""
+},
+"jg-16010-24418661": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜59歳",
+"holidays": 122,
+"weekly2": "週休二日制(土日休)",
+"overtime": 0,
+"bonus": 1.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": true,
+"jlpt": "",
+"employees": 10,
+"founded": "2019",
+"website": "https://www.oneasia-japan.org/"
+},
+"jg-16010-24421861": {
+"quals": [
+"license_car"
+],
+"age": "〜64歳",
+"holidays": 124,
+"weekly2": "週休二日制(土日休)",
+"overtime": 15,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 38,
+"founded": "1976",
+"website": "https://taikoukk.com/"
+},
+"jg-16020-13268061": {
+"quals": [
+"license_car"
+],
+"age": "",
+"holidays": 125,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": 1.5,
+"raise": false,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 36,
+"founded": "1983",
+"website": ""
+},
+"jg-16040-05013161": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜40歳",
+"holidays": 125,
+"weekly2": "週休二日制(土日休)",
+"overtime": 0,
+"bonus": 2.2,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": true,
+"jlpt": "",
+"employees": 30,
+"founded": "1958",
+"website": ""
+},
+"jg-16050-05483761": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 103,
+"weekly2": "その他",
+"overtime": 10,
+"bonus": 1.2,
+"raise": true,
+"commute": true,
+"housing": "",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 19,
+"founded": "1968",
+"website": ""
+},
+"jg-21030-14639361": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 27569,
+"founded": "1958",
+"website": "http://valorholdings.co.jp"
+},
+"jg-21030-14640561": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 27569,
+"founded": "1958",
+"website": "http://valorholdings.co.jp"
+},
+"jg-21030-14641461": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 27569,
+"founded": "1958",
+"website": "http://valorholdings.co.jp"
+},
+"jg-21030-14642761": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 27569,
+"founded": "1958",
+"website": "http://valorholdings.co.jp"
+},
+"jg-16020-13245261": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 3,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16020-13246561": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 3,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16020-13248761": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 3,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16020-13250061": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 3,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16020-13251361": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 5,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16020-13252661": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜44歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 5,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
 }
 }

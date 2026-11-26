@@ -35680,5 +35680,81 @@
   "site_title": "",
   "site_url": "",
   "site_checked": "2026-11-26"
+ },
+ "一般財団法人 射水市公園等管理業務公社 太閤山分室": {
+  "employees": 36,
+  "founded": "1983",
+  "hw_checked": "2026-11-26"
+ },
+ "大平工業 株式会社": {
+  "employees": 30,
+  "founded": "1958",
+  "hw_checked": "2026-11-26"
+ },
+ "有限会社 宮田鉄工所": {
+  "employees": 19,
+  "founded": "1968",
+  "hw_checked": "2026-11-26"
+ },
+ "西村工業 株式会社": {
+  "employees": 25,
+  "founded": "1948",
+  "website": "https://www.nishimura-kogyo.jp",
+  "site_ok": true,
+  "site_url": "https://www.nishimura-kogyo.jp",
+  "recruit_url": "https://www.nishimura-kogyo.jp/recruit/",
+  "links": [
+   [
+    "会社案内",
+    "https://www.nishimura-kogyo.jp/profile/"
+   ],
+   [
+    "主な施工実績",
+    "https://www.nishimura-kogyo.jp/work"
+   ],
+   [
+    "SDGs",
+    "https://www.nishimura-kogyo.jp/sdgs/"
+   ],
+   [
+    "採用情報",
+    "https://www.nishimura-kogyo.jp/recruit/"
+   ],
+   [
+    "社員メッセージ",
+    "https://www.nishimura-kogyo.jp/message/"
+   ],
+   [
+    "社長ブログ",
+    "https://www.nishimura-kogyo.jp/category/blog/"
+   ],
+   [
+    "お問い合わせ",
+    "https://www.nishimura-kogyo.jp/contact/"
+   ],
+   [
+    ">> 新卒採用の募集要項はこちらをクリック",
+    "https://www.nishimura-kogyo.jp/new_graduates"
+   ],
+   [
+    "お問い合わせ",
+    "https://www.nishimura-kogyo.jp/contact"
+   ],
+   [
+    "会社案内",
+    "https://www.nishimura-kogyo.jp/profile"
+   ],
+   [
+    "採用情報",
+    "https://www.nishimura-kogyo.jp/recruit"
+   ],
+   [
+    "社員メッセージ",
+    "https://www.nishimura-kogyo.jp/message"
+   ]
+  ],
+  "site_foreign_words": [],
+  "site_title": "西村工業株式会社　土木・舗装工事でふるさと富山高岡の発展に貢献",
+  "site_checked": "2026-11-26"
  }
 }

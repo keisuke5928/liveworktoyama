@@ -3,6 +3,258 @@
  "collected": "2026-11-26",
  "jobs": [
   {
+   "id": "jg-16010-24375961",
+   "status": "open",
+   "title_ja": "工務スタッフ",
+   "employer_ja": "株式会社 三和製玉",
+   "region": "toyama_city",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 230000,
+    "max": 270000
+   },
+   "hours": "9:00–18:00 / 8:00–17:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24375961",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24375961",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16010-24396261",
+   "status": "open",
+   "title_ja": "特養のケアアシスタント ※身体介護なし 短時間です!!",
+   "employer_ja": "社会福祉法人 光風会",
+   "region": "toyama_city",
+   "category": "care",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1120,
+    "max": 1120
+   },
+   "hours": "8:00–11:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24396261",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24396261",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16010-24399761",
+   "status": "open",
+   "title_ja": "☆日勤のみの短時間☆ 通所介護の看護業務をお願いします",
+   "employer_ja": "社会福祉法人 光風会",
+   "region": "toyama_city",
+   "category": "care",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1390,
+    "max": 1500
+   },
+   "hours": "8:30–13:00 / 8:30–16:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24399761",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24399761",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16010-24418661",
+   "status": "open",
+   "title_ja": "登録日本語教員",
+   "employer_ja": "公益社団法人ONE ASIA",
+   "region": "toyama_city",
+   "category": "office",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 240000,
+    "max": 300000
+   },
+   "hours": "9:00–18:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24418661",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24418661",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16010-24421861",
+   "status": "open",
+   "title_ja": "設計積算及びCADオペレーター *土日祝お休み*",
+   "employer_ja": "太閤産業 株式会社",
+   "region": "toyama_city",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 220000,
+    "max": 350000
+   },
+   "hours": "8:00–17:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24421861",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24421861",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13268061",
+   "status": "open",
+   "title_ja": "公園内の芝生・樹木等の管理及び草刈業務",
+   "employer_ja": "一般財団法人 射水市公園等管理業務公社 太閤山分室",
+   "region": "imizu",
+   "category": "manufacturing",
+   "employment": "contract",
+   "pay": {
+    "per": "month",
+    "min": 184000,
+    "max": 184000
+   },
+   "hours": "8:30–17:15",
+   "published": "2026-11-26",
+   "hellowork_no": "16020-13268061",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13268061",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16040-05013161",
+   "status": "open",
+   "title_ja": "事務職",
+   "employer_ja": "大平工業 株式会社",
+   "region": "kurobe",
+   "category": "office",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 220000,
+    "max": 220000
+   },
+   "hours": "8:00–17:20",
+   "published": "2026-11-26",
+   "hellowork_no": "16040-05013161",
+   "hellowork_office": "魚津公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16040-05013161",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16050-05483761",
+   "status": "open",
+   "title_ja": "溶接工 *未経験者応募可 (本社)",
+   "employer_ja": "有限会社 宮田鉄工所",
+   "region": "oyabe",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 190000,
+    "max": 280000
+   },
+   "hours": "8:00–17:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16050-05483761",
+   "hellowork_office": "砺波公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16050-05483761",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-21030-14639361",
+   "status": "open",
+   "title_ja": "精肉の盛り付け・加工(バロー北陸プロセスセンター)",
+   "employer_ja": "株式会社バロー",
+   "region": "nanto",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1120,
+    "max": 1120
+   },
+   "hours": "9:00–13:00 / 8:00–12:00",
+   "published": "2026-11-26",
+   "hellowork_no": "21030-14639361",
+   "hellowork_office": "多治見公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/21030-14639361",
+   "checked": "2026-11-26",
+   "official_url": "https://valorholdings.co.jp/strength/"
+  },
+  {
+   "id": "jg-21030-14640561",
+   "status": "open",
+   "title_ja": "精肉の盛り付け・加工(バロー北陸プロセスセンター)",
+   "employer_ja": "株式会社バロー",
+   "region": "nanto",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1120,
+    "max": 1200
+   },
+   "hours": "",
+   "published": "2026-11-26",
+   "hellowork_no": "21030-14640561",
+   "hellowork_office": "多治見公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/21030-14640561",
+   "checked": "2026-11-26",
+   "official_url": "https://valorholdings.co.jp/strength/"
+  },
+  {
+   "id": "jg-21030-14641461",
+   "status": "open",
+   "title_ja": "精肉工場での商品の出荷検品 バロー北陸プロセスセンター",
+   "employer_ja": "株式会社バロー",
+   "region": "nanto",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1120,
+    "max": 1120
+   },
+   "hours": "",
+   "published": "2026-11-26",
+   "hellowork_no": "21030-14641461",
+   "hellowork_office": "多治見公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/21030-14641461",
+   "checked": "2026-11-26",
+   "official_url": "https://valorholdings.co.jp/strength/"
+  },
+  {
+   "id": "jg-21030-14642761",
+   "status": "open",
+   "title_ja": "精肉工場での清掃や翌日準備 バロー北陸プロセスセンター",
+   "employer_ja": "株式会社バロー",
+   "region": "nanto",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "hour",
+    "min": 1120,
+    "max": 1120
+   },
+   "hours": "13:00–17:00",
+   "published": "2026-11-26",
+   "hellowork_no": "21030-14642761",
+   "hellowork_office": "多治見公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/21030-14642761",
+   "checked": "2026-11-26",
+   "official_url": "https://valorholdings.co.jp/strength/"
+  },
+  {
    "id": "jg-13040-61510962",
    "status": "open",
    "title_ja": "ソエルガーデン富山/住宅型有老のホーム長/正社員",
@@ -83,6 +335,132 @@
    "hellowork_no": "16010-24363561",
    "hellowork_office": "富山公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24363561",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13245261",
+   "status": "open",
+   "title_ja": "現場作業員★入社祝金あり 未経験の方も丁寧に指導します★",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 220000,
+    "max": 240000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13245261",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13245261",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13246561",
+   "status": "open",
+   "title_ja": "現場作業員★入社祝金あり/経験者",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 240000,
+    "max": 360000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13246561",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13246561",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13248761",
+   "status": "open",
+   "title_ja": "重機オペレーター★入社祝金あり★経験者",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 250000,
+    "max": 370000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13248761",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13248761",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13250061",
+   "status": "open",
+   "title_ja": "重機オペレーター★入社祝金あり★未経験者",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 230000,
+    "max": 250000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13250061",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13250061",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13251361",
+   "status": "open",
+   "title_ja": "土木施工管理 ★入社祝金あり★",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 280000,
+    "max": 465000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13251361",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13251361",
+   "checked": "2026-11-26",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13252661",
+   "status": "open",
+   "title_ja": "土木施工管理見習い、現場作業 ★入社祝金あり★",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 240000,
+    "max": 290000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-25",
+   "hellowork_no": "16020-13252661",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13252661",
    "checked": "2026-11-26",
    "official_url": ""
   },
@@ -1532,27 +1910,6 @@
    "hellowork_no": "16020-13126461",
    "hellowork_office": "高岡公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13126461",
-   "checked": "2026-11-26",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16020-13129961",
-   "status": "open",
-   "title_ja": "開店前の清掃のお仕事【高岡駅前店】/3H程度週3日勤務",
-   "employer_ja": "高岡秋吉 株式会社",
-   "region": "takaoka",
-   "category": "other",
-   "employment": "full_time",
-   "pay": {
-    "per": "hour",
-    "min": 1150,
-    "max": 1150
-   },
-   "hours": "",
-   "published": "2026-11-17",
-   "hellowork_no": "16020-13129961",
-   "hellowork_office": "高岡公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13129961",
    "checked": "2026-11-26",
    "official_url": ""
   },
@@ -3340,27 +3697,6 @@
    "source_url": "https://www.jobs-go.jp/jobs/detail/16010-23705361",
    "checked": "2026-11-26",
    "official_url": "https://www.sainouhp.or.jp/recruit/care/care-worker/"
-  },
-  {
-   "id": "jg-16010-23709461",
-   "status": "open",
-   "title_ja": "有磯海SA上り線(売店テイクアウトコーナー)",
-   "employer_ja": "株式会社 ジェック経営コンサルタント",
-   "region": "namerikawa",
-   "category": "retail",
-   "employment": "full_time",
-   "pay": {
-    "per": "hour",
-    "min": 1120,
-    "max": 1120
-   },
-   "hours": "7:00–16:00 / 13:00–22:00",
-   "published": "2026-11-10",
-   "hellowork_no": "16010-23709461",
-   "hellowork_office": "富山公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-23709461",
-   "checked": "2026-11-26",
-   "official_url": ""
   },
   {
    "id": "jg-16010-23742861",
@@ -5732,27 +6068,6 @@
    "hellowork_no": "15100-02200661",
    "hellowork_office": "糸魚川公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/15100-02200661",
-   "checked": "2026-11-26",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16010-23239061",
-   "status": "open",
-   "title_ja": "生産技術スタッフ(設備導入・改善)【定着率95.3%】",
-   "employer_ja": "株式会社 河村産業所 富山工場",
-   "region": "toyama_city",
-   "category": "manufacturing",
-   "employment": "full_time",
-   "pay": {
-    "per": "month",
-    "min": 230000,
-    "max": 300000
-   },
-   "hours": "8:00–17:00",
-   "published": "2026-11-04",
-   "hellowork_no": "16010-23239061",
-   "hellowork_office": "富山公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-23239061",
    "checked": "2026-11-26",
    "official_url": ""
   },
@@ -11990,27 +12305,6 @@
    "hellowork_no": "16050-04989461",
    "hellowork_office": "砺波公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16050-04989461",
-   "checked": "2026-11-26",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16070-02954361",
-   "status": "open",
-   "title_ja": "工場内軽作業(富山工場/週5日)",
-   "employer_ja": "三晶MEC 株式会社",
-   "region": "toyama_city",
-   "category": "manufacturing",
-   "employment": "full_time",
-   "pay": {
-    "per": "hour",
-    "min": 1200,
-    "max": 1250
-   },
-   "hours": "8:30–17:00",
-   "published": "2026-10-22",
-   "hellowork_no": "16070-02954361",
-   "hellowork_office": "滑川公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16070-02954361",
    "checked": "2026-11-26",
    "official_url": ""
   },
@@ -19848,27 +20142,6 @@
    "official_url": ""
   },
   {
-   "id": "jg-16010-20751661",
-   "status": "open",
-   "title_ja": "清掃(1日4.5h・週2～3日)【富山技術専門学院】",
-   "employer_ja": "株式会社 バロン",
-   "region": "toyama_city",
-   "category": "manufacturing",
-   "employment": "full_time",
-   "pay": {
-    "per": "hour",
-    "min": 1150,
-    "max": 1150
-   },
-   "hours": "8:00–12:30",
-   "published": "2026-10-01",
-   "hellowork_no": "16010-20751661",
-   "hellowork_office": "富山公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-20751661",
-   "checked": "2026-11-26",
-   "official_url": ""
-  },
-  {
    "id": "jg-16010-20824261",
    "status": "open",
    "title_ja": "金属加工作業員【未経験者歓迎】★日勤のみ★",
@@ -24464,27 +24737,6 @@
    "hellowork_no": "16040-04100061",
    "hellowork_office": "魚津公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16040-04100061",
-   "checked": "2026-11-26",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16040-04102661",
-   "status": "open",
-   "title_ja": "ケアワーカー【グループホームしんきろうハウス】",
-   "employer_ja": "社会福祉法人 新川老人福祉会",
-   "region": "uozu",
-   "category": "care",
-   "employment": "full_time",
-   "pay": {
-    "per": "month",
-    "min": 195300,
-    "max": 232400
-   },
-   "hours": "7:00–16:00 / 8:30–17:30 / 10:30–19:30",
-   "published": "2026-09-14",
-   "hellowork_no": "16040-04102661",
-   "hellowork_office": "魚津公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16040-04102661",
    "checked": "2026-11-26",
    "official_url": ""
   },
