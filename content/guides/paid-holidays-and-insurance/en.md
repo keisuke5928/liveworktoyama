@@ -6,6 +6,9 @@ description: Paid holidays (yukyu), health insurance, work injury insurance (ros
 2. Part-time workers also get paid holidays, based on how many days they work.
 3. Tell your company early when you want to take a day off.
 4. Unused days can be carried over to the next year, then they expire.
+5. The number of days goes up to a maximum of 20 days a year.
+6. If you get 10 or more days a year, your company must make sure you take at least 5 of them.
+7. You can usually take paid holidays when you want, for any reason. For more work rules, see [Your rights at work](/en/guides/rights-at-work/).
 
 ## How does health insurance work?
 1. Show your insurance card (or My Number card) at hospitals. You usually pay 30% of the cost.
@@ -19,3 +22,5 @@ description: Paid holidays (yukyu), health insurance, work injury insurance (ros
 ## What if I lose my job?
 1. If you had employment insurance, you may get unemployment benefits. Ask at Hello Work.
 2. Many visas must report leaving a company to immigration within 14 days.
++++ links
+- [Guidebook on Living and Working, Chapters 3, 6 and 7 (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

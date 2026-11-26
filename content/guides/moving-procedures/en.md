@@ -12,5 +12,10 @@ description: What to do at the city office after you move to Toyama (address reg
 1. If you change or leave your company or school, many visa types must report this to immigration within 14 days. You can do it online.
 2. Your residence card has an expiry date. Apply to extend your period of stay before it ends.
 3. For questions about your own visa, ask immigration or a gyoseishoshi.
+
+## What should I know about my residence card?
+1. If you are 16 or older, always carry your residence card.
+2. If you lose it, apply for a new card at immigration within 14 days after you notice. Bring your passport, a photo (4 cm x 3 cm) and a paper that shows why you lost it, such as a lost property report from the police.
+3. When you leave Japan for good, return your card at the airport. See our guide [Leaving Japan](/en/guides/leaving-japan/).
 +++ links
 - [Guidebook on Living and Working in Japan (chapters on procedures at the city office)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)

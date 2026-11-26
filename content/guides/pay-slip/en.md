@@ -22,3 +22,4 @@ Your pay slip (kyuyo meisaisho) shows what you earned and what was taken out. Ke
 3. If something looks wrong, ask your company first. If it is not solved, call a labor consultation line.
 +++ links
 - [Phone lines for foreign workers (MHLW, PDF)](https://www.mhlw.go.jp/content/001708139.pdf)
+- [Guidebook on Living and Working, Chapters 3, 6 and 7 (Immigration Services Agency)](https://www.moj.go.jp/isa/support/portal/guidebook_all.html)
