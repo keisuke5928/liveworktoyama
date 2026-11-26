@@ -179,13 +179,49 @@ def parse_detail(page):
     return d
 
 
+HW_URL = ("https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do?screenId=GECA110010&action=dispDetailBtn"
+          "&kJNo={no}&kJKbn=1&jGSHNo=&fullPart=1&iNFTeikyoRiyoDtiID=&kSNo=&newArrival=&tatZngy=1&shogaiKbn=0")
+SITE_OVERRIDES = ROOT / "content/jobs_auto/site_overrides.json"
+
+
+def norm_url(u):
+    """Clean a homepage URL as typed in a job form (e.g. 'http//www.x.jp', 'www/x.jp'). Returns '' if it is not a URL."""
+    u = html.unescape(u or "").strip().replace("：", ":").replace("／", "/")
+    scheme = "https://" if re.match(r"(?i)^https", u) else "http://"
+    u = re.sub(r"(?i)^h?ttps?[:/]*", "", u).replace("www@", "www.").replace("www/", "www.")
+    u = u.lstrip(":/")
+    host = u.split("/")[0]
+    if "@" in u or "." not in host or " " in host:
+        return ""
+    return scheme + u
+
+
+def hellowork_site(no):
+    """Read the 'homepage' field of a public Hello Work job listing."""
+    req = urllib.request.Request(HW_URL.format(no=no.replace("-", "")), headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "Accept-Language": "ja"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        page = r.read().decode("utf-8", "ignore")
+    m = re.search(r'id="ID_hp"[^>]*>(.*?)</', page, re.S)
+    return norm_url(text(m.group(1))) if m else ""
+
+
 def check_company_site(url):
     """Open the company's website, find a recruitment page and look for mentions of foreign staff."""
     out = {"website": url, "ok": False, "recruit_url": "", "foreign_words": [], "title": ""}
-    try:
-        page = fetch(url)
-    except Exception:
+    page = ""
+    # Try https first (plain http often cannot be reached through our network), then the URL as given.
+    for u in dict.fromkeys([re.sub(r"(?i)^http://", "https://", url), url]):
+        try:
+            page = fetch(u)
+            url = u
+            break
+        except Exception:
+            continue
+    if not page:
         return out
+    out["website"] = url
     out["ok"] = True
     m = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
     out["title"] = html.unescape(m.group(1)).strip()[:80] if m else ""
@@ -279,12 +315,34 @@ def enrich(jobs, today):
         for k in ("employees", "founded", "website"):
             if d.get(k) and not c.get(k):
                 c[k] = d[k]
+    # Companies whose JobsGo profile has no homepage: use our checked list, then the Hello Work listing (every 30 days).
+    overrides = json.loads(SITE_OVERRIDES.read_text(encoding="utf-8")) if SITE_OVERRIDES.exists() else {}
+    month_ago = (datetime.date.fromisoformat(today) - datetime.timedelta(days=30)).isoformat()
+    for j in jobs:
+        c = companies[j["employer_ja"]]
+        if c.get("website"):
+            continue
+        if overrides.get(j["employer_ja"]):
+            c["website"], c["website_source"] = overrides[j["employer_ja"]], "search"
+        elif j.get("hellowork_no") and c.get("hw_checked", "") < month_ago:
+            try:
+                url = hellowork_site(j["hellowork_no"])
+            except Exception as e:
+                print(f"hellowork {j['hellowork_no']}: {e}", file=sys.stderr)
+                url = ""
+            c["hw_checked"] = today
+            if url:
+                c["website"], c["website_source"] = url, "hellowork"
+            time.sleep(1)
+    for j in jobs:
+        name = j["employer_ja"]
+        c = companies[name]
         if c.get("website") and (not c.get("site_checked") or c["site_checked"] < (datetime.date.fromisoformat(today) - datetime.timedelta(days=30)).isoformat()):
-            sites[name] = c["website"]
+            sites[name] = norm_url(c["website"]) or c["website"]
     print(f"company websites to check: {len(sites)}", file=sys.stderr)
     with ThreadPoolExecutor(max_workers=8) as ex:
         for name, res in zip(sites, ex.map(check_company_site, sites.values())):
-            companies[name].update({"site_ok": res["ok"], "recruit_url": res["recruit_url"], "links": res.get("links", []),
+            companies[name].update({"site_ok": res["ok"], "site_url": res["website"] if res["ok"] else "", "recruit_url": res["recruit_url"], "links": res.get("links", []),
                                     "site_foreign_words": res["foreign_words"], "site_title": res["title"], "site_checked": today})
     for j in jobs:
         c = companies.get(j["employer_ja"], {})
@@ -305,9 +363,18 @@ def sites_only():
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def new_sites():
+    """Look up homepages for companies that have none, and check only sites not checked in the last 30 days."""
+    data = json.loads(OUT.read_text(encoding="utf-8"))
+    enrich(data["jobs"], datetime.date.today().isoformat())
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
     if "--sites-only" in sys.argv:
         return sites_only()
+    if "--new-sites" in sys.argv:
+        return new_sites()
     max_pages = 200
     if "--max-pages" in sys.argv:
         max_pages = int(sys.argv[sys.argv.index("--max-pages") + 1])
