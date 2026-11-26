@@ -38,8 +38,9 @@
     if (j.hs) rows.push([L.job_housing, esc(L.housing_single)]);
     if (j.pub) rows.push([L.job_posted, esc(fmtDate(j.pub)) + (j.hw ? ' · ' + esc(f('job_hw_no', {no: j.hw})) : '')]);
     h += '<dl>' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + r[1] + '</dd>'; }).join('') + '</dl><div class="btns">';
-    if (j.o) h += '<a class="btn sm" href="' + esc(j.o) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply_official) + '</a><a class="btn sm ghost" href="' + esc(j.u) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply_source) + '</a>';
-    else h += '<a class="btn sm" href="' + esc(j.u) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply) + '</a>';
+    if (j.o) h += '<a class="btn sm" data-apply="official" href="' + esc(j.o) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply_official) + '</a><a class="btn sm ghost" data-apply="source" href="' + esc(j.u) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply_source) + '</a>';
+    else h += '<a class="btn sm" data-apply="source" href="' + esc(j.u) + '" target="_blank" rel="noopener nofollow">' + esc(L.job_apply) + '</a>';
+    h += '<p class="vnote">' + esc(L.visa_check) + ' <a href="/' + C.lang + '/guides/changing-jobs/">' + esc(L.visa_check_link) + '</a></p>';
     h += '<button type="button" class="btn sm ghost save" data-id="' + esc(j.id) + '" aria-pressed="' + sv + '">' + (sv ? '★ ' + esc(L.saved) : '☆ ' + esc(L.save)) + '</button></div></article>';
     return h;
   }

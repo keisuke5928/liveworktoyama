@@ -4,6 +4,11 @@
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[data-lang]');
     if (a) { try { localStorage.setItem(KEY, a.getAttribute('data-lang')); } catch (_) {} }
+    // Count clicks to the original job pages (company recruitment page or job site). No personal data.
+    var ap = e.target.closest && e.target.closest('a[data-apply]');
+    if (ap && typeof window.gtag === 'function') {
+      window.gtag('event', 'apply_click', { link_type: ap.getAttribute('data-apply'), link_domain: ap.hostname, transport_type: 'beacon' });
+    }
     var open = document.querySelector('details.lang[open]');
     if (open && !open.contains(e.target)) open.removeAttribute('open');
   });

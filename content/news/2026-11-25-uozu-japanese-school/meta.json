@@ -1,18 +1,62 @@
 {
   "date": "2026-11-25",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "category": "news",
   "region": "uozu",
   "image": "/img/news/2026-11-25-uozu-japanese-school.png",
   "scene": "school",
-  "og_title": ["New Japanese language", "school in Uozu, April 2027"],
+  "og_title": [
+    "New Japanese language",
+    "school in Uozu, April 2027"
+  ],
   "og_sub": "うおづしに にほんごがっこうが できます",
   "easy_summary": "2027ねん 4がつ、うおづしに にほんごがっこうが できる よていです。",
   "sources": [
-    {"name": {"en": "Kitanihon Shimbun", "ja": "北日本新聞", "easy": "きたにほん しんぶん", "vi": "Báo Kitanihon Shimbun", "id": "Surat kabar Kitanihon Shimbun"},
-     "date": "2026-11-25",
-     "note": {"en": "print edition", "ja": "朝刊（紙面）", "easy": "しんぶん", "vi": "bản in", "id": "edisi cetak"}}
+    {
+      "name": {
+        "en": "Kitanihon Shimbun",
+        "ja": "北日本新聞",
+        "easy": "きたにほん しんぶん",
+        "vi": "Báo Kitanihon Shimbun",
+        "id": "Surat kabar Kitanihon Shimbun"
+      },
+      "date": "2026-11-25",
+      "note": {
+        "en": "print edition (no web link)",
+        "ja": "朝刊（紙面・ウェブ版のリンクなし）",
+        "easy": "しんぶん（インターネットの リンクは ありません）",
+        "vi": "bản in (không có liên kết web)",
+        "id": "edisi cetak (tanpa tautan web)"
+      }
+    },
+    {
+      "name": {
+        "en": "Uozu City (press conference material)",
+        "ja": "魚津市 定例記者会見資料",
+        "easy": "うおづし",
+        "vi": "TP. Uozu (tài liệu họp báo)",
+        "id": "Kota Uozu (bahan konferensi pers)"
+      },
+      "date": "2025-10-01",
+      "url": "https://www.city.uozu.toyama.jp/attach/EDIT/076/076916.pdf"
+    },
+    {
+      "name": {
+        "en": "Uozu City (press release)",
+        "ja": "魚津市 報道発表",
+        "easy": "うおづし",
+        "vi": "TP. Uozu (thông cáo báo chí)",
+        "id": "Kota Uozu (siaran pers)"
+      },
+      "date": "2025-10-01",
+      "url": "https://www.city.uozu.toyama.jp/attach/EDIT/076/076562.pdf"
+    }
   ],
-  "related": ["moving-procedures", "phone-and-sim"],
-  "related_pages": ["students"]
+  "related": [
+    "moving-procedures",
+    "phone-and-sim"
+  ],
+  "related_pages": [
+    "students"
+  ]
 }

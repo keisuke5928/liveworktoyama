@@ -292,7 +292,8 @@ def header(lang, section, alternates, ja_only=False):
         f'<a href="{href}"{cur_attr if key == section else ""}>{esc(label)}</a>' for key, href, label in links
     )
     biz_cur = ' aria-current="page"' if section == "business" else ""
-    nav += f'<a href="/business/" class="biz" lang="ja"{biz_cur}>企業のみなさまへ</a>'
+    if nl == "ja":  # job seekers' menus stay simple; businesses find their page in the footer
+        nav += f'<a href="/business/" class="biz" lang="ja"{biz_cur}>企業のみなさまへ</a>'
     return (
         f'<a class="skip" href="#main">{esc(t(nl, "skip"))}</a>\n<header>\n  <div class="bar">\n'
         f'    <a class="logo" href="/{nl}/" lang="en">Live &amp; Work <b>Toyama</b><small lang="{UI[nl]["html_lang"]}">{esc(t(nl, "tagline"))}</small></a>\n'
@@ -316,7 +317,7 @@ def footer(lang):
         f'  <span>© Live &amp; Work Toyama by Oiyo · Toyama, Japan</span>\n'
         f'  <nav aria-label="Footer"><a href="/about/" lang="ja">About / 掲載方針</a><a href="/business/" lang="ja">企業のみなさまへ</a>'
         f'<a href="/partners/" lang="ja">学校・自治体のみなさまへ</a></nav>\n'
-        f'  <p class="note" style="margin:0;flex-basis:100%">{esc(t(nl, "footer_note"))}</p>\n'
+        f'  <p class="note" style="margin:0;flex-basis:100%">{esc(t(nl, "footer_note"))} {esc(t(nl, "footer_note2"))}</p>\n'
         "</div></footer>\n"
     )
 
@@ -334,6 +335,8 @@ def head(lang, title, desc, path, alternates, og_image=None, og_type="website", 
         f'<meta name="description" content="{esc(desc)}">',
         f'<link rel="canonical" href="{url}">',
     ]
+    if lang in LANGS:
+        lines.append(f'<link rel="alternate" type="application/rss+xml" title="{esc(SITE["name"])} RSS" href="/{lang}/feed.xml">')
     if len(alternates) > 1:
         for l in LANGS:
             if l in alternates:
@@ -440,12 +443,23 @@ def build_home(lang):
             f'<button class="btn" type="submit">{esc(t(lang, "home_find_btn"))}</button></div>'
             f'<p class="note"><a href="/{lang}/jobs/search/">{esc(t(lang, "home_find_all"))}</a> · <a href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(allj)))}</a></p></form>')
     body = band(
-        f'<div class="hero2"><div><p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
+        f'<div class="hero2"><div><p class="kicker">{esc(t(lang, "home_kicker"))}</p><p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
         f'<h1>{esc(t(lang, "home_h1"))}</h1>\n<p class="lead">{esc(t(lang, "home_lead"))}</p>\n'
         f'<div class="btns"><a class="btn ghost" href="/{lang}/guides/">{esc(t(lang, "nav_guides"))}</a>'
         f'<a class="btn ghost" href="/{lang}/news/">{esc(t(lang, "nav_news"))}</a>'
         f'<a class="btn ghost" href="/{lang}/students/">{esc(t(lang, "btn_students"))}</a></div></div>{find}</div>'
     )
+    # Seasonal reminder (the site is rebuilt every morning, so this follows the calendar)
+    mon = datetime.date.today().month
+    season = {12: ("winter", ["driving-in-snow", "winter-clothes-and-heating"]), 1: ("winter", ["driving-in-snow", "winter-clothes-and-heating"]),
+              2: ("winter", ["driving-in-snow", "winter-clothes-and-heating"]), 3: ("spring", ["moving-procedures", "garbage-sorting"]),
+              4: ("spring", ["moving-procedures", "garbage-sorting"]), 6: ("rain", ["earthquakes-and-heavy-snow"]),
+              7: ("rain", ["earthquakes-and-heavy-snow"]), 8: ("rain", ["earthquakes-and-heavy-snow"]), 9: ("rain", ["earthquakes-and-heavy-snow"]),
+              10: ("autumn", ["winter-clothes-and-heating", "driving-in-snow"]), 11: ("autumn", ["driving-in-snow", "winter-clothes-and-heating"])}.get(mon)
+    if season:
+        gl = "".join(f'<a class="btn sm" href="/{lang}/guides/{g}/">{esc((GUIDE_BY_SLUG[g]["lang"].get(lang) or GUIDE_BY_SLUG[g]["lang"]["en"])["title"])}</a>'
+                     for g in season[1] if g in GUIDE_BY_SLUG)
+        body += "\n" + band(f'<div class="season"><p><span class="tag">{esc(t(lang, "season_label"))}</span> <b>{esc(t(lang, "season_" + season[0]))}</b></p><div class="btns">{gl}</div></div>', top0=True)
     # 2. Phone numbers people need fast (tap to call)
     tels = [("119", "119", "tel_119", "red"), ("110", "110", "tel_110", "red"), ("#8000", "%238000", "tel_8000", ""), ("076-441-6330", "0764416330", "tel_tic", "")]
     tel_html = "".join(f'<a class="tel {c}" href="tel:{h}"><b>{esc(n)}</b><span>{esc(t(lang, k))}</span></a>' for n, h, k, c in tels)
@@ -463,6 +477,7 @@ def build_home(lang):
     if allj:
         from collections import Counter
         cc = Counter(j.get("category", "other") for j in allj)
+        pt_n = sum(1 for j in allj if j.get("employment") == "part_time")
         cats = "".join(f'<a class="chip" href="/{lang}/jobs/search/?cat={c}">{esc(t(lang, "job_cat_" + c))} <span>{n}</span></a>' for c, n in cc.most_common())
         cities = "".join(f'<a class="chip" href="/{lang}/jobs/{region_slug(r)}/">{esc(t(lang, "region_" + r))} <span>{len(all_jobs_in(r))}</span></a>' for r in REGION_ORDER if all_jobs_in(r))
         week = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
@@ -476,7 +491,9 @@ def build_home(lang):
         jobs = (f'<div class="shead"><h2 class="sh">{esc(t(lang, "nav_jobs"))}</h2><a href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(allj)))} →</a></div>'
                 f'<h3>{esc(t(lang, "home_by_cat"))}</h3><div class="chips">{cats}</div>'
                 f'<h3>{esc(t(lang, "home_by_city"))}</h3><div class="chips">{cities}</div>'
-                f'<p><a class="btn sm" href="/{lang}/jobs/search/?new=1">{esc(t(lang, "home_new_jobs", n=new_n))}</a></p>'
+                f'<div class="btns"><a class="btn sm" href="/{lang}/jobs/search/?new=1">{esc(t(lang, "home_new_jobs", n=new_n))}</a>'
+                f'<a class="btn sm ghost" href="/{lang}/jobs/search/?emp=part_time">{esc(t(lang, "home_parttime"))} ({pt_n})</a></div>'
+                f'<p class="note">{esc(t(lang, "home_parttime_note"))} <a href="/{lang}/students/">{esc(t(lang, "btn_students"))}</a></p>'
                 + (f'<h3>{esc(t(lang, "home_featured"))}</h3><div class="ngrid">{feat}</div>' if feat else "")
                 + f'<p class="note">{esc(t(lang, "jobs_note"))}</p>')
         body += "\n" + band(jobs)
@@ -486,6 +503,8 @@ def build_home(lang):
         d = g["lang"].get(lang) or g["lang"]["en"]
         tiles += f'<a class="card gtile" href="/{lang}/guides/{g["slug"]}/"><b>{esc(d["title"])}</b><span class="note">{esc(d.get("description", ""))}</span></a>'
     body += "\n" + band(f'<div class="shead"><h2 class="sh">{esc(t(lang, "nav_guides"))}</h2><a href="/{lang}/guides/">{esc(t(lang, "home_guides_n", n=len(GUIDES)))} →</a></div><div class="ggrid">{tiles}</div>', cls="tint")
+    body += "\n" + band(f'<div class="card upd"><h2 class="sh">{esc(t(lang, "home_updates_h"))}</h2><p>{esc(t(lang, "home_updates"))}</p>'
+                         f'<p><a class="btn sm ghost" href="/{lang}/feed.xml">{esc(t(lang, "home_rss"))}</a></p></div>')
     body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "disclaimer"))}</p></div>')
     ld = [
         {"@context": "https://schema.org", **org_ld()},
@@ -820,11 +839,15 @@ def job_card(j, lang):
     )
 
 
+def visa_note(lang):
+    return f'<p class="vnote">{esc(t(lang, "visa_check"))} <a href="/{lang}/guides/changing-jobs/">{esc(t(lang, "visa_check_link"))}</a></p>'
+
+
 def job_buttons(official, source, lang):
     if official:
-        return (f'<a class="btn sm" href="{esc(official)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_official"))}</a>'
-                f'<a class="btn sm ghost" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_source"))}</a>')
-    return f'<a class="btn sm" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a>'
+        return (f'<a class="btn sm" data-apply="official" href="{esc(official)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_official"))}</a>'
+                f'<a class="btn sm ghost" data-apply="source" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply_source"))}</a>' + visa_note(lang))
+    return f'<a class="btn sm" data-apply="source" href="{esc(source)}" target="_blank" rel="noopener nofollow">{esc(t(lang, "job_apply"))}</a>' + visa_note(lang)
 
 
 def detail_rows(d, lang):
@@ -954,7 +977,7 @@ def build_job_search(lang):
     keys = ["job_pay", "job_hours", "job_requires", "job_holidays", "job_bonus", "job_housing", "job_posted", "job_employer",
             "job_apply", "job_apply_official", "job_apply_source", "job_foreign_text", "holidays_fmt", "bonus_fmt", "jlpt_fmt",
             "pay_month", "pay_hour", "pay_year", "pay_day", "pay_from", "pay_range", "pay_unknown", "results_n", "show_more",
-            "save", "saved", "no_results", "job_auto_title", "job_hw_no", "job_japanese", "housing_single"]
+            "save", "saved", "no_results", "job_auto_title", "job_hw_no", "job_japanese", "housing_single", "visa_check", "visa_check_link"]
     L = {k: t(lang, k) for k in keys}
     for pre, vals in (("job_cat_", ["care", "manufacturing", "food", "retail", "construction", "logistics", "hotel", "office", "agriculture", "other"]),
                       ("emp_", ["full_time", "contract", "part_time", "dispatch"]), ("region_", REGION_ORDER),
@@ -1176,7 +1199,9 @@ def build_students(lang):
             [plain(c.get("text", ""))] + [plain(x) for x in c.get("items", [])] + [c.get("note", "")]).strip()}})
     body = band(f'<h1>{esc(t(lang, "students_h1"))}</h1>\n<p class="lead">{esc(t(lang, "students_lead"))}</p>')
     body += "\n" + band("\n".join(cards), top0=True).replace('class="wrap"', 'class="wrap grid"', 1)
-    body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "students_rule"))}</p></div>')
+    body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "students_rule"))}</p></div>'
+                         f'<div class="btns"><a class="btn" href="/{lang}/jobs/search/?emp=part_time">{esc(t(lang, "students_jobs_btn"))}</a>'
+                         f'<a class="btn ghost" href="/{lang}/guides/changing-jobs/">{esc(t(lang, "visa_check_link"))}</a></div>')
     crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "nav_students"), path)]
     ld = [crumbs_ld(crumbs), {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": UI[lang]["hreflang"], "mainEntity": faq}]
     page(lang, path, t(lang, "students_h1"), t(lang, "students_desc"), body, section="students",
@@ -1233,6 +1258,28 @@ def build_404():
     doc += '<main id="main">' + band(f"<h1>404</h1><ul>{links}</ul>") + "</main>\n" + footer("en")
     doc += f'<script src="/assets/site.js?v={JS_V}" defer></script>\n</body>\n</html>\n'
     (OUT / "404.html").write_text(doc, encoding="utf-8")
+
+
+def build_feeds():
+    """RSS 2.0 feed of news per language (no sign-up, no personal data)."""
+    from email.utils import format_datetime
+    for lang in LANGS:
+        items = []
+        for n in NEWS[:30]:
+            if lang not in n["lang"]:
+                continue
+            d = n["lang"][lang]
+            url = f"{BASE}/{lang}/news/{n['slug']}/"
+            dt = datetime.datetime.fromisoformat(n["date"] + "T09:00:00+09:00")
+            items.append(f"<item><title>{esc(d['title'])}</title><link>{url}</link><guid>{url}</guid>"
+                         f"<pubDate>{format_datetime(dt)}</pubDate><description>{esc(d.get('description', ''))}</description></item>")
+        xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+               f"<title>{esc(SITE['name'])} ({esc(UI[lang]['lang_name'])})</title><link>{BASE}/{lang}/news/</link>"
+               f"<description>{esc(t(lang, 'home_desc'))}</description><language>{UI[lang]['hreflang']}</language>"
+               + "".join(items) + "</channel></rss>\n")
+        out = OUT / lang / "feed.xml"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(xml, encoding="utf-8")
 
 
 def build_sitemap():
@@ -1336,6 +1383,7 @@ def main():
     build_ja_page("about", None)
     build_root()
     build_404()
+    build_feeds()
     build_sitemap()
     build_robots()
     build_llms()

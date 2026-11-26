@@ -154,3 +154,7 @@
 2. ニュースの追加：`content/news/YYYY-MM-DD-slug/` に meta.json と5言語の .md を置き、`node tools/make-images.mjs` で画像を作ってからビルドし、`python3 tools/check.py` で確認する。手順の詳細は README.md
 3. ガイド：`content/guides/<slug>/`。見出しは質問形式にする
 4. GA4のタグ（測定ID G-FXB7F1EDW4、2026-11-26設定）は `content/site.json` の `ga4_id`。Search Consoleの確認コードは `gsc_verification` に入れる
+5. 求人の応募ボタンには `data-apply`（official＝企業の採用ページ、source＝求人サイト）を付け、クリックをGA4のイベント `apply_click` で数える（個人情報は送らない）。週1回の見直しでこの数を見る
+6. 上部メニューの「企業のみなさまへ」は日本語ページだけに出す。ほかの言語はフッターから（2026-11-26 オーナー指示）
+7. ニュースのRSSは /<言語>/feed.xml（build.py が自動生成）。トップの季節の案内は月ごとに build.py が切り替える
+8. 求人カードには「応募の前に在留資格を確認」の一言と「転職できる？」ガイドへのリンクを必ず付ける
