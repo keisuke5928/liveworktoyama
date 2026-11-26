@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "takagi-seiko",
+  "title": {
+    "en": "Plastic molding operator (Fukumitsu Factory, Nanto)",
+    "easy": "プラスチックを つくる きかいの しごと（なんとし）",
+    "ja": "プラスチック成形オペレーター（福光工場）",
+    "vi": "Vận hành máy đúc nhựa (nhà máy Fukumitsu, Nanto)",
+    "id": "Operator cetak plastik (Pabrik Fukumitsu, Nanto)"
+  },
+  "employer": {
+    "en": "Takagi Seiko Corporation",
+    "ja": "株式会社タカギセイコー"
+  },
+  "region": "nanto",
+  "category": "manufacturing",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 192400,
+    "max": 262600
+  },
+  "hours": {
+    "en": "Day shift at first (8:10–17:00), then two shifts: 8:10–16:45 and 16:35–0:45. 120 days off a year.",
+    "ja": "慣れるまで日勤（8:10〜17:00）、その後2交替（8:10〜16:45／16:35〜0:45）。年間休日120日",
+    "easy": "はじめは ひるの しごと。あとで ひると よるの こうたい。",
+    "vi": "Ban đầu làm ca ngày (8:10–17:00), sau đó 2 ca: 8:10–16:45 và 16:35–0:45. 120 ngày nghỉ/năm.",
+    "id": "Awalnya shift siang (8:10–17:00), lalu dua shift: 8:10–16:45 dan 16:35–0:45. 120 hari libur per tahun."
+  },
+  "japanese": "unknown",
+  "housing": "none",
+  "foreign_welcome": {
+    "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+    "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+    "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+    "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+    "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+  },
+  "summary": {
+    "en": "Operating molding machines for plastic parts for vehicles and construction machines, removing extra plastic, and quality checks. Ages 18 to 35. A Japanese driver's license is required.",
+    "easy": "くるまの プラスチックの ぶひんを つくる きかいを うごかします。18さいから 35さいまで。うんてん めんきょが ひつようです。",
+    "ja": "車両・建設機械用プラスチック部品の成形、バリ取り、品質確認。18〜35歳。普通自動車運転免許が必要。",
+    "vi": "Vận hành máy đúc linh kiện nhựa cho xe và máy xây dựng, loại bỏ phần thừa, kiểm tra chất lượng. Từ 18 đến 35 tuổi. Cần bằng lái Nhật.",
+    "id": "Mengoperasikan mesin cetak komponen plastik untuk kendaraan dan alat berat, membuang sisa plastik, dan cek kualitas. Usia 18–35 tahun. Wajib punya SIM Jepang."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/16050-05432561",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 16050-05432561)",
+    "ja": "ジョブズゴー（ハローワーク求人 16050-05432561）",
+    "easy": "ジョブズゴー（ハローワーク 16050-05432561）",
+    "vi": "JobsGo (tin Hello Work 16050-05432561)",
+    "id": "JobsGo (lowongan Hello Work 16050-05432561)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}

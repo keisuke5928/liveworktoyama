@@ -1,0 +1,67 @@
+{
+  "name": {
+    "en": "Village Field Co., Ltd. (Furusato no Kaze group)",
+    "ja": "株式会社ビレッジ・フィールド（ふる里の風グループ）"
+  },
+  "industry": "care",
+  "region": "toyama_city",
+  "location": {
+    "en": "Sumiyoshi-cho, Toyama City",
+    "ja": "富山市住吉町",
+    "easy": "とやまし すみよしちょう",
+    "vi": "Sumiyoshi-cho, TP. Toyama",
+    "id": "Sumiyoshi-cho, Kota Toyama"
+  },
+  "founded": "2004",
+  "employees": {
+    "en": "About 150 (whole company)",
+    "ja": "約150名（企業全体）",
+    "easy": "やく 150にん",
+    "vi": "Khoảng 150 (toàn công ty)",
+    "id": "Sekitar 150 (seluruh perusahaan)"
+  },
+  "website": "https://furusatonokaze.com/",
+  "tagline": {
+    "en": "Nursing care company running day services and group homes in Toyama City.",
+    "easy": "デイサービスや グループホームを する かいごの かいしゃです（とやまし）。",
+    "ja": "デイサービスやグループホームを運営する介護の会社（富山市）。",
+    "vi": "Công ty điều dưỡng điều hành dịch vụ ban ngày và nhà tập thể tại TP. Toyama.",
+    "id": "Perusahaan perawatan lansia yang menjalankan layanan harian dan rumah kelompok di Kota Toyama."
+  },
+  "about": {
+    "en": "Village Field runs the \"Furusato no Kaze\" care services: day services, home-visit care, care planning, housing with services for older people, and group homes. Its job posting says applicants can visit and try the work before deciding.",
+    "easy": "「ふる里の風」と いう なまえで、デイサービス、ほうもん かいご、グループホーム などを して います。はたらく まえに けんがく できます。",
+    "ja": "「ふる里の風」として、デイサービス、訪問介護、居宅介護支援、サービス付き高齢者向け住宅、グループホームを運営しています。求人情報では、見学や体験就業ができるとしています。",
+    "vi": "Công ty điều hành dịch vụ chăm sóc \"Furusato no Kaze\": chăm sóc ban ngày, chăm sóc tại nhà, lập kế hoạch chăm sóc, nhà ở có dịch vụ cho người cao tuổi và nhà tập thể. Tin tuyển dụng cho biết có thể đến tham quan và làm thử trước khi quyết định.",
+    "id": "Perusahaan menjalankan layanan perawatan \"Furusato no Kaze\": layanan harian, perawatan kunjungan rumah, perencanaan perawatan, hunian dengan layanan untuk lansia, dan rumah kelompok. Iklannya menyebutkan pelamar bisa berkunjung dan mencoba bekerja sebelum memutuskan."
+  },
+  "hiring": {
+    "en": "In November 2026 the company posted a full-time day service care job (Furusato no Kaze Sumiyoshi) at Hello Work. It is listed as \"actively hiring foreign nationals\" on JobsGo. A Japanese driver's license (AT is OK) is required because the job includes driving users to and from home.",
+    "easy": "2026ねん 11がつ、ハローワークに デイサービスの かいごの しごとを だしました。くるまで おくりむかえを するので、うんてん めんきょが ひつようです。",
+    "ja": "2026年11月、デイサービス（ふる里の風 住吉）の介護職員の正社員求人をハローワークに出しています。ジョブズゴーでは「外国人積極採用」に分類されています。送迎があるため普通自動車運転免許（AT限定可）が必要です。",
+    "vi": "Tháng 11/2026, công ty đăng tin tuyển nhân viên chăm sóc toàn thời gian cho dịch vụ ban ngày (Furusato no Kaze Sumiyoshi) trên Hello Work. Tin được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo. Cần bằng lái Nhật (số tự động được) vì có đưa đón người sử dụng dịch vụ.",
+    "id": "Pada November 2026 perusahaan memasang lowongan pengasuh penuh waktu untuk layanan harian (Furusato no Kaze Sumiyoshi) di Hello Work. Lowongan ini masuk kategori \"aktif merekrut warga asing\" di JobsGo. Wajib punya SIM Jepang (AT boleh) karena ada tugas antar-jemput pengguna."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "Furusato no Kaze official website",
+        "ja": "ふる里の風 公式サイト"
+      },
+      "url": "https://furusatonokaze.com/",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 16010-24268561)",
+        "ja": "ジョブズゴー（ハローワーク求人 16010-24268561）",
+        "easy": "ジョブズゴー（ハローワーク 16010-24268561）",
+        "vi": "JobsGo (tin Hello Work 16010-24268561)",
+        "id": "JobsGo (lowongan Hello Work 16010-24268561)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/16010-24268561",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}

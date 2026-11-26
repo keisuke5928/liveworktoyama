@@ -1,0 +1,69 @@
+{
+  "name": {
+    "en": "AEON Bakery Co., Ltd.",
+    "ja": "イオンベーカリー株式会社"
+  },
+  "industry": "food",
+  "region": "tonami",
+  "location": {
+    "en": "Stores in Tonami and Takaoka (AEON shopping centers)",
+    "ja": "砺波店・高岡店（イオンの商業施設内）",
+    "easy": "となみと たかおかの みせ",
+    "vi": "Cửa hàng ở Tonami và Takaoka (trong trung tâm AEON)",
+    "id": "Toko di Tonami dan Takaoka (di pusat belanja AEON)"
+  },
+  "founded": "2010",
+  "employees": {
+    "en": "About 2,200 (whole company)",
+    "ja": "約2,200名（企業全体）",
+    "easy": "やく 2200にん",
+    "vi": "Khoảng 2.200 (toàn công ty)",
+    "id": "Sekitar 2.200 (seluruh perusahaan)"
+  },
+  "tagline": {
+    "en": "AEON group bakery chain with stores inside shopping centers in Tonami and Takaoka.",
+    "easy": "イオンの なかの パンやさんの かいしゃです（となみ、たかおか）。",
+    "ja": "イオンの商業施設内でベーカリーを展開するイオングループの会社（砺波・高岡）。",
+    "vi": "Chuỗi tiệm bánh thuộc tập đoàn AEON, có cửa hàng trong trung tâm mua sắm ở Tonami và Takaoka.",
+    "id": "Jaringan toko roti grup AEON dengan toko di pusat belanja di Tonami dan Takaoka."
+  },
+  "about": {
+    "en": "AEON Bakery is an AEON group company. According to its job posting, it runs in-store bakeries such as \"Kantevole\" and \"Pan Kojo\" inside AEON shopping centers across Japan.",
+    "easy": "イオンの グループの かいしゃです。イオンの なかで「カンテボーレ」などの パンやさんを して います。",
+    "ja": "イオングループの会社です。求人情報によると、全国のイオンのショッピングセンター内で「カンテボーレ」「パン工場」などのインストアベーカリーを運営しています。",
+    "vi": "AEON Bakery là công ty thuộc tập đoàn AEON. Theo tin tuyển dụng, công ty điều hành các tiệm bánh như \"Kantevole\" và \"Pan Kojo\" trong các trung tâm mua sắm AEON trên khắp Nhật Bản.",
+    "id": "AEON Bakery adalah perusahaan grup AEON. Menurut iklan lowongannya, perusahaan menjalankan toko roti seperti \"Kantevole\" dan \"Pan Kojo\" di pusat belanja AEON di seluruh Jepang."
+  },
+  "hiring": {
+    "en": "In November 2026 the company posted full-time jobs for bread making and sales (store manager candidates) at its Tonami and Takaoka stores at Hello Work. They are listed as \"actively hiring foreign nationals\" on JobsGo. Experience in bread making and in management is required. Housing for singles and families is available.",
+    "easy": "2026ねん 11がつ、ハローワークに パンを つくって うる しごと（てんちょう こうほ）を だしました。パンづくりと マネジメントの けいけんが ひつようです。",
+    "ja": "2026年11月、砺波店・高岡店のパンの製造・販売（店長候補）の正社員求人をハローワークに出しています。ジョブズゴーでは「外国人積極採用」に分類されています。製パンとマネジメントの経験が必要です。単身用・世帯用の住宅もあります。",
+    "vi": "Tháng 11/2026, công ty đăng tin tuyển toàn thời gian làm và bán bánh mì (ứng viên cửa hàng trưởng) tại cửa hàng Tonami và Takaoka trên Hello Work. Tin được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo. Cần kinh nghiệm làm bánh mì và quản lý. Có nhà ở cho người độc thân và gia đình.",
+    "id": "Pada November 2026 perusahaan memasang lowongan penuh waktu membuat dan menjual roti (calon manajer toko) di toko Tonami dan Takaoka di Hello Work. Lowongan ini masuk kategori \"aktif merekrut warga asing\" di JobsGo. Perlu pengalaman membuat roti dan manajemen. Tersedia tempat tinggal untuk lajang dan keluarga."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 12010-36399161)",
+        "ja": "ジョブズゴー（ハローワーク求人 12010-36399161）",
+        "easy": "ジョブズゴー（ハローワーク 12010-36399161）",
+        "vi": "JobsGo (tin Hello Work 12010-36399161)",
+        "id": "JobsGo (lowongan Hello Work 12010-36399161)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/12010-36399161",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 12010-36400761)",
+        "ja": "ジョブズゴー（ハローワーク求人 12010-36400761）",
+        "easy": "ジョブズゴー（ハローワーク 12010-36400761）",
+        "vi": "JobsGo (tin Hello Work 12010-36400761)",
+        "id": "JobsGo (lowongan Hello Work 12010-36400761)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/12010-36400761",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}

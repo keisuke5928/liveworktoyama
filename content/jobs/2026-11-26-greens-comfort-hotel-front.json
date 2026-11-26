@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "greens",
+  "title": {
+    "en": "Hotel front desk, opening staff (Comfort Hotel Toyama Minamiguchi)",
+    "easy": "あたらしい ホテルの フロント（とやまえき みなみぐち）",
+    "ja": "ホテルフロント オープニングスタッフ（コンフォートホテル富山南口）",
+    "vi": "Lễ tân khách sạn, nhân viên khai trương (Comfort Hotel Toyama Minamiguchi)",
+    "id": "Resepsionis hotel, staf pembukaan (Comfort Hotel Toyama Minamiguchi)"
+  },
+  "employer": {
+    "en": "Greens Co., Ltd. (Comfort Hotel Toyama Minamiguchi)",
+    "ja": "株式会社グリーンズ（コンフォートホテル富山南口）"
+  },
+  "region": "toyama_city",
+  "category": "hotel",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 248800,
+    "max": 274000
+  },
+  "hours": {
+    "en": "Shifts, including night shifts (for example 8:45–19:15 or 19:00–9:00). 8–9 days off a month, 107 days a year.",
+    "ja": "シフト制（例：8:45〜19:15、19:00〜9:00の夜勤あり）。月8〜9日休み、年間休日107日",
+    "easy": "シフト。よるの しごとも あります。1かげつに 8〜9にち やすみ。",
+    "vi": "Theo ca, có ca đêm (ví dụ 8:45–19:15 hoặc 19:00–9:00). Nghỉ 8–9 ngày/tháng, 107 ngày/năm.",
+    "id": "Shift, termasuk shift malam (misalnya 8:45–19:15 atau 19:00–9:00). Libur 8–9 hari per bulan, 107 hari per tahun."
+  },
+  "japanese": "n2",
+  "housing": "support",
+  "foreign_welcome": {
+    "en": "The posting says foreign applicants must have JLPT N2 or higher",
+    "easy": "がいこくじんは にほんご N2 いじょう と かいて あります",
+    "ja": "求人に「外国籍の方は日本語能力試験N2以上の方に限る」と記載",
+    "vi": "Tin ghi người nước ngoài cần JLPT N2 trở lên",
+    "id": "Iklan menyebutkan pelamar asing wajib JLPT N2 atau lebih"
+  },
+  "summary": {
+    "en": "Check-in and check-out, phone and email reservations, front desk system, checking room cleaning, and later sales management and staff training.",
+    "easy": "チェックイン、よやく、でんわや メールの たいおう などを します。",
+    "ja": "チェックイン・アウト、電話・メールでの予約対応、フロントシステム入力、客室清掃の確認、売上管理やスタッフ教育など。",
+    "vi": "Nhận và trả phòng, đặt phòng qua điện thoại và email, nhập hệ thống lễ tân, kiểm tra dọn phòng, sau đó quản lý doanh thu và đào tạo nhân viên.",
+    "id": "Check-in dan check-out, reservasi lewat telepon dan email, sistem resepsionis, cek kebersihan kamar, lalu manajemen penjualan dan pelatihan staf."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/24010-14419761",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 24010-14419761)",
+    "ja": "ジョブズゴー（ハローワーク求人 24010-14419761）",
+    "easy": "ジョブズゴー（ハローワーク 24010-14419761）",
+    "vi": "JobsGo (tin Hello Work 24010-14419761)",
+    "id": "JobsGo (lowongan Hello Work 24010-14419761)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}

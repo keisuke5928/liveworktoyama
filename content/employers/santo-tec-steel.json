@@ -1,0 +1,62 @@
+{
+  "name": {
+    "en": "Santo Techno Steel Co., Ltd.",
+    "ja": "三東テクノスチール株式会社"
+  },
+  "industry": "manufacturing",
+  "region": "toyama_city",
+  "location": {
+    "en": "Yatsuo, Toyama City",
+    "ja": "富山市八尾町",
+    "easy": "とやまし やつおまち",
+    "vi": "Yatsuo, TP. Toyama",
+    "id": "Yatsuo, Kota Toyama"
+  },
+  "founded": "2014",
+  "tagline": {
+    "en": "Makes the steel frames of large buildings, in Yatsuo, Toyama City.",
+    "easy": "おおきな たてものの てっこつを つくる かいしゃです（とやまし やつお）。",
+    "ja": "大型建築物の鉄骨を製造する会社（富山市八尾町）。",
+    "vi": "Sản xuất khung thép cho các tòa nhà lớn, tại Yatsuo, TP. Toyama.",
+    "id": "Membuat rangka baja untuk gedung besar, di Yatsuo, Kota Toyama."
+  },
+  "about": {
+    "en": "Santo Techno Steel makes structural steel, such as columns and beams, for large buildings. According to its job posting, it has made steel for buildings such as stadiums, and most of its work is for the Tokyo area. The average age of employees is about 40.",
+    "easy": "はしらや はりなど、おおきな たてものの てっこつを つくります。とうきょうの ほうの しごとが おおいと、しごとの じょうほうに かいて あります。",
+    "ja": "柱や梁など、大型建築物の鉄骨を製造しています。求人情報によると、競技場などの建物の鉄骨を手がけ、首都圏の仕事が中心です。従業員の平均年齢は約40歳です。",
+    "vi": "Công ty sản xuất kết cấu thép như cột và dầm cho các tòa nhà lớn. Theo tin tuyển dụng, công ty đã làm thép cho các công trình như sân vận động, và phần lớn công việc là cho khu vực Tokyo. Tuổi trung bình của nhân viên khoảng 40.",
+    "id": "Perusahaan ini membuat baja struktur seperti kolom dan balok untuk gedung besar. Menurut iklan lowongannya, perusahaan pernah membuat baja untuk gedung seperti stadion, dan sebagian besar pekerjaannya untuk wilayah Tokyo. Usia rata-rata karyawan sekitar 40 tahun."
+  },
+  "hiring": {
+    "en": "In November 2026 the company posted full-time production jobs (cutting, assembly, welding, welding robots) at Hello Work. They are listed as \"actively hiring foreign nationals\" on JobsGo. One posting says you can start without a welding license. A Japanese driver's license (AT is OK) is required.",
+    "easy": "2026ねん 11がつ、ハローワークに こうじょうの しごと（ようせつ など）を だしました。ようせつの しかくが なくても はじめられる しごとも あります。うんてん めんきょが ひつようです。",
+    "ja": "2026年11月、ハローワークに製造スタッフ（切断・組立・溶接・溶接ロボット操作）の正社員求人を出しています。ジョブズゴーでは「外国人積極採用」に分類されています。溶接の資格がなくても応募できる求人もあります。普通自動車運転免許（AT限定可）が必要です。",
+    "vi": "Tháng 11/2026, công ty đăng tin tuyển nhân viên sản xuất toàn thời gian (cắt, lắp ráp, hàn, vận hành robot hàn) tại Hello Work. Tin được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo. Một tin cho biết có thể bắt đầu khi chưa có chứng chỉ hàn. Cần bằng lái ô tô Nhật (số tự động được).",
+    "id": "Pada November 2026 perusahaan memasang lowongan staf produksi penuh waktu (pemotongan, perakitan, pengelasan, robot las) di Hello Work. Lowongan ini masuk kategori \"aktif merekrut warga asing\" di JobsGo. Satu lowongan menyebutkan Anda bisa mulai tanpa sertifikat las. Wajib punya SIM mobil Jepang (AT boleh)."
+  },
+  "sources": [
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 16010-24294861)",
+        "ja": "ジョブズゴー（ハローワーク求人 16010-24294861）",
+        "easy": "ジョブズゴー（ハローワーク 16010-24294861）",
+        "vi": "JobsGo (tin Hello Work 16010-24294861)",
+        "id": "JobsGo (lowongan Hello Work 16010-24294861)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/16010-24294861",
+      "date": "2026-11-26"
+    },
+    {
+      "name": {
+        "en": "JobsGo (Hello Work posting 16010-24293761)",
+        "ja": "ジョブズゴー（ハローワーク求人 16010-24293761）",
+        "easy": "ジョブズゴー（ハローワーク 16010-24293761）",
+        "vi": "JobsGo (tin Hello Work 16010-24293761)",
+        "id": "JobsGo (lowongan Hello Work 16010-24293761)"
+      },
+      "url": "https://www.jobs-go.jp/jobs/detail/16010-24293761",
+      "date": "2026-11-26"
+    }
+  ],
+  "checked": "2026-11-26"
+}

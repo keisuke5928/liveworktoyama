@@ -1,0 +1,58 @@
+{
+  "status": "open",
+  "employer_id": "tsukushi-kobo",
+  "title": {
+    "en": "Care worker at a day service for people with disabilities",
+    "easy": "しょうがいの ある ひとの デイサービスの かいご",
+    "ja": "介護職（ぼらハートつくし）",
+    "vi": "Nhân viên chăm sóc tại dịch vụ ban ngày cho người khuyết tật",
+    "id": "Pengasuh di layanan harian untuk penyandang disabilitas"
+  },
+  "employer": {
+    "en": "Tsukushi Kobo Co., Ltd.",
+    "ja": "株式会社つくし工房"
+  },
+  "region": "toyama_city",
+  "category": "care",
+  "employment": "full_time",
+  "pay": {
+    "per": "month",
+    "min": 180400,
+    "max": 236000
+  },
+  "hours": {
+    "en": "Day shifts around 8:30–17:30; night shift about once a month after you get used to the work. 120 days off a year.",
+    "ja": "日勤 8:30〜17:30前後、慣れてから夜勤月1回程度。年間休日120日",
+    "easy": "ひるの しごと。なれたら よるの しごと 1かげつに 1かい くらい。",
+    "vi": "Ca ngày khoảng 8:30–17:30; sau khi quen, trực đêm khoảng 1 lần/tháng. 120 ngày nghỉ/năm.",
+    "id": "Shift siang sekitar 8:30–17:30; setelah terbiasa, shift malam sekitar sebulan sekali. 120 hari libur per tahun."
+  },
+  "japanese": "unknown",
+  "housing": "none",
+  "foreign_welcome": {
+    "en": "Listed in the \"actively hiring foreign nationals\" category on JobsGo, which shows Hello Work postings",
+    "easy": "ジョブズゴー（ハローワークの しごと）で「がいこくじん せっきょく さいよう」に はいって います",
+    "ja": "ジョブズゴー（ハローワーク求人を掲載）で「外国人積極採用」の求人に分類",
+    "vi": "Được xếp vào mục \"tích cực tuyển người nước ngoài\" trên JobsGo (trang đăng tin của Hello Work)",
+    "id": "Masuk kategori \"aktif merekrut warga asing\" di JobsGo (situs yang memuat lowongan Hello Work)"
+  },
+  "summary": {
+    "en": "Care, activities, bathing, meals and transport for children and adults with disabilities. Requires the Certified Care Worker qualification and a Japanese driver's license.",
+    "easy": "しょうがいの ある ひとの せわを します。かいごふくしし の しかくと うんてん めんきょが ひつようです。",
+    "ja": "障害者（児）のデイサービスでの介護、レクリエーション、入浴・食事介助、送迎。介護福祉士と普通自動車運転免許が必要。",
+    "vi": "Chăm sóc, sinh hoạt, tắm, ăn uống và đưa đón trẻ em, người lớn khuyết tật. Cần chứng chỉ Kaigo Fukushishi và bằng lái Nhật.",
+    "id": "Perawatan, kegiatan, mandi, makan, dan antar-jemput anak serta orang dewasa penyandang disabilitas. Perlu sertifikat Kaigo Fukushishi dan SIM Jepang."
+  },
+  "students_ok": false,
+  "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24141161",
+  "source_name": {
+    "en": "JobsGo (Hello Work posting 16010-24141161)",
+    "ja": "ジョブズゴー（ハローワーク求人 16010-24141161）",
+    "easy": "ジョブズゴー（ハローワーク 16010-24141161）",
+    "vi": "JobsGo (tin Hello Work 16010-24141161)",
+    "id": "JobsGo (lowongan Hello Work 16010-24141161)"
+  },
+  "first_listed": "2026-11-26",
+  "checked": "2026-11-26",
+  "paid": false
+}
