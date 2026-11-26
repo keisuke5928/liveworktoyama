@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;background:transparent}
+.wrap{display:inline-block;position:relative;padding:150px 170px 190px 60px;font-family:Nunito,sans-serif;font-weight:900;font-size:300px;line-height:1;letter-spacing:-4px;word-spacing:-.12em;white-space:nowrap}
+.n{color:var(--navy)} .g{color:var(--green)}
+.pin{display:inline-block;width:.56em;height:.82em;vertical-align:-.21em;margin:0 .01em}
+.wave{position:absolute;left:40px;bottom:95px;width:var(--ww);height:130px}
+.spark{position:absolute;width:150px;height:150px}
+body.light{--navy:#00255F;--green:#03905F;--yellow:#FFD200;--hole:#fff}
+body.dark{--navy:#FFFFFF;--green:#2DBE85;--yellow:#FFD200}
+</style></head>
+<body class="light"><div class="wrap" id="logo"><span class="n">Live &amp; Work </span><span class="g" id="toy">T<svg class="pin" viewBox="0 0 56 82" aria-hidden="true"><path fill="var(--green)" fill-rule="evenodd" d="M28 2C13 2 2 13.5 2 28c0 19 26 52 26 52s26-33 26-52C54 13.5 43 2 28 2Zm0 14a13 13 0 1 1 0 26a13 13 0 0 1 0-26Z"/></svg>yama</span>
+<svg class="wave" id="wave" preserveAspectRatio="none" viewBox="0 0 1000 120"><defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="var(--navy)"/><stop offset=".55" stop-color="var(--navy)"/><stop offset="1" stop-color="var(--green)"/></linearGradient></defs>
+<path d="M0 112 C 200 30, 430 18, 640 58 S 900 78, 1000 30 L 1000 50 C 900 100, 760 98, 630 84 S 220 50, 0 120 Z" fill="url(#wg)"/></svg>
+<svg class="spark" id="spark" viewBox="0 0 190 190"><g stroke="var(--yellow)" stroke-width="24" stroke-linecap="round"><path d="M40 70 L28 18"/><path d="M85 90 L125 45"/><path d="M110 140 L165 118"/></g></svg>
+</div>
+<script>
+document.fonts.ready.then(()=>{
+  const t=document.getElementById('toy').getBoundingClientRect(), w=document.getElementById('logo').getBoundingClientRect();
+  document.getElementById('wave').style.width=(t.left-w.left+ t.width*0.30)+'px';
+  const s=document.getElementById('spark'); s.style.left=(t.right-w.left-55)+'px'; s.style.top=(t.top-w.top-35)+'px';
+  document.body.dataset.ready=1;
+});
+</script></body></html>
