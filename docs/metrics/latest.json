@@ -9,7 +9,7 @@
     "sessions": 34,
     "screenPageViews": 147,
     "engagementRate": 0.4706,
-    "averageSessionDuration": 155.3097
+    "averageSessionDuration": 184.2838
    }
   ],
   "pages": [
@@ -25,7 +25,7 @@
     "screenPageViews": 28,
     "activeUsers": 26,
     "userEngagementDuration": 56,
-    "engagementRate": 0.3462
+    "engagementRate": 0.3846
    },
    {
     "pagePath": "/ja/jobs/",
@@ -39,14 +39,14 @@
     "screenPageViews": 16,
     "activeUsers": 9,
     "userEngagementDuration": 0,
-    "engagementRate": 0.8889
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/jobs/search/",
     "screenPageViews": 8,
     "activeUsers": 3,
     "userEngagementDuration": 97,
-    "engagementRate": 0.6667
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/",
@@ -102,7 +102,7 @@
     "screenPageViews": 2,
     "activeUsers": 2,
     "userEngagementDuration": 6,
-    "engagementRate": 0.5
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/jobs/toyama-city/",
@@ -144,21 +144,21 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 5,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/en/guides/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/en/news/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 1,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/aeon-bakery/",
@@ -172,28 +172,28 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 18,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/c-fdb4c66a91/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 49,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/takagi-seiko/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 26,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/village-field/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 49,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/bank-account/",
@@ -221,7 +221,7 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/leaving-japan/",
@@ -274,21 +274,15 @@
    },
    {
     "landingPage": "/ja",
-    "sessions": 6,
-    "engagementRate": 0.5,
-    "averageSessionDuration": 228.3507
-   },
-   {
-    "landingPage": "",
-    "sessions": 1,
-    "engagementRate": 0,
-    "averageSessionDuration": 263.3307
+    "sessions": 5,
+    "engagementRate": 0.6,
+    "averageSessionDuration": 123.554
    },
    {
     "landingPage": "/ja/employers",
     "sessions": 1,
     "engagementRate": 1,
-    "averageSessionDuration": 2171.2591
+    "averageSessionDuration": 4172.045
    },
    {
     "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
@@ -302,11 +296,6 @@
     "sessionDefaultChannelGroup": "Direct",
     "sessions": 34,
     "engagementRate": 0.4706
-   },
-   {
-    "sessionDefaultChannelGroup": "Unassigned",
-    "sessions": 1,
-    "engagementRate": 0
    }
   ],
   "devices": [
@@ -335,7 +324,7 @@
     "activeUsers": 2
    },
    {
-    "country": "",
+    "country": "(not set)",
     "activeUsers": 1
    },
    {
@@ -363,9 +352,12 @@
     "eventCount": 1
    }
   ],
-  "apply_clicks_by_type": {
-   "note": "register custom dimension link_type in GA4"
-  },
+  "apply_clicks_by_type": [
+   {
+    "customEvent:link_type": "(not set)",
+    "eventCount": 1
+   }
+  ],
   "events": [
    {
     "eventName": "page_view",
@@ -420,7 +412,7 @@
     "sessions": 34,
     "screenPageViews": 147,
     "engagementRate": 0.4706,
-    "averageSessionDuration": 155.3097
+    "averageSessionDuration": 184.2838
    }
   ],
   "pages": [
@@ -436,7 +428,7 @@
     "screenPageViews": 28,
     "activeUsers": 26,
     "userEngagementDuration": 56,
-    "engagementRate": 0.3462
+    "engagementRate": 0.3846
    },
    {
     "pagePath": "/ja/jobs/",
@@ -450,14 +442,14 @@
     "screenPageViews": 16,
     "activeUsers": 9,
     "userEngagementDuration": 0,
-    "engagementRate": 0.8889
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/jobs/search/",
     "screenPageViews": 8,
     "activeUsers": 3,
     "userEngagementDuration": 97,
-    "engagementRate": 0.6667
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/",
@@ -513,7 +505,7 @@
     "screenPageViews": 2,
     "activeUsers": 2,
     "userEngagementDuration": 6,
-    "engagementRate": 0.5
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/jobs/toyama-city/",
@@ -555,21 +547,21 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 5,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/en/guides/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/en/news/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 1,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/aeon-bakery/",
@@ -583,28 +575,28 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 18,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/c-fdb4c66a91/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 49,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/takagi-seiko/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 26,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/employers/village-field/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 49,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/bank-account/",
@@ -632,7 +624,7 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 0
+    "engagementRate": 1
    },
    {
     "pagePath": "/ja/guides/leaving-japan/",
@@ -685,21 +677,15 @@
    },
    {
     "landingPage": "/ja",
-    "sessions": 6,
-    "engagementRate": 0.5,
-    "averageSessionDuration": 228.3507
-   },
-   {
-    "landingPage": "",
-    "sessions": 1,
-    "engagementRate": 0,
-    "averageSessionDuration": 263.3307
+    "sessions": 5,
+    "engagementRate": 0.6,
+    "averageSessionDuration": 123.554
    },
    {
     "landingPage": "/ja/employers",
     "sessions": 1,
     "engagementRate": 1,
-    "averageSessionDuration": 2171.2591
+    "averageSessionDuration": 4172.045
    },
    {
     "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
@@ -713,11 +699,6 @@
     "sessionDefaultChannelGroup": "Direct",
     "sessions": 34,
     "engagementRate": 0.4706
-   },
-   {
-    "sessionDefaultChannelGroup": "Unassigned",
-    "sessions": 1,
-    "engagementRate": 0
    }
   ],
   "devices": [
@@ -746,7 +727,7 @@
     "activeUsers": 2
    },
    {
-    "country": "",
+    "country": "(not set)",
     "activeUsers": 1
    },
    {
@@ -774,9 +755,12 @@
     "eventCount": 1
    }
   ],
-  "apply_clicks_by_type": {
-   "note": "register custom dimension link_type in GA4"
-  },
+  "apply_clicks_by_type": [
+   {
+    "customEvent:link_type": "(not set)",
+    "eventCount": 1
+   }
+  ],
   "events": [
    {
     "eventName": "page_view",
@@ -822,5 +806,15 @@
     "averageSessionDuration": 1.8777
    }
   ]
- }
+ },
+ "sitemaps": [
+  {
+   "path": "https://liveworktoyama.com/sitemap.xml",
+   "lastSubmitted": "2026-11-26T03:27:02.787Z",
+   "lastDownloaded": "2026-11-26T03:27:03.803Z",
+   "isPending": false,
+   "warnings": "0",
+   "errors": "0"
+  }
+ ]
 }
