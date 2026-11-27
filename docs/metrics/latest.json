@@ -2,79 +2,825 @@
  "generated": "2026-11-27",
  "note": "Aggregated numbers only. No personal data.",
  "last7d": {
-  "totals": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  "totals": [
+   {
+    "activeUsers": 30,
+    "newUsers": 34,
+    "sessions": 34,
+    "screenPageViews": 147,
+    "engagementRate": 0.4706,
+    "averageSessionDuration": 155.3097
+   }
+  ],
+  "pages": [
+   {
+    "pagePath": "/ja/",
+    "screenPageViews": 30,
+    "activeUsers": 5,
+    "userEngagementDuration": 242,
+    "engagementRate": 0.75
+   },
+   {
+    "pagePath": "/en/",
+    "screenPageViews": 28,
+    "activeUsers": 26,
+    "userEngagementDuration": 56,
+    "engagementRate": 0.3462
+   },
+   {
+    "pagePath": "/ja/jobs/",
+    "screenPageViews": 17,
+    "activeUsers": 3,
+    "userEngagementDuration": 119,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/",
+    "screenPageViews": 16,
+    "activeUsers": 9,
+    "userEngagementDuration": 0,
+    "engagementRate": 0.8889
+   },
+   {
+    "pagePath": "/ja/jobs/search/",
+    "screenPageViews": 8,
+    "activeUsers": 3,
+    "userEngagementDuration": 97,
+    "engagementRate": 0.6667
+   },
+   {
+    "pagePath": "/ja/guides/",
+    "screenPageViews": 7,
+    "activeUsers": 3,
+    "userEngagementDuration": 24,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/",
+    "screenPageViews": 4,
+    "activeUsers": 3,
+    "userEngagementDuration": 17,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/students/",
+    "screenPageViews": 4,
+    "activeUsers": 3,
+    "userEngagementDuration": 31,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/about/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 17,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/employers/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 8,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/help-in-your-language/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 6,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/moving-procedures/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 18,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/phone-and-sim/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 6,
+    "engagementRate": 0.5
+   },
+   {
+    "pagePath": "/ja/jobs/toyama-city/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 26,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/uozu/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 23,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/business/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/easy/jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 2,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/easy/news/2026-11-26-visa-fee-change/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 2,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/employers/c-688d34e22a/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 5,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/guides/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 4,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/news/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/aeon-bakery/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 24,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/employers/c-688d34e22a/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 18,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/c-fdb4c66a91/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 49,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/takagi-seiko/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 26,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/village-field/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 49,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/guides/bank-account/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 8,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/changing-jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 9,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/earthquakes-and-heavy-snow/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 7,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/garbage-sorting/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 4,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/guides/leaving-japan/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 14,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/himi/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 11,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-26-indonesia-tb-screening/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 13,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-26-visa-fee-change/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 25,
+    "engagementRate": 1
+   }
+  ],
+  "views_by_language": {
+   "ja": 95,
+   "en": 31,
+   "other": 16,
+   "ja-only": 3,
+   "easy": 2
   },
-  "pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "landing_pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "channels": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "devices": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "countries": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "browser_languages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "apply_clicks_by_page": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
+  "landing_pages": [
+   {
+    "landingPage": "/en",
+    "sessions": 19,
+    "engagementRate": 0.1579,
+    "averageSessionDuration": 1.8777
+   },
+   {
+    "landingPage": "/",
+    "sessions": 8,
+    "engagementRate": 1,
+    "averageSessionDuration": 32.1403
+   },
+   {
+    "landingPage": "/ja",
+    "sessions": 6,
+    "engagementRate": 0.5,
+    "averageSessionDuration": 228.3507
+   },
+   {
+    "landingPage": "",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 263.3307
+   },
+   {
+    "landingPage": "/ja/employers",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 2171.2591
+   },
+   {
+    "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 1183.0376
+   }
+  ],
+  "channels": [
+   {
+    "sessionDefaultChannelGroup": "Direct",
+    "sessions": 34,
+    "engagementRate": 0.4706
+   },
+   {
+    "sessionDefaultChannelGroup": "Unassigned",
+    "sessions": 1,
+    "engagementRate": 0
+   }
+  ],
+  "devices": [
+   {
+    "deviceCategory": "mobile",
+    "sessions": 19,
+    "engagementRate": 0.4211
+   },
+   {
+    "deviceCategory": "desktop",
+    "sessions": 15,
+    "engagementRate": 0.5333
+   }
+  ],
+  "countries": [
+   {
+    "country": "United States",
+    "activeUsers": 21
+   },
+   {
+    "country": "Japan",
+    "activeUsers": 5
+   },
+   {
+    "country": "Netherlands",
+    "activeUsers": 2
+   },
+   {
+    "country": "",
+    "activeUsers": 1
+   },
+   {
+    "country": "Switzerland",
+    "activeUsers": 1
+   }
+  ],
+  "browser_languages": [
+   {
+    "language": "English",
+    "activeUsers": 24
+   },
+   {
+    "language": "Japanese",
+    "activeUsers": 5
+   },
+   {
+    "language": "German",
+    "activeUsers": 1
+   }
+  ],
+  "apply_clicks_by_page": [
+   {
+    "pagePath": "/ja/jobs/search/",
+    "eventCount": 1
+   }
+  ],
   "apply_clicks_by_type": {
    "note": "register custom dimension link_type in GA4"
   },
-  "events": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "search_queries": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:liveworktoyama.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain"
-  },
-  "search_pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:liveworktoyama.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain"
-  }
+  "events": [
+   {
+    "eventName": "page_view",
+    "eventCount": 147
+   },
+   {
+    "eventName": "user_engagement",
+    "eventCount": 97
+   },
+   {
+    "eventName": "scroll",
+    "eventCount": 53
+   },
+   {
+    "eventName": "session_start",
+    "eventCount": 38
+   },
+   {
+    "eventName": "first_visit",
+    "eventCount": 34
+   },
+   {
+    "eventName": "click",
+    "eventCount": 19
+   },
+   {
+    "eventName": "apply_click",
+    "eventCount": 1
+   },
+   {
+    "eventName": "form_start",
+    "eventCount": 1
+   }
+  ],
+  "search_queries": [],
+  "search_pages": [],
+  "hint_low_ctr": [],
+  "hint_low_engagement": [
+   {
+    "landingPage": "/en",
+    "sessions": 19,
+    "engagementRate": 0.1579,
+    "averageSessionDuration": 1.8777
+   }
+  ]
  },
  "last28d": {
-  "totals": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  "totals": [
+   {
+    "activeUsers": 30,
+    "newUsers": 34,
+    "sessions": 34,
+    "screenPageViews": 147,
+    "engagementRate": 0.4706,
+    "averageSessionDuration": 155.3097
+   }
+  ],
+  "pages": [
+   {
+    "pagePath": "/ja/",
+    "screenPageViews": 30,
+    "activeUsers": 5,
+    "userEngagementDuration": 242,
+    "engagementRate": 0.75
+   },
+   {
+    "pagePath": "/en/",
+    "screenPageViews": 28,
+    "activeUsers": 26,
+    "userEngagementDuration": 56,
+    "engagementRate": 0.3462
+   },
+   {
+    "pagePath": "/ja/jobs/",
+    "screenPageViews": 17,
+    "activeUsers": 3,
+    "userEngagementDuration": 119,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/",
+    "screenPageViews": 16,
+    "activeUsers": 9,
+    "userEngagementDuration": 0,
+    "engagementRate": 0.8889
+   },
+   {
+    "pagePath": "/ja/jobs/search/",
+    "screenPageViews": 8,
+    "activeUsers": 3,
+    "userEngagementDuration": 97,
+    "engagementRate": 0.6667
+   },
+   {
+    "pagePath": "/ja/guides/",
+    "screenPageViews": 7,
+    "activeUsers": 3,
+    "userEngagementDuration": 24,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/",
+    "screenPageViews": 4,
+    "activeUsers": 3,
+    "userEngagementDuration": 17,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/students/",
+    "screenPageViews": 4,
+    "activeUsers": 3,
+    "userEngagementDuration": 31,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/about/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 17,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/employers/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 8,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/help-in-your-language/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 6,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/moving-procedures/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 18,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/phone-and-sim/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 6,
+    "engagementRate": 0.5
+   },
+   {
+    "pagePath": "/ja/jobs/toyama-city/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 26,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/uozu/",
+    "screenPageViews": 2,
+    "activeUsers": 1,
+    "userEngagementDuration": 23,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/business/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/easy/jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 2,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/easy/news/2026-11-26-visa-fee-change/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 2,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/employers/c-688d34e22a/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 5,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/guides/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 4,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/news/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/aeon-bakery/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 24,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/employers/c-688d34e22a/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 18,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/c-fdb4c66a91/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 49,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/takagi-seiko/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 26,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/employers/village-field/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 49,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/guides/bank-account/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 8,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/changing-jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 9,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/earthquakes-and-heavy-snow/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 7,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/garbage-sorting/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 4,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/ja/guides/leaving-japan/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 14,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/himi/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 11,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-26-indonesia-tb-screening/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 13,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-26-visa-fee-change/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 25,
+    "engagementRate": 1
+   }
+  ],
+  "views_by_language": {
+   "ja": 95,
+   "en": 31,
+   "other": 16,
+   "ja-only": 3,
+   "easy": 2
   },
-  "pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "landing_pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "channels": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "devices": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "countries": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "browser_languages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "apply_clicks_by_page": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
+  "landing_pages": [
+   {
+    "landingPage": "/en",
+    "sessions": 19,
+    "engagementRate": 0.1579,
+    "averageSessionDuration": 1.8777
+   },
+   {
+    "landingPage": "/",
+    "sessions": 8,
+    "engagementRate": 1,
+    "averageSessionDuration": 32.1403
+   },
+   {
+    "landingPage": "/ja",
+    "sessions": 6,
+    "engagementRate": 0.5,
+    "averageSessionDuration": 228.3507
+   },
+   {
+    "landingPage": "",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 263.3307
+   },
+   {
+    "landingPage": "/ja/employers",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 2171.2591
+   },
+   {
+    "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 1183.0376
+   }
+  ],
+  "channels": [
+   {
+    "sessionDefaultChannelGroup": "Direct",
+    "sessions": 34,
+    "engagementRate": 0.4706
+   },
+   {
+    "sessionDefaultChannelGroup": "Unassigned",
+    "sessions": 1,
+    "engagementRate": 0
+   }
+  ],
+  "devices": [
+   {
+    "deviceCategory": "mobile",
+    "sessions": 19,
+    "engagementRate": 0.4211
+   },
+   {
+    "deviceCategory": "desktop",
+    "sessions": 15,
+    "engagementRate": 0.5333
+   }
+  ],
+  "countries": [
+   {
+    "country": "United States",
+    "activeUsers": 21
+   },
+   {
+    "country": "Japan",
+    "activeUsers": 5
+   },
+   {
+    "country": "Netherlands",
+    "activeUsers": 2
+   },
+   {
+    "country": "",
+    "activeUsers": 1
+   },
+   {
+    "country": "Switzerland",
+    "activeUsers": 1
+   }
+  ],
+  "browser_languages": [
+   {
+    "language": "English",
+    "activeUsers": 24
+   },
+   {
+    "language": "Japanese",
+    "activeUsers": 5
+   },
+   {
+    "language": "German",
+    "activeUsers": 1
+   }
+  ],
+  "apply_clicks_by_page": [
+   {
+    "pagePath": "/ja/jobs/search/",
+    "eventCount": 1
+   }
+  ],
   "apply_clicks_by_type": {
    "note": "register custom dimension link_type in GA4"
   },
-  "events": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
-  },
-  "search_queries": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:liveworktoyama.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain"
-  },
-  "search_pages": {
-   "error": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:liveworktoyama.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain"
-  }
+  "events": [
+   {
+    "eventName": "page_view",
+    "eventCount": 147
+   },
+   {
+    "eventName": "user_engagement",
+    "eventCount": 97
+   },
+   {
+    "eventName": "scroll",
+    "eventCount": 53
+   },
+   {
+    "eventName": "session_start",
+    "eventCount": 38
+   },
+   {
+    "eventName": "first_visit",
+    "eventCount": 34
+   },
+   {
+    "eventName": "click",
+    "eventCount": 19
+   },
+   {
+    "eventName": "apply_click",
+    "eventCount": 1
+   },
+   {
+    "eventName": "form_start",
+    "eventCount": 1
+   }
+  ],
+  "search_queries": [],
+  "search_pages": [],
+  "hint_low_ctr": [],
+  "hint_low_engagement": [
+   {
+    "landingPage": "/en",
+    "sessions": 19,
+    "engagementRate": 0.1579,
+    "averageSessionDuration": 1.8777
+   }
+  ]
  }
 }
