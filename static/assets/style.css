@@ -231,3 +231,10 @@ footer nav a{min-height:44px}
 @media(min-width:601px){.logo img{height:42px}}
 .chip span{color:var(--grn)}
 [hidden]{display:none!important}
+.bizcta{margin-top:28px;border-left:5px solid var(--grn)}
+.bizcta h2{font-size:18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;margin:8px 0}
+.stats div{background:var(--bayf);border-radius:12px;padding:16px}
+.stats b{display:block;font-size:34px;font-weight:900;color:var(--bay);line-height:1.1}
+.stats span{font-size:14px;color:var(--soft)}
+.stats{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}@media(max-width:600px){.stats{grid-template-columns:1fr 1fr}.stats b{font-size:28px}}

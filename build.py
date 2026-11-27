@@ -945,6 +945,7 @@ def build_jobs(lang):
     )
     crumbs = [(t(lang, "nav_home"), f"/{lang}/"), (t(lang, "nav_jobs"), path)]
     last = max([j["checked"] for j in JOBS + AUTO_JOBS], default=None)
+    body += "\n" + band('<p class="note" lang="ja">求人の掲載・修正のご依頼、外国人スタッフの採用のご相談は <a data-cta="jobs_biz" href="/business/">企業のみなさまへ</a>（無料ヒアリングあり）</p>', top0=True)
     page(lang, path, t(lang, "jobs_h1"), t(lang, "jobs_desc"), body, section="jobs",
          alternates=alts(lambda l: f"/{l}/jobs/"), jsonld=[crumbs_ld(crumbs)], slim=False, lastmod=last)
     for r in REGION_ORDER:
@@ -1101,6 +1102,16 @@ def build_employers_list(lang):
          alternates=alts(lambda l: f"/{l}/employers/"), jsonld=[crumbs_ld(crumbs)], slim=False)
 
 
+def employer_cta(name):
+    """Japanese box for the company's own staff: free corrections and help with hiring foreign staff (B2B entry)."""
+    subj = quote(f"【Live & Work Toyama】{name} の掲載について")
+    return ('<aside class="card bizcta" lang="ja"><h2>この企業の採用ご担当者さまへ</h2>'
+            '<p>このページは、公開されている求人情報をもとに自動で作成しています。掲載内容の修正・削除のご依頼は無料で、すぐに対応します。</p>'
+            '<p>外国人スタッフの採用を進めたい場合は、多言語の求人ページ制作や面接通訳などもご相談いただけます。</p>'
+            f'<div class="btns"><a class="btn sm" data-cta="employer_mail" href="mailto:info@liveworktoyama.com?subject={subj}">メールで連絡する</a>'
+            '<a class="btn sm ghost" data-cta="employer_biz" href="/business/">企業向けサービスを見る</a></div></aside>')
+
+
 def build_employer(e, lang):
     path = f"/{lang}/employers/{e['slug']}/"
     name = pick(e["name"], lang)
@@ -1133,6 +1144,7 @@ def build_employer(e, lang):
         f'<p class="upd">{esc(t(lang, "emp_disclaimer"))}</p>',
         f'<div class="rule" style="margin-top:20px"><p>{esc(t(lang, "jobs_note"))}</p></div>',
     ]
+    parts.append(employer_cta(pick(e["name"], "ja")))
     body = band("\n".join(parts), narrow=True)
     ld = [crumbs_ld(crumbs), {"@context": "https://schema.org", "@type": "Organization", "name": pick(e["name"], "ja"),
           "alternateName": pick(e["name"], "en"), **({"url": e["website"]} if e.get("website") else {}),
@@ -1182,6 +1194,7 @@ def build_company(c, lang):
         f'<p class="upd">{esc(t(lang, "emp_disclaimer"))}</p>',
         f'<div class="rule" style="margin-top:20px"><p>{esc(t(lang, "jobs_note"))}</p></div>',
     ]
+    parts.append(employer_cta(name))
     body = band("\n".join(parts), narrow=True)
     ld = [crumbs_ld(crumbs), {"@context": "https://schema.org", "@type": "Organization", "name": name,
           **({"url": info["website"]} if info.get("website") and info.get("site_ok") else {}),
@@ -1226,6 +1239,12 @@ def build_ja_page(name, section):
     if name in ("about", "business"):
         ld.append({"@context": "https://schema.org", **org_ld()})
     body = body.replace("<!--CRUMBS-->", crumbs_html(crumbs, "ja"))
+    if "<!--STATS-->" in body:  # numbers that update every day
+        n_jobs, n_comp = len(JOBS) + len(AUTO_JOBS), len(COMPANIES)
+        stats = (f'<div class="stats"><div><b>{n_jobs:,}</b><span>掲載中の求人</span></div><div><b>{n_comp:,}</b><span>掲載企業</span></div>'
+                 f'<div><b>5</b><span>言語（英語・やさしい日本語・日本語・ベトナム語・インドネシア語）</span></div><div><b>{len(GUIDES)}</b><span>生活・仕事のガイド</span></div></div>'
+                 f'<p class="note">{datetime.date.today().month}月{datetime.date.today().day}日現在。富山県内の外国籍の方の応募歓迎・外国人積極採用の求人を毎朝更新しています。</p>')
+        body = body.replace("<!--STATS-->", stats)
     page("ja", path, meta["title"], meta["description"], body, section=section, ja_only=True, jsonld=ld, slim=False,
          alternates={"ja": path})
 
