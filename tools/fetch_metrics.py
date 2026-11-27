@@ -108,6 +108,10 @@ def main():
         if isinstance(r["landing_pages"], list):
             r["hint_low_engagement"] = [p for p in r["landing_pages"] if p["sessions"] >= 10 and p["engagementRate"] < 0.4][:20]
         out[k] = r
+    # Which sitemaps Search Console knows about (read-only). Empty list = sitemap not submitted yet.
+    r = s.get(f"https://www.googleapis.com/webmasters/v3/sites/{quote(site, safe='')}/sitemaps", timeout=60)
+    out["sitemaps"] = [{k: m.get(k) for k in ("path", "lastSubmitted", "lastDownloaded", "isPending", "warnings", "errors")}
+                       for m in r.json().get("sitemap", [])] if r.status_code == 200 else {"error": r.text[:300]}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "latest.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if datetime.date.today().weekday() == 0 or not (OUT / "history").exists():
