@@ -230,3 +230,4 @@ footer nav a{min-height:44px}
 @media(max-width:600px){.logo img{height:28px}}
 @media(min-width:601px){.logo img{height:42px}}
 .chip span{color:var(--grn)}
+[hidden]{display:none!important}

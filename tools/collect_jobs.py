@@ -102,7 +102,15 @@ def parse_block(block):
     office = src.group(1) if src else ""
     emp_text = cell(block, "requirement")
     tags = " ".join(re.findall(r'class="tag[^"]*"[^>]*>([^<]+)<', block))
-    etype = next((v for k, v in EMPLOYMENT if k in (emp_text + " " + tags)), "full_time")
+    # JobsGo marks full-time, contract and dispatch jobs with a strong tag (e.g. "正社員").
+    # Hello Work part-time jobs have no such tag, so a job without one is part-time.
+    strong = " ".join(re.findall(r'class="tag strong"[^>]*>([^<]+)<', block))
+    title_raw = text(re.search(r'href="/jobs/detail/[\w-]+"[^>]*>(.*?)</a>', block, re.S).group(1))
+    etype = next((v for k, v in EMPLOYMENT if k in strong), None)
+    if etype is None:
+        etype = next((v for k, v in EMPLOYMENT if k in (emp_text + " " + tags)), None) or "part_time"
+    if etype == "full_time" and re.search(r"パート|アルバイト", title_raw) and "正社員" not in strong:
+        etype = "part_time"
     content = cell(block, "content")
     cat = next((c for c, rx in CATEGORY if re.search(rx, title)), None) or \
         next((c for c, rx in CATEGORY if re.search(rx, content[:200])), "other")
