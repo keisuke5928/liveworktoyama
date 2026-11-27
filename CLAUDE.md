@@ -6,7 +6,7 @@
 ## 1. プロジェクトの概要
 
 1. サイト名：Live & Work Toyama（by Oiyo）。サブタイトル「Jobs and daily life in Toyama」
-2. ドメイン：liveworktoyama.com（お名前.comで取得。ネームサーバーはお名前.com 01〜04.dnsv.jp。Whois公開代行あり）
+2. ドメイン：liveworktoyama.com（お名前.comで取得。Whois公開代行あり。2026-11-27 にネームサーバーを Cloudflare（lisa / milan.ns.cloudflare.com）へ移し、DNS は Cloudflare で管理。GitHub Pages の A・AAAA・CNAME は「DNS only」）
 3. 公開方法：GitHub Pages（このリポジトリ keisuke5928/liveworktoyama、Public）
 4. 運営：Oiyo（おいよ）。吉田圭佑（Kay）の個人事業。富山県滑川市。将来は Oiyo Inc.
 5. 「おいよ」は富山県東部（呉東）の言葉で、相手の話に「そうそう、そうなんだよ」と強く共感する言葉。「はい」という意味ではない
@@ -117,7 +117,7 @@
    6. 広告費：実費（企業から媒体へ直接支払い）
 2. 行わないこと：求職者の紹介、応募の取り次ぎ、合否判断、成功報酬の請求、在留資格の個別判断や申請書類作成、特定技能の義務的支援の代行
 3. Meta広告は国籍でターゲティングしない。地域と言語で配信する
-4. 問い合わせ先はメールのみ掲載する（電話番号は当面載せない。2026-11-26 オーナー指示）。メールアドレスはオーナーが作成後に掲載する
+4. 問い合わせ先はメールのみ掲載する（電話番号は当面載せない。2026-11-26 オーナー指示）。メールは info@liveworktoyama.com（2026-11-27開設。Cloudflare Email Routing でオーナーの Gmail に転送。ネームサーバーは Cloudflare の lisa / milan.ns.cloudflare.com、サイトのレコードは「DNS only」のまま）
 
 ## 8. 自動化と運用
 

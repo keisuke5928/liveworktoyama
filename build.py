@@ -237,6 +237,8 @@ def org_ld():
         "logo": {"@type": "ImageObject", "url": BASE + "/img/logo.png", "width": 512, "height": 512},
         "address": {"@type": "PostalAddress", "addressRegion": "Toyama", "addressCountry": "JP"},
         "brand": {"@type": "Brand", "name": SITE["name"]},
+        "email": "info@liveworktoyama.com",
+        "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "info@liveworktoyama.com", "availableLanguage": ["ja", "en"]},
     }
 
 
