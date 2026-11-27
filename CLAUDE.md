@@ -163,7 +163,7 @@
 
 1. データの集め方
    1. 毎朝5時（日本時間）に GitHub Actions「Fetch site metrics」が GA4 と Search Console の数字を `docs/metrics/latest.json` に保存する（月曜は `docs/metrics/history/` にも保存）。集計した数字だけで、個人を特定できる情報は扱わない
-   2. 必要な設定：GitHub のリポジトリのシークレット `GA_SA_KEY`（サービスアカウントの鍵）と `GA4_PROPERTY_ID`（数字のプロパティID）。サービスアカウントは GA4 の「閲覧者」、Search Console の「制限付き」ユーザーにする
+   2. 必要な設定：GitHub のリポジトリのシークレット `GA_SA_KEY`（サービスアカウントの鍵）と `GA4_PROPERTY_ID`（数字のプロパティID）。サービスアカウントは GA4 の「閲覧者」、Search Console の「制限付き」ユーザーにする。2026-11-27 設定完了：Google Cloud プロジェクト liveworktoyama、サービスアカウント lwt-metrics@liveworktoyama.iam.gserviceaccount.com。GA4・Search Console・Google Cloud はサイト運営用の Google アカウントにまとめた（Search Console はドメインプロパティ、Cloudflare の DNS に確認用 TXT が2件。消さない）。GA4 のカスタムディメンション「応募先の種類」（link_type）登録済み
    3. データがまだないときは、UIの自動チェック、サイト内の情報の抜け、季節の話題をもとに見直す
 2. 毎週月曜の自動見直し（スケジュールタスク「週次のサイト改善」）
    1. 先週と比べて、よく見られているページ、すぐ離脱されるページ（hint_low_engagement）、検索で表示されるのにクリックされないページ（hint_low_ctr）、応募ボタンのクリック（apply_click）、言語別・端末別の閲覧を見る
