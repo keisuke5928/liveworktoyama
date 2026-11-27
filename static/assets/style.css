@@ -67,6 +67,8 @@ footer nav a{min-height:36px;font-size:13.5px;color:var(--soft)}
 
 /* ---- added for the multi-page site ---- */
 html[lang=vi] body{font-family:"Noto Sans","Zen Kaku Gothic New",system-ui,sans-serif}
+html[lang=my] body{font-family:"Noto Sans Myanmar","Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.95}
+html[lang=my] h1,html[lang=my] h2,html[lang=my] h3{line-height:1.6}
 .skip{position:absolute;left:-9999px;top:8px;z-index:20;background:var(--bg);color:var(--ink);padding:10px 14px;border-radius:8px}
 .skip:focus{left:16px}
 .bar nav{order:2}

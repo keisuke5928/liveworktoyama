@@ -321,6 +321,7 @@ def footer(lang):
         f'  <span>© Live &amp; Work Toyama by Oiyo · Toyama, Japan</span>\n'
         f'  <nav aria-label="Footer"><a href="/about/" lang="ja">About / 掲載方針</a><a href="/business/" lang="ja">企業のみなさまへ</a>'
         f'<a href="/partners/" lang="ja">学校・自治体のみなさまへ</a>'
+        '<a href="/my/" lang="my">မြန်မာ</a>'
         + "".join(f'<a href="{esc(u)}" rel="noopener" target="_blank">{esc(k.capitalize())}</a>' for k, u in SITE.get("social", {}).items())
         + '</nav>\n'
         f'  <p class="note" style="margin:0;flex-basis:100%">{esc(t(nl, "footer_note"))} {esc(t(nl, "footer_note2"))}</p>\n'
@@ -449,7 +450,7 @@ def build_home(lang):
             f'<button class="btn" type="submit">{esc(t(lang, "home_find_btn"))}</button></div>'
             f'<p class="note"><a href="/{lang}/jobs/search/">{esc(t(lang, "home_find_all"))}</a> · <a href="/{lang}/jobs/">{esc(t(lang, "jobs_total", n=len(allj)))}</a></p></form>')
     body = band(
-        f'<div class="hero2"><div><p class="kicker">{esc(t(lang, "home_kicker"))}</p><p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + "</p>\n"
+        f'<div class="hero2"><div><p class="kicker">{esc(t(lang, "home_kicker"))}</p><p class="hlangs"><span class="hl-label">{esc(t(lang, "home_langs"))}</span>' + "".join(f'<a href="/{l}/" lang="{UI[l]["html_lang"]}" data-lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{esc(UI[l]["lang_name"])}</a>' for l in LANGS) + '<a href="/my/" lang="my" data-cta="lang_my">မြန်မာ</a>' + "</p>\n"
         f'<h1>{esc(t(lang, "home_h1"))}</h1>\n<p class="lead">{esc(t(lang, "home_lead"))}</p>\n'
         f'<div class="btns"><a class="btn ghost" href="/{lang}/guides/">{esc(t(lang, "nav_guides"))}</a>'
         f'<a class="btn ghost" href="/{lang}/news/">{esc(t(lang, "nav_news"))}</a>'
@@ -1278,6 +1279,23 @@ def build_root():
     PAGES.append({"path": "/", "alternates": alternates, "lastmod": SITE["updated"], "xdefault": "/"})
 
 
+def build_myanmar():
+    """Burmese entry page (/my/): one page of life- and work-critical info. Not a full site language."""
+    path = "/my/"
+    body = (C / "pages-my" / "index.html").read_text(encoding="utf-8")
+    title = "မြန်မာဘာသာ အရေးကြီးအချက်များ (Myanmar) | " + SITE["name"]
+    desc = "Toyama information in Burmese: emergency 119/110, phone help in Burmese, job-change rules, winter safety. Private site, not a public office."
+    doc = head("en", title, desc, path, {"en": path})
+    doc = doc.replace('<html lang="en">', '<html lang="my">', 1)
+    doc = doc.replace('content="en_US"', 'content="my_MM"', 1)
+    doc = doc.replace("</head>", '<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&display=swap" rel="stylesheet">\n</head>')
+    doc += "<body>\n" + header("en", None, {}) + scene("en", slim=True) + "\n"
+    doc += f'<main id="main">\n{body}\n</main>\n\n' + footer("en")
+    doc += f'<script src="/assets/site.js?v={JS_V}" defer></script>\n</body>\n</html>\n'
+    write(path, doc)
+    PAGES.append({"path": path, "alternates": {}, "lastmod": SITE["updated"], "xdefault": None})
+
+
 def build_404():
     links = "".join(f'<li><a href="/{l}/" lang="{UI[l]["html_lang"]}">{esc(UI[l]["lang_name"])}</a> — {esc(t(l, "not_found"))}</li>' for l in LANGS)
     doc = head("en", f"404 | {SITE['name']}", "Page not found.", "/404.html", {"en": "/404.html"})
@@ -1356,6 +1374,7 @@ def build_llms():
         f"- [Home]({BASE}/en/): latest news, guides, job listings, where to get help",
         f"- [News]({BASE}/en/news/): short news for residents of Toyama",
         f"- [Life guides]({BASE}/en/guides/): daily life and work in Toyama",
+        f"- [Burmese / မြန်မာ]({BASE}/my/): one page in Burmese: emergency numbers, phone help in Burmese, job-change rules, winter safety",
         f"- [Job listings]({BASE}/en/jobs/): how job listings work",
         f"- [International students]({BASE}/en/students/): part-time work rules (28 hours a week, 8 hours a day in long holidays)",
         "",
@@ -1410,6 +1429,7 @@ def main():
     build_ja_page("partners", "business")
     build_ja_page("about", None)
     build_root()
+    build_myanmar()
     build_404()
     build_feeds()
     build_sitemap()
