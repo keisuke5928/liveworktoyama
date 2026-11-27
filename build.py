@@ -238,6 +238,7 @@ def org_ld():
         "address": {"@type": "PostalAddress", "addressRegion": "Toyama", "addressCountry": "JP"},
         "brand": {"@type": "Brand", "name": SITE["name"]},
         "email": "info@liveworktoyama.com",
+        "sameAs": list(SITE.get("social", {}).values()),
         "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "info@liveworktoyama.com", "availableLanguage": ["ja", "en"]},
     }
 
@@ -319,7 +320,9 @@ def footer(lang):
         '<footer class="band"><div class="wrap">\n'
         f'  <span>© Live &amp; Work Toyama by Oiyo · Toyama, Japan</span>\n'
         f'  <nav aria-label="Footer"><a href="/about/" lang="ja">About / 掲載方針</a><a href="/business/" lang="ja">企業のみなさまへ</a>'
-        f'<a href="/partners/" lang="ja">学校・自治体のみなさまへ</a></nav>\n'
+        f'<a href="/partners/" lang="ja">学校・自治体のみなさまへ</a>'
+        + "".join(f'<a href="{esc(u)}" rel="noopener" target="_blank">{esc(k.capitalize())}</a>' for k, u in SITE.get("social", {}).items())
+        + '</nav>\n'
         f'  <p class="note" style="margin:0;flex-basis:100%">{esc(t(nl, "footer_note"))} {esc(t(nl, "footer_note2"))}</p>\n'
         "</div></footer>\n"
     )
@@ -507,7 +510,8 @@ def build_home(lang):
         tiles += f'<a class="card gtile" href="/{lang}/guides/{g["slug"]}/"><b>{esc(d["title"])}</b><span class="note">{esc(d.get("description", ""))}</span></a>'
     body += "\n" + band(f'<div class="shead"><h2 class="sh">{esc(t(lang, "nav_guides"))}</h2><a href="/{lang}/guides/">{esc(t(lang, "home_guides_n", n=len(GUIDES)))} →</a></div><div class="ggrid">{tiles}</div>', cls="tint")
     body += "\n" + band(f'<div class="card upd"><h2 class="sh">{esc(t(lang, "home_updates_h"))}</h2><p>{esc(t(lang, "home_updates"))}</p>'
-                         f'<p><a class="btn sm ghost" href="/{lang}/feed.xml">{esc(t(lang, "home_rss"))}</a></p></div>')
+                         f'<div class="btns">' + "".join(f'<a class="btn sm" data-cta="social_{k}" href="{esc(u)}" rel="noopener" target="_blank">{esc(k.capitalize())}</a>' for k, u in SITE.get("social", {}).items())
+                         + f'<a class="btn sm ghost" href="/{lang}/feed.xml">{esc(t(lang, "home_rss"))}</a></div></div>')
     body += "\n" + band(f'<div class="rule"><p>{esc(t(lang, "disclaimer"))}</p></div>')
     ld = [
         {"@context": "https://schema.org", **org_ld()},
