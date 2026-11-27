@@ -126,7 +126,7 @@
    2. 1〜2本の記事を5言語で追加。記事ごとにSEO・AEOの設定をする
    3. 記事はオーナーの確認を待たずに main に反映し、自動で公開する（2026-11-26 オーナー指示）。公開前に `python3 build.py && python3 tools/check.py` が通ることを必ず確認する
    4. ガイドの追加は週1本程度まで
-   5. SNS投稿（Facebookページ https://www.facebook.com/liveworktoyama（2026-11-27開設、`content/site.json` の social に登録するとサイトのトップ・フッター・構造化データに自動で出る）、Instagram（https://www.instagram.com/liveworktoyama/、2026-11-27開設、Facebook ページとリンク済み、site.json に登録済み）。TikTokは2か月目以降、週1本程度）。Facebookへは毎朝、記事の公開を確認したあとに `python3 tools/post_facebook.py` で新しい記事を自動投稿する（2026-11-27 オーナー指示。Meta アプリ「LWT Poster」のページ用トークンを graph.facebook.com 向けの鍵として環境に保存済み。投稿済みは content/social/facebook.json に記録し、同じ記事は2回投稿しない。401/403 が出たらトークン切れなのでオーナーに再発行を頼む）。Instagramはリール動画で投稿する：`node tools/make_reel.mjs <記事ID>` で記事から縦長動画（1080×1920、約16秒、英語＋やさしいにほんご）と投稿文（英語・ベトナム語・インドネシア語・やさしいにほんご）を `_reels/` に作る（2026-11-27 オーナー指示）。動画の文字は記事の内容だけを使う
+   5. SNS投稿（Facebookページ https://www.facebook.com/liveworktoyama（2026-11-27開設、`content/site.json` の social に登録するとサイトのトップ・フッター・構造化データに自動で出る）、Instagram（https://www.instagram.com/liveworktoyama/、2026-11-27開設、Facebook ページとリンク済み、site.json に登録済み）。TikTokは2か月目以降、週1本程度）。Facebookへは毎朝、記事の公開を確認したあとに `python3 tools/post_facebook.py` で新しい記事を自動投稿する（2026-11-27 オーナー指示。Meta アプリ「LWT Poster」のページ用トークンを graph.facebook.com 向けの鍵として環境に保存済み。投稿済みは content/social/facebook.json に記録し、同じ記事は2回投稿しない。401/403 が出たらトークン切れなのでオーナーに再発行を頼む）。Instagramはリール動画で投稿する：`node tools/make_reel.mjs <記事ID>` で記事から縦長動画（1080×1920、約16秒、英語＋やさしいにほんご）と投稿文（英語・ベトナム語・インドネシア語・やさしいにほんご）を `_reels/` に作る（2026-11-27 オーナー指示）。動画の文字は記事の内容だけを使う。Instagram へは自動投稿する（2026-11-27 オーナー指示。同じページ用トークンに instagram_basic・instagram_content_publish を追加済み、IG ユーザーID 17841466716525932）。手順：記事を作るときに `python3 tools/post_instagram.py --stage` で動画を static/reels/ に置き、記事と一緒に main に反映 → 公開を確認したら `python3 tools/post_instagram.py` で投稿（投稿済みは content/social/instagram.json に記録し、動画は static/reels/ から消して次のコミットで反映）。1日1本まで
    6. 求人の収集・掲載・見直し（6章10）
    7. 最後に日本語のまとめを出す：追加した記事と求人、終了にした求人、事実確認が必要な点
 2. 週1回の見直し
@@ -134,7 +134,7 @@
    2. 何をなぜ変えたかを `docs/運用ノート.md` に記録し、まとめで報告する
 3. AIが自分の判断で変えてよいもの：記事のテーマ選びと割合、文章のトーンや長さ、見出し、投稿時間、ガイドの追加と更新、メニューの並び順、トップで目立たせる記事。サイトのUI・UXの改善も、12章のルールの範囲で自動で行う（2026-11-26 オーナー指示）
 4. AIが勝手に変えないもの（提案だけしてオーナーの許可を待つ）：法律に関わる文言（掲載方針、免責、求人のルール）、料金や企業向けサービスの内容、ロゴ・配色・フォントなどブランドの変更（12章4）
-5. オーナーの作業として残るもの：求人掲載の判断、企業からの問い合わせ対応、Facebookグループへのシェア（自動化不可）、SNS接続が切れたときの再接続
+5. オーナーの作業として残るもの：求人掲載の判断、企業からの問い合わせ対応、Facebookグループへのシェア（自動化不可）、SNS接続が切れたときの再接続（Facebook・Instagram は同じトークン。約60日で切れることがあるので、401/403 が出たら再発行を頼む）
 
 ## 9. 外国人読者の国籍データ（富山県）
 
