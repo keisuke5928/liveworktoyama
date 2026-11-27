@@ -468,8 +468,11 @@ def build_home(lang):
                      for g in season[1] if g in GUIDE_BY_SLUG)
         body += "\n" + band(f'<div class="season"><p><span class="tag">{esc(t(lang, "season_label"))}</span> <b>{esc(t(lang, "season_" + season[0]))}</b></p><div class="btns">{gl}</div></div>', top0=True)
     # 2. Phone numbers people need fast (tap to call)
-    tels = [("119", "119", "tel_119", "red"), ("110", "110", "tel_110", "red"), ("#8000", "%238000", "tel_8000", ""), ("076-441-6330", "0764416330", "tel_tic", "")]
-    tel_html = "".join(f'<a class="tel {c}" href="tel:{h}"><b>{esc(n)}</b><span>{esc(t(lang, k))}</span></a>' for n, h, k, c in tels)
+    # 119 and 110 are shown as numbers only (no tap-to-call), to avoid calls by mistake (owner request 2026-11-27)
+    tels = [("119", None, "tel_119", "red"), ("110", None, "tel_110", "red"), ("#8000", "%238000", "tel_8000", ""), ("076-441-6330", "0764416330", "tel_tic", "")]
+    tel_html = "".join(
+        f'<a class="tel {c}" href="tel:{h}"><b>{esc(n)}</b><span>{esc(t(lang, k))}</span></a>' if h else
+        f'<div class="tel {c}"><b>{esc(n)}</b><span>{esc(t(lang, k))}</span></div>' for n, h, k, c in tels)
     body += "\n" + band(f'<h2 class="sh">{esc(t(lang, "home_phone_h"))}</h2><div class="tels">{tel_html}</div>'
                          f'<p class="note"><a href="/{lang}/guides/help-in-your-language/">{esc(t(lang, "home_help_link"))}</a> · <a href="/{lang}/guides/sick-or-hurt/">{esc(pick({l: GUIDE_BY_SLUG["sick-or-hurt"]["lang"][l]["title"] for l in GUIDE_BY_SLUG["sick-or-hurt"]["lang"]}, lang))}</a></p>', top0=True)
     # 3. Latest news with pictures and dates
