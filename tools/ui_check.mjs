@@ -31,7 +31,7 @@ for (const l of LANGS) {
   const n = pick(`${l}/news`); if (n) pages.push(`/${l}/news/${n}/`);
   for (const g of ['changing-jobs', 'driving-in-snow', 'help-in-your-language']) pages.push(`/${l}/guides/${g}/`);
 }
-pages.push('/business/', '/about/', '/partners/');
+pages.push('/business/', '/about/', '/partners/', '/my/');
 
 const problems = [];
 const seen = new Set();
