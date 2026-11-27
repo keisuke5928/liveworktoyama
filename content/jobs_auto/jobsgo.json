@@ -3,6 +3,195 @@
  "collected": "2026-11-27",
  "jobs": [
   {
+   "id": "jg-16010-24440361",
+   "status": "open",
+   "title_ja": "デイサービスでの送迎(ふる里の風 中田)",
+   "employer_ja": "株式会社 ビレッジ・フィールド",
+   "region": "toyama_city",
+   "category": "care",
+   "employment": "part_time",
+   "pay": {
+    "per": "hour",
+    "min": 1250,
+    "max": 1250
+   },
+   "hours": "15:45–17:30",
+   "published": "2026-11-27",
+   "hellowork_no": "16010-24440361",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24440361",
+   "checked": "2026-11-27",
+   "official_url": "https://furusatonokaze-recruit.com/job_search/kaigo_day/"
+  },
+  {
+   "id": "jg-16020-13280761",
+   "status": "open",
+   "title_ja": "製品検査【正社員】フレックスタイム・経験不問",
+   "employer_ja": "株式会社MOVEON精機",
+   "region": "takaoka",
+   "category": "manufacturing",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 193000,
+    "max": 230000
+   },
+   "hours": "8:00–17:00 / 9:30–15:30",
+   "published": "2026-11-27",
+   "hellowork_no": "16020-13280761",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13280761",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13284061",
+   "status": "open",
+   "title_ja": "調理師(二上万葉苑)正職員 ※増員による求人",
+   "employer_ja": "社会福祉法人 射水万葉会",
+   "region": "takaoka",
+   "category": "food",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 171000,
+    "max": 196400
+   },
+   "hours": "8:30–17:30 / 6:00–15:00 / 10:00–19:00",
+   "published": "2026-11-27",
+   "hellowork_no": "16020-13284061",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13284061",
+   "checked": "2026-11-27",
+   "official_url": "https://www.imizu-manyoukai.or.jp/facility-senior/%e7%89%b9%e5%88%a5%e9%a4%8a%e8%ad%b7%e8%80%81%e4%ba%ba%e3%83%9b%e3%83%bc%e3%83%a0-%e4%ba%8c%e4%b8%8a%e4%b8%87%e8%91%89%e8%8b%91/"
+  },
+  {
+   "id": "jg-16020-13286661",
+   "status": "open",
+   "title_ja": "栄養士(二上万葉苑)調理員 ※増員による求人",
+   "employer_ja": "社会福祉法人 射水万葉会",
+   "region": "takaoka",
+   "category": "food",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 180000,
+    "max": 211100
+   },
+   "hours": "8:30–17:30 / 6:00–15:00 / 10:00–19:00",
+   "published": "2026-11-27",
+   "hellowork_no": "16020-13286661",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13286661",
+   "checked": "2026-11-27",
+   "official_url": "https://www.imizu-manyoukai.or.jp/facility-senior/%e7%89%b9%e5%88%a5%e9%a4%8a%e8%ad%b7%e8%80%81%e4%ba%ba%e3%83%9b%e3%83%bc%e3%83%a0-%e4%ba%8c%e4%b8%8a%e4%b8%87%e8%91%89%e8%8b%91/"
+  },
+  {
+   "id": "jg-16020-13287261",
+   "status": "open",
+   "title_ja": "調理員(二上万葉苑)正職員 ※増員による求人",
+   "employer_ja": "社会福祉法人 射水万葉会",
+   "region": "takaoka",
+   "category": "food",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 167400,
+    "max": 194400
+   },
+   "hours": "8:30–17:30 / 6:00–15:00 / 10:00–19:00",
+   "published": "2026-11-27",
+   "hellowork_no": "16020-13287261",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13287261",
+   "checked": "2026-11-27",
+   "official_url": "https://www.imizu-manyoukai.or.jp/facility-senior/%e7%89%b9%e5%88%a5%e9%a4%8a%e8%ad%b7%e8%80%81%e4%ba%ba%e3%83%9b%e3%83%bc%e3%83%a0-%e4%ba%8c%e4%b8%8a%e4%b8%87%e8%91%89%e8%8b%91/"
+  },
+  {
+   "id": "jg-16020-13289461",
+   "status": "open",
+   "title_ja": "送迎運転手(デイサービス利用者の送迎)",
+   "employer_ja": "社会福祉法人 早川福祉会『特別養護老人ホーム藤園苑』",
+   "region": "takaoka",
+   "category": "care",
+   "employment": "part_time",
+   "pay": {
+    "per": "hour",
+    "min": 1119,
+    "max": 1119
+   },
+   "hours": "8:00–10:00 / 15:30–17:30",
+   "published": "2026-11-27",
+   "hellowork_no": "16020-13289461",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13289461",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16050-05488361",
+   "status": "open",
+   "title_ja": "営業職 ◎資格取得支援制度あり ◎残業ほぼなし",
+   "employer_ja": "株式会社ISHIKURO",
+   "region": "tonami",
+   "category": "retail",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 210000,
+    "max": 345000
+   },
+   "hours": "9:00–18:00 / 8:30–17:30",
+   "published": "2026-11-27",
+   "hellowork_no": "16050-05488361",
+   "hellowork_office": "砺波公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16050-05488361",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16050-05490461",
+   "status": "open",
+   "title_ja": "【鈑金・塗装】残業ほぼ無し、有給取得しやすい",
+   "employer_ja": "株式会社ISHIKURO",
+   "region": "nanto",
+   "category": "other",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 212700,
+    "max": 400000
+   },
+   "hours": "8:30–17:30",
+   "published": "2026-11-27",
+   "hellowork_no": "16050-05490461",
+   "hellowork_office": "砺波公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16050-05490461",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16050-05493961",
+   "status": "open",
+   "title_ja": "一般事務*原則残業無*有休の取りやすい環境*各種認定企業",
+   "employer_ja": "株式会社ISHIKURO",
+   "region": "tonami",
+   "category": "office",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 210000,
+    "max": 320000
+   },
+   "hours": "9:00–18:00",
+   "published": "2026-11-27",
+   "hellowork_no": "16050-05493961",
+   "hellowork_office": "砺波公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16050-05493961",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
    "id": "jg-16010-24375961",
    "status": "open",
    "title_ja": "工務スタッフ",
@@ -22,6 +211,27 @@
    "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24375961",
    "checked": "2026-11-27",
    "official_url": ""
+  },
+  {
+   "id": "jg-16010-24379661",
+   "status": "open",
+   "title_ja": "デイサービス介護での介護職員(ふる里の風中田)",
+   "employer_ja": "株式会社 ビレッジ・フィールド",
+   "region": "toyama_city",
+   "category": "care",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 233000,
+    "max": 233000
+   },
+   "hours": "8:15–17:00",
+   "published": "2026-11-26",
+   "hellowork_no": "16010-24379661",
+   "hellowork_office": "富山公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16010-24379661",
+   "checked": "2026-11-27",
+   "official_url": "https://furusatonokaze-recruit.com/job_search/kaigo_day/"
   },
   {
    "id": "jg-16010-24396261",
@@ -129,23 +339,44 @@
    "official_url": ""
   },
   {
-   "id": "jg-16040-05013161",
+   "id": "jg-16020-13269361",
    "status": "open",
-   "title_ja": "事務職",
-   "employer_ja": "大平工業 株式会社",
-   "region": "kurobe",
-   "category": "office",
+   "title_ja": "医薬品の製造作業(2交替)未経験者歓迎、文系の方も歓迎",
+   "employer_ja": "救急薬品工業株式会社",
+   "region": "imizu",
+   "category": "manufacturing",
    "employment": "full_time",
    "pay": {
     "per": "month",
-    "min": 220000,
-    "max": 220000
+    "min": 200000,
+    "max": 260000
    },
-   "hours": "8:00–17:20",
+   "hours": "8:15–17:15 / 16:45–1:30",
    "published": "2026-11-26",
-   "hellowork_no": "16040-05013161",
-   "hellowork_office": "魚津公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16040-05013161",
+   "hellowork_no": "16020-13269361",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13269361",
+   "checked": "2026-11-27",
+   "official_url": ""
+  },
+  {
+   "id": "jg-16020-13277361",
+   "status": "open",
+   "title_ja": "一般事務(建設関係)/残業ほぼ無し/週休2日制",
+   "employer_ja": "西村工業 株式会社",
+   "region": "takaoka",
+   "category": "construction",
+   "employment": "full_time",
+   "pay": {
+    "per": "month",
+    "min": 240000,
+    "max": 260000
+   },
+   "hours": "8:00–17:30",
+   "published": "2026-11-26",
+   "hellowork_no": "16020-13277361",
+   "hellowork_office": "高岡公共職業安定所",
+   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-13277361",
    "checked": "2026-11-27",
    "official_url": ""
   },
@@ -5144,27 +5375,6 @@
    "hellowork_no": "16020-12840461",
    "hellowork_office": "高岡公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16020-12840461",
-   "checked": "2026-11-27",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16020-12848261",
-   "status": "open",
-   "title_ja": "介護補助、盛付、配膳下膳等",
-   "employer_ja": "いちごいちえ株式会社",
-   "region": "takaoka",
-   "category": "care",
-   "employment": "part_time",
-   "pay": {
-    "per": "hour",
-    "min": 1150,
-    "max": 1200
-   },
-   "hours": "17:00–20:00",
-   "published": "2026-11-06",
-   "hellowork_no": "16020-12848261",
-   "hellowork_office": "高岡公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16020-12848261",
    "checked": "2026-11-27",
    "official_url": ""
   },
@@ -18500,27 +18710,6 @@
    "hellowork_no": "16040-04425261",
    "hellowork_office": "魚津公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16040-04425261",
-   "checked": "2026-11-27",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16040-04428761",
-   "status": "open",
-   "title_ja": "建設会社の営業事務",
-   "employer_ja": "大高建設株式会社",
-   "region": "kurobe",
-   "category": "construction",
-   "employment": "full_time",
-   "pay": {
-    "per": "month",
-    "min": 300000,
-    "max": 350000
-   },
-   "hours": "8:00–17:00",
-   "published": "2026-10-05",
-   "hellowork_no": "16040-04428761",
-   "hellowork_office": "魚津公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16040-04428761",
    "checked": "2026-11-27",
    "official_url": ""
   },
@@ -33032,27 +33221,6 @@
    "hellowork_no": "16040-03806961",
    "hellowork_office": "魚津公共職業安定所",
    "source_url": "https://www.jobs-go.jp/jobs/detail/16040-03806961",
-   "checked": "2026-11-27",
-   "official_url": ""
-  },
-  {
-   "id": "jg-16040-03807161",
-   "status": "open",
-   "title_ja": "介護職【花みずき参番館】",
-   "employer_ja": "社会福祉法人 海望福祉会(あんどの里)",
-   "region": "toyama_city",
-   "category": "care",
-   "employment": "full_time",
-   "pay": {
-    "per": "month",
-    "min": 185700,
-    "max": 262900
-   },
-   "hours": "7:00–16:00 / 9:30–18:30 / 16:00–9:00",
-   "published": "2026-09-01",
-   "hellowork_no": "16040-03807161",
-   "hellowork_office": "魚津公共職業安定所",
-   "source_url": "https://www.jobs-go.jp/jobs/detail/16040-03807161",
    "checked": "2026-11-27",
    "official_url": ""
   },
