@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-28",
+  "updated": "2026-11-28",
+  "category": "work",
+  "region": "toyama",
+  "image": "/img/news/2026-11-28-toyama-minimum-wage-1119.png",
+  "scene": "work",
+  "og_title": [
+    "Toyama minimum wage",
+    "is now 1,119 yen an hour"
+  ],
+  "og_sub": "さいていちんぎん 1,119えん",
+  "easy_summary": "2026ねん 10がつ 1にちから、とやまけんの さいていちんぎんは 1じかん 1,119えんです。きゅうりょうめいさいを みて たしかめましょう。",
+  "sources": [
+    {
+      "name": {
+        "en": "Toyama Labour Bureau",
+        "ja": "富山労働局",
+        "easy": "とやま ろうどうきょく",
+        "vi": "Cục Lao động Toyama",
+        "id": "Biro Ketenagakerjaan Toyama"
+      },
+      "note": {
+        "en": "September 2026, minimum wage revision",
+        "ja": "2026年9月、富山県最低賃金の改正",
+        "easy": "2026ねん 9がつ、さいていちんぎんの おしらせ",
+        "vi": "tháng 9/2026, điều chỉnh lương tối thiểu",
+        "id": "September 2026, perubahan upah minimum"
+      },
+      "url": "https://jsite.mhlw.go.jp/toyama-roudoukyoku/news_topics/oshirase/_120032/R8saichin_toushin_00010.html"
+    },
+    {
+      "name": {
+        "en": "Ministry of Health, Labour and Welfare",
+        "ja": "厚生労働省",
+        "easy": "こうせいろうどうしょう",
+        "vi": "Bộ Y tế, Lao động và Phúc lợi",
+        "id": "Kementerian Kesehatan, Ketenagakerjaan dan Kesejahteraan"
+      },
+      "note": {
+        "en": "Labour Conditions Hotline, foreign languages (checked 2026-11-28)",
+        "ja": "労働条件相談ほっとライン 外国語対応（2026年11月28日確認）",
+        "easy": "ほっとライン（2026ねん 11がつ 28にちに たしかめました）",
+        "vi": "Đường dây nóng tư vấn điều kiện lao động (kiểm tra 28/11/2026)",
+        "id": "Hotline Konsultasi Kondisi Kerja (dicek 28/11/2026)"
+      },
+      "url": "https://www.check-roudou.mhlw.go.jp/soudan/foreigner.html"
+    }
+  ],
+  "related": [
+    "pay-slip",
+    "rights-at-work"
+  ]
+}

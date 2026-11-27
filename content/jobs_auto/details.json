@@ -4234,23 +4234,6 @@
 "founded": "2020",
 "website": "https://shoken.biz/company.html"
 },
-"jg-16020-12848261": {
-"quals": [],
-"age": "",
-"holidays": null,
-"weekly2": "毎週",
-"overtime": 0,
-"bonus": null,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": false,
-"foreign_text": false,
-"jlpt": "",
-"employees": 10,
-"founded": "2021",
-"website": "https://www.ichigoichie-toyama.com"
-},
 "jg-16020-12850861": {
 "quals": [
 "license_car",
@@ -16029,25 +16012,6 @@
 "employees": 44,
 "founded": "1937",
 "website": "http://www.enraku.com"
-},
-"jg-16040-04428761": {
-"quals": [
-"license_car"
-],
-"age": "〜64歳",
-"holidays": 126,
-"weekly2": "週休二日制(土日休)",
-"overtime": 14,
-"bonus": 4.0,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 72,
-"founded": "1954",
-"website": "https://o-taka.co.jp"
 },
 "jg-16040-04429861": {
 "quals": [],
@@ -28796,25 +28760,6 @@
 "founded": "2001",
 "website": "https://www.kaiboufukushi.com/"
 },
-"jg-16040-03807161": {
-"quals": [
-"care_training"
-],
-"age": "18歳〜62歳",
-"holidays": 116,
-"weekly2": "その他",
-"overtime": 4,
-"bonus": 4.0,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": false,
-"jlpt": "",
-"employees": 174,
-"founded": "2001",
-"website": "https://www.kaiboufukushi.com/"
-},
 "jg-16040-03817361": {
 "quals": [],
 "age": "",
@@ -30298,26 +30243,6 @@
 "founded": "1983",
 "website": ""
 },
-"jg-16040-05013161": {
-"quals": [
-"license_car",
-"pc"
-],
-"age": "〜40歳",
-"holidays": 125,
-"weekly2": "週休二日制(土日休)",
-"overtime": 0,
-"bonus": 2.2,
-"raise": true,
-"commute": true,
-"housing": "なし",
-"social_ins": true,
-"foreign_text": true,
-"jlpt": "",
-"employees": 30,
-"founded": "1958",
-"website": ""
-},
 "jg-16050-05483761": {
 "quals": [
 "license_car"
@@ -30510,6 +30435,226 @@
 "holidays": 114,
 "weekly2": "毎週",
 "overtime": 5,
+"bonus": 2.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 25,
+"founded": "1948",
+"website": "https://www.nishimura-kogyo.jp"
+},
+"jg-16010-24440361": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": false,
+"commute": true,
+"housing": "なし",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 150,
+"founded": "2004",
+"website": "https://furusatonokaze.com/"
+},
+"jg-16020-13280761": {
+"quals": [
+"license_car"
+],
+"age": "〜44歳",
+"holidays": 115,
+"weekly2": "その他",
+"overtime": 20,
+"bonus": 3.5,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 68,
+"founded": "2021",
+"website": "https://www.matsump.co.jp/"
+},
+"jg-16020-13284061": {
+"quals": [
+"cook"
+],
+"age": "〜64歳",
+"holidays": 115,
+"weekly2": "その他",
+"overtime": 1,
+"bonus": 4.4,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 856,
+"founded": "1983",
+"website": "http://www.imizu-manyoukai.or.jp"
+},
+"jg-16020-13286661": {
+"quals": [],
+"age": "〜64歳",
+"holidays": 115,
+"weekly2": "その他",
+"overtime": 1,
+"bonus": 4.4,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 856,
+"founded": "1983",
+"website": "http://www.imizu-manyoukai.or.jp"
+},
+"jg-16020-13287261": {
+"quals": [],
+"age": "〜64歳",
+"holidays": 115,
+"weekly2": "その他",
+"overtime": 1,
+"bonus": 4.4,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 856,
+"founded": "1983",
+"website": "http://www.imizu-manyoukai.or.jp"
+},
+"jg-16020-13289461": {
+"quals": [],
+"age": "",
+"holidays": null,
+"weekly2": "毎週",
+"overtime": 0,
+"bonus": null,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": false,
+"foreign_text": false,
+"jlpt": "",
+"employees": 250,
+"founded": "2005",
+"website": "http://www.fujisonoen.or.jp/"
+},
+"jg-16050-05488361": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 110,
+"weekly2": "その他",
+"overtime": 0,
+"bonus": 3.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 48,
+"founded": "1965",
+"website": "https://www.ishikuro.co.jp"
+},
+"jg-16050-05490461": {
+"quals": [
+"license_car"
+],
+"age": "〜59歳",
+"holidays": 110,
+"weekly2": "その他",
+"overtime": 0,
+"bonus": 3.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 48,
+"founded": "1965",
+"website": "https://www.ishikuro.co.jp"
+},
+"jg-16050-05493961": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜59歳",
+"holidays": 110,
+"weekly2": "その他",
+"overtime": 2,
+"bonus": 3.0,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 48,
+"founded": "1965",
+"website": "https://www.ishikuro.co.jp"
+},
+"jg-16010-24379661": {
+"quals": [
+"license_car"
+],
+"age": "〜64歳",
+"holidays": 113,
+"weekly2": "毎週",
+"overtime": 5,
+"bonus": 2.5,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 150,
+"founded": "2004",
+"website": "https://furusatonokaze.com/"
+},
+"jg-16020-13269361": {
+"quals": [],
+"age": "18歳〜64歳",
+"holidays": 124,
+"weekly2": "毎週",
+"overtime": 8,
+"bonus": 3.5,
+"raise": true,
+"commute": true,
+"housing": "なし",
+"social_ins": true,
+"foreign_text": false,
+"jlpt": "",
+"employees": 277,
+"founded": "1963",
+"website": "https://www.qqp.co.jp/"
+},
+"jg-16020-13277361": {
+"quals": [
+"license_car",
+"pc"
+],
+"age": "〜59歳",
+"holidays": 114,
+"weekly2": "毎週",
+"overtime": 0,
 "bonus": 2.0,
 "raise": true,
 "commute": true,
