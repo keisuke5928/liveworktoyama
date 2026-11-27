@@ -105,7 +105,7 @@ for (let i = 1; i < files.length; i++) {
 }
 fc = fc.replace(/;$/, '');
 const mp4 = path.join(OUT, `${id}.mp4`);
-args.push('-filter_complex', fc, '-map', `[${last}]`, '-map', `${files.length}:a`, '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20',
+args.push('-filter_complex', fc, '-map', `[${last}]`, '-map', `${files.length}:a`, '-shortest', '-c:v', 'libx264', '-preset', 'slow', '-crf', '28',
   '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', mp4);
 execFileSync('ffmpeg', args, { stdio: 'ignore' });
 fs.rmSync(tmp, { recursive: true, force: true });
