@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 NEWS = ROOT / "content/news"
 LOG = ROOT / "content/social/facebook.json"
-API = "https://graph.facebook.com/v21.0"
+API = "https://graph.facebook.com/v27.0"
 SITE = "https://liveworktoyama.com"
 
 
