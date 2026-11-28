@@ -75,7 +75,7 @@ const foot = (n, total) => `<div class="foot"><span>${SITE}</span><span>${n}/${t
 const pts = en.points.slice(0, 3);
 const total = pts.length + 2;
 const slides = [
-  page(`${top}<div class="mid">${photo ? `<img class="photo" src="${photo}"><p class="credit">Photo: ${esc(ph.author)} / ${esc(ph.license)}</p>` : ''}<p class="date">${esc(date)}</p><h1>${esc(en.title)}</h1><div class="bar"></div><p class="ez">${esc(easy ? easy.title : '')}</p></div>${foot(1, total)}`),
+  page(`${top}<div class="mid">${photo ? `<img class="photo" src="${photo}"><p class="credit">Photo: ${esc(ph.author)}${ph.license ? ' / ' + esc(ph.license) : ''}</p>` : ''}<p class="date">${esc(date)}</p><h1>${esc(en.title)}</h1><div class="bar"></div><p class="ez">${esc(easy ? easy.title : '')}</p></div>${foot(1, total)}`),
   ...pts.map((p, i) => page(`${top}<div class="mid"><p class="num">${i + 1}</p><p class="pt">${esc(p)}</p><div class="bar"></div><p class="ez">${esc(easy && easy.points[i] ? easy.points[i] : '')}</p></div>${foot(i + 2, total)}`)),
   page(`${top}<div class="mid"><p class="pt">Read the full article in 5 languages</p><div class="langs"><span>English</span><span>やさしいにほんご</span><span>日本語</span><span>Tiếng Việt</span><span>Bahasa Indonesia</span></div><p class="url">${SITE}</p><p class="ez">プロフィールの リンクから よめます</p><p class="note">Private information site. Not a public office. For visa questions, ask immigration or a gyoseishoshi.</p></div>${foot(total, total)}`, false),
 ];

@@ -1,7 +1,7 @@
 title: Where can I see free winter lights near Toyama Station?
 description: Kansui Park, 9 minutes on foot from Toyama Station, has free illuminations every evening from 17:00 to 22:00 until February 28, 2027. No car needed. A special Toyama Bay design starts December 4.
 image_alt: Illustration of a town in winter in front of the Tateyama mountains
-photo_alt: Tenmon Bridge at Kansui Park on a snowy day (daytime photo)
+photo_alt: Tenmon Bridge lit up at dusk, reflected in the water at Kansui Park
 ---
 +++ short
 1. Kansui Park (Fugan Unga Kansui Koen) has free winter lights every evening, 17:00 to 22:00, until February 28, 2027.

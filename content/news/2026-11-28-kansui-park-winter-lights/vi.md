@@ -1,7 +1,7 @@
 title: Xem đèn trang trí mùa đông miễn phí gần ga Toyama ở đâu?
 description: Công viên Kansui, đi bộ 9 phút từ ga Toyama, có đèn trang trí miễn phí mỗi tối từ 17:00 đến 22:00 đến ngày 28/2/2027. Không cần ô tô. Từ ngày 4/12 có thiết kế đặc biệt về vịnh Toyama.
 image_alt: Hình minh họa thị trấn mùa đông trước dãy núi Tateyama
-photo_alt: Cầu Tenmon ở công viên Kansui vào ngày tuyết (ảnh ban ngày)
+photo_alt: Cầu Tenmon lên đèn lúc hoàng hôn, phản chiếu trên mặt nước ở công viên Kansui
 ---
 +++ short
 1. Công viên Kansui (Fugan Unga Kansui Koen) có đèn trang trí mùa đông miễn phí mỗi tối, 17:00–22:00, đến ngày 28/2/2027.
