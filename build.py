@@ -563,6 +563,8 @@ def build_news_list(lang):
 
 
 def photo_credit(ph, lang):
+    if ph.get("own"):  # taken by the site's own team
+        return f'<figcaption class="credit">{esc(t(lang, "photo_credit"))}: {esc(ph["author"])}</figcaption>'
     lic = f'<a href="{esc(ph["license_url"])}" rel="noopener license">{esc(ph["license"])}</a>' if ph.get("license_url") else esc(ph["license"])
     return (f'<figcaption class="credit">{esc(t(lang, "photo_credit"))}: <a href="{esc(ph["source"])}" rel="noopener">{esc(ph["author"])}</a>'
             f' / {lic} / {esc(ph["site"])}</figcaption>')
