@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-28",
+  "updated": "2026-11-28",
+  "category": "outings",
+  "region": "toyama",
+  "image": "/img/news/2026-11-28-takaoka-daibutsu.png",
+  "scene": "town",
+  "photo": "takaoka-daibutsu-night-owner",
+  "og_title": ["Takaoka Daibutsu: a big Buddha", "10 minutes from the station"],
+  "og_sub": "たかおか だいぶつ",
+  "easy_summary": "たかおか だいぶつは たかさ 16メートルの おおきな ぶつぞうです。たかおかえきから あるいて 10ぷん。おかねは すきな だけ（しのう）です。",
+  "sources": [
+    {"name": {"en": "Takaoka Tourism Navi (official)", "ja": "高岡観光ナビ（公式）", "easy": "たかおか かんこう ナビ", "vi": "Takaoka Tourism Navi (chính thức)", "id": "Takaoka Tourism Navi (resmi)"},
+     "note": {"en": "Takaoka Daibutsu, checked 2026-11-28", "ja": "高岡大仏（2026年11月28日確認）", "easy": "たかおか だいぶつ", "vi": "Takaoka Daibutsu (kiểm tra 28/11/2026)", "id": "Takaoka Daibutsu (dicek 28/11/2026)"},
+     "url": "https://www.takaoka.or.jp/viewpoint/detail_3204.html"}
+  ],
+  "related": ["winter-clothes-and-heating", "help-in-your-language"]
+}
