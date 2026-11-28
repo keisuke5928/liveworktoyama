@@ -1,79 +1,100 @@
 {
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "note": "Aggregated numbers only. No personal data.",
  "last7d": {
   "totals": [
    {
-    "activeUsers": 30,
-    "newUsers": 34,
-    "sessions": 34,
-    "screenPageViews": 147,
-    "engagementRate": 0.4706,
-    "averageSessionDuration": 184.2838
+    "activeUsers": 60,
+    "newUsers": 66,
+    "sessions": 72,
+    "screenPageViews": 217,
+    "engagementRate": 0.4167,
+    "averageSessionDuration": 101.3476
    }
   ],
   "pages": [
    {
-    "pagePath": "/ja/",
-    "screenPageViews": 30,
-    "activeUsers": 5,
-    "userEngagementDuration": 242,
-    "engagementRate": 0.75
-   },
-   {
     "pagePath": "/en/",
-    "screenPageViews": 28,
-    "activeUsers": 26,
-    "userEngagementDuration": 56,
-    "engagementRate": 0.3846
+    "screenPageViews": 46,
+    "activeUsers": 42,
+    "userEngagementDuration": 81,
+    "engagementRate": 0.3488
    },
    {
-    "pagePath": "/ja/jobs/",
-    "screenPageViews": 17,
-    "activeUsers": 3,
-    "userEngagementDuration": 119,
-    "engagementRate": 1
+    "pagePath": "/ja/",
+    "screenPageViews": 43,
+    "activeUsers": 7,
+    "userEngagementDuration": 372,
+    "engagementRate": 0.6875
    },
    {
     "pagePath": "/",
-    "screenPageViews": 16,
-    "activeUsers": 9,
+    "screenPageViews": 25,
+    "activeUsers": 14,
     "userEngagementDuration": 0,
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/jobs/search/",
-    "screenPageViews": 8,
-    "activeUsers": 3,
-    "userEngagementDuration": 97,
+    "pagePath": "/ja/jobs/",
+    "screenPageViews": 18,
+    "activeUsers": 4,
+    "userEngagementDuration": 126,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/search/",
+    "screenPageViews": 11,
+    "activeUsers": 4,
+    "userEngagementDuration": 114,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/news/2026-11-27-help-for-vietnamese-residents/",
+    "screenPageViews": 8,
+    "activeUsers": 8,
+    "userEngagementDuration": 26,
+    "engagementRate": 0.375
    },
    {
     "pagePath": "/ja/guides/",
-    "screenPageViews": 7,
-    "activeUsers": 3,
-    "userEngagementDuration": 24,
-    "engagementRate": 1
-   },
-   {
-    "pagePath": "/ja/news/",
-    "screenPageViews": 4,
-    "activeUsers": 3,
-    "userEngagementDuration": 17,
+    "screenPageViews": 8,
+    "activeUsers": 4,
+    "userEngagementDuration": 35,
     "engagementRate": 1
    },
    {
     "pagePath": "/ja/students/",
+    "screenPageViews": 8,
+    "activeUsers": 4,
+    "userEngagementDuration": 45,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/",
+    "screenPageViews": 5,
+    "activeUsers": 4,
+    "userEngagementDuration": 28,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/help-in-your-language/",
     "screenPageViews": 4,
-    "activeUsers": 3,
-    "userEngagementDuration": 31,
+    "activeUsers": 2,
+    "userEngagementDuration": 27,
     "engagementRate": 1
    },
    {
     "pagePath": "/about/",
-    "screenPageViews": 2,
-    "activeUsers": 1,
+    "screenPageViews": 3,
+    "activeUsers": 2,
     "userEngagementDuration": 17,
+    "engagementRate": 0.6667
+   },
+   {
+    "pagePath": "/business/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 99,
     "engagementRate": 1
    },
    {
@@ -84,10 +105,17 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/guides/help-in-your-language/",
+    "pagePath": "/ja/guides/changing-jobs/",
     "screenPageViews": 2,
-    "activeUsers": 1,
-    "userEngagementDuration": 6,
+    "activeUsers": 2,
+    "userEngagementDuration": 32,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/leaving-japan/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 20,
     "engagementRate": 1
    },
    {
@@ -119,13 +147,6 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/business/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 1,
-    "engagementRate": 1
-   },
-   {
     "pagePath": "/easy/jobs/",
     "screenPageViews": 1,
     "activeUsers": 1,
@@ -154,11 +175,39 @@
     "engagementRate": 1
    },
    {
+    "pagePath": "/en/guides/garbage-sorting/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/guides/pay-slip/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
+   },
+   {
     "pagePath": "/en/news/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 1,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/students/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
    },
    {
     "pagePath": "/ja/employers/aeon-bakery/",
@@ -203,13 +252,6 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/guides/changing-jobs/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 9,
-    "engagementRate": 1
-   },
-   {
     "pagePath": "/ja/guides/earthquakes-and-heavy-snow/",
     "screenPageViews": 1,
     "activeUsers": 1,
@@ -221,13 +263,6 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 1
-   },
-   {
-    "pagePath": "/ja/guides/leaving-japan/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 14,
     "engagementRate": 1
    },
    {
@@ -250,33 +285,83 @@
     "activeUsers": 1,
     "userEngagementDuration": 25,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-27-help-for-vietnamese-residents/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 37,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/my/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 22,
+    "engagementRate": 0
    }
   ],
   "views_by_language": {
-   "ja": 95,
-   "en": 31,
-   "other": 16,
-   "ja-only": 3,
+   "en": 61,
+   "ja": 123,
+   "other": 26,
+   "ja-only": 5,
    "easy": 2
   },
   "landing_pages": [
    {
     "landingPage": "/en",
-    "sessions": 19,
-    "engagementRate": 0.1579,
-    "averageSessionDuration": 1.8777
+    "sessions": 32,
+    "engagementRate": 0.125,
+    "averageSessionDuration": 2.2014
    },
    {
     "landingPage": "/",
-    "sessions": 8,
+    "sessions": 15,
     "engagementRate": 1,
-    "averageSessionDuration": 32.1403
+    "averageSessionDuration": 27.9659
    },
    {
     "landingPage": "/ja",
-    "sessions": 5,
-    "engagementRate": 0.6,
-    "averageSessionDuration": 123.554
+    "sessions": 9,
+    "engagementRate": 0.5556,
+    "averageSessionDuration": 146.0893
+   },
+   {
+    "landingPage": "/en/news/2026-11-27-help-for-vietnamese-residents",
+    "sessions": 8,
+    "engagementRate": 0.375,
+    "averageSessionDuration": 14.1532
+   },
+   {
+    "landingPage": "",
+    "sessions": 3,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
+   },
+   {
+    "landingPage": "/en/guides/garbage-sorting",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 1.8543
+   },
+   {
+    "landingPage": "/en/guides/pay-slip",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0.574
+   },
+   {
+    "landingPage": "/en/jobs",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
+   },
+   {
+    "landingPage": "/en/students",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
    },
    {
     "landingPage": "/ja/employers",
@@ -285,61 +370,115 @@
     "averageSessionDuration": 4172.045
    },
    {
+    "landingPage": "/ja/jobs/search",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 21.5504
+   },
+   {
     "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
     "sessions": 1,
     "engagementRate": 1,
     "averageSessionDuration": 1183.0376
+   },
+   {
+    "landingPage": "/my",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
    }
   ],
   "channels": [
    {
     "sessionDefaultChannelGroup": "Direct",
-    "sessions": 34,
-    "engagementRate": 0.4706
+    "sessions": 61,
+    "engagementRate": 0.3934
+   },
+   {
+    "sessionDefaultChannelGroup": "Organic Social",
+    "sessions": 11,
+    "engagementRate": 0.5455
+   },
+   {
+    "sessionDefaultChannelGroup": "Unassigned",
+    "sessions": 3,
+    "engagementRate": 0
    }
   ],
   "devices": [
    {
-    "deviceCategory": "mobile",
-    "sessions": 19,
-    "engagementRate": 0.4211
+    "deviceCategory": "desktop",
+    "sessions": 39,
+    "engagementRate": 0.4103
    },
    {
-    "deviceCategory": "desktop",
-    "sessions": 15,
-    "engagementRate": 0.5333
+    "deviceCategory": "mobile",
+    "sessions": 33,
+    "engagementRate": 0.4242
    }
   ],
   "countries": [
    {
     "country": "United States",
-    "activeUsers": 21
+    "activeUsers": 35
    },
    {
     "country": "Japan",
+    "activeUsers": 8
+   },
+   {
+    "country": "Poland",
     "activeUsers": 5
    },
    {
     "country": "Netherlands",
-    "activeUsers": 2
+    "activeUsers": 3
    },
    {
     "country": "(not set)",
     "activeUsers": 1
    },
    {
+    "country": "Canada",
+    "activeUsers": 1
+   },
+   {
+    "country": "Germany",
+    "activeUsers": 1
+   },
+   {
+    "country": "Ireland",
+    "activeUsers": 1
+   },
+   {
+    "country": "Russia",
+    "activeUsers": 1
+   },
+   {
+    "country": "South Korea",
+    "activeUsers": 1
+   },
+   {
+    "country": "Sweden",
+    "activeUsers": 1
+   },
+   {
     "country": "Switzerland",
+    "activeUsers": 1
+   },
+   {
+    "country": "United Kingdom",
     "activeUsers": 1
    }
   ],
   "browser_languages": [
    {
     "language": "English",
-    "activeUsers": 24
+    "activeUsers": 51
    },
    {
     "language": "Japanese",
-    "activeUsers": 5
+    "activeUsers": 8
    },
    {
     "language": "German",
@@ -349,43 +488,51 @@
   "apply_clicks_by_page": [
    {
     "pagePath": "/ja/jobs/search/",
-    "eventCount": 1
+    "eventCount": 3
    }
   ],
   "apply_clicks_by_type": [
    {
     "customEvent:link_type": "(not set)",
     "eventCount": 1
+   },
+   {
+    "customEvent:link_type": "official",
+    "eventCount": 1
+   },
+   {
+    "customEvent:link_type": "source",
+    "eventCount": 1
    }
   ],
   "events": [
    {
     "eventName": "page_view",
-    "eventCount": 147
+    "eventCount": 217
    },
    {
     "eventName": "user_engagement",
-    "eventCount": 97
-   },
-   {
-    "eventName": "scroll",
-    "eventCount": 53
+    "eventCount": 123
    },
    {
     "eventName": "session_start",
-    "eventCount": 38
+    "eventCount": 79
+   },
+   {
+    "eventName": "scroll",
+    "eventCount": 77
    },
    {
     "eventName": "first_visit",
-    "eventCount": 34
+    "eventCount": 66
    },
    {
     "eventName": "click",
-    "eventCount": 19
+    "eventCount": 20
    },
    {
     "eventName": "apply_click",
-    "eventCount": 1
+    "eventCount": 3
    },
    {
     "eventName": "form_start",
@@ -398,85 +545,106 @@
   "hint_low_engagement": [
    {
     "landingPage": "/en",
-    "sessions": 19,
-    "engagementRate": 0.1579,
-    "averageSessionDuration": 1.8777
+    "sessions": 32,
+    "engagementRate": 0.125,
+    "averageSessionDuration": 2.2014
    }
   ]
  },
  "last28d": {
   "totals": [
    {
-    "activeUsers": 30,
-    "newUsers": 34,
-    "sessions": 34,
-    "screenPageViews": 147,
-    "engagementRate": 0.4706,
-    "averageSessionDuration": 184.2838
+    "activeUsers": 60,
+    "newUsers": 66,
+    "sessions": 72,
+    "screenPageViews": 217,
+    "engagementRate": 0.4167,
+    "averageSessionDuration": 101.3476
    }
   ],
   "pages": [
    {
-    "pagePath": "/ja/",
-    "screenPageViews": 30,
-    "activeUsers": 5,
-    "userEngagementDuration": 242,
-    "engagementRate": 0.75
-   },
-   {
     "pagePath": "/en/",
-    "screenPageViews": 28,
-    "activeUsers": 26,
-    "userEngagementDuration": 56,
-    "engagementRate": 0.3846
+    "screenPageViews": 46,
+    "activeUsers": 42,
+    "userEngagementDuration": 81,
+    "engagementRate": 0.3488
    },
    {
-    "pagePath": "/ja/jobs/",
-    "screenPageViews": 17,
-    "activeUsers": 3,
-    "userEngagementDuration": 119,
-    "engagementRate": 1
+    "pagePath": "/ja/",
+    "screenPageViews": 43,
+    "activeUsers": 7,
+    "userEngagementDuration": 372,
+    "engagementRate": 0.6875
    },
    {
     "pagePath": "/",
-    "screenPageViews": 16,
-    "activeUsers": 9,
+    "screenPageViews": 25,
+    "activeUsers": 14,
     "userEngagementDuration": 0,
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/jobs/search/",
-    "screenPageViews": 8,
-    "activeUsers": 3,
-    "userEngagementDuration": 97,
+    "pagePath": "/ja/jobs/",
+    "screenPageViews": 18,
+    "activeUsers": 4,
+    "userEngagementDuration": 126,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/jobs/search/",
+    "screenPageViews": 11,
+    "activeUsers": 4,
+    "userEngagementDuration": 114,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/news/2026-11-27-help-for-vietnamese-residents/",
+    "screenPageViews": 8,
+    "activeUsers": 8,
+    "userEngagementDuration": 26,
+    "engagementRate": 0.375
    },
    {
     "pagePath": "/ja/guides/",
-    "screenPageViews": 7,
-    "activeUsers": 3,
-    "userEngagementDuration": 24,
-    "engagementRate": 1
-   },
-   {
-    "pagePath": "/ja/news/",
-    "screenPageViews": 4,
-    "activeUsers": 3,
-    "userEngagementDuration": 17,
+    "screenPageViews": 8,
+    "activeUsers": 4,
+    "userEngagementDuration": 35,
     "engagementRate": 1
    },
    {
     "pagePath": "/ja/students/",
+    "screenPageViews": 8,
+    "activeUsers": 4,
+    "userEngagementDuration": 45,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/",
+    "screenPageViews": 5,
+    "activeUsers": 4,
+    "userEngagementDuration": 28,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/help-in-your-language/",
     "screenPageViews": 4,
-    "activeUsers": 3,
-    "userEngagementDuration": 31,
+    "activeUsers": 2,
+    "userEngagementDuration": 27,
     "engagementRate": 1
    },
    {
     "pagePath": "/about/",
-    "screenPageViews": 2,
-    "activeUsers": 1,
+    "screenPageViews": 3,
+    "activeUsers": 2,
     "userEngagementDuration": 17,
+    "engagementRate": 0.6667
+   },
+   {
+    "pagePath": "/business/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 99,
     "engagementRate": 1
    },
    {
@@ -487,10 +655,17 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/guides/help-in-your-language/",
+    "pagePath": "/ja/guides/changing-jobs/",
     "screenPageViews": 2,
-    "activeUsers": 1,
-    "userEngagementDuration": 6,
+    "activeUsers": 2,
+    "userEngagementDuration": 32,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/guides/leaving-japan/",
+    "screenPageViews": 2,
+    "activeUsers": 2,
+    "userEngagementDuration": 20,
     "engagementRate": 1
    },
    {
@@ -522,13 +697,6 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/business/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 1,
-    "engagementRate": 1
-   },
-   {
     "pagePath": "/easy/jobs/",
     "screenPageViews": 1,
     "activeUsers": 1,
@@ -557,11 +725,39 @@
     "engagementRate": 1
    },
    {
+    "pagePath": "/en/guides/garbage-sorting/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 1,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/guides/pay-slip/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
+   },
+   {
+    "pagePath": "/en/jobs/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
+   },
+   {
     "pagePath": "/en/news/",
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 1,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/en/students/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 0,
+    "engagementRate": 0
    },
    {
     "pagePath": "/ja/employers/aeon-bakery/",
@@ -606,13 +802,6 @@
     "engagementRate": 1
    },
    {
-    "pagePath": "/ja/guides/changing-jobs/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 9,
-    "engagementRate": 1
-   },
-   {
     "pagePath": "/ja/guides/earthquakes-and-heavy-snow/",
     "screenPageViews": 1,
     "activeUsers": 1,
@@ -624,13 +813,6 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 4,
-    "engagementRate": 1
-   },
-   {
-    "pagePath": "/ja/guides/leaving-japan/",
-    "screenPageViews": 1,
-    "activeUsers": 1,
-    "userEngagementDuration": 14,
     "engagementRate": 1
    },
    {
@@ -653,33 +835,83 @@
     "activeUsers": 1,
     "userEngagementDuration": 25,
     "engagementRate": 1
+   },
+   {
+    "pagePath": "/ja/news/2026-11-27-help-for-vietnamese-residents/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 37,
+    "engagementRate": 1
+   },
+   {
+    "pagePath": "/my/",
+    "screenPageViews": 1,
+    "activeUsers": 1,
+    "userEngagementDuration": 22,
+    "engagementRate": 0
    }
   ],
   "views_by_language": {
-   "ja": 95,
-   "en": 31,
-   "other": 16,
-   "ja-only": 3,
+   "en": 61,
+   "ja": 123,
+   "other": 26,
+   "ja-only": 5,
    "easy": 2
   },
   "landing_pages": [
    {
     "landingPage": "/en",
-    "sessions": 19,
-    "engagementRate": 0.1579,
-    "averageSessionDuration": 1.8777
+    "sessions": 32,
+    "engagementRate": 0.125,
+    "averageSessionDuration": 2.2014
    },
    {
     "landingPage": "/",
-    "sessions": 8,
+    "sessions": 15,
     "engagementRate": 1,
-    "averageSessionDuration": 32.1403
+    "averageSessionDuration": 27.9659
    },
    {
     "landingPage": "/ja",
-    "sessions": 5,
-    "engagementRate": 0.6,
-    "averageSessionDuration": 123.554
+    "sessions": 9,
+    "engagementRate": 0.5556,
+    "averageSessionDuration": 146.0893
+   },
+   {
+    "landingPage": "/en/news/2026-11-27-help-for-vietnamese-residents",
+    "sessions": 8,
+    "engagementRate": 0.375,
+    "averageSessionDuration": 14.1532
+   },
+   {
+    "landingPage": "",
+    "sessions": 3,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
+   },
+   {
+    "landingPage": "/en/guides/garbage-sorting",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 1.8543
+   },
+   {
+    "landingPage": "/en/guides/pay-slip",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0.574
+   },
+   {
+    "landingPage": "/en/jobs",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
+   },
+   {
+    "landingPage": "/en/students",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
    },
    {
     "landingPage": "/ja/employers",
@@ -688,61 +920,115 @@
     "averageSessionDuration": 4172.045
    },
    {
+    "landingPage": "/ja/jobs/search",
+    "sessions": 1,
+    "engagementRate": 1,
+    "averageSessionDuration": 21.5504
+   },
+   {
     "landingPage": "/ja/news/2026-11-26-indonesia-tb-screening",
     "sessions": 1,
     "engagementRate": 1,
     "averageSessionDuration": 1183.0376
+   },
+   {
+    "landingPage": "/my",
+    "sessions": 1,
+    "engagementRate": 0,
+    "averageSessionDuration": 0
    }
   ],
   "channels": [
    {
     "sessionDefaultChannelGroup": "Direct",
-    "sessions": 34,
-    "engagementRate": 0.4706
+    "sessions": 61,
+    "engagementRate": 0.3934
+   },
+   {
+    "sessionDefaultChannelGroup": "Organic Social",
+    "sessions": 11,
+    "engagementRate": 0.5455
+   },
+   {
+    "sessionDefaultChannelGroup": "Unassigned",
+    "sessions": 3,
+    "engagementRate": 0
    }
   ],
   "devices": [
    {
-    "deviceCategory": "mobile",
-    "sessions": 19,
-    "engagementRate": 0.4211
+    "deviceCategory": "desktop",
+    "sessions": 39,
+    "engagementRate": 0.4103
    },
    {
-    "deviceCategory": "desktop",
-    "sessions": 15,
-    "engagementRate": 0.5333
+    "deviceCategory": "mobile",
+    "sessions": 33,
+    "engagementRate": 0.4242
    }
   ],
   "countries": [
    {
     "country": "United States",
-    "activeUsers": 21
+    "activeUsers": 35
    },
    {
     "country": "Japan",
+    "activeUsers": 8
+   },
+   {
+    "country": "Poland",
     "activeUsers": 5
    },
    {
     "country": "Netherlands",
-    "activeUsers": 2
+    "activeUsers": 3
    },
    {
     "country": "(not set)",
     "activeUsers": 1
    },
    {
+    "country": "Canada",
+    "activeUsers": 1
+   },
+   {
+    "country": "Germany",
+    "activeUsers": 1
+   },
+   {
+    "country": "Ireland",
+    "activeUsers": 1
+   },
+   {
+    "country": "Russia",
+    "activeUsers": 1
+   },
+   {
+    "country": "South Korea",
+    "activeUsers": 1
+   },
+   {
+    "country": "Sweden",
+    "activeUsers": 1
+   },
+   {
     "country": "Switzerland",
+    "activeUsers": 1
+   },
+   {
+    "country": "United Kingdom",
     "activeUsers": 1
    }
   ],
   "browser_languages": [
    {
     "language": "English",
-    "activeUsers": 24
+    "activeUsers": 51
    },
    {
     "language": "Japanese",
-    "activeUsers": 5
+    "activeUsers": 8
    },
    {
     "language": "German",
@@ -752,43 +1038,51 @@
   "apply_clicks_by_page": [
    {
     "pagePath": "/ja/jobs/search/",
-    "eventCount": 1
+    "eventCount": 3
    }
   ],
   "apply_clicks_by_type": [
    {
     "customEvent:link_type": "(not set)",
     "eventCount": 1
+   },
+   {
+    "customEvent:link_type": "official",
+    "eventCount": 1
+   },
+   {
+    "customEvent:link_type": "source",
+    "eventCount": 1
    }
   ],
   "events": [
    {
     "eventName": "page_view",
-    "eventCount": 147
+    "eventCount": 217
    },
    {
     "eventName": "user_engagement",
-    "eventCount": 97
-   },
-   {
-    "eventName": "scroll",
-    "eventCount": 53
+    "eventCount": 123
    },
    {
     "eventName": "session_start",
-    "eventCount": 38
+    "eventCount": 79
+   },
+   {
+    "eventName": "scroll",
+    "eventCount": 77
    },
    {
     "eventName": "first_visit",
-    "eventCount": 34
+    "eventCount": 66
    },
    {
     "eventName": "click",
-    "eventCount": 19
+    "eventCount": 20
    },
    {
     "eventName": "apply_click",
-    "eventCount": 1
+    "eventCount": 3
    },
    {
     "eventName": "form_start",
@@ -801,9 +1095,9 @@
   "hint_low_engagement": [
    {
     "landingPage": "/en",
-    "sessions": 19,
-    "engagementRate": 0.1579,
-    "averageSessionDuration": 1.8777
+    "sessions": 32,
+    "engagementRate": 0.125,
+    "averageSessionDuration": 2.2014
    }
   ]
  },
