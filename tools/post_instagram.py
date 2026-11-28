@@ -60,6 +60,9 @@ def make(news_id):
 
 def stage(args):
     log = load_log()
+    if not args and STAGE.exists() and any(STAGE.glob("*.mp4")):  # keep one reel a day: something is already waiting
+        print("a reel is already staged:", ", ".join(f.name for f in STAGE.glob("*.mp4")))
+        return
     ids = args or [d.name for d in sorted(NEWS.iterdir(), reverse=True) if (d / "meta.json").exists() and d.name not in log][:1]
     if not ids:
         print("nothing new to stage")

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-28",
+  "updated": "2026-11-28",
+  "category": "outings",
+  "region": "toyama",
+  "image": "/img/news/2026-11-28-shinminato-uchikawa.png",
+  "scene": "town",
+  "photo": "uchikawa-tateyama-owner",
+  "og_title": ["Uchikawa in Imizu:", "a canal town with mountain views"],
+  "og_sub": "しんみなとの うちかわ",
+  "easy_summary": "いみずしの うちかわは、かわぞいに ふねと いえが ならぶ まちです。あるくのは むりょう。たかおかえきから まんようせんで いけます。",
+  "sources": [
+    {"name": {"en": "Imizu City official tourism site", "ja": "射水市公式観光サイト", "easy": "いみずしの かんこうの サイト", "vi": "Trang du lịch chính thức thành phố Imizu", "id": "Situs wisata resmi Kota Imizu"},
+     "note": {"en": "Around Uchikawa, checked 2026-11-28", "ja": "内川周辺（2026年11月28日確認）", "easy": "うちかわ", "vi": "Khu vực Uchikawa (kiểm tra 28/11/2026)", "id": "Sekitar Uchikawa (dicek 28/11/2026)"},
+     "url": "https://www.imizu-kanko.jp/imizu-unique/uchikawa"}
+  ],
+  "related": ["winter-clothes-and-heating", "help-in-your-language"]
+}
