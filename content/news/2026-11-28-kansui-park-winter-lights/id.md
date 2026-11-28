@@ -1,6 +1,7 @@
 title: Di mana bisa melihat lampu musim dingin gratis dekat Stasiun Toyama?
 description: Taman Kansui, 9 menit jalan kaki dari Stasiun Toyama, punya iluminasi gratis setiap malam pukul 17:00–22:00 sampai 28 Februari 2027. Tidak perlu mobil. Mulai 4 Desember ada desain khusus bertema Teluk Toyama.
 image_alt: Ilustrasi kota di musim dingin di depan Pegunungan Tateyama
+photo_alt: Jembatan Tenmon di Taman Kansui saat bersalju (foto siang hari)
 ---
 +++ short
 1. Taman Kansui (Fugan Unga Kansui Koen) punya lampu musim dingin gratis setiap malam, 17:00–22:00, sampai 28 Februari 2027.

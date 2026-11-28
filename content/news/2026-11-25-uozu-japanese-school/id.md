@@ -1,6 +1,7 @@
 title: Sekolah bahasa Jepang akan dibuka di Uozu pada April 2027
 description: Sekolah bahasa Jepang yang diakui Kementerian Pendidikan direncanakan dibuka di Kota Uozu pada April 2027, yang pertama di Prefektur Toyama. Sekolah ini berencana menerima sekitar 100 siswa.
 image_alt: Ilustrasi gedung sekolah, pohon sakura, dan siswa dengan latar Pegunungan Tateyama
+photo_alt: Teluk Toyama dilihat dari Uozu
 ---
 +++ short
 1. Sekolah bahasa Jepang direncanakan dibuka di Kota Uozu pada April 2027.

@@ -1,6 +1,7 @@
 title: A Japanese language school will open in Uozu in April 2027
 description: A Japanese language school approved by the Ministry of Education is planned to open in Uozu City in April 2027, the first of its kind in Toyama. It plans to accept about 100 students.
 image_alt: Illustration of a school building with cherry trees and students in front of the Tateyama mountains
+photo_alt: Toyama Bay seen from Uozu
 ---
 +++ short
 1. A Japanese language school is planned to open in Uozu City in April 2027.

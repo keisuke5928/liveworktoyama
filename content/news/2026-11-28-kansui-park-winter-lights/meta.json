@@ -5,13 +5,34 @@
   "region": "toyama",
   "image": "/img/news/2026-11-28-kansui-park-winter-lights.png",
   "scene": "town",
-  "og_title": ["Free winter lights", "9 minutes from Toyama Station"],
+  "og_title": [
+    "Free winter lights",
+    "9 minutes from Toyama Station"
+  ],
   "og_sub": "かんすいこうえんの イルミネーション（むりょう）",
   "easy_summary": "かんすいこうえんの イルミネーションは むりょうです。2027ねん 2がつ 28にちまで、まいにち 17じから 22じまで みられます。とやまえきから あるいて 9ふんです。",
   "sources": [
-    {"name": {"en": "Toyama Prefecture", "ja": "富山県", "easy": "とやまけん", "vi": "Tỉnh Toyama", "id": "Prefektur Toyama"},
-     "note": {"en": "Kansui Park Sweet Illumination 2026 (updated September 30, 2026)", "ja": "環水公園スイートイルミネーション2026（2026年9月30日更新）", "easy": "かんすいこうえんの イルミネーション 2026", "vi": "Kansui Park Sweet Illumination 2026 (cập nhật 30/9/2026)", "id": "Kansui Park Sweet Illumination 2026 (diperbarui 30 September 2026)"},
-     "url": "https://www.pref.toyama.jp/810211/event/20261009illuminight.html"}
+    {
+      "name": {
+        "en": "Toyama Prefecture",
+        "ja": "富山県",
+        "easy": "とやまけん",
+        "vi": "Tỉnh Toyama",
+        "id": "Prefektur Toyama"
+      },
+      "note": {
+        "en": "Kansui Park Sweet Illumination 2026 (updated September 30, 2026)",
+        "ja": "環水公園スイートイルミネーション2026（2026年9月30日更新）",
+        "easy": "かんすいこうえんの イルミネーション 2026",
+        "vi": "Kansui Park Sweet Illumination 2026 (cập nhật 30/9/2026)",
+        "id": "Kansui Park Sweet Illumination 2026 (diperbarui 30 September 2026)"
+      },
+      "url": "https://www.pref.toyama.jp/810211/event/20261009illuminight.html"
+    }
   ],
-  "related": ["winter-clothes-and-heating", "driving-in-snow"]
+  "related": [
+    "winter-clothes-and-heating",
+    "driving-in-snow"
+  ],
+  "photo": "kansui-park-tenmon-bridge-snow"
 }
