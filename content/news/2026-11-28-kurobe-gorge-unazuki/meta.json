@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-28",
+  "updated": "2026-11-28",
+  "category": "outings",
+  "region": "toyama",
+  "image": "/img/news/2026-11-28-kurobe-gorge-unazuki.png",
+  "scene": "snow",
+  "photo": "kurobe-gorge-autumn-owner",
+  "og_title": ["Kurobe Gorge trolley train:", "last days of the season"],
+  "og_sub": "くろべきょうこくの トロッコでんしゃ",
+  "easy_summary": "くろべきょうこくの トロッコでんしゃは 11がつ 30にちまで ぜんぶの くかんを はしります。12がつ 1にち〜6にちは うなづき〜ささだいら だけです。",
+  "sources": [
+    {"name": {"en": "Kurobe Gorge Railway", "ja": "黒部峡谷鉄道", "easy": "くろべきょうこく てつどう", "vi": "Đường sắt hẻm núi Kurobe", "id": "Kurobe Gorge Railway"},
+     "note": {"en": "Extended season (October 16, 2026), fares and access, checked 2026-11-28", "ja": "旅客営業期間の延長（2026年10月16日）、運賃・アクセス（2026年11月28日確認）", "easy": "でんしゃの おしらせ", "vi": "Kéo dài mùa chạy tàu (16/10/2026), giá vé và đường đi (kiểm tra 28/11/2026)", "id": "Perpanjangan masa operasi (16 Oktober 2026), tarif dan akses (dicek 28/11/2026)"},
+     "url": "https://www.kurotetu.co.jp/news-detail/?post=650"},
+    {"name": {"en": "Kurobe Gorge Railway: fares", "ja": "黒部峡谷鉄道：運賃", "easy": "でんしゃの おかね", "vi": "Đường sắt hẻm núi Kurobe: giá vé", "id": "Kurobe Gorge Railway: tarif"},
+     "note": {"en": "checked 2026-11-28", "ja": "2026年11月28日確認", "easy": "2026ねん 11がつ 28にち", "vi": "kiểm tra 28/11/2026", "id": "dicek 28/11/2026"},
+     "url": "https://www.kurotetu.co.jp/fare/"}
+  ],
+  "related": ["winter-clothes-and-heating", "driving-in-snow"]
+}
