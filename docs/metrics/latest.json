@@ -8,8 +8,8 @@
     "newUsers": 66,
     "sessions": 72,
     "screenPageViews": 217,
-    "engagementRate": 0.4167,
-    "averageSessionDuration": 101.3476
+    "engagementRate": 0.4444,
+    "averageSessionDuration": 130.1879
    }
   ],
   "pages": [
@@ -18,14 +18,14 @@
     "screenPageViews": 46,
     "activeUsers": 42,
     "userEngagementDuration": 81,
-    "engagementRate": 0.3488
+    "engagementRate": 0.3721
    },
    {
     "pagePath": "/ja/",
     "screenPageViews": 43,
     "activeUsers": 7,
     "userEngagementDuration": 372,
-    "engagementRate": 0.6875
+    "engagementRate": 0.8125
    },
    {
     "pagePath": "/",
@@ -298,7 +298,7 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 22,
-    "engagementRate": 0
+    "engagementRate": 1
    }
   ],
   "views_by_language": {
@@ -311,9 +311,9 @@
   "landing_pages": [
    {
     "landingPage": "/en",
-    "sessions": 32,
-    "engagementRate": 0.125,
-    "averageSessionDuration": 2.2014
+    "sessions": 31,
+    "engagementRate": 0.129,
+    "averageSessionDuration": 1.8663
    },
    {
     "landingPage": "/",
@@ -324,8 +324,8 @@
    {
     "landingPage": "/ja",
     "sessions": 9,
-    "engagementRate": 0.5556,
-    "averageSessionDuration": 146.0893
+    "engagementRate": 0.6667,
+    "averageSessionDuration": 192.0148
    },
    {
     "landingPage": "/en/news/2026-11-27-help-for-vietnamese-residents",
@@ -334,8 +334,8 @@
     "averageSessionDuration": 14.1532
    },
    {
-    "landingPage": "",
-    "sessions": 3,
+    "landingPage": "(not set)",
+    "sessions": 1,
     "engagementRate": 0,
     "averageSessionDuration": 0
    },
@@ -384,32 +384,27 @@
    {
     "landingPage": "/my",
     "sessions": 1,
-    "engagementRate": 0,
-    "averageSessionDuration": 0
+    "engagementRate": 1,
+    "averageSessionDuration": 1675.7639
    }
   ],
   "channels": [
    {
     "sessionDefaultChannelGroup": "Direct",
     "sessions": 61,
-    "engagementRate": 0.3934
+    "engagementRate": 0.4262
    },
    {
     "sessionDefaultChannelGroup": "Organic Social",
     "sessions": 11,
     "engagementRate": 0.5455
-   },
-   {
-    "sessionDefaultChannelGroup": "Unassigned",
-    "sessions": 3,
-    "engagementRate": 0
    }
   ],
   "devices": [
    {
     "deviceCategory": "desktop",
     "sessions": 39,
-    "engagementRate": 0.4103
+    "engagementRate": 0.4615
    },
    {
     "deviceCategory": "mobile",
@@ -545,9 +540,9 @@
   "hint_low_engagement": [
    {
     "landingPage": "/en",
-    "sessions": 32,
-    "engagementRate": 0.125,
-    "averageSessionDuration": 2.2014
+    "sessions": 31,
+    "engagementRate": 0.129,
+    "averageSessionDuration": 1.8663
    }
   ]
  },
@@ -558,8 +553,8 @@
     "newUsers": 66,
     "sessions": 72,
     "screenPageViews": 217,
-    "engagementRate": 0.4167,
-    "averageSessionDuration": 101.3476
+    "engagementRate": 0.4444,
+    "averageSessionDuration": 130.1879
    }
   ],
   "pages": [
@@ -568,14 +563,14 @@
     "screenPageViews": 46,
     "activeUsers": 42,
     "userEngagementDuration": 81,
-    "engagementRate": 0.3488
+    "engagementRate": 0.3721
    },
    {
     "pagePath": "/ja/",
     "screenPageViews": 43,
     "activeUsers": 7,
     "userEngagementDuration": 372,
-    "engagementRate": 0.6875
+    "engagementRate": 0.8125
    },
    {
     "pagePath": "/",
@@ -848,7 +843,7 @@
     "screenPageViews": 1,
     "activeUsers": 1,
     "userEngagementDuration": 22,
-    "engagementRate": 0
+    "engagementRate": 1
    }
   ],
   "views_by_language": {
@@ -861,9 +856,9 @@
   "landing_pages": [
    {
     "landingPage": "/en",
-    "sessions": 32,
-    "engagementRate": 0.125,
-    "averageSessionDuration": 2.2014
+    "sessions": 31,
+    "engagementRate": 0.129,
+    "averageSessionDuration": 1.8663
    },
    {
     "landingPage": "/",
@@ -874,8 +869,8 @@
    {
     "landingPage": "/ja",
     "sessions": 9,
-    "engagementRate": 0.5556,
-    "averageSessionDuration": 146.0893
+    "engagementRate": 0.6667,
+    "averageSessionDuration": 192.0148
    },
    {
     "landingPage": "/en/news/2026-11-27-help-for-vietnamese-residents",
@@ -884,8 +879,8 @@
     "averageSessionDuration": 14.1532
    },
    {
-    "landingPage": "",
-    "sessions": 3,
+    "landingPage": "(not set)",
+    "sessions": 1,
     "engagementRate": 0,
     "averageSessionDuration": 0
    },
@@ -934,32 +929,27 @@
    {
     "landingPage": "/my",
     "sessions": 1,
-    "engagementRate": 0,
-    "averageSessionDuration": 0
+    "engagementRate": 1,
+    "averageSessionDuration": 1675.7639
    }
   ],
   "channels": [
    {
     "sessionDefaultChannelGroup": "Direct",
     "sessions": 61,
-    "engagementRate": 0.3934
+    "engagementRate": 0.4262
    },
    {
     "sessionDefaultChannelGroup": "Organic Social",
     "sessions": 11,
     "engagementRate": 0.5455
-   },
-   {
-    "sessionDefaultChannelGroup": "Unassigned",
-    "sessions": 3,
-    "engagementRate": 0
    }
   ],
   "devices": [
    {
     "deviceCategory": "desktop",
     "sessions": 39,
-    "engagementRate": 0.4103
+    "engagementRate": 0.4615
    },
    {
     "deviceCategory": "mobile",
@@ -1095,17 +1085,31 @@
   "hint_low_engagement": [
    {
     "landingPage": "/en",
-    "sessions": 32,
-    "engagementRate": 0.125,
-    "averageSessionDuration": 2.2014
+    "sessions": 31,
+    "engagementRate": 0.129,
+    "averageSessionDuration": 1.8663
    }
   ]
  },
+ "daily": [
+  {
+   "date": "2026-11-26",
+   "activeUsers": 30,
+   "sessions": 34,
+   "screenPageViews": 147
+  },
+  {
+   "date": "2026-11-27",
+   "activeUsers": 34,
+   "sessions": 38,
+   "screenPageViews": 70
+  }
+ ],
  "sitemaps": [
   {
    "path": "https://liveworktoyama.com/sitemap.xml",
    "lastSubmitted": "2026-11-26T03:27:02.787Z",
-   "lastDownloaded": "2026-11-26T03:27:03.803Z",
+   "lastDownloaded": "2026-11-28T04:36:31.881Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0"
