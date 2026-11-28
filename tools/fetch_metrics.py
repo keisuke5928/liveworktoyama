@@ -108,6 +108,11 @@ def main():
         if isinstance(r["landing_pages"], list):
             r["hint_low_engagement"] = [p for p in r["landing_pages"] if p["sessions"] >= 10 and p["engagementRate"] < 0.4][:20]
         out[k] = r
+    # Day-by-day numbers for the last 28 days (for the dashboard's trend line)
+    daily = ga(s, prop, 28, ["date"], ["activeUsers", "sessions", "screenPageViews"], limit=60,
+               order={"dimension": {"dimensionName": "date"}, "desc": False})
+    out["daily"] = [{"date": f'{r["date"][:4]}-{r["date"][4:6]}-{r["date"][6:]}', **{k: v for k, v in r.items() if k != "date"}}
+                    for r in daily] if isinstance(daily, list) else daily
     # Which sitemaps Search Console knows about (read-only). Empty list = sitemap not submitted yet.
     r = s.get(f"https://www.googleapis.com/webmasters/v3/sites/{quote(site, safe='')}/sitemaps", timeout=60)
     out["sitemaps"] = [{k: m.get(k) for k in ("path", "lastSubmitted", "lastDownloaded", "isPending", "warnings", "errors")}
