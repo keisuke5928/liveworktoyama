@@ -34,6 +34,9 @@ function readDoc(lang) {
 const en = readDoc('en'), easy = readDoc('easy'), vi = readDoc('vi'), idn = readDoc('id'), ja = readDoc('ja');
 const SITE = 'liveworktoyama.com';
 const logo = 'data:image/png;base64,' + fs.readFileSync(path.join(ROOT, 'static/img/brand/wordmark.png')).toString('base64');
+const photos = fs.existsSync(path.join(ROOT, 'content/photos.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/photos.json'), 'utf8')) : {};
+const ph = meta.photo && photos[meta.photo];
+const photo = ph ? 'data:image/jpeg;base64,' + fs.readFileSync(path.join(ROOT, 'static', ph.src)).toString('base64') : '';
 const date = meta.date.replace(/^(\d+)-(\d+)-(\d+)$/, (_, y, m, d) => `${+m}/${+d}/${y}`);
 
 const css = `
@@ -56,6 +59,8 @@ h1{font-size:92px;line-height:1.08;font-weight:900;letter-spacing:-1px}
 .langs{display:flex;flex-wrap:wrap;gap:18px}
 .langs span{border:4px solid #00255f;border-radius:50px;padding:14px 30px;font-size:42px;font-weight:800;color:#00255f;background:#fff}
 .url{font-size:76px;font-weight:900;color:#00255f}
+.photo{width:100%;height:470px;object-fit:cover;border-radius:28px}
+.credit{font-size:24px;color:#4a5f6d;margin-top:-28px}
 .note{font-family:'Zen Kaku Gothic New';font-size:34px;line-height:1.5;color:#4a5f6d;font-weight:500}
 `;
 const scene = `<svg class="scene" viewBox="0 0 1080 520" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e6f0f8"/></linearGradient></defs>
@@ -70,7 +75,7 @@ const foot = (n, total) => `<div class="foot"><span>${SITE}</span><span>${n}/${t
 const pts = en.points.slice(0, 3);
 const total = pts.length + 2;
 const slides = [
-  page(`${top}<div class="mid"><p class="date">${esc(date)}</p><h1>${esc(en.title)}</h1><div class="bar"></div><p class="ez">${esc(easy ? easy.title : '')}</p></div>${foot(1, total)}`),
+  page(`${top}<div class="mid">${photo ? `<img class="photo" src="${photo}"><p class="credit">Photo: ${esc(ph.author)} / ${esc(ph.license)}</p>` : ''}<p class="date">${esc(date)}</p><h1>${esc(en.title)}</h1><div class="bar"></div><p class="ez">${esc(easy ? easy.title : '')}</p></div>${foot(1, total)}`),
   ...pts.map((p, i) => page(`${top}<div class="mid"><p class="num">${i + 1}</p><p class="pt">${esc(p)}</p><div class="bar"></div><p class="ez">${esc(easy && easy.points[i] ? easy.points[i] : '')}</p></div>${foot(i + 2, total)}`)),
   page(`${top}<div class="mid"><p class="pt">Read the full article in 5 languages</p><div class="langs"><span>English</span><span>やさしいにほんご</span><span>日本語</span><span>Tiếng Việt</span><span>Bahasa Indonesia</span></div><p class="url">${SITE}</p><p class="ez">プロフィールの リンクから よめます</p><p class="note">Private information site. Not a public office. For visa questions, ask immigration or a gyoseishoshi.</p></div>${foot(total, total)}`, false),
 ];
@@ -105,7 +110,7 @@ for (let i = 1; i < files.length; i++) {
 }
 fc = fc.replace(/;$/, '');
 const mp4 = path.join(OUT, `${id}.mp4`);
-args.push('-filter_complex', fc, '-map', `[${last}]`, '-map', `${files.length}:a`, '-shortest', '-c:v', 'libx264', '-preset', 'slow', '-crf', '28',
+args.push('-filter_complex', fc, '-map', `[${last}]`, '-map', `${files.length}:a`, '-shortest', '-c:v', 'libx264', '-preset', 'slow', '-crf', '32',
   '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', mp4);
 execFileSync('ffmpeg', args, { stdio: 'ignore' });
 fs.rmSync(tmp, { recursive: true, force: true });
