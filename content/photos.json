@@ -26,7 +26,8 @@
   "source": "",
   "site": "",
   "own": true,
-  "taken": "2026-11"
+  "taken": "2026-11",
+  "tall": "content/photos/tall/kansui-park-lights-owner.jpg"
  },
  "takaoka-daibutsu-night-owner": {
   "src": "/img/photos/takaoka-daibutsu-night-owner.jpg",
@@ -37,7 +38,8 @@
   "source": "",
   "site": "",
   "own": true,
-  "taken": "2026-11"
+  "taken": "2026-11",
+  "tall": "content/photos/tall/takaoka-daibutsu-night-owner.jpg"
  },
  "uchikawa-tateyama-owner": {
   "src": "/img/photos/uchikawa-tateyama-owner.jpg",
@@ -48,7 +50,8 @@
   "source": "",
   "site": "",
   "own": true,
-  "taken": "2026-11"
+  "taken": "2026-11",
+  "tall": "content/photos/tall/uchikawa-tateyama-owner.jpg"
  },
  "kurobe-gorge-autumn-owner": {
   "src": "/img/photos/kurobe-gorge-autumn-owner.jpg",
@@ -59,6 +62,7 @@
   "source": "",
   "site": "",
   "own": true,
-  "taken": "2026-11"
+  "taken": "2026-11",
+  "tall": "content/photos/tall/kurobe-gorge-autumn-owner.jpg"
  }
 }
