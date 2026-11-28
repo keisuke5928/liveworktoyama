@@ -216,8 +216,11 @@ def load_news():
     return sorted(news, key=lambda n: (n["date"], n["slug"]), reverse=True)
 
 
+PHOTOS = json.loads((C / "photos.json").read_text(encoding="utf-8")) if (C / "photos.json").exists() else {}
 GUIDES = load_guides()
 NEWS = load_news()
+for _n in NEWS:  # a free photo (content/photos.json) replaces the template image on the page and in cards; OGP keeps the template card
+    _n["card_img"] = PHOTOS[_n["photo"]]["src"] if _n.get("photo") in PHOTOS else _n["image"]
 GUIDE_BY_SLUG = {g["slug"]: g for g in GUIDES}
 
 # ---------------------------------------------------------------- layout
@@ -479,7 +482,7 @@ def build_home(lang):
     cards = ""
     for n in NEWS[:3]:
         url = f"/{lang}/news/{n['slug']}/"
-        cards += (f'<article class="card ncard"><a href="{url}" tabindex="-1" aria-hidden="true"><img src="{n["image"]}" width="1200" height="630" alt="" loading="lazy"></a>'
+        cards += (f'<article class="card ncard"><a href="{url}" tabindex="-1" aria-hidden="true"><img src="{n["card_img"]}" width="1200" height="630" alt="" loading="lazy"></a>'
                   f'<p class="nmeta"><time datetime="{n["date"]}">{esc(short_date(n["date"], lang))}</time> · {esc(t(lang, "cat_" + n["category"]))}</p>'
                   f'<h3><a href="{url}">{esc(news_title(n, lang))}</a></h3></article>')
     body += "\n" + band(f'<div class="shead"><h2 class="sh">{esc(t(lang, "home_news"))}</h2><a href="/{lang}/news/">{esc(t(lang, "all_news"))} →</a></div><div class="ngrid">{cards}</div>', cls="tint")
@@ -542,7 +545,7 @@ def build_news_list(lang):
         d = n["lang"].get(lang) or n["lang"].get(CHAIN[lang][1] if len(CHAIN[lang]) > 1 else "en")
         url = f"/{lang}/news/{n['slug']}/"
         items.append(
-            f'<article class="card newsitem"><a href="{url}" tabindex="-1" aria-hidden="true"><img class="thumb" src="{n["image"]}" width="1200" height="630" alt="" loading="lazy"></a>'
+            f'<article class="card newsitem"><a href="{url}" tabindex="-1" aria-hidden="true"><img class="thumb" src="{n["card_img"]}" width="1200" height="630" alt="" loading="lazy"></a>'
             f'<div><span class="tag">{esc(t(lang, "cat_" + n["category"]))}</span><span class="tag">{esc(t(lang, "region_" + n["region"]))}</span>'
             f'<h2><a href="{url}">{esc(d["title"])}</a></h2><p class="note"><time datetime="{n["date"]}">{fmt_date(n["date"], lang)}</time></p>'
             f'<p>{esc(d["description"])}</p></div></article>'
@@ -557,6 +560,20 @@ def build_news_list(lang):
     }]
     page(lang, path, t(lang, "news_h1"), t(lang, "news_lead"), body, section="news",
          alternates=alts(lambda l: f"/{l}/news/"), jsonld=ld, slim=False, lastmod=NEWS[0]["date"] if NEWS else None)
+
+
+def photo_credit(ph, lang):
+    lic = f'<a href="{esc(ph["license_url"])}" rel="noopener license">{esc(ph["license"])}</a>' if ph.get("license_url") else esc(ph["license"])
+    return (f'<figcaption class="credit">{esc(t(lang, "photo_credit"))}: <a href="{esc(ph["source"])}" rel="noopener">{esc(ph["author"])}</a>'
+            f' / {lic} / {esc(ph["site"])}</figcaption>')
+
+
+def photo_figure(n, d, title, lang):
+    ph = PHOTOS.get(n.get("photo"))
+    if not ph:
+        return f'<figure class="hero"><img src="{n["image"]}" width="1200" height="630" alt="{esc(d.get("image_alt", title))}"></figure>'
+    alt = d.get("photo_alt") or d.get("image_alt", title)
+    return f'<figure class="hero"><img src="{ph["src"]}" width="1200" height="630" alt="{esc(alt)}">{photo_credit(ph, lang)}</figure>'
 
 
 def build_news_article(n, lang):
@@ -574,7 +591,7 @@ def build_news_article(n, lang):
         f"<div>{tags}</div>",
         f"<h1>{esc(title)}</h1>",
         f'<p class="meta"><time datetime="{n["date"]}">{fmt_date(n["date"], lang)}</time> · {esc(t(lang, "read_time", n=minutes))}</p>',
-        f'<figure class="hero"><img src="{n["image"]}" width="1200" height="630" alt="{esc(d.get("image_alt", title))}"></figure>',
+        photo_figure(n, d, title, lang),
         f'<section class="box short" aria-labelledby="h-short"><h2 id="h-short">{esc(t(lang, "in_short"))}</h2>{md(d.get("short", ""))}</section>',
         f'<div class="prose">{body_html}</div>',
         f'<section class="box meaning" aria-labelledby="h-mean"><h2 id="h-mean">{esc(t(lang, "meaning"))}</h2>{meaning_html}</section>',

@@ -1,6 +1,7 @@
 title: Trường tiếng Nhật sẽ mở ở Uozu vào tháng 4 năm 2027
 description: Một trường tiếng Nhật được Bộ Giáo dục công nhận dự kiến mở ở thành phố Uozu vào tháng 4/2027, là trường đầu tiên như vậy ở tỉnh Toyama. Trường dự kiến nhận khoảng 100 học viên.
 image_alt: Hình minh họa trường học, cây hoa anh đào và học sinh trước dãy núi Tateyama
+photo_alt: Vịnh Toyama nhìn từ Uozu
 ---
 +++ short
 1. Một trường tiếng Nhật dự kiến mở ở thành phố Uozu vào tháng 4/2027.
