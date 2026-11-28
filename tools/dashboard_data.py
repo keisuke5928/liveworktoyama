@@ -93,6 +93,12 @@ def main():
             pass
         posts.append({"article": art[11:], "date": art[:10], "platform": "Instagram", "url": url})
     save("social", sorted(posts, key=lambda p: (p["date"], p["platform"]), reverse=True), "content/social/ (posted by the site's tools)")
+    # one file with every dataset, for upload to the dashboard (each dataset's loader picks its part)
+    allf = {"generated": gen}
+    for f in sorted(OUT.glob("*.json")):
+        if f.name != "lwt-dashboard.json":
+            allf[f.stem] = json.loads(f.read_text(encoding="utf-8"))["rows"]
+    (OUT / "lwt-dashboard.json").write_text(json.dumps(allf, ensure_ascii=False) + "\n", encoding="utf-8")
     print("wrote", ", ".join(sorted(f.name for f in OUT.glob("*.json"))), "| metrics", gen)
 
 
