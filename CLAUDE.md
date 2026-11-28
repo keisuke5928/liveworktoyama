@@ -175,6 +175,7 @@
    1. 毎朝5時（日本時間）に GitHub Actions「Fetch site metrics」が GA4 と Search Console の数字を `docs/metrics/latest.json` に保存する（月曜は `docs/metrics/history/` にも保存）。集計した数字だけで、個人を特定できる情報は扱わない
    2. 必要な設定：GitHub のリポジトリのシークレット `GA_SA_KEY`（サービスアカウントの鍵）と `GA4_PROPERTY_ID`（数字のプロパティID）。サービスアカウントは GA4 の「閲覧者」、Search Console の「制限付き」ユーザーにする。2026-11-27 設定完了：Google Cloud プロジェクト liveworktoyama、サービスアカウント lwt-metrics@liveworktoyama.iam.gserviceaccount.com。GA4・Search Console・Google Cloud はサイト運営用の Google アカウントにまとめた（Search Console はドメインプロパティ、Cloudflare の DNS に確認用 TXT が2件。消さない）。GA4 のカスタムディメンション「応募先の種類」（link_type）登録済み
    3. データがまだないときは、UIの自動チェック、サイト内の情報の抜け、季節の話題をもとに見直す
+   4. オーナー用のダッシュボード：https://claude.ai/artifact/QLbUxoa1FWnNQQ8vaSmYd5（claude.ai の「Data」タイプ、非公開）。サイトの利用、応募・企業向けボタンのクリック、日ごとの推移、言語・流入元・端末・国、よく見られているページ、検索の言葉、記事・求人の数、SNS の投稿を1か所で見られる（2026-11-28 オーナー指示）。毎朝の自動更新で `python3 tools/dashboard_data.py` → `_dashboard/lwt-dashboard.json` をダッシュボードにアップロード（Artifact の asset）→ 11個のデータ（datasets/traffic など）の source.url と updated を新しいファイルに更新 → 前のファイルを削除
 2. 毎週月曜の自動見直し（スケジュールタスク「週次のサイト改善」）
    1. 先週と比べて、よく見られているページ、すぐ離脱されるページ（hint_low_engagement）、検索で表示されるのにクリックされないページ（hint_low_ctr）、応募ボタンのクリック（apply_click）、言語別・端末別の閲覧を見る
    2. 改善を1週間に最大3つ選ぶ。それぞれ「データで見えたこと → 仮説 → 変更 → 2週間後に見る数字」を決める
